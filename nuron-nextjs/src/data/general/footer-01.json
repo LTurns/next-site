@@ -3,53 +3,29 @@
     "logo-widget": {
         "logo": [
             {
-                "src": "/images/logo/logo-white.png",
+                "src": "/images/logo/cbslogo-white.png",
                 "alt": "logo"
             }
         ],
-        "text": "Created with the collaboration of over 60 of the world's best Nuron Artists."
-    },
-    "newsletter-widget": {
-        "title": "Get The Latest Nuron Updates",
-        "note": "Email is safe. We don't spam."
+        "text": "Leaders in Cable Blowing and Cable Installation"
     },
     "quicklink-widget": {
-        "title": "Nuron",
+        "title": "CBS Products",
         "menu": [
             {
                 "id": 1,
-                "text": "Protocol Explore",
-                "path": "/explore-01"
+                "text": "Fibre Installation",
+                "path": "/fibre-installation"
             },
             {
                 "id": 2,
-                "text": "System Token",
-                "path": "/about"
+                "text": "Overhead Line",
+                "path": "/overhead-line"
             },
             {
                 "id": 3,
-                "text": "Otimize Time",
-                "path": "/about"
-            },
-            {
-                "id": 4,
-                "text": "Visual Checking",
-                "path": "/about"
-            },
-            {
-                "id": 5,
-                "text": "Fadeup System",
-                "path": "/blog"
-            },
-            {
-                "id": 6,
-                "text": "Activity Log",
-                "path": "/activity"
-            },
-            {
-                "id": 7,
-                "text": "System Auto Since",
-                "path": "/blog"
+                "text": "Underground Cable Laying",
+                "path": "/underground-cable-laying"
             }
         ]
     },
@@ -57,74 +33,19 @@
         "title": "Information",
         "menu": [
             {
-                "id": 1,
-                "text": "Market Explore",
-                "path": "/explore-01"
+                "id": 4,
+                "text": "About",
+                "path": "/about"
             },
             {
                 "id": 2,
-                "text": "Ready Token",
-                "path": "/about"
-            },
-            {
-                "id": 3,
-                "text": "Otimize Time",
-                "path": "/about"
-            },
-            {
-                "id": 4,
-                "text": "Main Option",
-                "path": "/about"
-            },
-            {
-                "id": 5,
-                "text": "Blog Grid",
-                "path": "/blog"
+                "text": "Where To Buy",
+                "path": "/where-to-buy"
             },
             {
                 "id": 6,
-                "text": "About Us",
-                "path": "/about"
-            },
-            {
-                "id": 7,
-                "text": "Fix Bug",
-                "path": "/blog"
-            }
-        ]
-    },
-    "soldout-widget": {
-        "title": "Recent Sold Out",
-        "products": [
-            {
-                "id": 1,
-                "title": "#21 The Wonder",
-                "path": "/product",
-                "highestBid": "Highest bid 1/20",
-                "price": "0.244wETH",
-                "image": {
-                    "src": "/images/portfolio/portfolio-01.jpg"
-                }
-            },
-            {
-                "id": 2,
-                "title": "Diamond Dog",
-                "path": "/product",
-                "highestBid": "Highest bid 1/20",
-                "price": "0.022wETH",
-                "image": {
-                    "src": "/images/portfolio/portfolio-02.jpg"
-                }
-            },
-            {
-                "id": 3,
-                "title": "Morgan11",
-                "path": "/product",
-                "highestBid": "Highest bid 1/20",
-                "price": "0.892wETH",
-                "image": {
-                    "src": "/images/portfolio/portfolio-03.jpg"
-                }
+                "text": "Contact Details",
+                "path": "/contact"
             }
         ]
     },
@@ -142,5 +63,5 @@
             }
         ]
     },
-    "copyright_text": "©2022 Nuron, Inc. All rights reserved"
+    "copyright_text": "©2024"
 }

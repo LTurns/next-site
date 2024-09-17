@@ -20,17 +20,6 @@ const HeroArea = ({ data }) => (
             <div className="row align-items-center">
                 <div className="col-xl-6 col-lg-6 col-md-12 order-2 order-lg-1 mt_md--40 mt_sm--40">
                     <div className="sldier-content">
-                        {data?.badge && (
-                            <span
-                                className="title-badge"
-                                data-sal="slide-up"
-                                data-sal-delay="150"
-                                data-sal-duration="800"
-                            >
-                                {data.badge}
-                            </span>
-                        )}
-
                         <h2
                             className="title"
                             data-sal="slide-up"
@@ -78,8 +67,6 @@ const HeroArea = ({ data }) => (
                                         path={banner.path}
                                         image={{
                                             src: banner.image.src,
-                                            width: 667,
-                                            height: 667,
                                         }}
                                     />
                                 </SliderItem>

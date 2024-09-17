@@ -6,6 +6,7 @@ import Logo from "@components/logo";
 import { slideToggle, slideUp } from "@utils/methods";
 import SubMenu from "./submenu";
 import MegaMenu from "./megamenu";
+import SearchBar from "@components/searchbar";
 
 const MobileMenu = ({ isOpen, onClick, menu, logo }) => {
     const onClickHandler = (e) => {
@@ -68,6 +69,7 @@ const MobileMenu = ({ isOpen, onClick, menu, logo }) => {
                     </ul>
                 </nav>
             </OffcanvasBody>
+            <SearchBar />
         </Offcanvas>
     );
 };

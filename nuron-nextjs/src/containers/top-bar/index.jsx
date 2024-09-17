@@ -4,12 +4,17 @@ import Web3 from "web3";
 import SearchForm from "@components/search-form/layout-03";
 import Anchor from "@ui/anchor";
 import Button from "@ui/button";
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
 import ColorSwitcher from "@components/color-switcher";
 import BurgerButton from "@ui/burger-button";
 import FlyoutSearchForm from "@components/search-form/layout-02";
 import MobileMenu from "@components/menu/mobile-menu-02";
 import UserDropdown from "@components/user-dropdown";
 import { useOffcanvas, useFlyoutSearch } from "@hooks";
+import Tooltip from "@mui/material/Tooltip";
+
+import { useRouter } from "next/router";
 
 // Demo Data
 import sideMenuData from "../../data/general/menu-02.json";
@@ -21,6 +26,10 @@ const TopBarArea = () => {
 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [ethBalance, setEthBalance] = useState("");
+
+    const router = useRouter();
+
+    const { cartCount } = useCart();
 
     const detectCurrentProvider = () => {
         let provider;
@@ -93,14 +102,14 @@ const TopBarArea = () => {
                             </Anchor>
                         </div>
                     </div>
-                    <div className="setting-option rn-icon-list notification-badge">
+                    {/* <div className="setting-option rn-icon-list notification-badge">
                         <div className="icon-box">
                             <Anchor path="/activity">
                                 <i className="feather-bell" />
                                 <span className="badge">2</span>
                             </Anchor>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className="setting-option header-btn">
                         <div className="icon-box">
                             <Button
@@ -113,7 +122,7 @@ const TopBarArea = () => {
                         </div>
                     </div> */}
 
-                    {!isAuthenticated && (
+                    {/* {!isAuthenticated && (
                         <div className="setting-option">
                             <div className="icon-box">
                                 <Button
@@ -125,26 +134,47 @@ const TopBarArea = () => {
                                 </Button>
                             </div>
                         </div>
-                    )}
-                    {isAuthenticated && (
+                    )} */}
+                    {/* {isAuthenticated && (
                         <div className="setting-option rn-icon-list user-account">
                             <UserDropdown
                                 onDisconnect={onDisconnect}
                                 ethBalance={ethBalance}
                             />
                         </div>
-                    )}
+                    )} */}
+                    <div>
+                        <Box
+                            sx={{ flexGrow: 0 }}
+                            onClick={() => {
+                                router.push("/cart");
+                            }}
+                        >
+                            <Tooltip title="Shopping Cart">
+                                <IconButton sx={{ p: 0 }}>
+                                    <Badge
+                                        badgeContent={cartCount}
+                                        color="error"
+                                    >
+                                        <ShoppingBagOutlinedIcon
+                                            style={{ color: "white" }}
+                                        />
+                                    </Badge>
+                                </IconButton>
+                            </Tooltip>
+                        </Box>
+                    </div>
                     <div className="setting-option mobile-menu-bar ml--5 d-block d-lg-none">
                         <div className="hamberger icon-box">
                             <BurgerButton onClick={offcanvasHandler} />
                         </div>
                     </div>
-                    <div
+                    {/* <div
                         id="my_switcher"
                         className="my_switcher setting-option"
                     >
                         <ColorSwitcher />
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <MobileMenu
@@ -152,8 +182,8 @@ const TopBarArea = () => {
                 isOpen={offcanvas}
                 onClick={offcanvasHandler}
                 logo={[
-                    { src: "/images/logo/logo-white.png" },
-                    { src: "/images/logo/logo-dark.png" },
+                    { src: "/images/logo/cbslogo-white.png" },
+                    { src: "/images/logo/cbslogo-dark.png" },
                 ]}
             />
         </>

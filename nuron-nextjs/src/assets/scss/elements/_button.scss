@@ -29,6 +29,7 @@ button {
 
         &.btn-primary {
             background: var(--color-primary);
+            color: black;
 
             &:hover {
                 background: var(--color-primary-alta);
@@ -40,16 +41,6 @@ button {
                     border: none;
                     box-shadow: none;
                 }
-            }
-        }
-
-        &.btn-primary-alta {
-            background: var(--color-primary-alta);
-            color: var(--color-white);
-
-            &:hover {
-                background: var(--color-primary);
-                color: var(--color-white) !important;
             }
         }
 

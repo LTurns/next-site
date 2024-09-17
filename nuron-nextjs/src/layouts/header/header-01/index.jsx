@@ -1,65 +1,72 @@
 /* eslint-disable no-console */
-import { useState } from "react";
 import PropTypes from "prop-types";
+import { React, useContext } from "react";
 import clsx from "clsx";
-import Web3 from "web3";
 import Logo from "@components/logo";
 import MainMenu from "@components/menu/main-menu";
 import MobileMenu from "@components/menu/mobile-menu";
-import SearchForm from "@components/search-form/layout-01";
-import FlyoutSearchForm from "@components/search-form/layout-02";
-import UserDropdown from "@components/user-dropdown";
+import SearchBar from "@components/searchbar";
 import ColorSwitcher from "@components/color-switcher";
 import BurgerButton from "@ui/burger-button";
-import Anchor from "@ui/anchor";
-import Button from "@ui/button";
 import { useOffcanvas, useSticky, useFlyoutSearch } from "@hooks";
+import router from "next/router";
+import { FaShoppingCart } from "react-icons/fa";
+import Box from "@mui/material/Box";
+import CartContext from "../../../Context/cart/CartContext";
 import headerData from "../../../data/general/header-01.json";
 import menuData from "../../../data/general/menu-01.json";
 
 const Header = ({ className }) => {
+    // const router = useRouter();
     const sticky = useSticky();
     const { offcanvas, offcanvasHandler } = useOffcanvas();
     const { search, searchHandler } = useFlyoutSearch();
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [ethBalance, setEthBalance] = useState("");
 
-    const detectCurrentProvider = () => {
-        let provider;
-        if (window.ethereum) {
-            provider = window.ethereum;
-        } else if (window.web3) {
-            provider = window.web3.currentProvider;
-        } else {
-            console.log(
-                "Non-ethereum browser detected. You should install Metamask"
-            );
-        }
-        return provider;
-    };
+    const { cartItems } = useContext(CartContext);
+    // const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-    const onConnect = async () => {
-        try {
-            const currentProvider = detectCurrentProvider();
-            if (currentProvider) {
-                await currentProvider.request({
-                    method: "eth_requestAccounts",
-                });
-                const web3 = new Web3(currentProvider);
-                const userAccount = await web3.eth.getAccounts();
-                const account = userAccount[0];
-                const getEthBalance = await web3.eth.getBalance(account);
-                setEthBalance(getEthBalance);
-                setIsAuthenticated(true);
-            }
-        } catch (err) {
-            console.log(err);
-        }
-    };
+    let total = 0;
 
-    const onDisconnect = () => {
-        setIsAuthenticated(false);
-    };
+    // eslint-disable-next-line
+    for (const item in cartItems) {
+        total += cartItems[item].quantity;
+    }
+    // const detectCurrentProvider = () => {
+    //     let provider;
+    //     if (window.ethereum) {
+    //         provider = window.ethereum;
+    //     } else if (window.web3) {
+    //         provider = window.web3.currentProvider;
+    //     } else {
+    //         console.log(
+    //             "Non-ethereum browser detected. You should install Metamask"
+    //         );
+    //     }
+    //     return provider;
+    // };
+
+    // const onConnect = async () => {
+    //     try {
+    //         const currentProvider = detectCurrentProvider();
+    //         if (currentProvider) {
+    //             await currentProvider.request({
+    //                 method: "eth_requestAccounts",
+    //             });
+    //             const web3 = new Web3(currentProvider);
+    //             const userAccount = await web3.eth.getAccounts();
+    //             const account = userAccount[0];
+    //             const getEthBalance = await web3.eth.getBalance(account);
+    //             setEthBalance(getEthBalance);
+    //             setIsAuthenticated(true);
+    //         }
+    //     } catch (err) {
+    //         console.log(err);
+    //     }
+    // };
+
+    // const onDisconnect = () => {
+    //     setIsAuthenticated(false);
+    // };
 
     return (
         <>
@@ -84,10 +91,11 @@ const Header = ({ className }) => {
                             </div>
                         </div>
                         <div className="header-right">
-                            <div className="setting-option d-none d-lg-block">
-                                <SearchForm />
+                            <div className="searches setting-option d-none d-lg-block">
+                                <SearchBar isOpen={true} />
                             </div>
-                            <div className="setting-option rn-icon-list d-block d-lg-none">
+
+                            <div className="rn-icon-list setting-option d-block d-lg-none">
                                 <div className="icon-box search-mobile-icon">
                                     <button
                                         type="button"
@@ -97,37 +105,31 @@ const Header = ({ className }) => {
                                         <i className="feather-search" />
                                     </button>
                                 </div>
-                                <FlyoutSearchForm isOpen={search} />
+                                <SearchBar isOpen={search} />
                             </div>
-                            {!isAuthenticated && (
-                                <div className="setting-option header-btn">
-                                    <div className="icon-box">
-                                        <Button
-                                            color="primary-alta"
-                                            className="connectBtn"
-                                            size="small"
-                                            onClick={onConnect}
-                                        >
-                                            Wallet connect
-                                        </Button>
-                                    </div>
-                                </div>
-                            )}
-                            {isAuthenticated && (
-                                <div className="setting-option rn-icon-list user-account">
-                                    <UserDropdown
-                                        onDisconnect={onDisconnect}
-                                        ethBalance={ethBalance}
-                                    />
-                                </div>
-                            )}
-                            <div className="setting-option rn-icon-list notification-badge">
+                            {/* <div className="setting-option rn-icon-list notification-badge">
                                 <div className="icon-box">
                                     <Anchor path={headerData.activity_link}>
                                         <i className="feather-bell" />
                                         <span className="badge">6</span>
                                     </Anchor>
                                 </div>
+                            </div> */}
+                            <div>
+                                {/* <Box
+                        sx={{ flexGrow: 0 }}
+                        onClick={() => {
+                        router.push("/cart");
+                        }}
+                    >
+                        <Tooltip title="Shopping Cart">
+                        <button sx={{ p: 0 }}>
+                            <Badge badgeContent={cartItems.length} color="error">
+                            <ShoppingBagOutlinedIcon style={{ color: "white" }} />
+                            </Badge>
+                        </button>
+                        </Tooltip>
+                    </Box> */}
                             </div>
                             <div className="setting-option mobile-menu-bar d-block d-xl-none">
                                 <div className="hamberger">
@@ -139,6 +141,24 @@ const Header = ({ className }) => {
                                 className="setting-option my_switcher"
                             >
                                 <ColorSwitcher />
+                            </div>
+                            <div className="nav__right-cart">
+                                <Box
+                                    sx={{ flexGrow: 0 }}
+                                    onClick={() => {
+                                        router.push("/cart");
+                                    }}
+                                >
+                                    <FaShoppingCart />
+                                    <span
+                                        style={{
+                                            fontSize: 9,
+                                            paddingInline: 5,
+                                        }}
+                                    >
+                                        {total}
+                                    </span>
+                                </Box>
                             </div>
                         </div>
                     </div>

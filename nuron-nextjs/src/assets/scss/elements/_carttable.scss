@@ -1,0 +1,46 @@
+.cart-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    // table-layout: auto;
+    // text-align: left;
+    margin: 20px auto;
+    // width: 600px;
+    
+
+    th {
+        padding-block: 20px;
+        text-align: left;
+        min-width: 100px;
+    }
+
+
+    svg {
+        width: 30px;
+        height: auto;
+    }
+
+    td {
+        text-align: left;
+    }
+
+
+    // td {
+    //     display: table-cell;
+    //     width: 100%;
+    //     min-width: 100px;
+    // }
+}
+
+
+.cart-table-button {
+    border: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.CartItem__button {
+    border: none;
+    width: 40px;
+    color: rgb(247, 131, 49);
+}

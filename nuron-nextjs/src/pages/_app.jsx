@@ -8,6 +8,7 @@ import "../assets/css/feather.css";
 import "../assets/css/modal-video.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/scss/style.scss";
+import CartState from "../Context/cart/CartState";
 
 const MyApp = ({ Component, pageProps }) => {
     const router = useRouter();
@@ -23,7 +24,9 @@ const MyApp = ({ Component, pageProps }) => {
     });
     return (
         <ThemeProvider defaultTheme="dark">
-            <Component {...pageProps} />
+            <CartState>
+                <Component {...pageProps} />
+            </CartState>
         </ThemeProvider>
     );
 };

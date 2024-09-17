@@ -18,77 +18,43 @@ const ShareDropdown = dynamic(() => import("@components/share-dropdown"), {
     ssr: false,
 });
 
-const Product = ({
-    overlay,
-    title,
-    slug,
-    latestBid,
-    price,
-    likeCount,
-    auction_date,
-    image,
-    bitCount,
-    authors,
-    placeBid,
-    disableShareDropdown,
-}) => {
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder({
+    projectId: "b6e027vh",
+    dataset: "production",
+});
+
+const urlFor = (source) => {
+    const image = builder.image(source);
+    return image;
+};
+
+const Product = ({ title, slug, image, disableShareDropdown }) => {
     const [showBidModal, setShowBidModal] = useState(false);
     const handleBidModal = () => {
         setShowBidModal((prev) => !prev);
     };
     return (
         <>
-            <div
-                className={clsx(
-                    "product-style-one",
-                    !overlay && "no-overlay",
-                    placeBid && "with-placeBid"
-                )}
-            >
+            <div className={clsx("product-style-one")}>
                 <div className="card-thumbnail">
                     {image?.src && (
                         <Anchor path={`/product/${slug}`}>
                             <Image
-                                src={image.src}
+                                src={urlFor(image).width(250).url()}
                                 alt={image?.alt || "NFT_portfolio"}
                                 width={533}
                                 height={533}
                             />
                         </Anchor>
                     )}
-                    {auction_date && <CountdownTimer date={auction_date} />}
-                    {placeBid && (
-                        <Button onClick={handleBidModal} size="small">
-                            Place Bid
-                        </Button>
-                    )}
                 </div>
-                <div className="product-share-wrapper">
-                    <div className="profile-share">
-                        {authors?.map((client) => (
-                            <ClientAvatar
-                                key={client.name}
-                                slug={client.slug}
-                                name={client.name}
-                                image={client.image}
-                            />
-                        ))}
-                        <Anchor
-                            className="more-author-text"
-                            path={`/product/${slug}`}
-                        >
-                            {bitCount}+ Place Bit.
-                        </Anchor>
-                    </div>
-                    {!disableShareDropdown && <ShareDropdown />}
-                </div>
+                <div className="product-share-wrapper"></div>
                 <Anchor path={`/product/${slug}`}>
                     <span className="product-name">{title}</span>
                 </Anchor>
-                <span className="latest-bid">Highest bid {latestBid}</span>
-                <ProductBid price={price} likeCount={likeCount} />
             </div>
-            <PlaceBidModal show={showBidModal} handleModal={handleBidModal} />
         </>
     );
 };
@@ -97,24 +63,7 @@ Product.propTypes = {
     overlay: PropTypes.bool,
     title: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
-    latestBid: PropTypes.string.isRequired,
-    price: PropTypes.shape({
-        amount: PropTypes.number.isRequired,
-        currency: PropTypes.string.isRequired,
-    }).isRequired,
-    likeCount: PropTypes.number.isRequired,
-    auction_date: PropTypes.string,
-    image: ImageType.isRequired,
-    authors: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            slug: PropTypes.string.isRequired,
-            image: ImageType.isRequired,
-        })
-    ),
-    bitCount: PropTypes.number,
-    placeBid: PropTypes.bool,
-    disableShareDropdown: PropTypes.bool,
+    image: PropTypes.object,
 };
 
 Product.defaultProps = {

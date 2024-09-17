@@ -1,0 +1,48 @@
+
+.auto-search {
+    color: black;
+    div {
+        height: 35px;
+        margin-top: 10px;
+
+        &:hover {
+            border: none !important;
+        }
+
+        input {
+            border: none;
+        }
+    }
+
+    .MuiOutlinedInput-root {
+        border: none !important;
+    }
+}
+
+// //     &:active {
+// //         border: 1px solid red;
+// //     }
+
+// //     .MuiInputBase-root {
+// //         &:active {
+// //             border: none;
+// //         }
+// //     }
+
+// //     .MuiOutlineInput-root {
+// //         border: none;
+// //     }
+// // }
+
+.MuiInputBase-root {
+margin-inline: 5px;
+}
+
+
+// // .MuiSvgIcon-root {
+// //     fill: white;
+// // }
+
+.MuiAutocomplete-option {
+    color: black;
+}

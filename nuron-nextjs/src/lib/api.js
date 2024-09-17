@@ -109,15 +109,15 @@ export function getPostsByTag(tag, fields = []) {
     return posts.filter((post) => post.tags.map((t) => t.slug).includes(tag));
 }
 
-// const productsDirectory = JSON.parse(
-//     fs.readFileSync("src/data/products.json", "utf8")
-// );
+const productsDirectory = JSON.parse(
+    fs.readFileSync("src/data/products-03.json", "utf8")
+);
 
-// export function getProductSlugs() {
-//     return fs.readdirSync(productsDirectory);
-// }
+export function getProductSlugs() {
+    return fs.readdirSync(productsDirectory);
+}
 
-// export function getAllProducts() {
-//     const slugs = getPostSlugs();
-//     return slugs;
-// }
+export function getAllProducts() {
+    const slugs = getPostSlugs();
+    return slugs;
+}

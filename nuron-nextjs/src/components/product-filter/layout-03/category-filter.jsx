@@ -2,17 +2,23 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const CategoryFilter = ({ categories, onChange }) => {
+    console.log(categories);
     const [isCheck, setIsCheck] = useState([]);
 
     const handleClick = (e) => {
         const { value, checked } = e.target;
         setIsCheck([...isCheck, value]);
+
         if (!checked) {
-            setIsCheck(isCheck.filter((item) => item !== value));
+            setIsCheck(
+                isCheck.filter((item) => {
+                    item !== value;
+                })
+            );
         }
     };
     useEffect(() => {
-        onChange("categories", isCheck);
+        onChange("subCategory", isCheck);
     }, [isCheck, onChange]);
 
     return (

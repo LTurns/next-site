@@ -3,30 +3,15 @@ import clsx from "clsx";
 import AddressBox from "@components/address-box";
 
 const ContactTopArea = ({ space, className }) => (
-    <div
-        className={clsx(
-            "rn-contact-top-area bg_color--5",
-            space === 1 && "rn-section-gapTop",
-            className
-        )}
-    >
-        <div className="container">
-            <div className="row g-5">
+    <div>
+        <div className="container mt--20">
+            <div className="row g-3">
                 <div
                     className="col-lg-12"
                     data-sal="slide-up"
                     data-sal-delay="150"
                     data-sal-duration="800"
-                >
-                    <div className="section-title mb--30 text-center">
-                        <h2 className="title">Quick Contact Address</h2>
-                        <p className="description">
-                            There are many variations of passages of Lorem Ipsum
-                            available, <br /> but the majority have suffered
-                            alteration.
-                        </p>
-                    </div>
-                </div>
+                ></div>
             </div>
             <div className="row g-5">
                 <div
@@ -38,7 +23,7 @@ const ContactTopArea = ({ space, className }) => (
                     <AddressBox
                         icon="feather-headphones"
                         title="Contact Phone Number"
-                        phoneNumbers={["+444 555 666 777", "+222 222 222 333"]}
+                        phoneNumbers={["+44 (0) 1572 723 665"]}
                     />
                 </div>
                 <div
@@ -50,7 +35,7 @@ const ContactTopArea = ({ space, className }) => (
                     <AddressBox
                         icon="feather-mail"
                         title="Our Email Address"
-                        emails={["admin@gmail.com", "example@gmail.com"]}
+                        emails={["sales@cbsproducts.com"]}
                     />
                 </div>
                 <div
@@ -62,7 +47,12 @@ const ContactTopArea = ({ space, className }) => (
                     <AddressBox
                         icon="feather-map-pin"
                         title="Our Location"
-                        address="5678 Bangla Main Road, cities 580 <br> GBnagla, example 54786"
+                        address="CBS Products (KT),
+Pillings Road
+Oakham
+Rutland
+LE15 6QF
+UK"
                     />
                 </div>
             </div>

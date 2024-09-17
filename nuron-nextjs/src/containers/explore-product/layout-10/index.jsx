@@ -1,10 +1,11 @@
-import { useReducer, useEffect, useCallback, useRef } from "react";
+import { useReducer, useEffect, useCallback, useRef, Conditional } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import SectionTitle from "@components/section-title/layout-02";
 import ProductFilter from "@components/product-filter/layout-03";
-import Product from "@components/product/layout-01";
+import Product from "@components/product/layout-02";
 import Pagination from "@components/pagination-02";
+import FilterButtons from "@components/filter-buttons";
 import { SectionTitleType, ProductType } from "@utils/types";
 import { flatDeep } from "@utils/methods";
 
@@ -36,7 +37,7 @@ const ExploreProductArea = ({
     const [state, dispatch] = useReducer(reducer, {
         products: [],
         allProducts: products || [],
-        inputs: { price: [0, 100] },
+        // inputs: { price: [0, 100] },
         sort: "newest",
         currentPage: 1,
     });
@@ -57,49 +58,49 @@ const ExploreProductArea = ({
     /* Pagination logic end */
 
     /* Sorting logic start */
-    const sortHandler = (value) => {
-        dispatch({
-            type: "SET_SORT",
-            payload: value,
-        });
-        const sortedProducts = state.products.sort((a, b) => {
-            switch (value) {
-                case "most-liked":
-                    return a.likeCount < b.likeCount ? 1 : -1;
-                case "least-liked":
-                    return a.likeCount > b.likeCount ? 1 : -1;
-                case "oldest":
-                    return new Date(a.published_at).getTime() >
-                        new Date(b.published_at).getTime()
-                        ? 1
-                        : -1;
-                case "low-to-high":
-                    return a.price.amount > b.price.amount ? 1 : -1;
-                case "high-to-low":
-                    return a.price.amount > b.price.amount ? -1 : 1;
-                default:
-                    return new Date(b.published_at).getTime() >
-                        new Date(a.published_at).getTime()
-                        ? 1
-                        : -1;
-            }
-        });
-        dispatch({ type: "SET_PRODUCTS", payload: sortedProducts });
-    };
+    // const sortHandler = (value) => {
+    //     dispatch({
+    //         type: "SET_SORT",
+    //         payload: value,
+    //     });
+    //     const sortedProducts = state.products.sort((a, b) => {
+    //         switch (value) {
+    //             case "most-liked":
+    //                 return a.likeCount < b.likeCount ? 1 : -1;
+    //             case "least-liked":
+    //                 return a.likeCount > b.likeCount ? 1 : -1;
+    //             case "oldest":
+    //                 return new Date(a.published_at).getTime() >
+    //                     new Date(b.published_at).getTime()
+    //                     ? 1
+    //                     : -1;
+    //             case "low-to-high":
+    //                 return a.price.amount > b.price.amount ? 1 : -1;
+    //             case "high-to-low":
+    //                 return a.price.amount > b.price.amount ? -1 : 1;
+    //             default:
+    //                 return new Date(b.published_at).getTime() >
+    //                     new Date(a.published_at).getTime()
+    //                     ? 1
+    //                     : -1;
+    //         }
+    //     });
+    //     dispatch({ type: "SET_PRODUCTS", payload: sortedProducts });
+    // };
 
-    useEffect(() => {
-        sortHandler(state.sort);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [state.currentPage]);
+    // useEffect(() => {
+    //     sortHandler(state.sort);
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, [state.currentPage]);
 
     /* Sorting logic end */
 
     /* Filter logic start */
 
     // Pricing filter
-    const priceHandler = (value) => {
-        dispatch({ type: "SET_INPUTS", payload: { price: value } });
-    };
+    // const priceHandler = (value) => {
+    //     dispatch({ type: "SET_INPUTS", payload: { price: value } });
+    // };
 
     // Filter Handler, this function receives the filter name and the value
     const filterHandler = useCallback((name, val) => {
@@ -113,12 +114,12 @@ const ExploreProductArea = ({
     const filterMethods = (item, filterKey, value) => {
         if (value === "all") return false;
         const itemKey = filterKey;
-        if (filterKey === "price") {
-            return (
-                item[itemKey].amount <= value[0] / 100 ||
-                item[itemKey].amount >= value[1] / 100
-            );
-        }
+        // if (filterKey === "price") {
+        //     return (
+        //         item[itemKey].amount <= value[0] / 100 ||
+        //         item[itemKey].amount >= value[1] / 100
+        //     );
+        // }
 
         if (Array.isArray(value) && value.length === 0) return false;
         if (Array.isArray(item[itemKey])) {
@@ -138,8 +139,10 @@ const ExploreProductArea = ({
         let filteredItems = [];
 
         filteredItems = itemsToFilter.filter((item) => {
+            console.log("yehh", item);
             // eslint-disable-next-line no-restricted-syntax
             for (const key in state.inputs) {
+                console.log(state.inputs);
                 if (filterMethods(item, key, state.inputs[key])) return false;
             }
             return true;
@@ -173,14 +176,15 @@ const ExploreProductArea = ({
     /* Filter logic end */
 
     // Generate data from products data
-    const cats = flatDeep(products.map((prod) => prod.categories));
+    const cats = flatDeep(products.map((prod) => prod.subCategory));
     const categories = cats.reduce((obj, b) => {
         const newObj = { ...obj };
         newObj[b] = obj[b] + 1 || 1;
+        console.log(newObj);
         return newObj;
     }, {});
-    const levels = [...new Set(products.map((prod) => prod.level))];
-    const languages = [...new Set(products.map((prod) => prod.language))];
+
+    delete categories[""];
 
     return (
         <div
@@ -192,48 +196,30 @@ const ExploreProductArea = ({
             id="explore-id"
         >
             <div className="container">
-                <div className="row mb--40">
-                    <div className="col-12">
-                        {section_title && (
-                            <SectionTitle disableAnimation {...section_title} />
-                        )}
-                    </div>
-                </div>
                 <div className="row g-5">
-                    <div className="col-lg-3 order-2 order-lg-1">
+                    <div className="col-lg-3 order-1 order-lg-1">
                         <ProductFilter
-                            sortHandler={sortHandler}
-                            inputs={state.inputs}
-                            sort={state.sort}
                             categories={categories}
-                            levels={levels}
-                            languages={languages}
                             filterHandler={filterHandler}
-                            priceHandler={priceHandler}
+                            // priceHandler={priceHandler}
                         />
                     </div>
-                    <div className="col-lg-9 order-1 order-lg-2">
+                    <div className="col-lg-9 order-2 order-lg-2">
                         <div className="row g-5">
                             {state.products.length > 0 ? (
                                 <>
-                                    {state.products.map((prod) => (
-                                        <div
-                                            key={prod.id}
-                                            className="col-lg-4 col-md-6 col-sm-12"
-                                        >
-                                            <Product
-                                                placeBid={!!placeBid}
-                                                title={prod.title}
-                                                slug={prod.slug}
-                                                latestBid={prod.latestBid}
-                                                price={prod.price}
-                                                likeCount={prod.likeCount}
-                                                image={prod.images?.[0]}
-                                                authors={prod.authors}
-                                                bitCount={prod.bitCount}
-                                            />
-                                        </div>
-                                    ))}
+                                    {state.products.map((prod) => {
+                                        return (
+                                            !prod.hasSubCategories && (
+                                                <div
+                                                    key={prod.id}
+                                                    className="col-lg-4 col-md-6 col-sm-12"
+                                                >
+                                                    <Product product={prod} />
+                                                </div>
+                                            )
+                                        );
+                                    })}
                                 </>
                             ) : (
                                 <p>No item to show</p>
@@ -259,7 +245,8 @@ ExploreProductArea.propTypes = {
     space: PropTypes.oneOf([1, 2]),
     data: PropTypes.shape({
         section_title: SectionTitleType,
-        products: PropTypes.arrayOf(ProductType),
+        // products: PropTypes.arrayOf(ProductType),
+        products: [],
         placeBid: PropTypes.bool,
     }),
 };

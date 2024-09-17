@@ -4,13 +4,7 @@ import Image from "next/image";
 import ContactForm from "@components/contact-form";
 
 const ContactFormArea = ({ space, className }) => (
-    <div
-        className={clsx(
-            "login-area message-area",
-            space === 1 && "rn-section-gapTop",
-            className
-        )}
-    >
+    <div>
         <div className="container">
             <div className="row g-5">
                 <div
@@ -20,14 +14,7 @@ const ContactFormArea = ({ space, className }) => (
                     data-sal-duration="800"
                 >
                     <div className="connect-thumbnail">
-                        <div className="left-image">
-                            <Image
-                                src="/images/contact/contact1.png"
-                                alt="Nft_Profile"
-                                width={669}
-                                height={686}
-                            />
-                        </div>
+                        <div className="left-image">Office Hours</div>
                     </div>
                 </div>
                 <div

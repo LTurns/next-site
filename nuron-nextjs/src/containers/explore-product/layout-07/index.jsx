@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import SectionTitle from "@components/section-title/layout-02";
-import Product from "@components/product/layout-01";
+import Product from "@components/product/layout-02";
 import Slider, { SliderItem } from "@ui/slider";
 import { SectionTitleType, ProductType } from "@utils/types";
 
@@ -15,7 +15,7 @@ const SliderOptions = {
         {
             breakpoint: 1399,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
             },
         },
@@ -56,15 +56,8 @@ const ExploreProductArea = ({ data, className, space }) => (
         )}
     >
         <div className="container">
-            {data?.section_title && (
-                <div className="row mb--30">
-                    <div className="col-12">
-                        <SectionTitle {...data.section_title} />
-                    </div>
-                </div>
-            )}
             {data?.products && (
-                <div className="row">
+                <div className="row mt--80">
                     <div className="col-lg-12">
                         <Slider
                             options={SliderOptions}
@@ -72,21 +65,20 @@ const ExploreProductArea = ({ data, className, space }) => (
                         >
                             {data.products.map((prod) => (
                                 <SliderItem
-                                    key={prod.id}
+                                    key={prod._id}
                                     className="single-slide-product"
                                 >
                                     <Product
-                                        overlay
-                                        placeBid={!!data.placeBid}
-                                        title={prod.title}
-                                        slug={prod.slug}
-                                        latestBid={prod.latestBid}
-                                        price={prod.price}
-                                        likeCount={prod.likeCount}
-                                        auction_date={prod.auction_date}
-                                        image={prod.images?.[0]}
-                                        authors={prod.authors}
-                                        bitCount={prod.bitCount}
+                                        product={prod}
+                                        // title={prod.title}
+                                        // slug={prod.title}
+                                        // intro={prod.intro}
+                                        // category={prod.category}
+                                        // productId={prod.productId}
+                                        // // latestBid={prod.latestBid}
+                                        // // price={prod.price}
+                                        // // likeCount={prod.likeCount}
+                                        // image={prod.mainImage}
                                     />
                                 </SliderItem>
                             ))}

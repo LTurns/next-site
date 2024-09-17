@@ -14,9 +14,9 @@ const AboutArea = ({ space, className, data }) => (
             className
         )}
     >
-        <div className="container mb--30">
+        <div className="container mb--50">
             <div className="row">
-                <div className="col-12">
+                <div className="col-lg-9">
                     {data?.section_title && (
                         <SectionTitle
                             className="about-title-m"
@@ -24,27 +24,40 @@ const AboutArea = ({ space, className, data }) => (
                         />
                     )}
                 </div>
+
+                <div className="col-lg-3">
+                    <Image
+                        src={data.image.src}
+                        alt={data.image?.alt || "Slider BG"}
+                        quality={100}
+                        sizes="100vw"
+                        style={{
+                            objectFit: "cover",
+                        }}
+                        width="250"
+                        height="250"
+                    />
+                </div>
             </div>
         </div>
-        <div className="container-fluid about-fluidimg ">
-            <div className="row">
+        {/* <div className="container-fluid about-fluidimg "> */}
+        {/* <div className="row">
                 <div className="img-wrapper">
                     {data?.image?.src && (
                         <Image
                             src={data.image.src}
                             alt={data.image?.alt || "Slider BG"}
                             quality={100}
-                            priority
                             fill
-                            sizes="100vw"
+                            sizes="50vw"
                             style={{
                                 objectFit: "cover",
                             }}
                         />
                     )}
                 </div>
-            </div>
-        </div>
+            </div> */}
+        {/* </div> */}
         <div className="container">
             <div className="row g-5">
                 {data?.items?.[0] && (

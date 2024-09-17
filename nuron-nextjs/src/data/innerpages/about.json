@@ -4,103 +4,54 @@
         {
             "section": "about-section",
             "section_title": {
-                "title": "Direct Teams. <br> For Your Dadicated Dreams"
+                "title": "Our team design and manufacture <br> our installation equipment."
             },
             "image": {
-                "src": "/images/bg/bg-image-22.jpg"
+                "src": "/images/hydraulic-power-pack.png"
             },
             "items": [
                 {
                     "id": 1,
-                    "title": "Why We Do This",
-                    "description": "NFTs are virtual tokens that represent ownership of something inherently distinct and scarce, whether it be a physical or digital item, such as artwork, a soundtrack, a collectible, an in-game item or real estate. Unlike regular cryptocurrencies like bitcoin or fiat money like the U.S.",
-                    "path": "/blog"
+                    "title": "Our History",
+                    "description": "Established in 1971 in Oakham, Rutland, England, the company began to design and manufacture cable jointing equipment and gradually diversified into winching equipment for the power transmission industry. With the de-regulation of the electricity industry, power companies entered the field of telecommunications, installing fibre optic cables along transmission line networks. CBS seized this opportunity to develop and build a line of pullers, tensioners and running out blocks for high production cable placing."
                 },
                 {
                     "id": 2,
-                    "title": "Helping You <br/> Grow In Every Stage.",
-                    "description": "NFTs are virtual tokens that represent ownership of something inherently distinct and scarce, whether it be a physical or digital item, such as artwork, a soundtrack, a collectible, an in-game item or real estate. Unlike regular cryptocurrencies like bitcoin or fiat money like the U.S."
+                    "title": "Working with <br/> Major Players.",
+                    "description": "Our success in the UK telecoms market meant that the company’s expertise and know-how rapidly came to the attention of the major players in the realm of fibre optic cable. Consequently, CBS has become the partner of choice in a number of high profile, international fibre optic cable projects around the globe in which our company has demonstrated its prowess in developing innovative solutions capable of withstanding extreme conditions, both of climate and terrain."
                 }
             ]
         },
         {
             "section": "quote-section",
             "section_title": {
-                "title": "Create, Sell well & Collect your Wonderful NFTs at Nuron Very Fast"
+                "title": "Our work with British Telecommunications (BT)"
             },
             "texts": [
                 {
                     "id": 1,
-                    "content": "The NFTs is a one-trick pony that climbed the ladders of success in recent years. The growth NFTs is tremendous, and according to Pymnts.com, the total sales volume of NFTs has nearly crossed $2.5 billion in the last six months of 2021. Surprisingly, the total sales volume of NFTs was $13.7 million in 2020. On comparing both the values,"
+                    "content": "Towards the end of the 90’s the company’s continuing quest for new horizons was promoted by achieving the internationally recognised Quality Standard, BS EN ISO 9001. The development of the Tornado series of fibre optic cable blowing machines proved highly successful both in the UK and global telecom markets. In the UK, the Tornado out-performed its competition in a most demanding evaluation, enabling CBS to win a highly coveted contract as exclusive suppliers of cable blowing equipment to British Telecommunications (BT). In 2021, CBS celebrated its 50th Anniversary! Our longevity in the field is proof that, empowered with the financial and engineering resources of Klein Tools USA, CBS Products has what it takes to keep your project running smoothly and on schedule whether you’re in telecoms, CATV or power transmission line construction; which brings us to the most compelling reason to consider CBS Products when planning your next cable deployment project: your bottom line."
                 }
             ]
         },
         {
             "section": "funfact-section",
             "section_title": {
-                "title": "Nuron Statistics"
+                "title": "Statistics"
             },
             "funfacts": [
                 {
                     "id": 1,
-                    "title": "Nuron All NFT's",
-                    "counter": 100
+                    "title": "Years Active",
+                    "counter": 53
                 },
                 {
                     "id": 2,
-                    "title": "All Creators",
-                    "counter": 500,
-                    "suffix": "+"
-                },
-                {
-                    "id": 3,
-                    "title": "Nuron Earning",
-                    "counter": 700
-                },
-                {
-                    "id": 4,
-                    "title": "Level One Seller",
-                    "counter": 900,
+                    "title": "Products",
+                    "counter": 197,
                     "suffix": "+"
                 }
             ]
-        },
-        {
-            "section": "cta-section",
-            "headings": [
-                {
-                    "id": 1,
-                    "content": "Discover Discover Discover rare digital art <br/> and collect NFTs"
-                }
-            ],
-            "texts": [
-                {
-                    "id": 1,
-                    "content": "The NFTs is a one-trick pony that climbed the recent years. The growth of NFTs is tremendous, and according to Pymnts.com, the total sales volume"
-                }
-            ],
-            "buttons": [
-                {
-                    "id": 1,
-                    "path": "/create",
-                    "content": "Create"
-                },
-                {
-                    "id": 2,
-                    "path": "/contact",
-                    "content": "Contact Us",
-                    "color": "primary-alta"
-                }
-            ],
-            "image": {
-                "src": "/images/bg/bg-image-6.jpg"
-            }
-        },
-        {
-            "section": "blog-section",
-            "section_title": {
-                "title": "Our Recent Blog"
-            }
         }
     ]
 }

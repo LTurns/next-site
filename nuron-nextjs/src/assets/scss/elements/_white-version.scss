@@ -18,7 +18,7 @@ html[data-theme="light"] body {
 
     .bg-color--3,
     .vedio-wrapper {
-        background: var(--color-white);
+        background: none;
     }
 
     .bg-color--2 {
@@ -118,6 +118,13 @@ html[data-theme="light"] body {
     .rn-search-mobile.form-group input {
         color: var(--color-light-body);
     }
+
+    .product-id {
+        color: orange;
+    }
+
+    .title { color: black}
+    .shopping-cart { color: rgb(255, 192, 1) }
 
     .rbt-single-widget.widget_categories ul li a:hover span {
         color: var(--color-primary);
@@ -427,6 +434,7 @@ html[data-theme="light"] body {
     .left-nav .nav.nav-tabs,
     .category-style-one {
         background: var(--color-white);
+        color: black;
     }
 
     .author-button-area .btn,
@@ -435,6 +443,13 @@ html[data-theme="light"] body {
         background: var(--color-gray-2);
         color: var(--color-light-heading);
     }
+
+    .nav-tabs {
+        &.active {
+            color: black;
+        }
+    }
+
     .author-button-area .at-follw {
         &:hover {
             background: var(--color-primary);
@@ -460,9 +475,9 @@ html[data-theme="light"] body {
     .left-nav .nav.nav-tabs button.active,
     .left-nav .nav.nav-tabs button:hover {
         background: var(--color-primary);
-        color: var(--color-white);
+        color: var(--color-black);
         i {
-            color: var(--color-white);
+            color: var(--color-black);
         }
     }
 
@@ -500,12 +515,12 @@ html[data-theme="light"] body {
     }
 
     .left-nav .nav.nav-tabs button.active i {
-        color: var(--color-white);
+        color: var(--color-black);
     }
 
     .tab-button-one .nav-tabs button.active {
         background: var(--color-primary);
-        color: var(--color-white);
+        color: var(--color-black);
     }
 
     .wallet-wrapper:hover .inner .icon svg,
@@ -1808,7 +1823,7 @@ html[data-theme="light"] body {
     }
 
     .product-style-one::before {
-        background-image: linear-gradient(100deg, #fff, #0398ed);
+        background-image: linear-gradient(100deg, #fff, #ede503);
     }
 
     .logo-custom-css .logo-dark {
@@ -1989,5 +2004,48 @@ html[data-theme="light"] body {
         &[aria-expanded="true"] i {
             color: var(--color-primary);
         }
+    }
+}
+
+
+
+// .auto-search {
+//     border: 1px solid white;
+//     height: 35px;
+//     margin-top: 10px;
+ 
+//     &:active {
+//         border: 1px solid red;
+//     }
+
+//     .MuiInputBase-root {
+//         &:active {
+//             border: none;
+//         }
+//     }
+
+//     .MuiOutlineInput-root {
+//         border: none;
+//     }
+// }
+
+.MuiInputBase-root {
+    border: 1px solid rgb(65, 72, 90);
+background: white;
+    color: black;
+}
+
+.MuiSvgIcon-root {
+    fill: black;
+}
+
+.MuiAutocomplete-listbox {
+    color: black;
+    background: white;
+}
+
+.MuiAutocomplete-option {
+    &:hover {
+        background: rgb(148, 146, 146);
     }
 }

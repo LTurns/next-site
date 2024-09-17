@@ -18,8 +18,8 @@ const ForgetPasswordArea = ({ className, space }) => (
                     <div className="form-wrapper-one">
                         <Logo
                             logo={[
-                                { src: "/images/logo/logo-white.png" },
-                                { src: "/images/logo/logo-dark.png" },
+                                { src: "/images/logo/cbslogo-white.png" },
+                                { src: "/images/logo/cbslogo-dark.png" },
                             ]}
                             className="mb--50"
                         />

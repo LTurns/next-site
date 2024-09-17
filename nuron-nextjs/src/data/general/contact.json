@@ -7,34 +7,16 @@
     },
     "socials": [
         {
-            "id": 1,
-            "icon": "feather-facebook",
-            "link": "https://facebook.com",
-            "title": "Facebook"
-        },
-        {
-            "id": 2,
-            "icon": "feather-twitter",
-            "link": "https://twitter.com",
-            "title": "Twitter"
-        },
-        {
-            "id": 3,
-            "icon": "feather-instagram",
-            "link": "https://instagram.com",
-            "title": "Instagram"
-        },
-        {
             "id": 4,
             "icon": "feather-linkedin",
-            "link": "https://linkedin.com",
+            "link": "https://www.linkedin.com/company/cbs-products-ltd/",
             "title": "linkedin"
         },
         {
-            "id": 5,
-            "icon": "feather-mail",
-            "link": "https://mail.com",
-            "title": "mail"
+            "id": 4,
+            "icon": "feather-youtube",
+            "link": "https://youtube.com/@CBSProducts_KT?si=7A5ZaUK5_-o54F-l",
+            "title": "linkedin"
         }
     ]
 }

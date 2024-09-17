@@ -224,7 +224,7 @@
 
 .rn-header {
     .logo-thumbnail {
-        padding-right: 32px;
+        // padding-right: 32px;
         position: relative;
         margin-right: 17px;
         @media #{$large-mobile} {
@@ -375,7 +375,7 @@
             margin-top: 10px;
         }
         .setting-option {
-            margin: 0 5px;
+            margin: 0px 10px;
             @media #{$small-mobile} {
                 margin: 0 2px;
             }
@@ -446,6 +446,7 @@
 
 .search-form-wrapper {
     position: relative;
+    height: 40px !important;
 
     .form-control,
     input {
@@ -504,7 +505,7 @@ input[type="search"]::-webkit-search-results-decoration {
     .logo-area {
         a {
             img {
-                max-width: 110px;
+                max-width: 500px;
             }
         }
     }
@@ -515,7 +516,7 @@ input[type="search"]::-webkit-search-results-decoration {
         &.form-group {
             position: absolute;
             top: 100%;
-            background: var(--background-color-4);
+            // background: var(--background-color-4);
             width: 100%;
             right: 0;
             margin-bottom: 0;
@@ -534,7 +535,7 @@ input[type="search"]::-webkit-search-results-decoration {
     }
     .rn-search-mobile.form-group input {
         width: 100%;
-        background: var(--color-primary-alta);
+        // background: var(--color-primary-alta);
         padding-right: 52px;
         color: var(--color-body);
     }
@@ -552,7 +553,7 @@ input[type="search"]::-webkit-search-results-decoration {
         border: 0 none;
         top: 50%;
         transform: translateY(-50%);
-        height: 47px;
+        height: 35px;
     }
     .search-mobile-icon {
         width: 40px;
@@ -586,11 +587,11 @@ input[type="search"]::-webkit-search-results-decoration {
         &.form-group {
             position: absolute;
             top: 100%;
-            background: var(--background-color-4);
+            // background: var(--background-color-4);
             width: 100%;
             right: 0;
             margin-bottom: 0;
-            padding: 20px;
+            padding: 5px;
             z-index: 3;
         }
     }
@@ -605,9 +606,9 @@ input[type="search"]::-webkit-search-results-decoration {
     }
     .rn-search-mobile.form-group input {
         width: 100%;
-        background: var(--color-primary-alta);
+        // background: var(--color-primary-alta);
         padding-right: 52px;
-        color: var(--color-body);
+        // color: var(--color-body);
     }
     button.search-button {
         position: absolute;
@@ -699,4 +700,10 @@ input[type="search"]::-webkit-search-results-decoration {
     z-index: 999;
     width: 100%;
     backdrop-filter: blur(9px);
+}
+
+.nav__right-cart {
+    svg {
+        fill: var(--color-primary);
+    }
 }

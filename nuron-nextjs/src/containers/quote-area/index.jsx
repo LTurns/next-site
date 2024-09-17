@@ -13,14 +13,14 @@ const QuoteArea = ({ space, className, data }) => (
     >
         <div className="container">
             <div className="row g-5 d-flex align-items-center">
-                <div className="col-lg-6">
+                <div className="col-lg-4">
                     <div className="rn-about-title-wrapper">
                         {data?.section_title && (
                             <SectionTitle {...data.section_title} />
                         )}
                     </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-8">
                     <div
                         className="rn-about-wrapper"
                         data-sal="slide-up"

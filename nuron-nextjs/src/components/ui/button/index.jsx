@@ -65,7 +65,7 @@ Button.propTypes = {
     className: PropTypes.string,
     path: PropTypes.string,
     size: PropTypes.oneOf(["large", "small", "medium"]),
-    color: PropTypes.oneOf(["primary", "primary-alta"]),
+    color: PropTypes.oneOf(["primary"]),
     shape: PropTypes.oneOf(["square", "ellipse"]),
     fullwidth: PropTypes.bool,
 };

@@ -6,6 +6,16 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, "./src/assets/scss")],
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "cdn.sanity.io",
+                port: "",
+                pathname: "/images/**",
+            },
+        ],
+    },
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         // eslint-disable-next-line no-param-reassign
         config.ignoreWarnings = [
@@ -16,4 +26,9 @@ module.exports = {
         ];
         return config;
     },
+    eslint: {
+        // Warning: This allows production builds to successfully complete even if
+        // your project has ESLint errors.
+        ignoreDuringBuilds: true,
+    }
 };

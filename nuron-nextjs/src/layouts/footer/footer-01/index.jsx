@@ -13,6 +13,7 @@ import { ItemType } from "@utils/types";
 // Demo data
 import footerData from "../../../data/general/footer-01.json";
 import contactData from "../../../data/general/contact.json";
+import { Divider } from "@mui/material";
 
 const Footer = ({ space, className, data }) => (
     <>
@@ -59,9 +60,6 @@ const Footer = ({ space, className, data }) => (
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="widget-content-wrapper">
                             <LogoWidget data={footerData["logo-widget"]} />
-                            <NewsletterWidget
-                                data={footerData["newsletter-widget"]}
-                            />
                         </div>
                     </div>
 
@@ -78,7 +76,34 @@ const Footer = ({ space, className, data }) => (
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        <SoldOutWidget data={footerData["soldout-widget"]} />
+                        <h5>Contact Details</h5>
+
+                        <div style={{ margin: 5 }}>
+                            <span style={{ fontSize: 16 }}>Address</span>
+                            <Divider style={{ marginBlock: 10 }}></Divider>
+                            CBS Products (KT), Pillings Road Oakham Rutland LE15
+                            6QF UK
+                        </div>
+
+                        <br></br>
+
+                        <div style={{ margin: 5 }}>
+                            <span style={{ fontSize: 16 }}>Email</span>
+                            <Divider style={{ marginBlock: 10 }}></Divider>
+                            <a
+                                class="email black--text"
+                                href="mailto: sales@cbsproducts.com"
+                            >
+                                sales@cbsproducts.com
+                            </a>
+                        </div>
+                        <div style={{ margin: 5 }}>
+                            <span style={{ fontSize: 16 }}>Phone</span>
+                            <Divider style={{ marginBlock: 10 }}></Divider>
+                            <a class="email black--text" href="tel:01572723665">
+                                +44 (0) 1572 723 665
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

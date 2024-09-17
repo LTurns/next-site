@@ -6,6 +6,18 @@ import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
 import { ImageType } from "@utils/types";
 
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder({
+    projectId: "b6e027vh",
+    dataset: "production",
+});
+
+const urlFor = (source) => {
+    const image = builder.image(source);
+    return image;
+};
+
 const GalleryTab = ({ images }) => (
     <div className="product-tab-wrapper">
         <TabContainer defaultActiveKey="nav-0">
@@ -13,14 +25,14 @@ const GalleryTab = ({ images }) => (
                 <Nav className="rn-pd-nav rn-pd-rt-content nav-pills">
                     {images?.map((image, index) => (
                         <Nav.Link
-                            key={image.src}
+                            key={urlFor(image).width(250).url()}
                             as="button"
                             eventKey={`nav-${index}`}
                         >
                             <span className="rn-pd-sm-thumbnail">
                                 <Image
-                                    src={image.src}
-                                    alt={image?.alt || "Product"}
+                                    src={urlFor(image).width(250).url()}
+                                    alt={"Product"}
                                     width={167}
                                     height={167}
                                 />
@@ -30,14 +42,16 @@ const GalleryTab = ({ images }) => (
                 </Nav>
                 <TabContent className="rn-pd-content">
                     {images?.map((image, index) => (
-                        <TabPane key={image.src} eventKey={`nav-${index}`}>
+                        <TabPane
+                            key={urlFor(image).url()}
+                            eventKey={`nav-${index}`}
+                        >
                             <div className="rn-pd-thumbnail">
-                                <Image
-                                    src={image.src}
-                                    alt={image?.alt || "Product"}
-                                    width={560}
-                                    height={560}
-                                    priority
+                                <img
+                                    src={urlFor(image).url()}
+                                    alt={"Product"}
+                                    width={400}
+                                    height={400}
                                 />
                             </div>
                         </TabPane>

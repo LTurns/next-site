@@ -9,8 +9,8 @@ const Logo = ({ className, logo }) => (
             <Anchor className="logo-light" path="/">
                 <Image
                     src={logo[0].src}
-                    alt={logo[0]?.alt || "nft-logo"}
-                    width={106}
+                    alt={logo[0]?.alt || "cbslogo"}
+                    width={150}
                     height={35}
                     priority
                 />
@@ -20,8 +20,8 @@ const Logo = ({ className, logo }) => (
             <Anchor className="logo-dark" path="/">
                 <Image
                     src={logo[1].src}
-                    alt={logo[1]?.alt || "nft-logo"}
-                    width={106}
+                    alt={logo[1]?.alt || "cbslogo"}
+                    width={150}
                     height={35}
                     priority
                 />
