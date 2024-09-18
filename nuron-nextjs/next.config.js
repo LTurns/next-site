@@ -16,6 +16,7 @@ module.exports = {
             },
         ],
     },
+     output: 'export',
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         // eslint-disable-next-line no-param-reassign
         config.ignoreWarnings = [
