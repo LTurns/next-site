@@ -198,6 +198,37 @@
     color: rgb(247, 224, 49);
 }
 
+.product-intro {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 12px;
+    margin-top: 5px;
+
+    @media #{$smlg-device} {
+        font-size: 10px;
+    }
+
+}
+
+.product-title {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: 14px;
+
+    @media #{$smlg-device} {
+        font-size: 12px;
+    }
+    
+}
+
 .product-share-wrapper {
     display: flex;
     justify-content: space-between;

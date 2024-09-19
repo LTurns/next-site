@@ -210,7 +210,7 @@ const ExploreProductArea = ({
                                             !prod.hasSubCategories && (
                                                 <div
                                                     key={prod.id}
-                                                    className="col-lg-4 col-md-6 col-sm-12"
+                                                    className="col-lg-4 col-md-6"
                                                 >
                                                     <Product product={prod} />
                                                 </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
     Box,
     Button,
@@ -10,11 +11,6 @@ import { useContext } from "react";
 import CartContext from "../Context/cart/CartContext";
 import { useRouter } from "next/router";
 import { MdDelete } from "react-icons/md";
-// import CartItem from "./cart-item";
-
-import { CiCirclePlus } from "react-icons/ci";
-import { CiCircleMinus } from "react-icons/ci";
-
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder({
@@ -44,15 +40,12 @@ export const CartView = () => {
                     <tbody>
                         <tr>
                             <td>
-                                {/* <button> */}
-                                <img
-                                    src={urlFor(item.product.mainImage)
-                                        .width(75)
-                                        .url()}
-                                    alt={item.product.title}
-                                    className="product-img"
-                                />
-                                {/* </button> */}
+                                    <Image
+                                        src={urlFor(item.product.mainImage)
+                                            .width(75)
+                                            .url()}
+                                        alt={item.product.title}
+                                    />
                             </td>
                             <td>
                                 <button

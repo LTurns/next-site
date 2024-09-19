@@ -47,7 +47,7 @@ const GalleryTab = ({ images }) => (
                             eventKey={`nav-${index}`}
                         >
                             <div className="rn-pd-thumbnail">
-                                <img
+                                <Image
                                     src={urlFor(image).url()}
                                     alt={"Product"}
                                     width={400}

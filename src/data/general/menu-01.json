@@ -12,7 +12,39 @@
     {
         "id": 4,
         "text": "Products",
-        "path": "/product"
+        "path": "/product",
+        "submenu": [
+            {
+                "id": 7,
+                "text": "Fibre Installation",
+                "path": "/fibre-installation",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 8,
+                "text": "Overhead Line",
+                "path": "/overhead-line",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 9,
+                "text": "Underground Cable Laying",
+                "path": "/underground-cable-laying",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 10,
+                "text": "Klein Tools",
+                "path": "/klein-tools",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 11,
+                "text": "All Products",
+                "path": "/product",
+                "icon": "feather-fast-forward"
+            }
+        ]
     },
 
     {

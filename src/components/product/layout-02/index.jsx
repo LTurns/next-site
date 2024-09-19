@@ -4,7 +4,6 @@ import Image from "next/image";
 import clsx from "clsx";
 import Anchor from "@ui/anchor";
 import ClientAvatar from "@ui/client-avatar";
-import Button from "@ui/button";
 import ShareDropdown from "@components/share-dropdown";
 import PlaceBidModal from "@components/modals/placebid-modal";
 import { ImageType } from "@utils/types";
@@ -14,7 +13,7 @@ import { useContext } from "react";
 import CartContext from "../../../Context/cart/CartContext";
 
 import imageUrlBuilder from "@sanity/image-url";
-import { CardActionArea, Divider } from "@mui/material";
+import { Divider, Button } from "@mui/material";
 
 const builder = imageUrlBuilder({
     projectId: "b6e027vh",
@@ -50,11 +49,9 @@ const Product = ({
     return (
         <>
             <div className={clsx("lg-product-wrapper product-card")}>
-                <div style={{ height: 520 }} className="color-shape-7">
+                <div style={{ height: 470 }} className="color-shape-7">
                     <Anchor path={`/product/${product.title}`}>
                         <div style={{ background: "white", borderRadius: 8 }}>
-                            {/* <img src={urlFor(image).width(250).url()}
-                                /> */}
                             <Image
                                 style={{
                                     objectFit: "contain",
@@ -83,18 +80,21 @@ const Product = ({
                         </div>
                         <Anchor path={`/product/${product.title}`}>
                             <p
-                                class="title"
-                                style={{ fontSize: 15, fontWeight: 500 }}
+                                class="title product-title"
+                                style={{ fontSize: 12, minHeight: 30 }}
                             >
                                 {product.title}
                             </p>
                         </Anchor>
-                        <Divider sx={{ marginBlock: 2 }}></Divider>
-                        <span>{product.intro}</span>
+                        <span className="product-intro">{product.intro}</span>
                     </div>
                 </div>
+
+                <Divider sx={{ marginTop: 2 }}></Divider>
+
+                    <Anchor path={`/product/${product.title}`}><Button variant="contained">View Product</Button></Anchor>
                 <div
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                    style={{ display: "flex", justifyContent: "space-between", marginTop: 8 }}
                 >
                     <Anchor
                         className="read-more-button"
