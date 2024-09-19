@@ -6,6 +6,7 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, "./src/assets/scss")],
     },
+    output: 'export',
     images: {
         remotePatterns: [
             {
@@ -17,6 +18,7 @@ module.exports = {
         ],
         unoptimized: true
     },
+    //  distDir: 'build',
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         // eslint-disable-next-line no-param-reassign
         config.ignoreWarnings = [
