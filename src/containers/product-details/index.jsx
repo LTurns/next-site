@@ -58,10 +58,10 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             <ProductTitle
                                 // title={product.title}
                                 // likeCount={product.likeCount}
-                                title={product.title}
+                                title={product?.title}
                             />
                             <span className="bid">
-                                <span>{product.productId}</span>
+                                <span>{product?.productId}</span>
                             </span>
                             <h6 className="title-name">
                                 {product?.category?.join(", ")}
@@ -76,9 +76,9 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             </div>
                             <div className="rn-bid-details">
                                 <BidTab
-                                    features={product?.features}
-                                    tables={product?.tables}
-                                    accessories={product?.accessories}
+                                    features={product.features}
+                                    tables={product.tables}
+                                    accessories={product.accessories}
                                 />
                                 {/* <PlaceBet
                                 // highest_bid={product.highest_bid}

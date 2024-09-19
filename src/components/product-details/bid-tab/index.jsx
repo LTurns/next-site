@@ -242,21 +242,21 @@ const BidTab = ({ className, accessories, tables, features }) => {
             <div className={clsx("tab-wrapper-one", className)}>
                 <nav className="tab-button-one">
                     <Nav as="div" className="nav-tabs">
-                        {features.length ? (
+                        {features?.length ? (
                             <Nav.Link as="button" eventKey="nav-profile">
                                 Features
                             </Nav.Link>
                         ) : (
                             ""
                         )}
-                        {accessories.length ? (
+                        {accessories?.length ? (
                             <Nav.Link as="button" eventKey="nav-contact">
                                 Accessories
                             </Nav.Link>
                         ) : (
                             ""
                         )}
-                        {tables.length ? (
+                        {tables?.length ? (
                             <Nav.Link as="button" eventKey="nav-info">
                                 Ordering Information
                             </Nav.Link>
