@@ -31,9 +31,6 @@ export const CartView = () => {
     const router = useRouter();
     const { removeItem, cartItems } = useContext(CartContext);
 
-    console.log("wooo", cartItems);
-
-    console.log(cartItems);
     return (
         <Container>
             <table className="cart-table">

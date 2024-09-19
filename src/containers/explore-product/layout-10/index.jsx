@@ -139,10 +139,8 @@ const ExploreProductArea = ({
         let filteredItems = [];
 
         filteredItems = itemsToFilter.filter((item) => {
-            console.log("yehh", item);
             // eslint-disable-next-line no-restricted-syntax
             for (const key in state.inputs) {
-                console.log(state.inputs);
                 if (filterMethods(item, key, state.inputs[key])) return false;
             }
             return true;
@@ -180,7 +178,6 @@ const ExploreProductArea = ({
     const categories = cats.reduce((obj, b) => {
         const newObj = { ...obj };
         newObj[b] = obj[b] + 1 || 1;
-        console.log(newObj);
         return newObj;
     }, {});
 

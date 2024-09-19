@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const CategoryFilter = ({ categories, onChange }) => {
-    console.log(categories);
     const [isCheck, setIsCheck] = useState([]);
 
     const handleClick = (e) => {

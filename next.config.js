@@ -15,8 +15,8 @@ module.exports = {
                 pathname: "/images/**",
             },
         ],
+        unoptimized: true
     },
-     distDir: 'build',
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         // eslint-disable-next-line no-param-reassign
         config.ignoreWarnings = [

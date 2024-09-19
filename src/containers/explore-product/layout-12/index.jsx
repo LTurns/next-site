@@ -145,7 +145,6 @@ const ExploreProductArea = ({
         filteredItems = itemsToFilter.filter((item) => {
             // eslint-disable-next-line no-restricted-syntax
             for (const key in state.inputs) {
-                console.log(key, state.inputs[key]);
                 if (filterMethods(item, key, state.inputs[key])) return false;
             }
             return true;
