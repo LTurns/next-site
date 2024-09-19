@@ -19,7 +19,7 @@ const ProductDetails = ({ product }) => (
                 currentPage="Product Details"
             />
             <ProductDetailsArea
-                product={product.hasSubCategories === false ? product : []}
+                product={ product }
             />
             {/* <ProductArea
                 data={{

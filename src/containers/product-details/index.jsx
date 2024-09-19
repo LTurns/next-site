@@ -68,7 +68,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             </h6>
 
                             <div>
-                                {product.description.map((p) => (
+                                {product?.description?.map((p) => (
                                     <p style={{ fontSize: 14 }} key={p.id}>
                                         {p.paragraph}
                                     </p>
@@ -76,9 +76,9 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             </div>
                             <div className="rn-bid-details">
                                 <BidTab
-                                    features={product.features}
-                                    tables={product.tables}
-                                    accessories={product.accessories}
+                                    features={product?.features}
+                                    tables={product?.tables}
+                                    accessories={product?.accessories}
                                 />
                                 {/* <PlaceBet
                                 // highest_bid={product.highest_bid}
@@ -111,7 +111,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
 ProductDetailsArea.propTypes = {
     space: PropTypes.oneOf([1, 2]),
     className: PropTypes.string,
-    product: PropTypes.object,
+    product:  PropTypes.arrayOf(PropTypes.shape({})),
     // product: PropTypes.shape({
     //     title: PropTypes.string.isRequired,
     //     likeCount: PropTypes.number,
