@@ -108,7 +108,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
 ProductDetailsArea.propTypes = {
     space: PropTypes.oneOf([1, 2]),
     className: PropTypes.string,
-    product: [],
+    product: PropTypes.object,
     // product: PropTypes.shape({
     //     title: PropTypes.string.isRequired,
     //     likeCount: PropTypes.number,
