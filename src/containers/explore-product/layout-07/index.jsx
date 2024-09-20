@@ -10,7 +10,7 @@ const SliderOptions = {
     slidesToShow: 5,
     slidesToScroll: 2,
     arrows: true,
-    dots: true,
+    dots: false,
     responsive: [
         {
             breakpoint: 1399,

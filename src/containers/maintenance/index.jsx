@@ -19,8 +19,8 @@ const MaintenanceArea = () => (
             <div className="container-fluid pt--40 pb--35 maintanance-plr text-center">
                 <Logo
                     logo={[
-                        { src: "/images/logo/cbslogo-white.png" },
-                        { src: "/images/logo/cbslogo-white.png" },
+                        { src: "/images/logo/cbslogo-white.jpg" },
+                        { src: "/images/logo/cbslogo-white.jpg" },
                     ]}
                 />
                 <div className="maintanance-inner">
