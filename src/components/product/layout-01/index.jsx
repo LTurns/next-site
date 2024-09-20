@@ -43,7 +43,7 @@ const Product = ({ title, slug, image, disableShareDropdown }) => {
                         <Anchor path={`/product/${slug}`}>
                             <Image
                                 src={urlFor(image).width(250).url()}
-                                alt={image?.alt || "NFT_portfolio"}
+                                alt={image?.alt || title }
                                 width={533}
                                 height={533}
                             />

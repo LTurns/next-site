@@ -49,7 +49,7 @@ const Product = ({
     return (
         <>
             <div className={clsx("lg-product-wrapper product-card")}>
-                <div style={{ height: 470 }} className="color-shape-7">
+                <div style={{ minHeight: 420 }} className="color-shape-7">
                     <Anchor path={`/product/${product.title}`}>
                         <div style={{ background: "white", borderRadius: 8 }}>
                             <Image
@@ -57,12 +57,10 @@ const Product = ({
                                     objectFit: "contain",
                                     marginInline: "auto",
                                     display: "block",
-                                    width: 300,
-                                    height: 300,
                                 }}
                                 src={urlFor(product.mainImage).url()}
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                             />
                         </div>
                     </Anchor>
@@ -74,14 +72,13 @@ const Product = ({
                                     path={`/product/${product.title}`}
                                 ></Anchor>
                             </div>
-                            <div class="product-id" style={{ fontSize: 10 }}>
+                            <div class="product-id">
                                 {product.productId}
                             </div>
                         </div>
                         <Anchor path={`/product/${product.title}`}>
                             <p
                                 class="title product-title"
-                                style={{ fontSize: 12, minHeight: 30 }}
                             >
                                 {product.title}
                             </p>
