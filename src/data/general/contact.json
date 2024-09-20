@@ -7,13 +7,13 @@
     },
     "socials": [
         {
-            "id": 4,
+            "id": 1,
             "icon": "feather-linkedin",
             "link": "https://www.linkedin.com/company/cbs-products-ltd/",
             "title": "linkedin"
         },
         {
-            "id": 4,
+            "id": 2,
             "icon": "feather-youtube",
             "link": "https://youtube.com/@CBSProducts_KT?si=7A5ZaUK5_-o54F-l",
             "title": "linkedin"

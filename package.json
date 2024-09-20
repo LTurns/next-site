@@ -12,8 +12,6 @@
         "clean": "rimraf node_modules .next"
     },
     "dependencies": {
-        "@emotion/react": "^11.13.3",
-        "@emotion/styled": "^11.13.0",
         "@mui/material": "^5.16.7",
         "@mui/styles": "6.0.2",
         "@sanity/image-url": "^1.0.2",

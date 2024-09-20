@@ -51,7 +51,7 @@ const WhereToBuy = ({
 
                         <Anchor path={website}>
                             <p
-                                class="title"
+                                className="title"
                                 style={{ fontSize: 15, fontWeight: 500 }}
                             >
                                 {name}

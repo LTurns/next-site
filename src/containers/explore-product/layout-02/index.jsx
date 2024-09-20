@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import SectionTitle from "@components/section-title/layout-02";
 import Product from "@components/product/layout-02";
 import FilterButtons from "@components/filter-buttons";
-import { flatDeep } from "@utils/methods";
 import { SectionTitleType, ProductType } from "@utils/types";
 const ExploreProductArea = ({ className, space, data }) => {
     const filters = [

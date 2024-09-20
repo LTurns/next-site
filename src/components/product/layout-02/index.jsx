@@ -62,20 +62,16 @@ const Product = ({
                         </div>
                     </Anchor>
                     <div className="read-content">
-                        <div className="product-share-wrapper">
-                            <div className="profile-share">
                                 <Anchor
                                     className="more-author-text"
                                     path={`/product/${product.title}`}
                                 ></Anchor>
-                            </div>
-                            <div class="product-id">
+                            <div className="product-id" style={{textAlign: 'right', marginTop: 10}}>
                                 {product.productId}
                             </div>
-                        </div>
                         <Anchor path={`/product/${product.title}`}>
                             <p
-                                class="title product-title"
+                                className="title product-title"
                             >
                                 {product.title}
                             </p>
@@ -98,7 +94,7 @@ const Product = ({
                     </Anchor>
 
                     <Button
-                        class="shopping-cart"
+                        className="shopping-cart"
                         onClick={() =>
                             addToCart({ quantity: count + 1, product })
                         }

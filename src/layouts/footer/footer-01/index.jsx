@@ -89,7 +89,7 @@ const Footer = ({ space, className, data }) => (
                             <span style={{ fontSize: 16 }}>Email</span>
                             <Divider style={{ marginBlock: 10 }}></Divider>
                             <a
-                                class="email black--text"
+                                className="email black--text"
                                 href="mailto: sales@cbsproducts.com"
                             >
                                 sales@cbsproducts.com
