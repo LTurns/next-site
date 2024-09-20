@@ -4,9 +4,6 @@ import TabContainer from "react-bootstrap/TabContainer";
 import TabContent from "react-bootstrap/TabContent";
 import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
-import BidsTabContent from "./bids-tab-content";
-import DetailsTabContent from "./details-tab-content";
-import HistoryTabContent from "./history-tab-content";
 import { makeStyles } from "@mui/styles";
 
 import React from "react";

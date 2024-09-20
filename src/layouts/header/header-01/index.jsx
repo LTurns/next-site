@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import PropTypes from "prop-types";
-import { React, useContext } from "react";
+import { useContext } from "react";
 import clsx from "clsx";
 import Logo from "@components/logo";
 import MainMenu from "@components/menu/main-menu";

@@ -19,7 +19,7 @@ const ProductDetails = ({ product }) => (
                 currentPage="Product Details"
             />
             <ProductDetailsArea
-                product={ product }
+                product={product}
             />
             {/* <ProductArea
                 data={{

@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import TopSeller from "@components/top-seller/layout-01";
 import { ImageType } from "@utils/types";
 
 const ProductCategory = ({ className, owner }) => (

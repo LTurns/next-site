@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import NiceSelect from "@ui/nice-select";
-import TopSeller from "@components/top-seller/layout-01";
 import Pagination from "@components/pagination-02";
 import { SellerType } from "@utils/types";
 import { slugify } from "@utils/methods";

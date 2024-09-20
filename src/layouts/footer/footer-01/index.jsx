@@ -2,18 +2,16 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import Image from "next/image";
 import LogoWidget from "@widgets/logo-widget";
-import NewsletterWidget from "@widgets/newsletter-widget";
 import QuicklinkWidget from "@widgets/quicklink-widget";
 import InformationWidget from "@widgets/information-widget";
-import SoldOutWidget from "@widgets/sold-out-widget";
 import FooterLinkWidget from "@widgets/footer-link-widget";
 import SocialWidget from "@widgets/social-widget";
 import { ItemType } from "@utils/types";
+import { Divider } from "@mui/material";
 
 // Demo data
 import footerData from "../../../data/general/footer-01.json";
 import contactData from "../../../data/general/contact.json";
-import { Divider } from "@mui/material";
 
 const Footer = ({ space, className, data }) => (
     <>

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import SectionTitle from "@components/section-title/layout-02";
 import NiceSelect from "@ui/nice-select";
-import TopSeller from "@components/top-seller/layout-01";
 import { SectionTitleType, SellerType } from "@utils/types";
 import { slugify } from "@utils/methods";
 

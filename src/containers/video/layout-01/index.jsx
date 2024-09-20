@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import Image from "next/image";
 import VideoButton from "@ui/video-button";
 import { ImageType } from "@utils/types";
 
