@@ -3,11 +3,7 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import clsx from "clsx";
 import Anchor from "@ui/anchor";
-import ClientAvatar from "@ui/client-avatar";
-import ShareDropdown from "@components/share-dropdown";
-import PlaceBidModal from "@components/modals/placebid-modal";
-import { ImageType } from "@utils/types";
-import { MdAddShoppingCart, MdDonutLarge } from "react-icons/md";
+import { MdAddShoppingCart } from "react-icons/md";
 
 import { useContext } from "react";
 import CartContext from "../../../Context/cart/CartContext";
@@ -61,6 +57,7 @@ const Product = ({
                                 src={urlFor(product.mainImage).url()}
                                 width={250}
                                 height={250}
+                                alt={product.title}
                             />
                         </div>
                     </Anchor>

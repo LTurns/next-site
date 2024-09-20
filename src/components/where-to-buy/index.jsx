@@ -1,51 +1,11 @@
 import { useState } from "react";
-import dynamic from "next/dynamic";
 import PropTypes from "prop-types";
 import Image from "next/image";
 import clsx from "clsx";
 import Anchor from "@ui/anchor";
-import ClientAvatar from "@ui/client-avatar";
-import ProductBid from "@components/product-bid";
-// import Button from "@ui/button";
-import { ImageType } from "@utils/types";
-import PlaceBidModal from "@components/modals/placebid-modal";
-
-import CardHeader from "@mui/material/CardHeader";
-import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
-import { red } from "@mui/material/colors";
-
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
 import { Divider } from "@mui/material";
 import { FaLocationPin } from "react-icons/fa6";
-
-import imageUrlBuilder from "@sanity/image-url";
-import { CardActionArea } from "@mui/material";
-
-const builder = imageUrlBuilder({
-    projectId: "b6e027vh",
-    dataset: "production",
-});
-
-const CountdownTimer = dynamic(() => import("@ui/countdown/layout-01"), {
-    ssr: false,
-});
-
-const ShareDropdown = dynamic(() => import("@components/share-dropdown"), {
-    ssr: false,
-});
-
-const urlFor = (source) => {
-    const image = builder.image(source);
-    return image;
-};
 
 const useStyles = makeStyles({
     category: {
@@ -68,12 +28,6 @@ const WhereToBuy = ({
     website,
     image,
 }) => {
-    const classes = useStyles();
-    const [showBidModal, setShowBidModal] = useState(false);
-    const handleBidModal = () => {
-        setShowBidModal((prev) => !prev);
-    };
-
     return (
         <>
             <div className={clsx("lg-product-wrapper")}>
@@ -88,6 +42,7 @@ const WhereToBuy = ({
                                     src={`/images/whereToBuy/${image}`}
                                     width={200}
                                     height={200}
+                                    alt={name}
                                 />
                             </div>
                         </Anchor>

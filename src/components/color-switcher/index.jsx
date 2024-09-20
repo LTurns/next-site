@@ -14,8 +14,8 @@ const ColorSwitcher = () => {
                 <Image
                     src="/images/icons/sun-01.svg"
                     alt="Sun images"
-                    width={16}
-                    height={16}
+                    width={48}
+                    height={48}
                 />
             </button>
             <button
@@ -26,8 +26,8 @@ const ColorSwitcher = () => {
                 <Image
                     src="/images/icons/vector.svg"
                     alt="Vector Images"
-                    width={16}
-                    height={16}
+                    width={48}
+                    height={48}
                 />
             </button>
         </div>
