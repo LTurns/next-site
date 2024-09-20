@@ -15,7 +15,7 @@ const SliderOptions = {
         {
             breakpoint: 1399,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
             },
         },
@@ -36,7 +36,7 @@ const SliderOptions = {
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 dots: true,
                 arrows: false,

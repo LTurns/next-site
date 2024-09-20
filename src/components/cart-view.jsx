@@ -45,6 +45,8 @@ export const CartView = () => {
                                             .width(75)
                                             .url()}
                                         alt={item.product.title}
+                                        width={75}
+                                        height={75}
                                     />
                             </td>
                             <td>

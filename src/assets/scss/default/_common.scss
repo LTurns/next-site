@@ -468,7 +468,7 @@ nav {
 }
 .isotope-list {
     display: grid;
-    gap: 10px;
+    gap: 20px;
 }
 .item-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -490,13 +490,13 @@ nav {
 .item-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     @media #{$laptop-device2} {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     @media #{$lg-layout} {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     @media #{$md-layout} {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     @media #{$sm-layout} {

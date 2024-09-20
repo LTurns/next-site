@@ -193,7 +193,7 @@ const ExploreProductArea = ({
             id="explore-id"
         >
             <div className="container">
-                <div className="row g-5">
+                <div className="row g-5 col-md-12 col-sm-6">
                     <div className="col-lg-3 order-1 order-lg-1">
                         <ProductFilter
                             categories={categories}
@@ -210,7 +210,7 @@ const ExploreProductArea = ({
                                             !prod.hasSubCategories && (
                                                 <div
                                                     key={prod.id}
-                                                    className="col-lg-4 col-md-6"
+                                                    className="col-lg-4 col-md-4 col-sm-6"
                                                 >
                                                     <Product product={prod} />
                                                 </div>

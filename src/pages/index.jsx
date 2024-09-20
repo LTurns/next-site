@@ -37,7 +37,7 @@ const Home = () => {
                 /> */}
 
                 <ExploreCarouselBothArea
-                    space={4}
+                    space={8}
                     data={{
                         products: productData.slice(0, 9),
                     }}

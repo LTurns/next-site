@@ -46,15 +46,17 @@ const HeroArea = ({ data }) => (
                     )}
                 </div>
                 <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
-                        <div>
+                    {data?.images?.[0]?.src && (
+                        <div className="slider-thumbnail">
                             <Image
                                 src={data.images[0].src}
-                                alt={"Slider Images"}
-                                width={510}
-                                height={450}
+                                alt={data.images[0]?.alt || "Slider Images"}
+                                width={585}
+                                height={593}
                                 priority
                             />
                         </div>
+                    )}
                 </div>
             </div>
         </div>

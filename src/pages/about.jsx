@@ -7,7 +7,6 @@ import AboutArea from "@containers/about/layout-02";
 import QuoteArea from "@containers/quote-area";
 import FunfactArea from "@containers/funfact";
 import { normalizedData } from "@utils/methods";
-import { getAllPosts } from "../lib/api";
 
 // Demo data
 import aboutData from "../data/innerpages/about.json";
@@ -28,23 +27,23 @@ const About = () => {
     );
 };
 
-export async function getStaticProps() {
-    const posts = getAllPosts([
-        "title",
-        "date",
-        "slug",
-        "image",
-        "category",
-        "timeToRead",
-    ]);
+// export async function getStaticProps() {
+//     const posts = getAllPosts([
+//         "title",
+//         "date",
+//         "slug",
+//         "image",
+//         "category",
+//         "timeToRead",
+//     ]);
 
-    return {
-        props: {
-            posts: posts.slice(0, 4),
-            className: "template-color-1",
-        },
-    };
-}
+//     return {
+//         props: {
+//             posts: posts.slice(0, 4),
+//             className: "template-color-1",
+//         },
+//     };
+// }
 
 // About.propTypes = {
 //     posts: PropTypes.arrayOf(PropTypes.shape({})),
