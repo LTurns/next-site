@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import SectionTitle from "@components/section-title/layout-02";
 import Product from "@components/product/layout-02";
 import Slider, { SliderItem } from "@ui/slider";
 import { SectionTitleType, ProductType } from "@utils/types";
@@ -36,10 +35,10 @@ const SliderOptions = {
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: true,
-                arrows: false,
+                dots: false,
+                arrows: true,
             },
         },
     ],
@@ -61,7 +60,7 @@ const ExploreProductArea = ({ data, className, space }) => (
                     <div className="col-lg-12">
                         <Slider
                             options={SliderOptions}
-                            className="banner-one-slick slick-arrow-style-one rn-slick-dot-style slick-gutter-15"
+                            className="banner-one-slick slick-arrow-style-one slick-gutter-15"
                         >
                             {data.products.map((prod) => (
                                 <SliderItem

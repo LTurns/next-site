@@ -18,8 +18,13 @@
             "buttons": [
                 {
                     "id": 1,
-                    "content": "Explore Products",
-                    "path": "/product"
+                    "content": "Overhead Line",
+                    "path": "/overhead-line"
+                },
+                {
+                    "id": 1,
+                    "content": "Telecoms",
+                    "path": "/telecoms"
                 }
             ],
             "images": [
@@ -49,8 +54,8 @@
                 },
                 {
                     "id": 2,
-                    "title": "Fibre Installation",
-                    "path": "/fibre-installation",
+                    "title": "Telecoms",
+                    "path": "/telecoms",
                     "subtitle": "Tornado, Hurricane, Accelair 3",
                     "description": "Includes a large catalogue of cable blowing machines, including our most recent atmos compressor."
                 },

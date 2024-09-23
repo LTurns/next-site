@@ -16,8 +16,8 @@
         "submenu": [
             {
                 "id": 7,
-                "text": "Fibre Installation",
-                "path": "/fibre-installation",
+                "text": "Telecoms",
+                "path": "/telecoms",
                 "icon": "feather-fast-forward"
             },
             {

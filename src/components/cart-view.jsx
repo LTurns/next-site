@@ -81,12 +81,6 @@ export const CartView = () => {
                     </tbody>
                 ))}
             </table>
-
-            <Divider></Divider>
-
-            <Box mt={2} mb={6}>
-                <Button variant="outlined">Checkout</Button>
-            </Box>
         </Container>
     );
 };

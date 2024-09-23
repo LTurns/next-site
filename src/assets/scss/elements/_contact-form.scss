@@ -1,37 +1,16 @@
 // Form Style One
 .form-wrapper-one {
     padding: 40px 35px;
+    margin: 40px;
     border-radius: 6px;
     background: var(--background-color-1);
     height: 100%;
     border: 1px solid var(--color-border);
+    color: white;
 
+    
     .input-box {
         display: block;
-    }
-
-    .nice-select {
-        width: 100%;
-        display: block;
-        margin-bottom: 15px;
-        background: var(--background-color-4);
-        border: 1px solid var(--color-border);
-
-        &::after {
-            border-bottom: 2px solid var(--color-body);
-            border-right: 2px solid var(--color-body);
-        }
-
-        &.open {
-            .list {
-                background: var(--background-color-2);
-                width: 250px;
-            }
-        }
-
-        .current {
-            color: var(--color-body);
-        }
     }
 
     .rn-form-label {

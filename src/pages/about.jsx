@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import SEO from "@components/seo";
 import Wrapper from "@layout/wrapper";
 import Header from "@layout/header/header-01";
@@ -11,13 +10,17 @@ import { normalizedData } from "@utils/methods";
 // Demo data
 import aboutData from "../data/innerpages/about.json";
 
+export async function getStaticProps() {
+    return { props: { className: "template-color-1" } };
+}
+
 const About = () => {
     const content = normalizedData(aboutData?.content || []);
     return (
         <Wrapper>
             <SEO pageTitle="About" />
             <Header />
-            <main id="main-content">
+            <main id="main-content" class="home-sticky-pin">
                 <AboutArea data={content["about-section"]} />
                 <QuoteArea data={content["quote-section"]} />
                 <FunfactArea data={content["funfact-section"]} />
@@ -26,27 +29,5 @@ const About = () => {
         </Wrapper>
     );
 };
-
-// export async function getStaticProps() {
-//     const posts = getAllPosts([
-//         "title",
-//         "date",
-//         "slug",
-//         "image",
-//         "category",
-//         "timeToRead",
-//     ]);
-
-//     return {
-//         props: {
-//             posts: posts.slice(0, 4),
-//             className: "template-color-1",
-//         },
-//     };
-// }
-
-// About.propTypes = {
-//     posts: PropTypes.arrayOf(PropTypes.shape({})),
-// };
 
 export default About;

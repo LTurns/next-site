@@ -34,7 +34,6 @@ const HeroArea = ({ data }) => (
                             {data.buttons.map(({ content, id, ...btn }, i) => (
                                 <Button
                                     {...btn}
-                                    data-sal-delay={400 + i * 100}
                                     data-sal="slide-up"
                                     data-sal-duration="800"
                                     key={id}

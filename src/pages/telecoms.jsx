@@ -16,12 +16,12 @@ const FibreInstallationProducts = productData.filter((product) =>
 
 const Product = () => (
     <Wrapper>
-        <SEO pageTitle="Fibre Installation Products" />
+        <SEO pageTitle="Telecoms Products" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Fibre Installation Products"
-                currentPage="Fibre Installation Products"
+                pageTitle="Telecoms Products"
+                currentPage="Telecoms Products"
             />
             <ExploreProductArea
                 data={{

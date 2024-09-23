@@ -7,7 +7,6 @@ import ServiceArea from "@containers/services/layout-01";
 import { normalizedData } from "@utils/methods";
 import VideoArea from "@containers/video/layout-01";
 import ExploreCarouselBothArea from "@containers/explore-product/layout-07";
-import Cart from "@components/cart";
 
 // Demo data
 import homepageData from "../data/homepages/home-04.json";
@@ -23,21 +22,12 @@ const Home = () => {
         <Wrapper>
             <SEO pageTitle="CBS Products" />
             <Header />
-            <Cart />
-
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
                 <ServiceArea data={content["service-section"]} />
                 <VideoArea data={content["video-section"]} />
-                {/* <ExploreProductArea
-                    data={{
-                        ...content["explore-product-section"],
-                        products: productData,
-                    }}
-                /> */}
-
                 <ExploreCarouselBothArea
-                    space={8}
+                    space={4}
                     data={{
                         products: productData.slice(0, 9),
                     }}

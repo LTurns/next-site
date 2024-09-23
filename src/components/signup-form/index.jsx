@@ -1,71 +1,86 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import Button from "@ui/button";
 import ErrorText from "@ui/error-text";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import { CartView } from "@components/cart-view";
+import { Button } from "@mui/material";
+import { useContext } from "react";
+import CartContext from "../../Context/cart/CartContext";
+import axios from "axios";
 
 const SignupForm = ({ className }) => {
     const router = useRouter();
+    const { cartItems } = useContext(CartContext);
+
     const {
         register,
         handleSubmit,
         formState: { errors },
-        getValues,
     } = useForm({
         mode: "onChange",
     });
     const onSubmit = (data, e) => {
         e.preventDefault();
-        // eslint-disable-next-line no-console
-        console.log(data);
-        router.push({
-            pathname: "/",
-        });
+        console.log(cartItems)
+
+        const item = cartItems.map(i => {
+            return `${i.product.title} : ${i.quantity}`
+        })
+
+        console.log(item.toString().replace(',', ', '))
+
+        try {
+            axios
+              .post("https://getform.io/f/cee9fb5b-06de-41ac-a982-5103f16311ce", {
+                email: data.email,
+                name: data.name,
+                number: data.phone ?? '',
+                message: data.message ?? '',
+                products: item,
+              })
+              .then(() => router.push({ pathname: "/thankyou" }))
+  
+          } catch (err) {
+            throw new Error(err);
+          }
+
+        // router.push({
+        //     pathname: "/thankyou",
+        // });
     };
 
     return (
         <div className={clsx("form-wrapper-one", className)}>
-            <h4>Sign Up</h4>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="mb-5">
-                    <label htmlFor="firstName" className="form-label">
-                        First name
+            <p>
+            Please fill in your contact details and someone from our team will be in touch shortly about your enquiry.
+            </p>
+             <CartView/>
+            <form onSubmit={handleSubmit(onSubmit)} >
+                <div className="row mb-2">
+                <div className="mb-5 col-lg-4">
+                    <label htmlFor="name" className="form-label">
+                        Name
                     </label>
                     <input
                         type="text"
-                        id="firstName"
-                        {...register("firstName", {
-                            required: "First name is required",
+                        id="name"
+                        {...register("name", {
+                            required: "Name is required",
                         })}
                     />
-                    {errors.firstName && (
-                        <ErrorText>{errors.firstName?.message}</ErrorText>
+                    {errors.name && (
+                        <ErrorText>{errors.name?.message}</ErrorText>
                     )}
                 </div>
-                <div className="mb-5">
-                    <label htmlFor="sastName" className="form-label">
-                        Last name
-                    </label>
-                    <input
-                        type="text"
-                        id="sastName"
-                        {...register("sastName", {
-                            required: "Last name is required",
-                        })}
-                    />
-                    {errors.sastName && (
-                        <ErrorText>{errors.sastName?.message}</ErrorText>
-                    )}
-                </div>
-                <div className="mb-5">
-                    <label htmlFor="exampleInputEmail1" className="form-label">
+                <div className="mb-5 col-lg-4">
+                    <label htmlFor="email" className="form-label">
                         Email address
                     </label>
                     <input
                         type="email"
-                        id="exampleInputEmail1"
-                        {...register("exampleInputEmail1", {
+                        id="email"
+                        {...register("email", {
                             required: "Email is required",
                             pattern: {
                                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
@@ -73,75 +88,33 @@ const SignupForm = ({ className }) => {
                             },
                         })}
                     />
-                    {errors.exampleInputEmail1 && (
+                    {errors.email && (
                         <ErrorText>
-                            {errors.exampleInputEmail1?.message}
+                            {errors.email?.message}
                         </ErrorText>
                     )}
                 </div>
-                <div className="mb-5">
-                    <label htmlFor="newPassword" className="form-label">
-                        Create Password
+                <div className="mb-5 col-lg-4">
+                    <label htmlFor="phone" className="form-label">
+                        Phone Number
                     </label>
                     <input
-                        type="password"
-                        id="newPassword"
-                        {...register("newPassword", {
-                            required: "Password is required",
-                        })}
+                        type="tel"
+                        id="phone"
+                        {...register("phone")}
                     />
-                    {errors.newPassword && (
-                        <ErrorText>{errors.newPassword?.message}</ErrorText>
-                    )}
                 </div>
-                <div className="mb-5">
-                    <label
-                        htmlFor="exampleInputPassword1"
-                        className="form-label"
-                    >
-                        Re Password
+                </div>
+                <div className="mb-5 col-lg-12">
+                    <label className="form-label">
+                        Message
                     </label>
-                    <input
-                        type="password"
-                        id="exampleInputPassword1"
-                        {...register("exampleInputPassword1", {
-                            required: "Confirm Password is required",
-                            validate: (value) =>
-                                value === getValues("newPassword") ||
-                                "The passwords do not match",
-                        })}
-                    />
-                    {errors.exampleInputPassword1 && (
-                        <ErrorText>
-                            {errors.exampleInputPassword1?.message}
-                        </ErrorText>
-                    )}
+                    <textarea 
+                    id="message"
+                    {...register("message")} />
                 </div>
-                <div className="mb-5 rn-check-box">
-                    <input
-                        type="checkbox"
-                        className="rn-check-box-input"
-                        id="exampleCheck1"
-                        {...register("exampleCheck1", {
-                            required: "Checkbox is required",
-                        })}
-                    />
-                    <label
-                        className="rn-check-box-label"
-                        htmlFor="exampleCheck1"
-                    >
-                        Allow to all tearms & Allow to all tearms & condition
-                    </label>
-                    <br />
-                    {errors.exampleCheck1 && (
-                        <ErrorText>{errors.exampleCheck1?.message}</ErrorText>
-                    )}
-                </div>
-                <Button type="submit" size="medium" className="mr--15">
-                    Sign Up
-                </Button>
-                <Button path="/login" color="primary-alta" size="medium">
-                    Log In
+                <Button type="submit">
+                    Submit
                 </Button>
             </form>
         </div>
