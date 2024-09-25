@@ -23,7 +23,6 @@ const CategoryFilter = ({ categories, onChange }) => {
     return (
         <div className="nuron-expo-filter-widget widget-category mt--30">
             <div className="inner">
-                <h5 className="widget-title">Categories</h5>
                 <div className="content">
                     {Object.entries(categories).map(([key, value]) => (
                         <div className="nuron-form-check" key={key}>
@@ -38,7 +37,7 @@ const CategoryFilter = ({ categories, onChange }) => {
                                 htmlFor={`cat-check-${key}`}
                                 className="text-capitalize"
                             >
-                                {key} <span>({value})</span>
+                                {key}
                             </label>
                         </div>
                     ))}

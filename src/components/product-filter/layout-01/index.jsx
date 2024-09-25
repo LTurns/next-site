@@ -1,13 +1,14 @@
 import { forwardRef } from "react";
 import PropTypes from "prop-types";
 import NiceSelect from "@ui/nice-select";
+import CategoryFilter from "../layout-03/category-filter";
 
 const ProductFilter = forwardRef(
-    ({ slectHandler, sortHandler, priceHandler, inputs }, ref) => (
+    ({ filterHandler, categories }, ref) => (
         <div className="default-exp-wrapper default-exp-expand" ref={ref}>
-            <div className="inner">
+            {/* <div className="inner">
                 <div className="filter-select-option">
-                    <h6 className="filter-leble">Category</h6>
+                    <h6 className="filter-leble">Product Type</h6>
                     <NiceSelect
                         options={[
                             { value: "all", text: "All Category" },
@@ -24,7 +25,8 @@ const ProductFilter = forwardRef(
                         name="category"
                     />
                 </div>
-            </div>
+            </div> */}
+                    <CategoryFilter categories={categories} onChange={filterHandler} />
         </div>
     )
 );
@@ -32,8 +34,8 @@ const ProductFilter = forwardRef(
 ProductFilter.displayName = "ProductFilter";
 
 ProductFilter.propTypes = {
-    slectHandler: PropTypes.func,
-    sortHandler: PropTypes.func,
+    filterHandler: PropTypes.func,
+    categories: PropTypes.shape({}),
 };
 
 export default ProductFilter;

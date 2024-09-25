@@ -16,6 +16,7 @@ const ShoppingCart = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb pageTitle="Enquiry Cart" currentPage="Enquiry Cart" />
+             <CartView/>
             <SignupForm />
         </main>
         <Footer />

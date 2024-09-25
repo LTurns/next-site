@@ -52,10 +52,6 @@ const SignupForm = ({ className }) => {
 
     return (
         <div className={clsx("form-wrapper-one", className)}>
-            <p>
-            Please fill in your contact details and someone from our team will be in touch shortly about your enquiry.
-            </p>
-             <CartView/>
             <form onSubmit={handleSubmit(onSubmit)} >
                 <div className="row mb-2">
                 <div className="mb-5 col-lg-4">

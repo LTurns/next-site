@@ -5,16 +5,15 @@ import SectionTitle from "@components/section-title/layout-02";
 import ProductFilter from "@components/product-filter/layout-03";
 import Product from "@components/product/layout-02";
 import Pagination from "@components/pagination-02";
-import FilterButtons from "@components/filter-buttons";
+import { slideToggle } from "@utils/methods";
+import FilterButton from "@ui/filter-button";
 import { SectionTitleType, ProductType } from "@utils/types";
 import { flatDeep } from "@utils/methods";
 
 function reducer(state, action) {
     switch (action.type) {
-        case "SET_INPUTS":
-            return { ...state, inputs: { ...state.inputs, ...action.payload } };
-        case "SET_SORT":
-            return { ...state, sort: action.payload };
+        case "FILTER_TOGGLE":
+            return { ...state, filterToggle: !state.filterToggle };
         case "SET_ALL_PRODUCTS":
             return { ...state, allProducts: action.payload };
         case "SET_PRODUCTS":
@@ -31,15 +30,14 @@ const POSTS_PER_PAGE = 12;
 const ExploreProductArea = ({
     className,
     space,
-    data: { section_title, products, placeBid },
+    data: { products },
 }) => {
     const itemsToFilter = [...products];
     const [state, dispatch] = useReducer(reducer, {
         products: [],
         allProducts: products || [],
-        // inputs: { price: [0, 100] },
-        sort: "newest",
         currentPage: 1,
+        filterToggle: false,
     });
 
     /* Pagination logic start */
@@ -134,6 +132,13 @@ const ExploreProductArea = ({
         return item[itemKey] !== value;
     };
 
+        const filterRef = useRef(null);
+    const filterToggle = () => {
+        dispatch({ type: "FILTER_TOGGLE" });
+        if (!filterRef.current) return;
+        slideToggle(filterRef.current);
+    };
+
     // Filter Method, this function is responsible for filtering the products
     const itemFilterHandler = useCallback(() => {
         let filteredItems = [];
@@ -153,16 +158,16 @@ const ExploreProductArea = ({
         itemFilterHandler();
     }, [itemFilterHandler]);
 
-    const initialRender = useRef(0);
-    useEffect(() => {
-        if (initialRender.current < 2) {
-            initialRender.current += 1;
-        } else {
-            document
-                .getElementById("explore-id")
-                .scrollIntoView({ behavior: "smooth" });
-        }
-    }, [state.inputs]);
+    // const initialRender = useRef(0);
+    // useEffect(() => {
+    //     if (initialRender.current < 2) {
+    //         initialRender.current += 1;
+    //     } else {
+    //         document
+    //             .getElementById("explore-id")
+    //             .scrollIntoView({ behavior: "smooth" });
+    //     }
+    // }, [state.inputs]);
 
     useEffect(() => {
         dispatch({
@@ -193,15 +198,23 @@ const ExploreProductArea = ({
             id="explore-id"
         >
             <div className="container">
-                <div className="row g-5 col-md-12 col-sm-6">
-                    <div className="col-lg-3 order-1 order-lg-1">
+            <div className="col-lg-12 col-md-12 col-sm-12 col-12 mb--15">
+                        <FilterButton
+                            open={state.filterToggle}
+                            onClick={filterToggle}
+                        />
+            </div>
+                <div className="row g-5 col-md-12 col-sm-12">
+                    <div className="col-lg-12 order-1 order-lg-1">
                         <ProductFilter
+                            ref={filterRef}
                             categories={categories}
                             filterHandler={filterHandler}
                             // priceHandler={priceHandler}
                         />
                     </div>
-                    <div className="col-lg-9 order-2 order-lg-2">
+                    </div>
+                    <div className="col-lg-12">
                         <div className="row g-5">
                             {state.products.length > 0 ? (
                                 <>
@@ -233,7 +246,6 @@ const ExploreProductArea = ({
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

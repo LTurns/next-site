@@ -29,17 +29,18 @@ export const CartView = () => {
 
     return (
         <Container>
-            <table className="cart-table">
+                        <p style={{padding: 20, textAlign: 'center'}}>
+            Please fill in your contact details below and someone from our team will be in touch shortly about your enquiry.
+            </p>
+            <table>
                 <tr>
-                    <th>Image</th>
-                    <th>Name</th>
-                    <th>Quantity</th>
-                    <th>Remove Item</th>
+                    <th>Item</th>
+                    <th>Remove</th>
                 </tr>
                 {cartItems.map((item) => (
                     <tbody>
                         <tr>
-                            <td>
+                            {/* <td>
                                     <Image
                                         src={urlFor(item.product.mainImage)
                                             .width(75)
@@ -48,26 +49,10 @@ export const CartView = () => {
                                         width={75}
                                         height={75}
                                     />
-                            </td>
-                            <td>
-                                <button
-                                    className="cart-table-button"
-                                    onClick={() => {
-                                        router.push(
-                                            `/product/${item.product.title}`
-                                        );
-                                    }}
-                                >
-                                    <span>{item.product.title}</span>
-                                </button>
-                            </td>
-                            <td>
-                                {/* <CiCirclePlus /> */}
-                                <strong style={{ padding: 20 }}>
-                                    {" "}
-                                    {item.quantity}
-                                </strong>
-                                {/* <CiCircleMinus /> */}
+                            </td> */}
+<td>
+                                    <span>{item.product.title} x {item.quantity}</span>
+    
                             </td>
                             <td>
                                 <button
