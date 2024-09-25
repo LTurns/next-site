@@ -7,7 +7,7 @@ const HeroArea = ({ data }) => (
     <div className="slider-one rn-section-gapTop">
         <div className="container">
             <div className="row row-reverce-sm align-items-center">
-                <div className="col-lg-5 col-md-6 col-sm-12 mt_sm--50">
+                <div className="col-lg-8 col-md-10 col-sm-12">
                     {data?.headings[0]?.content && (
                         <h2
                             className="title"
@@ -44,7 +44,7 @@ const HeroArea = ({ data }) => (
                         </div>
                     )}
                 </div>
-                <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
+                {/* <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
                     {data?.images?.[0]?.src && (
                         <div className="slider-thumbnail">
                             <Image
@@ -56,7 +56,7 @@ const HeroArea = ({ data }) => (
                             />
                         </div>
                     )}
-                </div>
+                </div> */}
             </div>
         </div>
     </div>
