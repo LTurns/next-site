@@ -66,13 +66,13 @@
             {
                 "id": 8,
                 "text": "General Enquiry",
-                "path": "/contact",
+                "path": "/general-enquiry",
                 "icon": "feather-fast-forward"
             },
             {
                 "id": 9,
                 "text": "Repairs",
-                "path": "/cart",
+                "path": "/repairs",
                 "icon": "feather-fast-forward"
             }
         ]

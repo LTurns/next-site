@@ -24,10 +24,10 @@ ProductFilter.propTypes = {
     // inputs: PropTypes.shape({
     //     price: PropTypes.arrayOf(PropTypes.number),
     // }),
-    sort: PropTypes.string,
+    // sort: PropTypes.string,
     categories: PropTypes.shape({}),
-    levels: PropTypes.arrayOf(PropTypes.string),
-    languages: PropTypes.arrayOf(PropTypes.string),
+    // levels: PropTypes.arrayOf(PropTypes.string),
+    // languages: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default ProductFilter;

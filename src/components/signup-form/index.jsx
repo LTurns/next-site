@@ -3,7 +3,6 @@ import clsx from "clsx";
 import ErrorText from "@ui/error-text";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import { CartView } from "@components/cart-view";
 import { Button } from "@mui/material";
 import { useContext } from "react";
 import CartContext from "../../Context/cart/CartContext";
@@ -22,7 +21,6 @@ const SignupForm = ({ className }) => {
     });
     const onSubmit = (data, e) => {
         e.preventDefault();
-        console.log(cartItems)
 
         const item = cartItems.map(i => {
             return `${i.product.title} : ${i.quantity}`
@@ -109,9 +107,11 @@ const SignupForm = ({ className }) => {
                     id="message"
                     {...register("message")} />
                 </div>
-                <Button type="submit">
+                <div>
+                <Button type="submit" variant="contained" size="medium" sx={{width: 300}}>
                     Submit
                 </Button>
+                </div>
             </form>
         </div>
     );

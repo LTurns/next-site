@@ -30,14 +30,15 @@ export const CartView = () => {
     return (
         <Container>
                         <p style={{padding: 20, textAlign: 'center'}}>
-            Please fill in your contact details below and someone from our team will be in touch shortly about your enquiry.
+            You are enquiring about the below products:
             </p>
             <table>
                 <tr>
                     <th>Item</th>
                     <th>Remove</th>
                 </tr>
-                {cartItems.map((item) => (
+                {
+                cartItems?.map((item) => (
                     <tbody>
                         <tr>
                             {/* <td>
@@ -64,8 +65,13 @@ export const CartView = () => {
                             </td>
                         </tr>
                     </tbody>
-                ))}
+                ))
+            }
             </table>
+
+            {!cartItems.length ? <p style={{textAlign: 'center', fontStyle: 'italic'}}>no items to display</p> : ''}
+            <p style={{padding: 20, textAlign: 'center'}}>
+            Please fill in your contact details and someone from our team will be in touch shortly about your enquiry.</p>
         </Container>
     );
 };

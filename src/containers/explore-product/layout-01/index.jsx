@@ -58,30 +58,12 @@ const ExploreProductArea = ({ className, space, data }) => {
         slideToggle(filterRef.current);
     };
 
-    const slectHandler = ({ value }, name) => {
-        dispatch({ type: "SET_INPUTS", payload: { [name]: value } });
-    };
-
     const filterHandler = useCallback((name, val) => {
         dispatch({
             type: "SET_INPUTS",
             payload: { [name]: val },
         });
     }, []);
-
-    const priceHandler = (value) => {
-        dispatch({ type: "SET_INPUTS", payload: { price: value } });
-    };
-
-    const sortHandler = ({ value }) => {
-        const sortedProducts = state.products.sort((a, b) => {
-            if (value === "most-liked") {
-                return a.likeCount < b.likeCount ? 1 : -1;
-            }
-            return a.likeCount > b.likeCount ? 1 : -1;
-        });
-        dispatch({ type: "SET_PRODUCTS", payload: sortedProducts });
-    };
 
     const filterMethods = (item, filterKey, value) => {
         if (value === "all") return false;

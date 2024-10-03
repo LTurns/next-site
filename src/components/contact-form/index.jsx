@@ -3,6 +3,7 @@ import Button from "@ui/button";
 import ErrorText from "@ui/error-text";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/router";
 
 const ContactForm = () => {
     const {
@@ -12,33 +13,22 @@ const ContactForm = () => {
     } = useForm({
         mode: "onChange",
     });
-    const [serverState, setServerState] = useState({
-        submitting: false,
-        status: null,
-    });
-    const handleServerResponse = (ok, msg, form) => {
-        setServerState({
-            submitting: false,
-            status: { ok, msg },
-        });
-        if (ok) {
-            form.reset();
-        }
-    };
+
     const onSubmit = (data, e) => {
-        const form = e.target;
-        setServerState({ submitting: true });
-        axios({
-            method: "post",
-            url: "https://getform.io/f/7a6695a7-c8e3-442c-bc2f-d46d3b9a535e",
-            data,
-        })
-            .then((_res) => {
-                handleServerResponse(true, "Thanks! for being with us", form);
-            })
-            .catch((err) => {
-                handleServerResponse(false, err.response.data.error, form);
-            });
+
+        try {
+            axios
+              .post("https://getform.io/f/7c4ff1e8-d838-46d1-b502-5853f033d47a", {
+                email: data.email,
+                name: data.name,
+                number: data.phone ?? '',
+                message: data.message,
+                subject: data.subject ?? '',
+              })
+              .then(() => $router.push({ path: "/thankyou" }));
+          } catch (err) {
+            throw new Error("Error sending email");
+          }
     };
     return (
         <div className="form-wrapper-one registration-area">
@@ -83,19 +73,25 @@ const ContactForm = () => {
                     )}
                 </div>
                 <div className="mb-5">
+                    <label htmlFor="contact-phone" className="form-label">
+                        Phone
+                    </label>
+                    <input
+                        name="contact-phone"
+                        type="tel"
+                        id="phone"
+                        {...register("contactPhone")}
+                    />
+                </div>
+                <div className="mb-5">
                     <label htmlFor="subject" className="form-label">
                         Subject
                     </label>
                     <input
                         name="subject"
                         type="text"
-                        {...register("subject", {
-                            required: "Subject is required",
-                        })}
+                        {...register("subject")}
                     />
-                    {errors.subject && (
-                        <ErrorText>{errors.subject?.message}</ErrorText>
-                    )}
                 </div>
                 <div className="mb-5">
                     <label htmlFor="contact-message" className="form-label">
@@ -112,37 +108,9 @@ const ContactForm = () => {
                         <ErrorText>{errors.contactMessage?.message}</ErrorText>
                     )}
                 </div>
-                <div className="mb-5 rn-check-box">
-                    <input
-                        id="condition"
-                        type="checkbox"
-                        className="rn-check-box-input"
-                        {...register("condition", {
-                            required: "Condition is required",
-                        })}
-                    />
-                    <label htmlFor="condition" className="rn-check-box-label">
-                        Allow to all tearms & condition
-                    </label>
-                    <br />
-                    {errors.condition && (
-                        <ErrorText>{errors.condition?.message}</ErrorText>
-                    )}
-                </div>
                 <Button type="submit" size="medium">
                     Send Message
                 </Button>
-                {serverState.status && (
-                    <p
-                        className={`mt-4 font-14 ${
-                            !serverState.status.ok
-                                ? "text-danger"
-                                : "text-success"
-                        }`}
-                    >
-                        {serverState.status.msg}
-                    </p>
-                )}
             </form>
         </div>
     );

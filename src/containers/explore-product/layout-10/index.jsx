@@ -20,6 +20,8 @@ function reducer(state, action) {
             return { ...state, products: action.payload };
         case "SET_PAGE":
             return { ...state, currentPage: action.payload };
+        case "SET_INPUTS":
+            return { ...state, inputs: { ...state.inputs, ...action.payload } };
         default:
             return state;
     }
@@ -112,22 +114,12 @@ const ExploreProductArea = ({
     const filterMethods = (item, filterKey, value) => {
         if (value === "all") return false;
         const itemKey = filterKey;
-        // if (filterKey === "price") {
-        //     return (
-        //         item[itemKey].amount <= value[0] / 100 ||
-        //         item[itemKey].amount >= value[1] / 100
-        //     );
-        // }
+
+        console.log('wooo', value, item[itemKey])
 
         if (Array.isArray(value) && value.length === 0) return false;
         if (Array.isArray(item[itemKey])) {
             return !item[itemKey].some((a1) => value.includes(a1));
-        }
-        if (
-            typeof item[itemKey] === "string" ||
-            typeof item[itemKey] === "number"
-        ) {
-            return !value.includes(item[itemKey]);
         }
         return item[itemKey] !== value;
     };
@@ -158,16 +150,16 @@ const ExploreProductArea = ({
         itemFilterHandler();
     }, [itemFilterHandler]);
 
-    // const initialRender = useRef(0);
-    // useEffect(() => {
-    //     if (initialRender.current < 2) {
-    //         initialRender.current += 1;
-    //     } else {
-    //         document
-    //             .getElementById("explore-id")
-    //             .scrollIntoView({ behavior: "smooth" });
-    //     }
-    // }, [state.inputs]);
+    const initialRender = useRef(0);
+    useEffect(() => {
+        if (initialRender.current < 2) {
+            initialRender.current += 1;
+        } else {
+            document
+                .getElementById("explore-id")
+                .scrollIntoView({ behavior: "smooth" });
+        }
+    }, [state.inputs]);
 
     useEffect(() => {
         dispatch({
@@ -179,7 +171,7 @@ const ExploreProductArea = ({
     /* Filter logic end */
 
     // Generate data from products data
-    const cats = flatDeep(products.map((prod) => prod.subCategory));
+    const cats = flatDeep(products.map((prod) => prod.subCategory ));
     const categories = cats.reduce((obj, b) => {
         const newObj = { ...obj };
         newObj[b] = obj[b] + 1 || 1;

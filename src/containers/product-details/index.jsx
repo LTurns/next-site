@@ -14,23 +14,6 @@ import PlaceBet from "@components/product-details/place-bet";
 import { ImageType } from "@utils/types";
 import { Box, Button, Typography } from "@mui/material";
 import { useRouter } from "next/router";
-// const description = [
-//     {
-//       "_key": "59c33e049930",
-//       "paragraph": "Atmos compressors are engineered to deliver exceptional performance and reliability. We manufacture and supply compressors for a wide range of industrial sectors. Our product range includes screw and piston electric compressors, and mobile compressors powered by diesel or gasoline engines."
-//     }
-//   ]
-
-// const mainImage = {
-//     "_type":"image",
-//     "asset":{
-//        "_ref":"image-00e218a7e8383bce40d31e863d38e9c7bac1dbe9-328x200-jpg",
-//        "_type":"reference"
-//     }
-//  }
-
-// Demo Image
-
 import { useContext } from "react";
 import CartContext from "../../Context/cart/CartContext";
 
