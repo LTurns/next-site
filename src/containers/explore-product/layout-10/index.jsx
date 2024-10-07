@@ -188,13 +188,13 @@ const ExploreProductArea = ({
             id="explore-id"
         >
             <div className="container">
-            <div className="col-1 mb--15">
+            <div className="col-lg-1 col-sm-3 mb--15">
                         <FilterButton
                             open={state.filterToggle}
                             onClick={filterToggle}
                         />
             </div>
-                <div className="row g-5 col-12">
+                <div className="row g-4 col-12">
                     <div className="col-12 order-1 order-lg-1">
                         <ProductFilter
                             ref={filterRef}
@@ -204,7 +204,7 @@ const ExploreProductArea = ({
                         />
                     </div>
                     </div>
-                        <div className="row g-5">
+                        <div className="row g-4">
                             {state.products.length > 0 ? (
                                 <>
                                     {state.products.map((prod) => {

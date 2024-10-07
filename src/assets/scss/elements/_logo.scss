@@ -4,20 +4,31 @@
     width: 200px;
     text-align: center;
     margin: 0;
-    background-color: var(--background-color-2);
-    height: 90px;
+    height: 70px;
     margin-right: 15px;
     border-radius: 6px;
+    background-color: var(--background-color-2);
 
     img {
-        // opacity: 0.8;
-        // transition: 0.3s;
-        max-height: 85px !important;
-        max-width: 160px !important;
-        // filter: grayscale(1);
-        // cursor: pointer;
-        // transition: var(--transition);
+        max-height: 70px;
+        max-width: 120px;
         padding: 20px !important;
         margin-inline: auto;
     }
+
+    @media (min-width: 768px) {
+        .logos-carousel {
+            height: 90px;
+        }
+        img {
+            // opacity: 0.8;
+            // transition: 0.3s;
+            max-height: 85px !important;
+            max-width: 160px !important;
+            padding: 20px !important;
+            // filter: grayscale(1);
+            // cursor: pointer;
+            // transition: var(--transition);
+        }
+}
 }

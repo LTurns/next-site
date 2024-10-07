@@ -11,7 +11,7 @@ const CategoryFilter = ({ categories, onChange }) => {
         if (!checked) {
             setIsCheck(
                 isCheck.filter((item) => {
-                    item !== value;
+                    !item.includes(value);
                 })
             );
         }

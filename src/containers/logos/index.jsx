@@ -30,14 +30,14 @@ const SliderOptions = {
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 5,
+                slidesToShow: 3,
                 slidesToScroll: 4,
             },
         },
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 5,
+                slidesToShow: 3,
                 slidesToScroll: 4
             },
         },
@@ -56,11 +56,11 @@ const ExploreLogos = ({ className, space }) => (
     >
         <div className="container">
         <div className="row">
-                    <div className="col-12 mb--50">
+                    <div className="col-12 mb--10">
                         <SectionTitle title="Our Distributors" />
                     </div>
                 </div>
-                <div className="row mt--80">
+                <div className="row mt--30">
                     <div className="col-lg-12">
                         <Slider
                             options={SliderOptions}

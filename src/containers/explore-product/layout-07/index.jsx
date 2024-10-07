@@ -60,7 +60,7 @@ const ExploreProductArea = ({ data, className, space }) => (
                     <div className="col-lg-12">
                         <Slider
                             options={SliderOptions}
-                            className="banner-one-slick slick-arrow-style-one slick-gutter-15"
+                            className="banner-one-slick slick-arrow-style-one slick-gutter-10"
                         >
                             {data.products.map((prod) => (
                                 <SliderItem

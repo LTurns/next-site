@@ -160,19 +160,6 @@
 }
 
 .product-card {
-    &:hover {
-        transition: 500ms ease;
-        transform: translateY(-10px);
-        .read-more-button {
-            width: 48px;
-            i {
-                color: var(--color-primary) !important;
-                transition: 0.3s;
-                transform: translateX(3px);
-            }
-        }
-    }
-
     .title {
         color: white;
     }
