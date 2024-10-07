@@ -1,50 +1,50 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import Product from "@components/product/layout-02";
 import Slider, { SliderItem } from "@ui/slider";
 import { SectionTitleType, ProductType } from "@utils/types";
+import Image from "next/image";
+import SectionTitle from "@components/section-title/layout-02";
+import whereToBuy from "../../data/whereToBuy.json";
 
 const SliderOptions = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 8,
     slidesToScroll: 2,
     arrows: true,
-    dots: false,
+    dots: true,
     responsive: [
         {
             breakpoint: 1399,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
+                slidesToShow: 6,
+                slidesToScroll: 4,
             },
         },
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
+                slidesToShow: 8,
+                slidesToScroll: 4,
             },
         },
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
+                slidesToShow: 5,
+                slidesToScroll: 4,
             },
         },
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: true,
+                slidesToShow: 5,
+                slidesToScroll: 4
             },
         },
     ],
 };
 
-const ExploreProductArea = ({ data, className, space }) => (
+const ExploreLogos = ({ className, space }) => (
     <div
         className={clsx(
             "en-product-area",
@@ -55,41 +55,39 @@ const ExploreProductArea = ({ data, className, space }) => (
         )}
     >
         <div className="container">
-            {data?.products && (
+        <div className="row">
+                    <div className="col-12 mb--50">
+                        <SectionTitle title="Our Distributors" />
+                    </div>
+                </div>
                 <div className="row mt--80">
                     <div className="col-lg-12">
                         <Slider
                             options={SliderOptions}
                             className="banner-one-slick slick-arrow-style-one slick-gutter-15"
                         >
-                            {data.products.map((prod) => (
+                            {whereToBuy.map((dist) => (
                                 <SliderItem
-                                    key={prod._id}
-                                    className="single-slide-product"
+                                    key={dist.name}
+                                    className="logos-carousel"
                                 >
-                                    <Product
-                                        product={prod}
-                                        // title={prod.title}
-                                        // slug={prod.title}
-                                        // intro={prod.intro}
-                                        // category={prod.category}
-                                        // productId={prod.productId}
-                                        // // latestBid={prod.latestBid}
-                                        // // price={prod.price}
-                                        // // likeCount={prod.likeCount}
-                                        // image={prod.mainImage}
-                                    />
+                                                        <Image
+                        src={`/images/whereToBuy/${dist.img}`}
+                        alt={dist.name}
+                        width={0}
+                        height={0}
+                        style={{ height: '100%', width: 'auto' }}
+                    />
                                 </SliderItem>
                             ))}
                         </Slider>
                     </div>
                 </div>
-            )}
         </div>
     </div>
 );
 
-ExploreProductArea.propTypes = {
+ExploreLogos.propTypes = {
     className: PropTypes.string,
     space: PropTypes.oneOf([1, 2, 3, 4]),
     data: PropTypes.shape({
@@ -99,8 +97,8 @@ ExploreProductArea.propTypes = {
     }),
 };
 
-ExploreProductArea.defaultProps = {
+ExploreLogos.defaultProps = {
     space: 1,
 };
 
-export default ExploreProductArea;
+export default ExploreLogos;

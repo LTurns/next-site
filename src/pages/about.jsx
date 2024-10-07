@@ -10,17 +10,13 @@ import { normalizedData } from "@utils/methods";
 // Demo data
 import aboutData from "../data/innerpages/about.json";
 
-export async function getStaticProps() {
-    return { props: { className: "template-color-1" } };
-}
-
 const About = () => {
     const content = normalizedData(aboutData?.content || []);
     return (
         <Wrapper>
             <SEO pageTitle="About" />
             <Header />
-            <main id="main-content" class="home-sticky-pin">
+            <main id="main-content">
                 <AboutArea data={content["about-section"]} />
                 <QuoteArea data={content["quote-section"]} />
                 <FunfactArea data={content["funfact-section"]} />
@@ -29,5 +25,14 @@ const About = () => {
         </Wrapper>
     );
 };
+
+export async function getStaticProps() {
+    return {
+        props: {
+            className: "template-color-1",
+        },
+    };
+}
+
 
 export default About;

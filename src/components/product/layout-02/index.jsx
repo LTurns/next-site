@@ -45,7 +45,7 @@ const Product = ({
     return (
         <>
             <div className={clsx("lg-product-wrapper product-card")}>
-                <div style={{ minHeight: 420 }} className="color-shape-7">
+                <div style={{ height: 270 }}>
                     <Anchor path={`/product/${product.title}`}>
                         <div style={{ background: "white", borderRadius: 8 }}>
                             <Image
@@ -55,8 +55,8 @@ const Product = ({
                                     display: "block",
                                 }}
                                 src={urlFor(product.mainImage).url()}
-                                width={250}
-                                height={250}
+                                width={200}
+                                height={200}
                                 alt={product.title}
                             />
                         </div>
@@ -76,7 +76,7 @@ const Product = ({
                                 {product.title}
                             </p>
                         </Anchor>
-                        <span className="product-intro">{product.intro}</span>
+                        {/* <span className="product-intro">{product.intro}</span> */}
                     </div>
                 </div>
 

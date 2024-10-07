@@ -22,7 +22,7 @@ const Logo = ({ className, logo }) => (
                     src={logo[1].src}
                     alt={logo[1]?.alt || "cbs logo"}
                     width={150}
-                    height={35}
+                    height={30}
                     priority
                 />
             </Anchor>

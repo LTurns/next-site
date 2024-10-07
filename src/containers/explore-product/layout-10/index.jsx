@@ -115,8 +115,6 @@ const ExploreProductArea = ({
         if (value === "all") return false;
         const itemKey = filterKey;
 
-        console.log('wooo', value, item[itemKey])
-
         if (Array.isArray(value) && value.length === 0) return false;
         if (Array.isArray(item[itemKey])) {
             return !item[itemKey].some((a1) => value.includes(a1));
@@ -190,14 +188,14 @@ const ExploreProductArea = ({
             id="explore-id"
         >
             <div className="container">
-            <div className="col-lg-12 col-md-12 col-sm-12 col-12 mb--15">
+            <div className="col-1 mb--15">
                         <FilterButton
                             open={state.filterToggle}
                             onClick={filterToggle}
                         />
             </div>
-                <div className="row g-5 col-md-12 col-sm-12">
-                    <div className="col-lg-12 order-1 order-lg-1">
+                <div className="row g-5 col-12">
+                    <div className="col-12 order-1 order-lg-1">
                         <ProductFilter
                             ref={filterRef}
                             categories={categories}
@@ -206,7 +204,6 @@ const ExploreProductArea = ({
                         />
                     </div>
                     </div>
-                    <div className="col-lg-12">
                         <div className="row g-5">
                             {state.products.length > 0 ? (
                                 <>
@@ -215,7 +212,7 @@ const ExploreProductArea = ({
                                             !prod.hasSubCategories && (
                                                 <div
                                                     key={prod.id}
-                                                    className="col-lg-4 col-md-4 col-sm-6"
+                                                    className="col-6 col-lg-3 col-md-3"
                                                 >
                                                     <Product product={prod} />
                                                 </div>
@@ -235,7 +232,6 @@ const ExploreProductArea = ({
                                 />
                             ) : null}
                         </div>
-                    </div>
                 </div>
             </div>
     );

@@ -7,7 +7,9 @@ import ServiceArea from "@containers/services/layout-01";
 import { normalizedData } from "@utils/methods";
 import VideoArea from "@containers/video/layout-01";
 import ExploreCarouselBothArea from "@containers/explore-product/layout-07";
+import ExploreLogos from "@containers/logos";
 import Image from "next/image";
+import CategoryArea from "@containers/category/layout-01";
 
 // Demo data
 import homepageData from "../data/homepages/home-04.json";
@@ -45,6 +47,7 @@ const Home = () => {
             <Header />
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
+                <ExploreLogos />
                 <ServiceArea data={content["service-section"]} />
                 <VideoArea data={content["video-section"]} />
                 {/* <div className="slider-thumbnail">
@@ -58,13 +61,13 @@ const Home = () => {
                             />
                             </div> */}
                 <ExploreCarouselBothArea
-                    space={3}
+                    space={4}
                     data={{
                         products: productData.slice(0, 9),
                     }}
                 />
             </main>
-            <Footer />
+            <Footer  data={content["brand-section"]}/>
         </Wrapper>
     );
 };

@@ -247,6 +247,7 @@
 
 .footer-top {
     border-bottom: 1px solid var(--color-border);
+    transition: var(--transition);
     padding-bottom: 0;
     margin-bottom: 50px;
     .nu-brand-area {
@@ -282,21 +283,15 @@
                 margin-bottom: 15px;
             }
             img {
-                opacity: 0.8;
-                transition: 0.3s;
+                // opacity: 0.8;
+                // transition: 0.3s;
                 max-height: 85px !important;
                 max-width: 109px !important;
-                filter: grayscale(1);
-                cursor: pointer;
-                transition: var(--transition);
+                // filter: grayscale(1);
+                // cursor: pointer;
+                // transition: var(--transition);
                 padding: 20px !important;
                 margin-inline: auto;
-            }
-            &:hover {
-                img {
-                    opacity: 1;
-                    filter: grayscale(0);
-                }
             }
         }
     }

@@ -29,7 +29,24 @@
             ],
             "images": [
                 {
-                    "src": "/images/hydraulic-power-pack.png"
+                    "src": "/images/banner/atmos-banner.png"
+                }
+            ]
+        },
+        {
+            "section": "category-section",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Art",
+                    "path": "/collection",
+                    "src": "/images/whereToBuy/amadys.png"
+                },
+                {
+                    "id": 2,
+                    "title": "Music",
+                    "path": "/collection",
+                    "src": "/images/whereToBuy/argano-logo.jpeg"
                 }
             ]
         },
@@ -82,6 +99,46 @@
             "video": {
                 "videoId": "O8FtLP0pBuQ"
             }
+        },
+        {
+            "section": "brand-section",
+            "items": [
+                {
+                    "id": 1,
+                    "image": {
+                        "src": "/images/brand/coinlogo.png",
+                        "alt": "nuron-brand_nft"
+                    }
+                },
+                {
+                    "id": 3,
+                    "image": {
+                        "src": "/images/brand/FIA-logo.png",
+                        "alt": "nuron-brand_nft"
+                    }
+                },
+                {
+                    "id": 4,
+                    "image": {
+                        "src": "/images/brand/risqslogo.png",
+                        "alt": "nuron-brand_nft"
+                    }
+                },
+                {
+                    "id": 5,
+                    "image": {
+                        "src": "/images/brand/sgslogo.jpeg",
+                        "alt": "nuron-brand_nft"
+                    }
+                },
+                {
+                    "id": 6,
+                    "image": {
+                        "src": "/images/brand/stamp.png",
+                        "alt": "nuron-brand_nft"
+                    }
+                }
+            ]
         }
     ]
 }

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import Button from "@ui/button";
 import { HeadingType, TextType, ButtonType, ImageType } from "@utils/types";
-
+import BannerGallery from "@components/banner-ui/banner-gallery";
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder({
@@ -28,7 +28,7 @@ const HeroArea = ({ data }) => (
     <div className="slider-one rn-section-gapTop">
         <div className="container">
             <div className="row row-reverce-sm align-items-center">
-                <div className="col-lg-6 col-md-8 col-sm-12">
+                <div className="col-lg-10 col-md-8 col-sm-12 order-1">
                     {data?.headings[0]?.content && (
                         <h2
                             className="title"
@@ -65,17 +65,17 @@ const HeroArea = ({ data }) => (
                         </div>
                     )}
                 </div>
-                <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
+                {/* <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1 order-2">
                         <div className="slider-thumbnail">
                             <Image
-                                src={urlFor(hydraulicImage).url()}
+                                src={data.images[0].src}
                                 alt={data.images[0]?.alt || "Slider Images"}
                                 width={585}
                                 height={593}
                                 priority
                             />
                         </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

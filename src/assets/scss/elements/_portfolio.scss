@@ -838,121 +838,6 @@
     }
 }
 
-.lg-product-col-2 {
-    &.active {
-        display: flex;
-        flex-wrap: wrap;
-        @media #{$small-mobile} {
-            padding: 0;
-        }
-    }
-    .lg-product-wrapper {
-        margin-top: 0;
-    }
-}
-
-.game-banner-slick-wrapper {
-    .product-share-wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-        align-items: center;
-        right: 0;
-        &.lg-product-share {
-            a {
-                img {
-                    max-width: 45px;
-                }
-            }
-        }
-    }
-    .share-react {
-        &.react {
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            .share-btn {
-                margin-right: 30px;
-                button {
-                    border: 1px solid var(--color-border);
-                    border-radius: 6px;
-                    padding: 4px 8px !important;
-                    outline: none;
-                    transition: var(--transition);
-                    &:hover {
-                        background: var(--color-primary-alta);
-                        border: 1px solid transparent;
-                    }
-                }
-                .share-btn-setting {
-                    button {
-                        border: none;
-                    }
-                }
-            }
-            .bid-react-area {
-                cursor: pointer;
-                border: 1px solid var(--color-border);
-                border-radius: 6px;
-                padding: 6px 8px;
-                outline: none;
-                transition: var(--transition);
-                &:hover {
-                    background: var(--color-primary-alta);
-                    border: 1px solid transparent;
-                }
-            }
-            .react-area {
-                svg {
-                    margin-right: 3px;
-                }
-            }
-        }
-    }
-}
-.tooltip-bottom-wrapper {
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(110px);
-    align-items: center;
-    @media #{$lg-layout} {
-        transform: none;
-    }
-    @media #{$md-layout} {
-        transform: none;
-    }
-    @media #{$sm-layout} {
-        transform: none;
-    }
-}
-
-.padding-controler-slide-product {
-    padding-top: 150px !important;
-    padding-bottom: 120px !important;
-}
-
-// product large area for index-9
-
-.product-notify-wrapper {
-    width: auto;
-    height: auto;
-    padding: 0;
-    .notice-heading {
-        border-radius: 5px 0 0 0;
-        margin-left: -25px;
-    }
-}
-
-.custom-product-col {
-    @media #{$lg-layout} {
-        width: 100%;
-    }
-}
-.product-notify-wrapper {
-    @media #{$lg-layout} {
-        margin-top: 0 !important;
-    }
-}
 
 .nuron-expo-filter-widget {
     margin-bottom: 50px;
@@ -1018,6 +903,6 @@
     margin-right: 4px;
     color: #dd8f1d;
     &.off {
-        color: #5d5d7e;
+        color: #ef9c29;
     }
 }
