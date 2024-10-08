@@ -202,7 +202,8 @@
         "videos": [],
         "_updatedAt": "2023-05-28T15:45:49Z",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "configurationTitle": "Configuration Section",
         "countInStock": 0,
@@ -1064,7 +1065,7 @@
         "id": "61e2bb2bab502f67f4985b15",
         "videos": [],
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "_rev": "8x12ShlkzurvJWsJ5ZRF6I",
         "hasSubCategories": false,
@@ -1166,7 +1167,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139NETT"
             },
@@ -1199,7 +1200,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2489STT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Rebar work with tether ring.",
@@ -2190,7 +2191,8 @@
             }
         },
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "subCategory": [
             "Tensioning & Lifting"
@@ -2823,7 +2825,9 @@
         "_id": "12eb2ebb-9b88-458f-a5ce-fd551fb1f0a1",
         "enquiries": 0,
         "accessories": [],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "_type": "product"
     },
     {
@@ -3106,11 +3110,12 @@
         ],
         "_id": "13bafbd3-e05c-4f63-ba17-265da4decc53",
         "subCategory": [
-            "Pole Climbing ",
-            ""
+            "Pole Climbing "
         ],
         "productId": "C-1972",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "recommendedProducts": [],
         "intro": "Spur type adjustable climbers; make easy work of pole climbing. Comfort pads, and calf and ankle straps, replacement gaffs.",
         "configurationInfo": [
@@ -3510,7 +3515,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for 46-percent greater cutting and gripping power than other plier designs.",
@@ -3533,7 +3538,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2288TT"
             },
@@ -3550,7 +3555,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2489STT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Rebar work with tether ring.",
@@ -3648,7 +3653,7 @@
         "tables": [],
         "_updatedAt": "2023-05-28T15:45:40Z",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "videos": [],
         "_rev": "fQbF5w1DAK2Q8lA9cu3nQf",
@@ -3988,7 +3993,6 @@
             "Tool Bags And Storage"
         ],
         "category": [
-            "General Tools",
             "Klein Tools"
         ],
         "features": [
@@ -4672,7 +4676,7 @@
                     }
                 },
                 "subCategory": [
-                    "BATTERY OPERATED TOOLS"
+                    "Battery Operated Tools"
                 ],
                 "productId": "K-BAT20-G7",
                 "intro": "Effective cable cutter that cuts up to 600 MCM copper and 1000 MCM aluminium cable."
@@ -5441,7 +5445,7 @@
                     "Pump Pliers with Tether ring"
                 ],
                 "productId": "K-D5026TT",
-                "intro": "The smaller pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life."
+                "intro": "The smaller pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life."
             },
             {
                 "_key": "NDYCantJ",
@@ -5456,7 +5460,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2489STT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Rebar work with tether ring.",
@@ -5464,7 +5468,7 @@
                 "id": "61e2bee2ab502f67f4991a0c"
             },
             {
-                "intro": "A collection of different sized plump pliers. All with secure tongue and groove design for non-slip grip, even with heavy pressure.",
+                "intro": "A collection of different sized plump Pliers. All with secure tongue and groove design for non-slip grip, even with heavy pressure.",
                 "title": "Pump Pliers With Tether Ring",
                 "id": "61e2c8caab502f67f49a4e42",
                 "_key": "8tpFaEth",
@@ -5479,7 +5483,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": ""
             }
@@ -5494,9 +5498,12 @@
         ],
         "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference.",
         "subCategory": [
-            "Grips For Large Conductors"
+            "Grips For Large Conductors",
+            "Grips"
         ],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "isDraft": false,
         "tables": [],
         "enquiries": 0,
@@ -5944,7 +5951,7 @@
                     "Pump Pliers with Tether ring"
                 ],
                 "productId": "K-D50212TT",
-                "intro": "The large pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The large pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 60.3mm)",
                 "id": "61e2cd2d4c278ed51471d0ef",
                 "_key": "2gvFdCJh"
@@ -6279,7 +6286,8 @@
         "enquiries": 0,
         "title": "Ratchet Cable Cutter (Quick Release 292mm)",
         "subCategory": [
-            "Ratchet Cable Cutters"
+            "Ratchet Cable Cutters",
+            "Cable Cutters"
         ],
         "tables": [],
         "_rev": "8x12ShlkzurvJWsJ5ZRYEg",
@@ -6289,7 +6297,8 @@
         "intro": "Quick action Ratchet Cutters designed for use on Copper & Aluminium cables up to 25mm (Not for Steel or ACSR).\n\n",
         "_createdAt": "2023-05-28T15:45:24Z",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "configurationTitle": "Configuration Section"
     },
@@ -6350,7 +6359,8 @@
         "_createdAt": "2023-05-28T15:45:24Z",
         "configurationTitle": "Configuration Section",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "title": "Analog Dynamometers",
         "productId": "D-732",
@@ -6695,89 +6705,6 @@
         "productId": "E-958-0612",
         "_createdAt": "2023-05-28T15:45:24Z",
         "accessories": []
-    },
-    {
-        "description": [
-            {
-                "paragraph": "Sample text one.",
-                "_key": "MsVKofrO"
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "KpXvqsFd"
-            },
-            {
-                "paragraph": "Sample text three.",
-                "_key": "D1tstljN"
-            }
-        ],
-        "intro": "Conductor self gripping clamps, including Aerial Bundle Conductor Clamps, Grips for larger conductors, Grips for Standard Aluminium and Copper Conductors and more.",
-        "hasSubCategories": true,
-        "category": [
-            "Overhead Line"
-        ],
-        "subCategory": [
-            "Grips And Come Along Clamps"
-        ],
-        "recommendedProducts": [],
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "R839f2Pk"
-            }
-        ],
-        "configurationTitle": "Configuration Section",
-        "isDraft": false,
-        "enquiries": 0,
-        "title": "Come Along Clamps",
-        "_id": "25c8eadd-a206-44b4-acb1-8c2c66440d9c",
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "features": [
-            {
-                "id": 1,
-                "_key": "opaAY1Ky",
-                "list": [
-                    {
-                        "listItem": "Add list item",
-                        "_key": "ktK265TB"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "countInStock": 0,
-        "_rev": "fQbF5w1DAK2Q8lA9cu3pLx",
-        "accessories": [],
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-57e8f5caaf5b03fa30cf22c21b602333892fa4f6-3524x2072-jpg",
-                "_type": "reference"
-            }
-        },
-        "videos": [],
-        "tables": [
-            {
-                "_key": "byTt0A3A",
-                "title": "A) Duct Clamp Collet",
-                "items": [
-                    {
-                        "itemDescription": "25mm",
-                        "_key": "pGaezqsq",
-                        "partNo": "C-1258-0200-25"
-                    }
-                ],
-                "columns": [
-                    "itemDescription",
-                    "partNo"
-                ]
-            }
-        ],
-        "moreImages": [],
-        "_updatedAt": "2023-05-28T15:45:42Z",
-        "productId": "",
-        "id": "61e7291e95c61896ca967d77",
-        "_type": "product"
     },
     {
         "accessories": [],
@@ -7316,13 +7243,14 @@
         "hasSubCategories": false,
         "_updatedAt": "2023-05-28T15:45:40Z",
         "subCategory": [
-            "Pump Pliers with Tether ring"
+            "Pump Pliers with Tether ring",
+            "Pliers"
         ],
         "_type": "product",
         "enquiries": 0,
         "description": [
             {
-                "paragraph": "The smaller pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "paragraph": "The smaller pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "_key": "Kqs72VXy"
             }
         ],
@@ -7335,7 +7263,7 @@
                 "_key": "G85N9rzV"
             }
         ],
-        "intro": "The smaller pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+        "intro": "The smaller pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
         "accessories": [],
         "title": "Pump Pliers With Tether Ring And Jaw Capacity 22mm",
         "productId": "K-D5026TT",
@@ -7619,71 +7547,6 @@
         "category": [
             "Overhead Line"
         ]
-    },
-    {
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "h5hL16oI"
-            }
-        ],
-        "recommendedProducts": [],
-        "category": [
-            "Klein Tools"
-        ],
-        "configurationTitle": "Configuration Section",
-        "id": "6212418b1ec7b948a7699fc3",
-        "hasSubCategories": true,
-        "description": [
-            {
-                "paragraph": "Sample text one.",
-                "_key": "23bXZd07"
-            },
-            {
-                "_key": "qDl8aq5r",
-                "paragraph": "Sample text two."
-            },
-            {
-                "_key": "z56MAlqF",
-                "paragraph": "Sample text three."
-            }
-        ],
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "tables": [],
-        "_id": "2cc19ff2-b3cb-46cf-8f59-19d71fac8f3f",
-        "subCategory": [],
-        "_updatedAt": "2023-05-28T15:45:48Z",
-        "videos": [],
-        "intro": "Spur type adjustable climbers make easy work of pole climbing. Includes comfort pads, and calf and ankle straps, replacement gaffs.",
-        "features": [
-            {
-                "id": 1,
-                "_key": "22FPAOe1",
-                "list": [
-                    {
-                        "_key": "EQxpQcXG",
-                        "listItem": "Add list item"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "countInStock": 0,
-        "_rev": "8x12ShlkzurvJWsJ5ZRYEg",
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_type": "reference",
-                "_ref": "image-19bb70fafb3e83cc12f8e38a20c8d5de032f5dff-1000x1000-jpg"
-            }
-        },
-        "enquiries": 0,
-        "isDraft": false,
-        "_type": "product",
-        "accessories": [],
-        "productId": "",
-        "title": "Pole Climbing",
-        "moreImages": []
     },
     {
         "enquiries": 0,
@@ -8056,7 +7919,8 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "GRIPs"
+                    "Grips",
+                    "Grips For Large Conductors"
                 ],
                 "productId": "K-1628-16-P",
                 "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference.",
@@ -8235,7 +8099,8 @@
         ],
         "id": "62189a9456746726942a1aa1",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "_rev": "fQbF5w1DAK2Q8lA9cu3xmt",
         "productId": "D-477",
@@ -8831,7 +8696,7 @@
         ],
         "_rev": "fQbF5w1DAK2Q8lA9cu3nQf",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "configurationTitle": "Configuration Section",
         "countInStock": 0,
@@ -8843,7 +8708,7 @@
             }
         ],
         "_type": "product",
-        "intro": "A collection of different sized plump pliers. All with secure tongue and groove design for non-slip grip, even with heavy pressure.",
+        "intro": "A collection of different sized plump Pliers. All with secure tongue and groove design for non-slip grip, even with heavy pressure.",
         "features": [
             {
                 "list": [
@@ -8965,7 +8830,7 @@
                     }
                 },
                 "subCategory": [
-                    "CABLE CROPPERS AND CUTTERS"
+                    "Cable Croppers And Cutters"
                 ],
                 "productId": "K-63028",
                 "intro": "Cable-gripping jaws quickly score jacket and insulation, and easily cut through copper inner conductor.",
@@ -9148,7 +9013,8 @@
         ],
         "_updatedAt": "2023-05-28T15:45:49Z",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "id": "6217b48b56746726942a1a9a",
         "_type": "product",
@@ -9158,71 +9024,6 @@
         "accessories": [],
         "_id": "3771308f-5247-4123-8b4c-df99dc6d56f0",
         "productId": "D-840"
-    },
-    {
-        "title": "Ratchet Cutters",
-        "accessories": [],
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-a9e86f0c38371987322fdc145829134ee5a4fc28-1000x1000-jpg",
-                "_type": "reference"
-            }
-        },
-        "moreImages": [],
-        "isDraft": false,
-        "recommendedProducts": [],
-        "countInStock": 0,
-        "productId": "",
-        "subCategory": [],
-        "intro": "Includes Ratchet Cable Cutter ACSR, both quick release and heavy duty.",
-        "_updatedAt": "2023-05-28T15:45:48Z",
-        "description": [
-            {
-                "_key": "QigdoCRk",
-                "paragraph": "Sample text one."
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "3HApbP0X"
-            },
-            {
-                "_key": "gqapyPLz",
-                "paragraph": "Sample text three."
-            }
-        ],
-        "enquiries": 0,
-        "configurationTitle": "Configuration Section",
-        "_type": "product",
-        "_id": "384b83e9-dd69-4597-9496-e91310d7767d",
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "6ALIg42Z"
-            }
-        ],
-        "_rev": "8x12ShlkzurvJWsJ5ZRYEg",
-        "category": [
-            "Klein Tools"
-        ],
-        "hasSubCategories": true,
-        "id": "621262a5b417ada221cc9c5e",
-        "features": [
-            {
-                "id": 1,
-                "_key": "MHFly5XE",
-                "list": [
-                    {
-                        "listItem": "Add list item",
-                        "_key": "u6J96Gh7"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "tables": [],
-        "videos": [],
-        "_createdAt": "2023-05-28T15:45:24Z"
     },
     {
         "description": [
@@ -10137,7 +9938,7 @@
         "isDraft": false,
         "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height.",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "recommendedProducts": [
             {
@@ -10192,7 +9993,7 @@
                     "Pump Pliers with Tether ring"
                 ],
                 "productId": "K-D50210TT",
-                "intro": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 44.5mm)",
                 "id": "61e2cc644c278ed51471d0ee",
                 "_key": "i9kPn5E1",
@@ -10254,7 +10055,9 @@
         "subCategory": [
             "Grips"
         ],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "_id": "3d0c9d14-fc7b-4ad5-8796-86bd1ad99a1d",
         "productId": "K-171670",
         "countInStock": 0,
@@ -10433,7 +10236,7 @@
         ],
         "enquiries": 0,
         "tables": [],
-        "intro": "The large pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+        "intro": "The large pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
         "countInStock": 0,
         "category": [
             "Klein Tools"
@@ -10444,7 +10247,7 @@
         "description": [
             {
                 "_key": "zaJue2QD",
-                "paragraph": "The large pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life."
+                "paragraph": "The large pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life."
             }
         ],
         "_updatedAt": "2023-05-28T15:45:41Z",
@@ -10515,7 +10318,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2017CSTT",
                 "intro": "The Slim Rebar Work Pliers with Tether Ring twists and cuts soft annealed rebar tie wire. Unique handle tempering helps absorb the ”snap” when cutting wire.",
@@ -11843,7 +11646,9 @@
                 "_key": "fXIvCm89"
             }
         ],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "_id": "43a74f74-c871-4afc-9500-039ab6024505",
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "recommendedProducts": [
@@ -12420,7 +12225,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for 46-percent greater cutting and gripping power than other plier designs.",
@@ -12823,7 +12628,7 @@
                     }
                 },
                 "subCategory": [
-                    "CABLE CROPPERS AND CUTTERS"
+                    "Cable Croppers And Cutters"
                 ],
                 "productId": "K-63041TH"
             },
@@ -12862,7 +12667,7 @@
                     }
                 },
                 "subCategory": [
-                    "CABLE CROPPERS AND CUTTERS"
+                    "Cable Croppers And Cutters"
                 ]
             }
         ],
@@ -13405,7 +13210,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "BATTERY OPERATED TOOLS"
+                    "Battery Operated Tools"
                 ],
                 "productId": "K-BAT20-G7",
                 "intro": "Effective cable cutter that cuts up to 600 MCM copper and 1000 MCM aluminium cable.",
@@ -13552,7 +13357,7 @@
         ],
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "configurationInfo": [
             {
@@ -13684,7 +13489,7 @@
         ],
         "tables": [],
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "_type": "product",
         "productId": "K-D20009NETP",
@@ -13735,7 +13540,7 @@
                     "Pump Pliers with Tether ring"
                 ],
                 "productId": "K-D5026TT",
-                "intro": "The smaller pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The smaller pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 22mm)",
                 "id": "61e2c9e5ab502f67f49ae5c2"
             },
@@ -13748,7 +13553,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for 46-percent greater cutting and gripping power than other plier designs.",
@@ -13908,7 +13713,9 @@
         "subCategory": [
             "Insulated Tools"
         ],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "_updatedAt": "2023-05-28T15:45:47Z",
         "recommendedProducts": [],
@@ -13983,73 +13790,6 @@
         "tables": [],
         "hasSubCategories": false,
         "_type": "product"
-    },
-    {
-        "features": [
-            {
-                "heading": "Fully labelled control panel containing:",
-                "id": 1,
-                "_key": "7Vj5Eq4u",
-                "list": [
-                    {
-                        "_key": "e5mMt8SX",
-                        "listItem": "Add list item"
-                    }
-                ]
-            }
-        ],
-        "moreImages": [],
-        "subCategory": [
-            "GENERAL TOOLS, TOOL KITS AND TOOL SETS"
-        ],
-        "isDraft": false,
-        "title": "General Tools",
-        "configurationInfo": [
-            {
-                "_key": "3CHA65dI",
-                "paragraph": "Configuration Paragraph"
-            }
-        ],
-        "_type": "product",
-        "category": [
-            "General Tools"
-        ],
-        "description": [
-            {
-                "_key": "v6h57nat",
-                "paragraph": "Sample text one."
-            },
-            {
-                "_key": "8t2BP37E",
-                "paragraph": "Sample text two."
-            },
-            {
-                "paragraph": "Sample text three.",
-                "_key": "hK0uWNQi"
-            }
-        ],
-        "tables": [],
-        "_updatedAt": "2023-05-28T15:45:41Z",
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "hasSubCategories": true,
-        "enquiries": 0,
-        "id": "61e2d2b3ab502f67f49dd9b5",
-        "configurationTitle": "Configuration Section",
-        "productId": "",
-        "videos": [],
-        "accessories": [],
-        "countInStock": 0,
-        "recommendedProducts": [],
-        "intro": "A large selection of general tools for multi-purpose use.",
-        "mainImage": {
-            "asset": {
-                "_type": "reference",
-                "_ref": "image-7d1e0e1956401201832d063042f1fe3a5a0e6adb-1500x382-jpg"
-            },
-            "_type": "image"
-        },
-        "_rev": "8x12ShlkzurvJWsJ5ZRF6I",
-        "_id": "558c170b-98b7-4bc0-8c7e-dfbdd0950971"
     },
     {
         "description": [
@@ -15012,7 +14752,8 @@
             }
         ],
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "mainImage": {
             "_type": "image",
@@ -15085,7 +14826,8 @@
             }
         ],
         "subCategory": [
-            "Ratchet Cable Cutters"
+            "Ratchet Cable Cutters",
+            "Cable Cutters"
         ],
         "id": "621266cfcaee60882d7b10c5",
         "intro": "Designed for cutting ACSR Conductors up to 31mm diameter.",
@@ -15589,7 +15331,7 @@
                     }
                 },
                 "subCategory": [
-                    "BATTERY OPERATED TOOLS"
+                    "Battery Operated Tools"
                 ],
                 "productId": "K-BAT20-716"
             }
@@ -15704,7 +15446,7 @@
                     }
                 },
                 "subCategory": [
-                    "BATTERY OPERATED TOOLS"
+                    "Battery Operated Tools"
                 ],
                 "productId": "K-BAT20-G7",
                 "intro": "Effective cable cutter that cuts up to 600 MCM copper and 1000 MCM aluminium cable.",
@@ -15846,11 +15588,13 @@
         "_updatedAt": "2023-05-28T15:45:48Z",
         "_createdAt": "2023-05-28T15:45:24Z",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "videos": [],
         "subCategory": [
-            "Ratchet Cable Cutters"
+            "Ratchet Cable Cutters",
+            "Cable Cutters"
         ],
         "hasSubCategories": false,
         "configurationInfo": [
@@ -16280,7 +16024,9 @@
         "_id": "65219fcf-a3c2-4489-8b83-eee4a21f6074",
         "countInStock": 0,
         "intro": "Non-contact detection of voltage in cables, cords, circuit breakers, lighting fixtures, switches, outlets, and wires.",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "enquiries": 0,
         "recommendedProducts": [],
         "configurationInfo": [
@@ -17183,7 +16929,8 @@
         "title": "Self Gripping Clamps (17.0 Kg)",
         "_createdAt": "2023-05-28T15:45:24Z",
         "subCategory": [
-            "Self Gripping Clamps"
+            "Self Gripping Clamps",
+            "Grips"
         ],
         "accessories": [],
         "videos": [],
@@ -17198,7 +16945,8 @@
             }
         ],
         "category": [
-            "Overhead Line"
+            "Overhead Line",
+            "Klein Tools"
         ],
         "id": "61e87a254c278ed51471d0f7",
         "countInStock": 0,
@@ -18781,7 +18529,7 @@
         "_createdAt": "2023-05-28T15:45:24Z",
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "intro": "Includes pouch with marked pockets for each wrench. Open ends offset at 15° angle for confined working areas."
     },
@@ -19224,7 +18972,9 @@
         "enquiries": 0
     },
     {
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "configurationInfo": [
             {
                 "_key": "t5vUN2hL",
@@ -19538,7 +19288,9 @@
         "_id": "7f8f5679-7387-46a4-bce5-27e1bd93a54a",
         "moreImages": [],
         "recommendedProducts": [],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "mainImage": {
             "asset": {
                 "_ref": "image-c31bd55eb63ed1ca8b7dafdc7b1165afbbda1d5b-1000x1000-jpg",
@@ -20368,7 +20120,7 @@
             "Klein Tools"
         ],
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "_updatedAt": "2023-05-28T15:45:47Z",
         "_type": "product",
@@ -20469,7 +20221,9 @@
     },
     {
         "_createdAt": "2023-05-28T15:45:24Z",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "hasSubCategories": false,
         "configurationInfo": [
             {
@@ -21039,7 +20793,7 @@
         "_rev": "qT6wZ0hWn93WaVB7WR7jez",
         "_updatedAt": "2023-05-28T15:45:39Z",
         "subCategory": [
-            "BATTERY OPERATED TOOLS"
+            "Battery Operated Tools"
         ],
         "configurationTitle": "Configuration Section",
         "_id": "850cff03-bdfd-4a0c-b410-8546ac82edc8",
@@ -21205,7 +20959,7 @@
         "intro": "Equipped with chain, toggle and shackle to keep grip from falling off the cable. This grip is for support wire .134 and larger.",
         "enquiries": 0,
         "subCategory": [
-            "GRIPs"
+            "Grips"
         ],
         "configurationTitle": "Configuration Section",
         "_id": "85a0eb19-40ae-48ed-b0dd-c91aa340c365",
@@ -21249,7 +21003,8 @@
             }
         ],
         "category": [
-            "Overhead Line"
+            "Overhead Line",
+            "Klein Tools"
         ],
         "mainImage": {
             "_type": "image",
@@ -21707,7 +21462,8 @@
         "intro": "Quick action Ratchet Cutters designed for use on Copper & Aluminium cables up to 28mm (Not for Steel or ACSR)",
         "isDraft": false,
         "subCategory": [
-            "Ratchet Cable Cutters"
+            "Ratchet Cable Cutters",
+            "Cable Cutters"
         ],
         "accessories": [],
         "countInStock": 0,
@@ -21740,7 +21496,8 @@
                 "id": "1",
                 "_key": "nGln3Fg2",
                 "category": [
-                    "Klein Tools"
+                    "Klein Tools",
+                    "General Tools"
                 ],
                 "mainImage": {
                     "_type": "image",
@@ -21758,7 +21515,8 @@
         ],
         "_type": "product",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "hasSubCategories": false,
         "configurationInfo": [
@@ -22022,7 +21780,9 @@
         "enquiries": 0
     },
     {
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "configurationTitle": "Configuration Section",
         "countInStock": 0,
         "productId": "K-1571-INS",
@@ -22360,7 +22120,7 @@
         "hasSubCategories": false,
         "_type": "product",
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "mainImage": {
             "_type": "image",
@@ -22371,7 +22131,7 @@
         },
         "description": [
             {
-                "paragraph": "A set of 13 professional, insulated tools including assorted pliers x 4, screwdrivers x 6, 1 each cable cutter, pump pliers and skinning knife.",
+                "paragraph": "A set of 13 professional, insulated tools including assorted Pliers x 4, screwdrivers x 6, 1 each cable cutter, pump Pliers and skinning knife.",
                 "_key": "97fqJLEK"
             },
             {
@@ -22484,7 +22244,7 @@
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "videos": [],
         "_createdAt": "2023-05-28T15:45:24Z",
-        "intro": "A set of 13 professional, insulated tools including assorted pliers x 4, screwdrivers x 6, 1 each cable cutter, pump pliers and skinning knife.",
+        "intro": "A set of 13 professional, insulated tools including assorted Pliers x 4, screwdrivers x 6, 1 each cable cutter, pump Pliers and skinning knife.",
         "recommendedProducts": [],
         "id": "620fa07acaee60882d7b1097",
         "moreImages": [],
@@ -23261,7 +23021,7 @@
                     "Pump Pliers with Tether ring"
                 ],
                 "productId": "K-D50210TT",
-                "intro": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 44.5mm)",
                 "id": "61e2cc644c278ed51471d0ee",
                 "_key": "92mmXuaX",
@@ -23767,7 +23527,7 @@
         "_id": "95ff3239-a9a3-4f81-87ac-17003c620e87",
         "description": [
             {
-                "paragraph": "Convenient storage for pliers, wrenches, screwdrivers, nut drivers and other tools and spare parts.",
+                "paragraph": "Convenient storage for Pliers, wrenches, screwdrivers, nut drivers and other tools and spare parts.",
                 "_key": "Bu9BoVq5"
             },
             {
@@ -23793,7 +23553,7 @@
         ],
         "moreImages": [],
         "accessories": [],
-        "intro": "Convenient storage for pliers, wrenches, screwdrivers, nut drivers and other tools and spare parts.",
+        "intro": "Convenient storage for Pliers, wrenches, screwdrivers, nut drivers and other tools and spare parts.",
         "videos": [],
         "features": [
             {
@@ -24249,7 +24009,8 @@
         "videos": [],
         "_updatedAt": "2023-05-28T15:45:50Z",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "intro": "Ideal tools for linesmen, ratchet facility in both directions, two sizes per wrench. Sizes from 10 x 14 x 41 x 46mm A/F. Can be supplied with insulated oil resistant grips.",
         "subCategory": [
@@ -25003,7 +24764,8 @@
         ],
         "_createdAt": "2023-05-28T15:45:24Z",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "mainImage": {
             "_type": "image",
@@ -26073,7 +25835,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ]
             },
             {
@@ -26093,7 +25855,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ]
             },
             {
@@ -26111,7 +25873,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2288TT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height."
@@ -26122,7 +25884,7 @@
         "hasSubCategories": false,
         "accessories": [],
         "title": "Rebar Work Pliers With Tether Ring",
-        "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power. The pliers can twist and cut soft annealed rebar tie wire.",
+        "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power. The Pliers can twist and cut soft annealed rebar tie wire.",
         "category": [
             "Klein Tools"
         ],
@@ -26208,7 +25970,7 @@
         "_createdAt": "2023-05-28T15:45:24Z",
         "id": "61e2c3ecab502f67f499ba08",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "_id": "9e1388a6-8cfc-402c-8dba-9619ab14a25a",
         "configurationInfo": [
@@ -26222,7 +25984,7 @@
         "_type": "product",
         "description": [
             {
-                "paragraph": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power. The pliers can twist and cut soft annealed rebar tie wire.",
+                "paragraph": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power. The Pliers can twist and cut soft annealed rebar tie wire.",
                 "_key": "KOGbwDwn"
             }
         ]
@@ -26476,71 +26238,6 @@
         ]
     },
     {
-        "accessories": [],
-        "countInStock": 0,
-        "_updatedAt": "2023-05-28T15:45:48Z",
-        "tables": [],
-        "_type": "product",
-        "isDraft": false,
-        "videos": [],
-        "recommendedProducts": [],
-        "features": [
-            {
-                "heading": "Fully labelled control panel containing:",
-                "id": 1,
-                "_key": "QXxM6XkK",
-                "list": [
-                    {
-                        "_key": "cBhaieOm",
-                        "listItem": "Add list item"
-                    }
-                ]
-            }
-        ],
-        "_rev": "8x12ShlkzurvJWsJ5ZRYEg",
-        "subCategory": [],
-        "hasSubCategories": true,
-        "moreImages": [],
-        "title": "Non Contact Voltage Testers",
-        "description": [
-            {
-                "_key": "ZfeWtvbH",
-                "paragraph": "Sample text one."
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "wdi4t1HP"
-            },
-            {
-                "_key": "J7MgNacw",
-                "paragraph": "Sample text three."
-            }
-        ],
-        "productId": "",
-        "_id": "9fa1d6a8-6d7a-4fc0-b204-2941fe8589cb",
-        "id": "6211ec2e4e7edb18e369080e",
-        "configurationTitle": "Configuration Section",
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-ae3b6ef734ac575bfc7e6aa71914cbefa4b603e0-1000x1000-jpg",
-                "_type": "reference"
-            }
-        },
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "DveeW2Hq"
-            }
-        ],
-        "enquiries": 0,
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "category": [
-            "Klein Tools"
-        ],
-        "intro": "A selection of non-contact voltage testers, including dual range testers, flashlights and testers with Infrared Thermometer."
-    },
-    {
         "enquiries": 0,
         "productId": "K-1628-30",
         "accessories": [],
@@ -26561,7 +26258,8 @@
         "title": "Grips For Large Conductors (Weight 12.29kg)",
         "tables": [],
         "subCategory": [
-            "Grips For Large Conductors"
+            "Grips For Large Conductors",
+            "Grips"
         ],
         "description": [
             {
@@ -26629,7 +26327,7 @@
                     "Pump Pliers with Tether ring"
                 ],
                 "productId": "K-D50210TT",
-                "intro": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 44.5mm)"
             }
         ],
@@ -26662,7 +26360,9 @@
                 ]
             }
         ],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "id": "61e72f3e4c278ed51471d0f3",
         "configurationTitle": "Configuration Section"
     },
@@ -26693,7 +26393,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ]
             },
             {
@@ -26710,7 +26410,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139NETT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height.",
@@ -26729,7 +26429,7 @@
         "moreImages": [],
         "_updatedAt": "2023-05-28T15:45:41Z",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "configurationTitle": "Configuration Section",
         "isDraft": false,
@@ -27236,7 +26936,9 @@
             }
         ],
         "hasSubCategories": false,
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "mainImage": {
             "_type": "image",
             "asset": {
@@ -27833,7 +27535,7 @@
         ],
         "hasSubCategories": false,
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "recommendedProducts": [
@@ -29198,7 +28900,7 @@
                     }
                 },
                 "subCategory": [
-                    "CABLE CROPPERS AND CUTTERS"
+                    "Cable Croppers And Cutters"
                 ],
                 "productId": "K-63028",
                 "intro": "Cable-gripping jaws quickly score jacket and insulation, and easily cut through copper inner conductor.",
@@ -29911,7 +29613,9 @@
             }
         ],
         "intro": "Designed for cutting Copper & Aluminium Cables (not suitable for steel or ACSR).",
-        "subCategory": [],
+        "subCategory": [
+            "Cable Croppers And Cutters"
+        ],
         "features": [
             {
                 "_key": "eM97SrfC",
@@ -30641,7 +30345,9 @@
         "subCategory": [
             "Grips"
         ],
-        "category": []
+        "category": [
+            "Klein Tools"
+        ]
     },
     {
         "_rev": "8x12ShlkzurvJWsJ5ZRF6I",
@@ -30744,7 +30450,7 @@
         "productId": "K-D2139",
         "_updatedAt": "2023-05-28T15:45:41Z",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "_type": "product",
         "title": "Linesmans Square Nose Pliers",
@@ -30794,7 +30500,7 @@
             },
             {
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139NETT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height.",
@@ -30928,7 +30634,8 @@
                 "id": "61e7299695c61896ca969bf1",
                 "_key": "RsltOxH2",
                 "category": [
-                    "Overhead Line"
+                    "Overhead Line",
+                    "Klein Tools"
                 ],
                 "mainImage": {
                     "_type": "image",
@@ -30956,10 +30663,11 @@
                     }
                 },
                 "subCategory": [
-                    "Pump Pliers with Tether ring"
+                    "Pump Pliers with Tether ring",
+                    "Pliers"
                 ],
                 "productId": "K-D50210TT",
-                "intro": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 44.5mm)",
                 "id": "61e2cc644c278ed51471d0ee",
                 "_key": "bLRZZIkO"
@@ -30968,7 +30676,9 @@
                 "title": "Grips For Large Conductors (Weight 15.47kg)",
                 "id": "61e72fd34c278ed51471d0f4",
                 "_key": "LEzTGt0m",
-                "category": [],
+                "category": [
+                    "Klein Tools"
+                ],
                 "mainImage": {
                     "_type": "image",
                     "asset": {
@@ -30977,7 +30687,8 @@
                     }
                 },
                 "subCategory": [
-                    "GRIPs"
+                    "Grips",
+                    "Grips For Large Conductors"
                 ],
                 "productId": "K-1628-40",
                 "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference."
@@ -31237,7 +30948,7 @@
         "_type": "product",
         "_id": "b42cd09b-18ee-4d17-8aed-01ad1fca2b58",
         "_rev": "fQbF5w1DAK2Q8lA9cu3nQf",
-        "intro": "These pliers include plastic-dipped handles for all-day comfort, reduced handle wobble, induction-hardened cutting knives and beveled cutting edges, perfect for professional use.",
+        "intro": "These Pliers include plastic-dipped handles for all-day comfort, reduced handle wobble, induction-hardened cutting knives and beveled cutting edges, perfect for professional use.",
         "productId": "",
         "hasSubCategories": true,
         "accessories": [],
@@ -32228,74 +31939,9 @@
         "countInStock": 0
     },
     {
-        "accessories": [],
-        "intro": "Includes grips for Messenger and Guy Strand and Wire Rope.",
-        "_type": "product",
-        "countInStock": 0,
-        "category": [],
-        "moreImages": [],
-        "subCategory": [
-            "Grips"
-        ],
-        "hasSubCategories": true,
-        "productId": "",
-        "_updatedAt": "2023-05-28T15:45:44Z",
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "enquiries": 0,
-        "features": [
-            {
-                "_key": "ivqxKONY",
-                "list": [
-                    {
-                        "_key": "MEYGLxZm",
-                        "listItem": "Add list item"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:",
-                "id": 1
-            }
-        ],
-        "configurationTitle": "Configuration Section",
-        "id": "62084a41cd17d7ed2e24ad8b",
-        "_id": "b6cb2f8a-c2e8-48da-b543-2abd6947f446",
-        "_rev": "fQbF5w1DAK2Q8lA9cu3sAj",
-        "isDraft": false,
-        "tables": [],
-        "videos": [],
-        "recommendedProducts": [],
-        "description": [
-            {
-                "paragraph": "Sample text one.",
-                "_key": "vaUQVsvS"
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "WsG9YkZr"
-            },
-            {
-                "paragraph": "Sample text three.",
-                "_key": "4AWv9ouX"
-            }
-        ],
-        "configurationInfo": [
-            {
-                "_key": "HJtBxQCf",
-                "paragraph": "Configuration Paragraph"
-            }
-        ],
-        "title": "Havens Grips",
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-7caf5c3e6402ddf6bb84219420797d9b061e5f91-981x655-jpg",
-                "_type": "reference"
-            }
-        }
-    },
-    {
         "countInStock": 0,
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "recommendedProducts": [],
         "_type": "product",
@@ -32321,23 +31967,23 @@
                 "_key": "NdN6sJfa",
                 "list": [
                     {
-                        "listItem": "Long nose side cutting pliers 6-3/4″",
+                        "listItem": "Long nose side cutting Pliers 6-3/4″",
                         "_key": "cIbw7hAl"
                     },
                     {
                         "_key": "VjXPmNCo",
-                        "listItem": "Journeyman™ long nose side cutting pliers 8″"
+                        "listItem": "Journeyman™ long nose side cutting Pliers 8″"
                     },
                     {
                         "_key": "g7hcPsN9",
-                        "listItem": "Journeyman™ pump pliers 10″"
+                        "listItem": "Journeyman™ pump Pliers 10″"
                     },
                     {
                         "_key": "CAcveO0B",
-                        "listItem": "Journeyman™ heavy duty side cutting wire pulling pliers 9″"
+                        "listItem": "Journeyman™ heavy duty side cutting wire pulling Pliers 9″"
                     },
                     {
-                        "listItem": "Diagonal angled head heavy duty cutting pliers 8″",
+                        "listItem": "Diagonal angled head heavy duty cutting Pliers 8″",
                         "_key": "TdwjNXWz"
                     },
                     {
@@ -32548,7 +32194,7 @@
             },
             {
                 "_key": "S7o4HHcl",
-                "paragraph": "Contains Journeyman side-cutting pliers x 1, diagonal-cutting pliers x 1, long-nose pliers x 2, Pump pliers x 1, Crimping/cutting tool x 1 and cable cutter x 1"
+                "paragraph": "Contains Journeyman side-cutting Pliers x 1, diagonal-cutting Pliers x 1, long-nose Pliers x 2, Pump Pliers x 1, Crimping/cutting tool x 1 and cable cutter x 1"
             },
             {
                 "paragraph": "2 x Klein-Kurve® wire strippers/cutters, 1 x Klein-Kurve® utility knife, 2 x adjustable wrenches, 2 x keystone-tip screwdrivers, 5 x cabinet-tip screwdrivers, 2 x Phillips-tip screwdrivers, 1 x wire-bending screwdriver",
@@ -33565,7 +33211,7 @@
                 },
                 "subCategory": [],
                 "productId": "K-33525SC",
-                "intro": "A set of 13 professional, insulated tools including assorted pliers x 4, screwdrivers x 6, a cable cutter, pump pliers and a skinning knife.",
+                "intro": "A set of 13 professional, insulated tools including assorted Pliers x 4, screwdrivers x 6, a cable cutter, pump Pliers and a skinning knife.",
                 "title": "13 Piece Utility Tool Kit With Roll-up Case",
                 "id": "1"
             }
@@ -33575,14 +33221,14 @@
         "productId": "K-33529",
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
         "_createdAt": "2023-05-28T15:45:24Z",
-        "intro": "Compact set of eight popular insulated tools including assorted pliers (3), screwdrivers (3), a cable cutter and Klein-Kurve wire stripper/cutter.",
+        "intro": "Compact set of eight popular insulated tools including assorted Pliers (3), screwdrivers (3), a cable cutter and Klein-Kurve wire stripper/cutter.",
         "enquiries": 0,
         "configurationTitle": "Configuration Section",
         "_type": "product",
         "title": "Insulated 8 Piece Tool Kit",
         "description": [
             {
-                "paragraph": "Compact set of eight popular insulated tools including assorted pliers (3), screwdrivers (3), a cable cutter and Klein-Kurve wire stripper/cutter.",
+                "paragraph": "Compact set of eight popular insulated tools including assorted Pliers (3), screwdrivers (3), a cable cutter and Klein-Kurve wire stripper/cutter.",
                 "_key": "6mcK3CDt"
             },
             {
@@ -33601,7 +33247,9 @@
         "tables": [],
         "moreImages": [],
         "_id": "be474a6b-60ec-405e-9096-7ce51e116e65",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "subCategory": [
             "Insulated Tools"
         ],
@@ -33949,7 +33597,7 @@
             }
         },
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "features": [
             {
@@ -34012,7 +33660,9 @@
             }
         ],
         "moreImages": [],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "recommendedProducts": [
             {
                 "title": "8 Piece Cushion-grip Screwdriver Set",
@@ -34033,71 +33683,6 @@
                 "intro": "General purpose selection of the most frequently used screwdrivers."
             }
         ]
-    },
-    {
-        "id": "62111d1f4b874616bed080f6",
-        "intro": "Klein Tools has an extremely high-quality line of grips. With ease-of-use and reliability, Klein wire-pulling grips set the mark.",
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-34128cb30d117a3a753a95febf68a70ec3a2e8df-990x551-jpg",
-                "_type": "reference"
-            }
-        },
-        "accessories": [],
-        "features": [
-            {
-                "id": 1,
-                "_key": "DwfafzRI",
-                "list": [
-                    {
-                        "_key": "vQmk6RFv",
-                        "listItem": "Add list item"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "description": [
-            {
-                "paragraph": "Sample text one.",
-                "_key": "okxIUE7P"
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "eReKENTM"
-            },
-            {
-                "paragraph": "Sample text three.",
-                "_key": "i9VlF2PG"
-            }
-        ],
-        "isDraft": false,
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "category": [
-            "Klein Tools"
-        ],
-        "hasSubCategories": true,
-        "countInStock": 0,
-        "configurationTitle": "Configuration Section",
-        "subCategory": [],
-        "title": "Grips And Come Along Clamps",
-        "tables": [],
-        "videos": [],
-        "_id": "c24af8c6-fa38-4308-95eb-4b3cd336d044",
-        "_type": "product",
-        "_rev": "8x12ShlkzurvJWsJ5ZRYEg",
-        "productId": "",
-        "moreImages": [],
-        "_updatedAt": "2023-05-28T15:45:48Z",
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "Nr1QQowl"
-            }
-        ],
-        "enquiries": 0,
-        "recommendedProducts": []
     },
     {
         "configurationInfo": [
@@ -34228,7 +33813,7 @@
     {
         "description": [
             {
-                "paragraph": "A set of 13 professional, insulated tools including assorted pliers x 4, screwdrivers x 6, a cable cutter, pump pliers and a skinning knife.",
+                "paragraph": "A set of 13 professional, insulated tools including assorted Pliers x 4, screwdrivers x 6, a cable cutter, pump Pliers and a skinning knife.",
                 "_key": "EG4szR6W"
             },
             {
@@ -34259,7 +33844,7 @@
         ],
         "accessories": [],
         "recommendedProducts": [],
-        "intro": "A set of 13 professional, insulated tools including assorted pliers x 4, screwdrivers x 6, a cable cutter, pump pliers and a skinning knife.",
+        "intro": "A set of 13 professional, insulated tools including assorted Pliers x 4, screwdrivers x 6, a cable cutter, pump Pliers and a skinning knife.",
         "countInStock": 0,
         "configurationTitle": "Configuration Section",
         "features": [
@@ -34353,7 +33938,9 @@
             }
         },
         "_id": "c32b69f3-d3a2-4923-a7bb-88aeac7cb271",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "hasSubCategories": false,
         "id": "62110ea8caee60882d7b10ab",
         "isDraft": false,
@@ -34417,7 +34004,9 @@
         ],
         "recommendedProducts": [],
         "id": "6210f6284b874616bec28a5f",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "enquiries": 0,
         "hasSubCategories": false,
         "subCategory": [
@@ -35508,7 +35097,8 @@
         "tables": [],
         "enquiries": 0,
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "_rev": "fQbF5w1DAK2Q8lA9cu3xmt",
         "videos": [],
@@ -35585,89 +35175,6 @@
         "tables": [],
         "id": "6208d7b8caee60882d7b1077",
         "enquiries": 0
-    },
-    {
-        "accessories": [],
-        "recommendedProducts": [],
-        "videos": [],
-        "countInStock": 0,
-        "moreImages": [],
-        "category": [
-            "Overhead Line"
-        ],
-        "subCategory": [
-            "GRIPs"
-        ],
-        "_rev": "8x12ShlkzurvJWsJ5ZRF6I",
-        "_id": "cf87126d-c51a-4a7e-9a58-81e0f646c905",
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-08e9fdcde689d8e8e2f9e843d45627ab6e27a833-1000x715-jpg",
-                "_type": "reference"
-            }
-        },
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "id": "61e7316095c61896ca98a875",
-        "enquiries": 0,
-        "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference.",
-        "productId": "",
-        "_updatedAt": "2023-05-28T15:45:41Z",
-        "_type": "product",
-        "title": "Grips For Large Conductors",
-        "description": [
-            {
-                "paragraph": "Sample text one.",
-                "_key": "8ykmNAnW"
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "emw5QOlX"
-            },
-            {
-                "paragraph": "Sample text three.",
-                "_key": "CjhMjlqt"
-            }
-        ],
-        "isDraft": false,
-        "tables": [
-            {
-                "columns": [
-                    "itemDescription",
-                    "partNo"
-                ],
-                "_key": "AoMfVj5F",
-                "title": "A) Duct Clamp Collet",
-                "items": [
-                    {
-                        "partNo": "C-1258-0200-25",
-                        "itemDescription": "25mm",
-                        "_key": "gyXekpub"
-                    }
-                ]
-            }
-        ],
-        "hasSubCategories": true,
-        "features": [
-            {
-                "id": 1,
-                "_key": "npcZYa3s",
-                "list": [
-                    {
-                        "_key": "xEWKuFaK",
-                        "listItem": "Add list item"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "configurationTitle": "Configuration Section",
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "ywr3xKko"
-            }
-        ]
     },
     {
         "subCategory": [
@@ -35883,89 +35390,6 @@
         "_type": "product"
     },
     {
-        "countInStock": 0,
-        "_id": "d1db946d-98ab-4568-aad0-517c8d41bd83",
-        "configurationTitle": "Configuration Section",
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "kYeGmMUF"
-            }
-        ],
-        "title": "Self Gripping Clamps",
-        "_rev": "fQbF5w1DAK2Q8lA9cu3pLx",
-        "videos": [],
-        "intro": "Suitable for aluminium, ACSR, steel earth wire, anti-twisting rope and copper conductors.",
-        "enquiries": 0,
-        "category": [
-            "Overhead Line"
-        ],
-        "_type": "product",
-        "id": "61e881420e435811f0b71ba2",
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "hasSubCategories": true,
-        "moreImages": [],
-        "features": [
-            {
-                "id": 1,
-                "_key": "KgppoNhP",
-                "list": [
-                    {
-                        "_key": "dvrVHNdw",
-                        "listItem": "Add list item"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "tables": [
-            {
-                "columns": [
-                    "itemDescription",
-                    "partNo"
-                ],
-                "_key": "FoZbN6CL",
-                "title": "A) Duct Clamp Collet",
-                "items": [
-                    {
-                        "itemDescription": "25mm",
-                        "_key": "0K879UtD",
-                        "partNo": "C-1258-0200-25"
-                    }
-                ]
-            }
-        ],
-        "recommendedProducts": [],
-        "isDraft": false,
-        "accessories": [],
-        "mainImage": {
-            "asset": {
-                "_type": "reference",
-                "_ref": "image-ac041dd3e1d883a08ad301ad1ef57117038db2dd-800x800-jpg"
-            },
-            "_type": "image"
-        },
-        "productId": "",
-        "_updatedAt": "2023-05-28T15:45:42Z",
-        "description": [
-            {
-                "_key": "EeOkw5i9",
-                "paragraph": "Sample text one."
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "SyQLFFQ3"
-            },
-            {
-                "paragraph": "Sample text three.",
-                "_key": "OlsuYsdv"
-            }
-        ],
-        "subCategory": [
-            "GRIPs"
-        ]
-    },
-    {
         "_rev": "8x12ShlkzurvJWsJ5ZRF6I",
         "id": "61e2cc644c278ed51471d0ee",
         "configurationInfo": [
@@ -35975,7 +35399,7 @@
             }
         ],
         "videos": [],
-        "intro": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+        "intro": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
         "accessories": [],
         "features": [
             {
@@ -36044,14 +35468,15 @@
         "isDraft": false,
         "_id": "d2833321-3953-49e0-b272-6015cf00fbae",
         "subCategory": [
-            "Pump Pliers with Tether ring"
+            "Pump Pliers with Tether ring",
+            "Pliers"
         ],
         "configurationTitle": "Configuration Section",
         "_createdAt": "2023-05-28T15:45:24Z",
         "description": [
             {
                 "_key": "6oMktqKE",
-                "paragraph": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life."
+                "paragraph": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life."
             }
         ],
         "countInStock": 0,
@@ -36126,7 +35551,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139"
             }
@@ -36617,59 +36042,6 @@
         ]
     },
     {
-        "recommendedProducts": [],
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "subCategory": [],
-        "_type": "product",
-        "enquiries": 0,
-        "tables": [],
-        "configurationTitle": "Configuration Section",
-        "isDraft": false,
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-e1a5101afbfaf275bed0b0d3e9bac85af35a0857-846x281-jpg",
-                "_type": "reference"
-            }
-        },
-        "hasSubCategories": true,
-        "productId": "K-65502",
-        "features": [],
-        "_rev": "8x12ShlkzurvJWsJ5ZRT42",
-        "_id": "d4ab0b92-a3d8-45a8-adc7-327571c5431f",
-        "id": "620fbdefcaee60882d7b109d",
-        "countInStock": 0,
-        "intro": "Includes Insulated High Leverage Side, Diagonal, Universal Cutting Pliers and more.",
-        "title": "Insulated Tools",
-        "videos": [],
-        "_updatedAt": "2023-05-28T15:45:47Z",
-        "moreImages": [],
-        "accessories": [],
-        "category": [
-            "Klein Tools"
-        ],
-        "configurationInfo": [
-            {
-                "_key": "8cJrLw4V",
-                "paragraph": ""
-            }
-        ],
-        "description": [
-            {
-                "paragraph": "Klein offers a lifetime warranty on material defects and workmanship for the normal life of the product.",
-                "_key": "5jGgkDUe"
-            },
-            {
-                "paragraph": "Sockets have chrome finish.",
-                "_key": "2AmkXTgM"
-            },
-            {
-                "paragraph": "Drive type: Hex; Measuring system: Inch.",
-                "_key": "Y5drtaEY"
-            }
-        ]
-    },
-    {
         "description": [
             {
                 "paragraph": "Tool Backpack with 35 pockets of different sizes for easy organisation.",
@@ -36826,7 +36198,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2489STT"
             },
@@ -36845,10 +36217,10 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "",
-                "intro": "A collection of different sized plump pliers. All with secure tongue and groove design for non-slip grip, even with heavy pressure."
+                "intro": "A collection of different sized plump Pliers. All with secure tongue and groove design for non-slip grip, even with heavy pressure."
             },
             {
                 "intro": "The CBS 821 Universal Winch offers the constant pulling tension of a double capstan drive and the flexibility of a direct drive drum in one machine.",
@@ -36874,7 +36246,8 @@
         ],
         "_type": "product",
         "category": [
-            "Overhead Line"
+            "Overhead Line",
+            "Klein Tools"
         ],
         "title": "Aerial Bundle Conductor Clamps",
         "configurationTitle": "Configuration Section",
@@ -37128,7 +36501,8 @@
             }
         ],
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "hasSubCategories": false,
         "title": "Rope Hoists",
@@ -37272,7 +36646,7 @@
         "isDraft": false,
         "_updatedAt": "2023-05-28T15:45:41Z",
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ],
         "videos": [],
         "configurationInfo": [
@@ -37415,7 +36789,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139NETT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height.",
@@ -37578,7 +36952,8 @@
             }
         ],
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "title": "Tensioning Pullers",
         "_updatedAt": "2023-05-28T15:45:50Z",
@@ -37716,73 +37091,6 @@
                 "_key": "jI8hoThq",
                 "paragraph": "Configuration Paragraph"
             }
-        ]
-    },
-    {
-        "_rev": "8x12ShlkzurvJWsJ5ZRYEg",
-        "recommendedProducts": [],
-        "_id": "dc08ace5-5f18-47fe-8620-e92060c3ffe7",
-        "countInStock": 0,
-        "_updatedAt": "2023-05-28T15:45:48Z",
-        "configurationTitle": "Configuration Section",
-        "configurationInfo": [
-            {
-                "paragraph": "Configuration Paragraph",
-                "_key": "engb6Gf7"
-            }
-        ],
-        "moreImages": [],
-        "tables": [],
-        "description": [
-            {
-                "paragraph": "Sample text one.",
-                "_key": "bqwAPX8v"
-            },
-            {
-                "paragraph": "Sample text two.",
-                "_key": "FlNWorBh"
-            },
-            {
-                "_key": "kenEDQK3",
-                "paragraph": "Sample text three."
-            }
-        ],
-        "_type": "product",
-        "_createdAt": "2023-05-28T15:45:24Z",
-        "subCategory": [
-            "Grips And Come Along Clamps"
-        ],
-        "videos": [],
-        "features": [
-            {
-                "id": 1,
-                "_key": "qJgBAQsv",
-                "list": [
-                    {
-                        "_key": "VJm9ScBK",
-                        "listItem": "Add list item"
-                    }
-                ],
-                "heading": "Fully labelled control panel containing:"
-            }
-        ],
-        "title": "Grips",
-        "mainImage": {
-            "_type": "image",
-            "asset": {
-                "_ref": "image-34128cb30d117a3a753a95febf68a70ec3a2e8df-990x551-jpg",
-                "_type": "reference"
-            }
-        },
-        "isDraft": false,
-        "intro": "Product Introduction",
-        "hasSubCategories": true,
-        "productId": "",
-        "accessories": [],
-        "enquiries": 0,
-        "id": "62111eaa4b874616bed2264f",
-        "category": [
-            "Klein Tools"
         ]
     },
     {
@@ -38145,7 +37453,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D20009NETP",
                 "intro": "The Linesmans Pliers can quickly and easily pull 1/8” (3 mm) or 1/4″ (6 mm) flat steel fish tape without damaging the tape.",
@@ -38180,7 +37488,7 @@
             }
         },
         "videos": [],
-        "intro": "The electronics pointed nose pliers have a sharp, pointed nose for precise tip cutting and trimming of printed circuit boards",
+        "intro": "The electronics pointed nose Pliers have a sharp, pointed nose for precise tip cutting and trimming of printed circuit boards",
         "configurationInfo": [
             {
                 "paragraph": "Configuration Paragraph",
@@ -38191,7 +37499,7 @@
         "description": [
             {
                 "_key": "LIm9nDZI",
-                "paragraph": "The electronics pointed nose pliers have a sharp, pointed nose for precise tip cutting and trimming of printed circuit boards"
+                "paragraph": "The electronics pointed nose Pliers have a sharp, pointed nose for precise tip cutting and trimming of printed circuit boards"
             }
         ],
         "category": [
@@ -38273,7 +37581,7 @@
         "moreImages": [],
         "enquiries": 0,
         "subCategory": [
-            "PLIERs"
+            "Pliers"
         ]
     },
     {
@@ -38359,11 +37667,12 @@
         },
         "tables": [],
         "subCategory": [
-            "Mini Ratchet Pullers"
+            "Tensioning & Lifting"
         ],
         "isDraft": false,
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "description": [
             {
@@ -38595,7 +37904,8 @@
         "hasSubCategories": false,
         "id": "61e875880e435811f0b58c3f",
         "category": [
-            "Overhead Line"
+            "Overhead Line",
+            "Klein Tools"
         ],
         "enquiries": 0,
         "subCategory": [
@@ -38917,7 +38227,8 @@
         "title": "Insulated Web Strap (Mini Ratchet Puller)",
         "_id": "e2c2ddff-6b22-4bc0-a477-2084e76a0a4c",
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "configurationInfo": [
             {
@@ -39068,7 +38379,9 @@
                 "paragraph": "Configuration Paragraph"
             }
         ],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "recommendedProducts": [],
         "_updatedAt": "2023-05-28T15:45:44Z",
         "hasSubCategories": false,
@@ -39881,7 +39194,9 @@
     {
         "recommendedProducts": [],
         "moreImages": [],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "accessories": [],
         "configurationInfo": [
             {
@@ -39993,10 +39308,13 @@
         "accessories": [],
         "videos": [],
         "subCategory": [
-            "Grips For Large Conductors"
+            "Grips For Large Conductors",
+            "Grips"
         ],
         "title": "Grips For Large Conductors (Weight 15.47kg)",
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "isDraft": false,
         "productId": "K-1628-40",
         "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference.",
@@ -40011,7 +39329,7 @@
         "hasSubCategories": false,
         "recommendedProducts": [
             {
-                "intro": "The large pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The large pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 60.3mm)",
                 "id": "61e2cd2d4c278ed51471d0ef",
                 "_key": "kTCsUzG8",
@@ -40041,7 +39359,8 @@
                     }
                 },
                 "subCategory": [
-                    "GRIPs"
+                    "Grips",
+                    "Grips For Large Conductors"
                 ],
                 "productId": "K-1628-16-P",
                 "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference.",
@@ -40063,7 +39382,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for 46-percent greater cutting and gripping power than other plier designs."
@@ -41147,7 +40466,9 @@
         "accessories": [],
         "_createdAt": "2023-05-28T15:45:24Z",
         "countInStock": 0,
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "mainImage": {
             "asset": {
                 "_ref": "image-5e8b3ca4a7a903024ec131364585f8ab02c7e9f0-734x576-png",
@@ -41214,7 +40535,8 @@
         "productId": "K-63060",
         "id": "621263ddcaee60882d7b10c2",
         "subCategory": [
-            "Ratchet Cable Cutters"
+            "Ratchet Cable Cutters",
+            "Cable Cutters"
         ],
         "description": [
             {
@@ -41261,7 +40583,8 @@
         "countInStock": 0,
         "enquiries": 0,
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "_createdAt": "2023-05-28T15:45:24Z",
         "configurationInfo": [
@@ -41341,7 +40664,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "BATTERY OPERATED TOOLS"
+                    "Battery Operated Tools"
                 ],
                 "productId": "K-BAT20-G7",
                 "intro": "Effective cable cutter that cuts up to 600 MCM copper and 1000 MCM aluminium cable.",
@@ -42321,7 +41644,7 @@
         "title": "General Purpose Insulated 22 Piece Tool Kit",
         "_type": "product",
         "tables": [],
-        "intro": "A comprehensive set of 22 insulated tools including assorted pliers x 8, screwdrivers x 9, 1 each pump pliers, wire stripper/cutter, cable cutter and more.",
+        "intro": "A comprehensive set of 22 insulated tools including assorted Pliers x 8, screwdrivers x 9, 1 each pump Pliers, wire stripper/cutter, cable cutter and more.",
         "moreImages": [],
         "accessories": [],
         "_rev": "8x12ShlkzurvJWsJ5ZRT42",
@@ -42333,7 +41656,7 @@
         "configurationTitle": "Configuration Section",
         "enquiries": 0,
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "videos": [],
         "_createdAt": "2023-05-28T15:45:24Z",
@@ -42459,7 +41782,7 @@
         ],
         "description": [
             {
-                "paragraph": "A comprehensive set of 22 insulated tools including assorted pliers x 8, screwdrivers x 9, 1 each pump pliers, wire stripper/cutter, cable cutter, lineman’s skinning knife and a crimping/cutting tool.",
+                "paragraph": "A comprehensive set of 22 insulated tools including assorted Pliers x 8, screwdrivers x 9, 1 each pump Pliers, wire stripper/cutter, cable cutter, lineman’s skinning knife and a crimping/cutting tool.",
                 "_key": "mlUToozR"
             },
             {
@@ -42653,7 +41976,7 @@
         "recommendedProducts": [
             {
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2139NETT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height.",
@@ -42673,7 +41996,7 @@
             },
             {
                 "productId": "K-D50210TT",
-                "intro": "The medium pump pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
+                "intro": "The medium pump Pliers, with secure tongue and groove design for non-slip grip, even with heavy pressure. Induction hardened jaws for long life.",
                 "title": "Pump Pliers With Tether Ring (jaw Capacity - 44.5mm)",
                 "id": "61e2cc644c278ed51471d0ee",
                 "_key": "4lGcjsLN",
@@ -42688,12 +42011,14 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "Pump Pliers with Tether ring"
+                    "Pump Pliers with Tether ring",
+                    "Pliers"
                 ]
             },
             {
                 "subCategory": [
-                    "GRIPs"
+                    "Grips",
+                    "Self Gripping Clamps"
                 ],
                 "productId": "IR3105",
                 "intro": "Suitable for aluminium, ACSR, steel earth wire, anti-twisting rope and copper conductors.",
@@ -42701,7 +42026,8 @@
                 "id": "61e875880e435811f0b58c3f",
                 "_key": "AbduDJB9",
                 "category": [
-                    "Overhead Line"
+                    "Overhead Line",
+                    "Klein Tools"
                 ],
                 "mainImage": {
                     "_type": "image",
@@ -43729,7 +43055,7 @@
                     "_type": "image"
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2017CSTT",
                 "intro": "The Slim Rebar Work Pliers with Tether Ring twists and cuts soft annealed rebar tie wire. Unique handle tempering helps absorb the ”snap” when cutting wire.",
@@ -43922,7 +43248,8 @@
             }
         ],
         "category": [
-            "Overhead Line"
+            "Overhead Line",
+            "Klein Tools"
         ],
         "configurationInfo": [
             {
@@ -43960,7 +43287,8 @@
             }
         ],
         "subCategory": [
-            "Self Gripping Clamps"
+            "Self Gripping Clamps",
+            "Grips"
         ],
         "_id": "fa0b0e52-f34d-4f1f-9811-ebf8c04bf8db",
         "description": [
@@ -44100,7 +43428,7 @@
                     }
                 },
                 "subCategory": [
-                    "PLIERs"
+                    "Pliers"
                 ],
                 "productId": "K-D2288TT",
                 "intro": "The high-leverage design means the rivet is closer to the cutting edge - for better gripping power than other plier designs. Includes split ring for tethering plier while working at height.",
@@ -44181,7 +43509,9 @@
         "_id": "fc95982d-dbaf-4920-b339-7f53f9596e59",
         "title": "7 Piece Metric Nut Driver Set 3 Inch Shaft",
         "videos": [],
-        "category": [],
+        "category": [
+            "Klein Tools"
+        ],
         "configurationInfo": [
             {
                 "paragraph": "",
@@ -44282,7 +43612,7 @@
             }
         ],
         "subCategory": [
-            "TOOL KITS AND TOOL SETS"
+            "Tool Kits And Tool Sets"
         ],
         "mainImage": {
             "_type": "image",
@@ -44444,7 +43774,8 @@
         "videos": [],
         "recommendedProducts": [],
         "category": [
-            "Klein Tools"
+            "Klein Tools",
+            "General Tools"
         ],
         "_createdAt": "2023-05-28T15:45:24Z",
         "productId": "D-1143",
@@ -44481,7 +43812,7 @@
             }
         ],
         "subCategory": [
-            "CABLE CROPPERS AND CUTTERS"
+            "Cable Croppers And Cutters"
         ],
         "hasSubCategories": false,
         "intro": "Cable-gripping jaws quickly score jacket and insulation, and easily cut through copper inner conductor.",
@@ -44523,7 +43854,7 @@
                         "_key": "qgEvNqUY"
                     },
                     {
-                        "listItem": "When cutting drop wire with an inner steel conductor, we recommend Cat. No. D2000-28 diagonal-cutting pliers.",
+                        "listItem": "When cutting drop wire with an inner steel conductor, we recommend Cat. No. D2000-28 diagonal-cutting Pliers.",
                         "_key": "lDO3w01s"
                     }
                 ],

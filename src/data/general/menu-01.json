@@ -39,6 +39,12 @@
                 "icon": "feather-fast-forward"
             },
             {
+                "id": 10,
+                "text": "General Tools",
+                "path": "/general-tools",
+                "icon": "feather-fast-forward"
+            },
+            {
                 "id": 11,
                 "text": "All Products",
                 "path": "/product",
@@ -46,7 +52,6 @@
             }
         ]
     },
-
     {
         "id": 5,
         "text": "Where to Buy",
