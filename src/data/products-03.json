@@ -45032,8 +45032,7 @@
         "_type": "product",
         "_updatedAt": "2023-09-08T17:07:11Z",
         "category": [
-            "Fibre Installation",
-            "Category"
+            "Fibre Installation"
         ],
         "configurationInfo": [
             {
@@ -45149,6 +45148,9 @@
         "subCategory": [
             "Duct Rod Equipment"
         ],
-        "title": "Mini Cable Duct Desilter System"
+        "title": "Mini Cable Duct Desilter System",
+        "accessories": [],
+        "recommendedProducts": [],
+        "tables": []
     }
 ]
