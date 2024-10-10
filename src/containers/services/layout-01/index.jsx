@@ -8,7 +8,6 @@ const ServiceArea = ({ className, id, space, data }) => (
     <div
         className={clsx(
             "rn-service-area",
-            space === 1 && "rn-section-gapTop",
             space === 2 && "pb--70",
             className
         )}

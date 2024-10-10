@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import AddressBox from "@components/address-box";
+import SectionTitle from "@components/section-title/layout-02";
 
-const ContactTopArea = ({ space, className }) => (
+const ContactTopArea = () => (
     <div>
         <div className="container mt--20">
+        <SectionTitle
+                title="Contact Details"
+            />
             <div className="row g-3">
                 <div
                     className="col-lg-12"

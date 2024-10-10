@@ -3,13 +3,14 @@ import clsx from "clsx";
 import Product from "@components/product/layout-02";
 import Slider, { SliderItem } from "@ui/slider";
 import { SectionTitleType, ProductType } from "@utils/types";
+import SectionTitle from "@components/section-title/layout-02";
 
 const SliderOptions = {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     arrows: true,
-    dots: false,
+    dots: true,
     responsive: [
         {
             breakpoint: 1399,
@@ -37,7 +38,7 @@ const SliderOptions = {
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                dots: false,
+                dots: true,
                 arrows: true,
             },
         },
@@ -55,9 +56,12 @@ const ExploreProductArea = ({ data, className, space }) => (
         )}
     >
         <div className="container">
-            {data?.products && (
+            {/* {data?.products && ( */}
                 <div className="row mt--80">
-                    <div className="col-lg-12">
+                                <SectionTitle
+                title="Popular Products"
+            />
+                    <div className="col-lg-12 mt--20">
                         <Slider
                             options={SliderOptions}
                             className="banner-one-slick slick-arrow-style-one slick-gutter-10"
@@ -84,7 +88,7 @@ const ExploreProductArea = ({ data, className, space }) => (
                         </Slider>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </div>
     </div>
 );

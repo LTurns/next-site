@@ -4,6 +4,7 @@ import TabContent from "react-bootstrap/TabContent";
 import TabContainer from "react-bootstrap/TabContainer";
 import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
+import VideoButton from "@ui/video-button";
 import { ImageType } from "@utils/types";
 
 import imageUrlBuilder from "@sanity/image-url";
@@ -18,7 +19,7 @@ const urlFor = (source) => {
     return image;
 };
 
-const GalleryTab = ({ images }) => (
+const GalleryTab = ({ images, videos }) => (
     <div className="product-tab-wrapper">
         <TabContainer defaultActiveKey="nav-0">
             <div className="pd-tab-inner">
@@ -64,5 +65,6 @@ const GalleryTab = ({ images }) => (
 
 GalleryTab.propTypes = {
     images: PropTypes.arrayOf(ImageType),
+    videos: PropTypes.arrayOf(ImageType)
 };
 export default GalleryTab;

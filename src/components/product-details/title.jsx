@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import VideoButton from "@ui/video-button";
 import clsx from "clsx";
 
-const ProductTitle = ({ className, title }) => (
+const ProductTitle = ({ className, title, videos }) => (
     <div className={clsx("pd-title-area", className)}>
         <h4 className="title">{title}</h4>
         <div className="pd-react-area">
@@ -18,8 +19,7 @@ const ProductTitle = ({ className, title }) => (
 
 ProductTitle.propTypes = {
     className: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    likeCount: PropTypes.number,
+    videos: PropTypes.array
 };
 
 ProductTitle.defaultProps = {

@@ -1,0 +1,2652 @@
+[
+    {
+        "_createdAt": "2024-07-24T13:26:29Z",
+        "_id": "794fa903-ea4a-475d-a2cd-39b1de370c15",
+        "_rev": "tlN8m7l7YmRrFGmM7ipQnz",
+        "_type": "product",
+        "_updatedAt": "2024-08-02T11:09:22Z",
+        "category": [
+            "Fibre Installation"
+        ],
+        "description": [
+            {
+                "_key": "59c33e049930",
+                "paragraph": "Atmos compressors are engineered to deliver exceptional performance and reliability. We manufacture and supply compressors for a wide range of industrial sectors. Our product range includes screw and piston electric compressors, and mobile compressors powered by diesel or gasoline engines."
+            }
+        ],
+        "features": [
+            {
+                "_key": "3f7e45fae4b7",
+                "heading": "Key Features",
+                "list": [
+                    {
+                        "_key": "3ce234f10d0d",
+                        "listItem": "High free air delivery"
+                    },
+                    {
+                        "_key": "46dc3d0d397b",
+                        "listItem": "Operating pressures up to 15 bar"
+                    },
+                    {
+                        "_key": "5035c48108a4",
+                        "listItem": "Equipped with Stage 5 diesel engines, fully compliant with the latest EU emission regulations"
+                    },
+                    {
+                        "_key": "a9ca5cc034e8",
+                        "listItem": "Compact dimensions and lightweight design"
+                    },
+                    {
+                        "_key": "374da5380bcd",
+                        "listItem": "Impressive performance"
+                    },
+                    {
+                        "_key": "cdca996978ec",
+                        "listItem": "Weight: 140 kg"
+                    },
+                    {
+                        "_key": "52c850988cc0",
+                        "listItem": "Emission-free alternative available"
+                    },
+                    {
+                        "_key": "4e83c6ffeec2",
+                        "listItem": "Easy-load design"
+                    },
+                    {
+                        "_key": "754bb31d932c",
+                        "listItem": "Outstanding maneuverability"
+                    },
+                    {
+                        "_key": "27622d15dd3e",
+                        "listItem": "Supplied with an additional cooler"
+                    }
+                ]
+            }
+        ],
+        "hasSubCategories": false,
+        "intro": "Atmos compressors are engineered to deliver exceptional performance and reliability. We manufacture and supply compressors for a wide range of industrial sectors.",
+        "isDraft": false,
+        "mainImage": {
+            "_type": "image",
+            "asset": {
+                "_type": "reference",
+                "_ref": "image-b1b324647e61eef29782d7706b18edd6e7c4960d-4530x3491-png"
+            }
+        },
+        "productId": "C-COMP-PB82E",
+        "subCategory": [
+            "Compressors"
+        ],
+        "accessories": [],
+        "recommendedProducts": [],
+        "tables": [],
+        "title": "Atmos Compressor"
+    },
+    {
+        "_id": "eba5cc59-7995-4531-bee8-74f793ee8839",
+        "category": [
+            "Fibre Installation"
+        ],
+        "subCategory": [
+            "Hurricane"
+        ],
+        "id": "617d4265e3fadc2334d28c27",
+        "intro": "Designed to maximise protection for micro cables with a compliant double drive concept, backed by the latest technology in servo controls.",
+        "moreImages": [],
+        "title": "Hurricane",
+        "hasSubCategories": false,
+        "_rev": "fQbF5w1DAK2Q8lA9cu3k4b",
+        "configurationTitle": "",
+        "accessories": [],
+        "tables": [
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "zb0d3PsZ",
+                "title": "A. Duct Clamp and Seal kit",
+                "items": [
+                    {
+                        "_key": "243vaHzI",
+                        "partNo": "C-1750-TBC-5",
+                        "itemDescription": "Tube Collet Assy 5mm o/d"
+                    },
+                    {
+                        "_key": "fYpEexYC",
+                        "partNo": "C-1750-TBC-7",
+                        "itemDescription": "Tube Collet Assy 7mm o/d"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy 8mm o/d",
+                        "_key": "Udr8KGNm",
+                        "partNo": "C-1750-TBC-8"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy 10mm o/d",
+                        "_key": "SYStDQBU",
+                        "partNo": "C-1750-TBC-10"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy 12mm o/d",
+                        "_key": "bsBxzyH9",
+                        "partNo": "C-1750-TBC-12"
+                    },
+                    {
+                        "partNo": "C-1750-TBC-14",
+                        "itemDescription": "Tube Collet Assy 14mm o/d",
+                        "_key": "2OtoGqjs"
+                    },
+                    {
+                        "partNo": "C-1750-TBC-16",
+                        "itemDescription": "Tube Collet Assy 16mm o/d",
+                        "_key": "Vy5bKW0o"
+                    },
+                    {
+                        "partNo": "C-1750-TBC-18",
+                        "itemDescription": "Tube Collet Assy 18mm o/d",
+                        "_key": "WuLoDIsm"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy 20mm o/d",
+                        "_key": "noyR12mP",
+                        "partNo": "C-1750-TBC-20"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy 22mm o/d",
+                        "_key": "ImoU7hKO",
+                        "partNo": "C-1750-TBC-22"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy 25mm o/d",
+                        "_key": "GdAiHFA9",
+                        "partNo": "C-1750-TBC-25"
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "bUACSRgX",
+                "title": "B. Cable Guides",
+                "items": [
+                    {
+                        "itemDescription": "Cable Guide 2.5-4mm",
+                        "_key": "KIYV1pQB",
+                        "partNo": "C-1750-CG-2.5-4"
+                    },
+                    {
+                        "itemDescription": "Cable Guide 4-6mm",
+                        "_key": "fjKbH8C5",
+                        "partNo": "C-1750-CG-4-6"
+                    },
+                    {
+                        "_key": "xMquuhBT",
+                        "partNo": "C-1750-CG-6-9",
+                        "itemDescription": "Cable Guide 6-9mm"
+                    },
+                    {
+                        "partNo": "C-1750-CG-9-12",
+                        "itemDescription": "Cable Guide 9-12mm",
+                        "_key": "ZnlIls82"
+                    },
+                    {
+                        "partNo": "C-1750-CG-12-14",
+                        "itemDescription": "Cable Guide 12-14mm",
+                        "_key": "krtsQeAb"
+                    },
+                    {
+                        "itemDescription": "Cable Guide 14-16mm",
+                        "_key": "CXdSiTsN",
+                        "partNo": "C-1750-CG-14-16"
+                    }
+                ]
+            },
+            {
+                "_key": "TGGZqe0G",
+                "title": "C. Cable Seals",
+                "items": [
+                    {
+                        "_key": "nlExxv5N",
+                        "partNo": "C-1750-CS-2.5-3",
+                        "itemDescription": "Cable Seals 2.5-3mm"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 3-4mm",
+                        "_key": "FaAWlFft",
+                        "partNo": "C-1750-CS-3-4"
+                    },
+                    {
+                        "partNo": "C-1750-CS-4-5",
+                        "itemDescription": "Cable Seals 4-5mm",
+                        "_key": "IOFahmTT"
+                    },
+                    {
+                        "partNo": "C-1750-CS-5-6",
+                        "itemDescription": "Cable Seals 5-6mm",
+                        "_key": "nbANPqm2"
+                    },
+                    {
+                        "_key": "UbrlUzhy",
+                        "partNo": "C-1750-CS-6-7.5",
+                        "itemDescription": "Cable Seals 6-7.5mm"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 7.5-9mm",
+                        "_key": "0taCZmjK",
+                        "partNo": "C-1750-CS-7.5-9"
+                    },
+                    {
+                        "_key": "1VFtWmAC",
+                        "partNo": "C-1750-CS-9-10.5",
+                        "itemDescription": "Cable Seals 9-10.5mm"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 10.5-12mm",
+                        "_key": "OKSUUrGI",
+                        "partNo": "C-1750-CS-10.5-12"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 12-14mm",
+                        "_key": "j499uIvK",
+                        "partNo": "C-1750-CS-12-14"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 14-16mm",
+                        "_key": "MDi0X3t3",
+                        "partNo": "C-1750-CS-14-16"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ]
+            },
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "fDekd8wu",
+                "title": "D. Duct Seals",
+                "items": [
+                    {
+                        "_key": "HRtLPafK",
+                        "partNo": "C-1750-TS-5",
+                        "itemDescription": "Tube Seals 5mm"
+                    },
+                    {
+                        "itemDescription": "Tube Seals 7mm",
+                        "_key": "tXzKovwW",
+                        "partNo": "C-1750-TS-7"
+                    },
+                    {
+                        "_key": "iNSf70Fo",
+                        "partNo": "C-1750-TS-8",
+                        "itemDescription": "Tube Seals 8mm"
+                    },
+                    {
+                        "itemDescription": "Tube Seals 10mm",
+                        "_key": "Jv9arlUN",
+                        "partNo": "C-1750-TS-10"
+                    },
+                    {
+                        "itemDescription": "Tube Seals 12mm",
+                        "_key": "mCTGn09g",
+                        "partNo": "C-1750-TS-12"
+                    },
+                    {
+                        "partNo": "C-1750-TS-14",
+                        "itemDescription": "Tube Seals 14mm",
+                        "_key": "DXopGDl3"
+                    },
+                    {
+                        "itemDescription": "Tube Seals 16mm",
+                        "_key": "9ZYmp3eZ",
+                        "partNo": "C-1750-TS-16"
+                    },
+                    {
+                        "itemDescription": "Tube Seals 18mm",
+                        "_key": "JBZNge2E",
+                        "partNo": "C-1750-TS-18"
+                    },
+                    {
+                        "partNo": "C-1750-TS-20",
+                        "itemDescription": "Tube Seals 20mm",
+                        "_key": "tbsKQ9EU"
+                    },
+                    {
+                        "itemDescription": "Tube Seals 22mm",
+                        "_key": "HqKle5fJ",
+                        "partNo": "C-1750-TS-22"
+                    },
+                    {
+                        "_key": "VvOnvm5b",
+                        "partNo": "C-1750-TS-25",
+                        "itemDescription": "Tube Seals 25mm"
+                    }
+                ]
+            },
+            {
+                "items": [
+                    {
+                        "partNo": "C-1750-DB-2.5-9",
+                        "itemDescription": "Drive Belt 2.5-9mm cable diameter",
+                        "_key": "EXSv2cgK"
+                    },
+                    {
+                        "itemDescription": "Drive Belt 3-11mm cable diameter",
+                        "_key": "0JjcIhrC",
+                        "partNo": "C-1750-DB-3-11"
+                    },
+                    {
+                        "itemDescription": "Drive Belt 5-16mm cable diameter",
+                        "_key": "qyFh9Y4H",
+                        "partNo": "C-1750-DB-5-14"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "q4miJtLR",
+                "title": "E. Drive Belts"
+            }
+        ],
+        "features": [
+            {
+                "heading": "Main Features:",
+                "id": 1,
+                "_key": "cmy2O0Ca",
+                "list": [
+                    {
+                        "_key": "fUt0IkLj",
+                        "listItem": "Automatic Cable Centralisation"
+                    },
+                    {
+                        "listItem": "Synchronous high grip profiled drive belts",
+                        "_key": "6rUzzu2z"
+                    },
+                    {
+                        "listItem": "Verticle design with ergonomic controls for ease of operation",
+                        "_key": "aL1nVh26"
+                    },
+                    {
+                        "listItem": "Forward and reverse",
+                        "_key": "7tuN6QgY"
+                    },
+                    {
+                        "listItem": "Variable torque and speed controls via remote",
+                        "_key": "8XXVCGCy"
+                    },
+                    {
+                        "listItem": "Digital servo motor drive system",
+                        "_key": "NDSQW46c"
+                    },
+                    {
+                        "listItem": "Single person operation",
+                        "_key": "eJzm4Oc4"
+                    },
+                    {
+                        "_key": "J7NHP7PS",
+                        "listItem": "Digital cable speed and length monitoring"
+                    },
+                    {
+                        "listItem": "Auto stop facility when air stone fitted",
+                        "_key": "K5b6IWLw"
+                    },
+                    {
+                        "listItem": "Integral air valve and pressure gauge",
+                        "_key": "z6QzDfKD"
+                    },
+                    {
+                        "listItem": "Advanced data logging system measures speed, force, distance, GPS location and environmental conditions",
+                        "_key": "qm1PvPEm"
+                    },
+                    {
+                        "listItem": "Easy cable threading",
+                        "_key": "fGSeKngF"
+                    },
+                    {
+                        "_key": "57iuSkV8",
+                        "listItem": "Polycarbonate safety guarding"
+                    },
+                    {
+                        "listItem": "Lightweight and compact",
+                        "_key": "Pnj8B5R1"
+                    },
+                    {
+                        "listItem": "Low maintenance",
+                        "_key": "9nVldtdb"
+                    },
+                    {
+                        "_key": "Cmugvot7",
+                        "listItem": "Low noise levels"
+                    },
+                    {
+                        "listItem": "Travel case",
+                        "_key": "r1CGm5oa"
+                    },
+                    {
+                        "listItem": "Tool Kit",
+                        "_key": "TbOKz1VK"
+                    }
+                ]
+            },
+            {
+                "_key": "A8dqxohW",
+                "list": [
+                    {
+                        "listItem": "Cable Diameter: 2.5 to 16mm",
+                        "_key": "BDQLfl5P"
+                    },
+                    {
+                        "listItem": "Tube Size (Outside Dia): 5 to 25mm",
+                        "_key": "Ia2BxaSB"
+                    },
+                    {
+                        "_key": "yTcVsJsP",
+                        "listItem": "Cable Speed (Adjustable): (0-85m/min)"
+                    },
+                    {
+                        "listItem": "Pushing Force: 400N",
+                        "_key": "BWDPVlPV"
+                    },
+                    {
+                        "listItem": "Air Pressure: 15 Bar Max",
+                        "_key": "jDBu71WM"
+                    },
+                    {
+                        "_key": "3AFlM53q",
+                        "listItem": "Power Requirement: 110/220 Volt AC"
+                    },
+                    {
+                        "listItem": "Length: 550mm",
+                        "_key": "mO9HvtT0"
+                    },
+                    {
+                        "listItem": "Width: 310mm",
+                        "_key": "J0qqHX4n"
+                    },
+                    {
+                        "listItem": "Height: 350mm",
+                        "_key": "I0WpwZTu"
+                    },
+                    {
+                        "listItem": "Net Weight: 24kg, full kit inc case 51.5kg",
+                        "_key": "V2Oy6YyT"
+                    }
+                ],
+                "heading": "Specifications:",
+                "id": 2
+            }
+        ],
+        "productId": "C-1750",
+        "description": [
+            {
+                "paragraph": "The C-1750 Hurricane has been designed to maximise protection for micro cables with a compliant double drive concept, backed by the latest technology in servo controls to provide precise control of torque and speed. Single person operation with safe, easy to operate ergonomic controls combines with low maintenance and high reliability to form the machine’s key features. The Hurricane is adjustable to suit a wide range of cable diameters 2.5-16mm.",
+                "_key": "Wz5IqVVt"
+            }
+        ],
+        "enquiries": 1,
+        "isDraft": false,
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "_type": "product",
+        "recommendedProducts": [
+            {
+                "subCategory": [],
+                "productId": "C-1900",
+                "intro": "Designed to provide maximum cable protection, combined with the performance and reliability of hydraulic drive.",
+                "title": "Jetstream",
+                "id": "617d4265e3fadc2334d28bca",
+                "_key": "2cbb7sXx",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-563e656f5b33bc2eea76a8ea0b39d722b5103f35-1200x1200-jpg",
+                        "_type": "reference"
+                    }
+                }
+            },
+            {
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_type": "reference",
+                        "_ref": "image-a8dc787a5c69dc00461c9e2e069a9b6a78e9fc1e-1200x1200-jpg"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1700",
+                "intro": "Backed by the latest technology in servo controls to provide precise control of torque and speed.",
+                "title": "Airstream",
+                "id": "617d4265e3fadc2334d28c8a",
+                "_key": "3IrQP1jG",
+                "category": [
+                    "Fibre Installation"
+                ]
+            },
+            {
+                "productId": "M17",
+                "intro": "The M17 is a portable compressor designed for cable blowing. Made With safety and efficiency in mind.",
+                "title": "Cable Blowing Machine Compressor",
+                "id": "617d4265e3fadc2334d28dcd",
+                "_key": "j7IFwz5u",
+                "category": [
+                    "Fibre Installation",
+                    "Underground Cable Laying"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-d66d70a7d13244e54f36a70878d67d2d33a6b2b5-336x205-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [
+                    "Compressors"
+                ]
+            }
+        ],
+        "_updatedAt": "2023-05-28T15:45:37Z",
+        "videos": [],
+        "countInStock": 0,
+        "configurationInfo": [
+            {
+                "paragraph": "In order to customise your Hurricane to your application, please select one of each from the list below, (A) Duct Clamp and Seal Kits, (B) Cable Guides and (C) Cable Seals. When ordering, please have Tube and Cable dimensions available.",
+                "_key": "eBIS43yW"
+            }
+        ],
+        "mainImage": {
+            "asset": {
+                "_ref": "image-de13911134934173305e1272b7d779323c83781f-1200x1200-jpg",
+                "_type": "reference"
+            },
+            "_type": "image"
+        }
+    },
+    {
+        "videos": [],
+        "configurationInfo": [
+            {
+                "paragraph": "In order to customise your new “Tornado” to your application, we ask that you pick one of each from the list below, the Duct Clamp Collet (A), the Duct Seal Collet (B), the Cable Collet Assy (C) and the In Feed Cable Collet (D), the Cable Seals (E) and the Cable Seal Plug (F).",
+                "_key": "wuUomiXe"
+            },
+            {
+                "paragraph": "When ordering, please have Tube and Cable dimensions available. All imperial sizes are available on request.",
+                "_key": "03LtukJl"
+            }
+        ],
+        "productId": "C-1250-08",
+        "moreImages": [],
+        "id": "617d4265e3fadc2334d28b4b",
+        "countInStock": 0,
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "intro": "The Tornado comprises an air box and cable pusher and is designed to provide an effective and safe method of fibre optic cable installation.",
+        "features": [
+            {
+                "id": 1,
+                "_key": "fXs4CwJL",
+                "list": [
+                    {
+                        "listItem": "Power on/off button",
+                        "_key": "lve79cRD"
+                    },
+                    {
+                        "listItem": "Emergency stop button",
+                        "_key": "1qmGH89y"
+                    },
+                    {
+                        "listItem": "Reset button",
+                        "_key": "6xdVldpD"
+                    },
+                    {
+                        "listItem": "Combined length counter recording in metres (feet) and cable speed read out in metres/min (feet/min)",
+                        "_key": "fPmktVsv"
+                    },
+                    {
+                        "_key": "lvN6biQF",
+                        "listItem": "Air pressure read out dial"
+                    },
+                    {
+                        "_key": "2KGQ1ezQ",
+                        "listItem": "Hydraulic on/off control valve"
+                    },
+                    {
+                        "listItem": "Adjustable speed control for drive belts",
+                        "_key": "etoJpEma"
+                    },
+                    {
+                        "listItem": "Air supply control on/off with automatic exhaust function",
+                        "_key": "JxRfOO3e"
+                    },
+                    {
+                        "listItem": "Hydraulic pressure read out dial",
+                        "_key": "weTqnFRd"
+                    }
+                ],
+                "heading": "FULLY LABELLED CONTROL PANEL CONTAINING:"
+            },
+            {
+                "id": 2,
+                "_key": "YraApnk1",
+                "list": [
+                    {
+                        "_key": "c1Ga1DLP",
+                        "listItem": "Manufactured in aluminium"
+                    },
+                    {
+                        "listItem": "Range taking of cables from 6mm – 32mm (0.25”-1.25”) by means of interchangeable collets with double cable sealing arrangement",
+                        "_key": "op4B1An3"
+                    },
+                    {
+                        "listItem": "Duct sealing at mouth of air box",
+                        "_key": "M8VnzEmy"
+                    },
+                    {
+                        "listItem": "Duct gripping facility designed to obviate duct crushing and distortion",
+                        "_key": "Z3nm7IFo"
+                    },
+                    {
+                        "_key": "XqaTLCzE",
+                        "listItem": "No tools are required to split air box for insertion of cable and duct"
+                    },
+                    {
+                        "listItem": "All seals, except cable seals, have a common diameter cord",
+                        "_key": "RAi8NkU1"
+                    },
+                    {
+                        "listItem": "Upper section of air box is retained",
+                        "_key": "ppmMfNrE"
+                    },
+                    {
+                        "listItem": "Air box aligned is adjustable for varying cable diameters",
+                        "_key": "aVFvFHow"
+                    },
+                    {
+                        "listItem": "On/off air control valve with automatic air exhaust from duct when in “off” position",
+                        "_key": "60WNpSzA"
+                    }
+                ],
+                "heading": "AIR BOX"
+            },
+            {
+                "list": [
+                    {
+                        "_key": "leZ7tznI",
+                        "listItem": "Front mounted wheels for ease of manoeuvrability"
+                    },
+                    {
+                        "_key": "J4m8CJO1",
+                        "listItem": "Lightweight anti-corrosion treated tubular steel frame"
+                    },
+                    {
+                        "listItem": "Adjustable frame allowing unit to be tilted up to 30°, reducing bending of duct and cable",
+                        "_key": "oB4mZOOU"
+                    },
+                    {
+                        "listItem": "Adjustable rear legs for uneven terrain",
+                        "_key": "s6I7G4cK"
+                    }
+                ],
+                "heading": "CHASSIS",
+                "id": 3,
+                "_key": "AB9O3A0Y"
+            },
+            {
+                "heading": "STORAGE CASE COMPRISING OF:",
+                "id": 4,
+                "_key": "Oc7NIGpt",
+                "list": [
+                    {
+                        "_key": "IN8v08W7",
+                        "listItem": "Operating Manual"
+                    },
+                    {
+                        "listItem": "Instructional Video",
+                        "_key": "b0fqIdjG"
+                    }
+                ]
+            },
+            {
+                "heading": "CABLE FEEDER",
+                "id": 5,
+                "_key": "6rIjsEyB",
+                "list": [
+                    {
+                        "listItem": "Manufactured in cast aluminium",
+                        "_key": "idsC6sOq"
+                    },
+                    {
+                        "listItem": "Hydraulically powered",
+                        "_key": "F2bZQT2c"
+                    },
+                    {
+                        "listItem": "Unit lifts and splits to allow insertion of cable between drive belts",
+                        "_key": "adsL7Ryf"
+                    },
+                    {
+                        "listItem": "Drive belts are profiled polyurethane, moulded",
+                        "_key": "f9sRND2v"
+                    },
+                    {
+                        "listItem": "Belt tension can be set by means of adjustable chain drive tensioners fitted to the side of the unit",
+                        "_key": "WSH4mNr6"
+                    },
+                    {
+                        "_key": "5DS11p24",
+                        "listItem": "System relief valve fitted as standard"
+                    }
+                ]
+            },
+            {
+                "list": [
+                    {
+                        "listItem": "3mm dia. Cord x 2.5 metres long",
+                        "_key": "VTOolQdP"
+                    },
+                    {
+                        "listItem": "Silicone Grease",
+                        "_key": "jkEzcnEG"
+                    },
+                    {
+                        "_key": "ijCq9uEj",
+                        "listItem": "Super Glue"
+                    },
+                    {
+                        "_key": "XYie1bVW",
+                        "listItem": "Metaflux 70-88 Chain Spray"
+                    },
+                    {
+                        "listItem": "Pliers 150mm",
+                        "_key": "aVuwLHRY"
+                    },
+                    {
+                        "listItem": "Screwdriver 150mm (slot)",
+                        "_key": "zMyyG2tc"
+                    },
+                    {
+                        "_key": "qu3Fi03c",
+                        "listItem": "Knife"
+                    },
+                    {
+                        "listItem": "13-17mm A/F Spanner",
+                        "_key": "IB6yTe9G"
+                    },
+                    {
+                        "listItem": "Battery Charger",
+                        "_key": "au3c1ArQ"
+                    },
+                    {
+                        "_key": "7HBBqIiO",
+                        "listItem": "Battery Charge Indicator"
+                    },
+                    {
+                        "listItem": "3mm Allen Key, 4mm Allen Key, 5mm Allen Key, 6mm Allen Key",
+                        "_key": "CN2iruyN"
+                    }
+                ],
+                "heading": "TOOL BOX",
+                "id": 6,
+                "_key": "0wwqM1a5"
+            }
+        ],
+        "configurationTitle": "TORNADO Configuration for Cable Blowing",
+        "isDraft": false,
+        "category": [
+            "Fibre Installation"
+        ],
+        "_rev": "qT6wZ0hWn93WaVB7WR7eCT",
+        "mainImage": {
+            "asset": {
+                "_ref": "image-32ba0a50be4d12fdb4d341bc5619a698fcd7c0f0-1769x2257-jpg",
+                "_type": "reference"
+            },
+            "_type": "image"
+        },
+        "enquiries": 0,
+        "_id": "b6529e7f-1451-44d7-9126-cdba76387418",
+        "_type": "product",
+        "subCategory": [
+            "Tornado"
+        ],
+        "tables": [
+            {
+                "title": "A) Duct Clamp Collet",
+                "items": [
+                    {
+                        "itemDescription": "25mm",
+                        "_key": "AhXMhXBx",
+                        "partNo": "C-1258-0200-25"
+                    },
+                    {
+                        "itemDescription": "32mm",
+                        "_key": "9cIhGLOt",
+                        "partNo": "C-1258-0200-32"
+                    },
+                    {
+                        "itemDescription": "38mm",
+                        "_key": "IkbrhzCN",
+                        "partNo": "C-1258-0200-38"
+                    },
+                    {
+                        "itemDescription": "40mm",
+                        "_key": "4kubEUdh",
+                        "partNo": "C-1258-0200-40"
+                    },
+                    {
+                        "itemDescription": "50mm",
+                        "_key": "d88eViEO",
+                        "partNo": "C-1258-0200-50"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "FJA8pA1U"
+            },
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "I8giDC7r",
+                "title": "B) Duct Seal Collet",
+                "items": [
+                    {
+                        "itemDescription": "25mm",
+                        "_key": "x33CHOL4",
+                        "partNo": "C-1257-0202-25"
+                    },
+                    {
+                        "_key": "H5R7q0kC",
+                        "partNo": "C-1257-0202-32",
+                        "itemDescription": "32mm"
+                    },
+                    {
+                        "itemDescription": "38mm",
+                        "_key": "l4SCzqn9",
+                        "partNo": "C-1257-0202-38"
+                    },
+                    {
+                        "_key": "0bhtgHyj",
+                        "partNo": "C-1257-0202-40",
+                        "itemDescription": "40mm"
+                    },
+                    {
+                        "partNo": "C-1257-0202-50",
+                        "itemDescription": "50mm",
+                        "_key": "C9j17sCJ"
+                    }
+                ]
+            },
+            {
+                "title": "C) Cable Collet Assy",
+                "items": [
+                    {
+                        "partNo": "C-1256-0103-06-09",
+                        "itemDescription": "6-9mm",
+                        "_key": "POGGO44n"
+                    },
+                    {
+                        "partNo": "C-1256-0103-09-12",
+                        "itemDescription": "9-12mm",
+                        "_key": "Do1rmhRb"
+                    },
+                    {
+                        "itemDescription": "12-16mm",
+                        "_key": "TFbNZfic",
+                        "partNo": "C-1256-0103-12-16"
+                    },
+                    {
+                        "_key": "2YDNCzUY",
+                        "partNo": "C-1256-0103-16-20",
+                        "itemDescription": "16-20mm"
+                    },
+                    {
+                        "itemDescription": "20-24mm",
+                        "_key": "z2RFI1xM",
+                        "partNo": "C-1256-0103-20-24"
+                    },
+                    {
+                        "itemDescription": "24-28mm",
+                        "_key": "eUCr1t8u",
+                        "partNo": "C-1256-0103-24-28"
+                    },
+                    {
+                        "partNo": "C-1256-0103-28-32",
+                        "itemDescription": "28-32mm",
+                        "_key": "1LdBAQyo"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "z4e2xo4l"
+            },
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "SUlWzDiL",
+                "title": "D) In-Feed Cable Collet",
+                "items": [
+                    {
+                        "itemDescription": "6-9mm",
+                        "_key": "zRtUQnlC",
+                        "partNo": "C-1256-0103-06-09"
+                    },
+                    {
+                        "itemDescription": "9-12mm",
+                        "_key": "vLGk81jn",
+                        "partNo": "C-1256-0103-09-12"
+                    },
+                    {
+                        "_key": "wzXRVG3Z",
+                        "partNo": "C-1256-0103-12-16",
+                        "itemDescription": "12-16mm"
+                    },
+                    {
+                        "itemDescription": "16-20mm",
+                        "_key": "b68EgYJM",
+                        "partNo": "C-1256-0103-16-20"
+                    },
+                    {
+                        "partNo": "C-1256-0103-20-24",
+                        "itemDescription": "20-24mm",
+                        "_key": "pWzqGQYw"
+                    },
+                    {
+                        "partNo": "C-1256-0103-24-28",
+                        "itemDescription": "24-28mm",
+                        "_key": "xixZderh"
+                    },
+                    {
+                        "itemDescription": "28-32mm",
+                        "_key": "z7Dax7Kk",
+                        "partNo": "C-1256-0103-28-32"
+                    }
+                ]
+            },
+            {
+                "_key": "tRVkPoPh",
+                "title": "E) Cable Seals (Supplied in packs of 10)",
+                "items": [
+                    {
+                        "itemDescription": "6-7.5mm",
+                        "_key": "GXlR2TAG",
+                        "partNo": "C-1255-0208-06-07.5"
+                    },
+                    {
+                        "itemDescription": "7.5-9mm",
+                        "_key": "ftZMp6ul",
+                        "partNo": "C-1255-0208-07.5-09"
+                    },
+                    {
+                        "itemDescription": "9-10.5mm",
+                        "_key": "hfAmF7jy",
+                        "partNo": "C-1255-0208-09-10.5"
+                    },
+                    {
+                        "itemDescription": "10.5-12mm",
+                        "_key": "YH6lzrAW",
+                        "partNo": "C-1255-0208-10.5-12"
+                    },
+                    {
+                        "partNo": "C-1255-0208-12-14-F",
+                        "itemDescription": "12-14mm",
+                        "_key": "bsVJ9JB0"
+                    },
+                    {
+                        "itemDescription": "14-16mm",
+                        "_key": "q6NQPTKb",
+                        "partNo": "C-1255-0208-14-16-F"
+                    },
+                    {
+                        "itemDescription": "16-18mm",
+                        "_key": "v2SGQm5f",
+                        "partNo": "C-1255-0208-16-18-F"
+                    },
+                    {
+                        "itemDescription": "18-20mm",
+                        "_key": "PycFeazJ",
+                        "partNo": "C-1255-0208-18-20-F"
+                    },
+                    {
+                        "itemDescription": "20-22mm",
+                        "_key": "LXEo6cl9",
+                        "partNo": "C-1255-0208-20-22-F"
+                    },
+                    {
+                        "partNo": "C-1255-0208-22-24-F",
+                        "itemDescription": "22-24mm",
+                        "_key": "k3NdsTlD"
+                    },
+                    {
+                        "itemDescription": "24-26mm",
+                        "_key": "CwKR0t2U",
+                        "partNo": "C-1255-0208-24-26-F"
+                    },
+                    {
+                        "itemDescription": "26-28mm",
+                        "_key": "EY3W78Bs",
+                        "partNo": "C-1255-0208-26-28-F"
+                    },
+                    {
+                        "itemDescription": "28-30mm",
+                        "_key": "M2CrmOJ8",
+                        "partNo": "C-1255-0208-28-30-F"
+                    },
+                    {
+                        "partNo": "C-1255-0208-30-32-F",
+                        "itemDescription": "30-32mm",
+                        "_key": "5FcDSj50"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ]
+            },
+            {
+                "_key": "CXszafyM",
+                "title": "F) Cable Seal Plugs",
+                "items": [
+                    {
+                        "itemDescription": "6-7.5mm",
+                        "_key": "nkoRUgHA",
+                        "partNo": "C-1256-0206-07.5"
+                    },
+                    {
+                        "partNo": "C-1256-0206-09",
+                        "itemDescription": "7.5-9mm",
+                        "_key": "Ibln7QIE"
+                    },
+                    {
+                        "itemDescription": "9-10.5mm",
+                        "_key": "10xUFDvl",
+                        "partNo": "C-1256-0206-10.5"
+                    },
+                    {
+                        "partNo": "C-1256-0206-12",
+                        "itemDescription": "10.5-12mm",
+                        "_key": "z3p27clE"
+                    },
+                    {
+                        "_key": "5PanHGB9",
+                        "partNo": "C-1256-0206-14",
+                        "itemDescription": "12-14mm"
+                    },
+                    {
+                        "itemDescription": "14-16mm",
+                        "_key": "9fO7okvm",
+                        "partNo": "C-1256-0206-16"
+                    },
+                    {
+                        "itemDescription": "16-18mm",
+                        "_key": "Jl2HCSYx",
+                        "partNo": "C-1256-0206-18"
+                    },
+                    {
+                        "itemDescription": "18-20mm",
+                        "_key": "avH3vvyl",
+                        "partNo": "C-1256-0206-20"
+                    },
+                    {
+                        "itemDescription": "20-22mm",
+                        "_key": "7KpLAjoN",
+                        "partNo": "C-1256-0206-22"
+                    },
+                    {
+                        "_key": "51ZsXHNW",
+                        "partNo": "C-1256-0206-24",
+                        "itemDescription": "22-24mm"
+                    },
+                    {
+                        "partNo": "C-1256-0206-26",
+                        "itemDescription": "24-26mm",
+                        "_key": "FtbeQp0a"
+                    },
+                    {
+                        "itemDescription": "26-28mm",
+                        "_key": "v58sGXtm",
+                        "partNo": "C-1256-0206-28"
+                    },
+                    {
+                        "itemDescription": "28-30mm",
+                        "_key": "RNaY7imj",
+                        "partNo": "C-1256-0206-30"
+                    },
+                    {
+                        "itemDescription": "30-32mm",
+                        "_key": "gQfWrjat",
+                        "partNo": "C-1256-0206-32"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ]
+            }
+        ],
+        "hasSubCategories": false,
+        "title": "Tornado",
+        "description": [
+            {
+                "paragraph": "The cable blowing machine (sometimes known as cable jetting), comprising an air box and cable pusher, has been designed to provide an effective and safe method of fibre optic cable installation.",
+                "_key": "CtJtKG4h"
+            },
+            {
+                "paragraph": "The system installs fibre optic cable of 6mm (0.25”) to 32mm (1.25”) overall diameter, at speeds up to 90m/min (300ft/min), into pre-installed ducts. The system operates on the viscous drag principle employing compressed air to install the cable, controlled and assisted by the belt drive system. The cable is propelled by compressed air, fed into the duct via a venturi principle, while the hydraulically powered belt drive system controls the fibre optic cable.",
+                "_key": "I5e2QsE2"
+            },
+            {
+                "paragraph": "The electronic monitoring system provides read out of speed and distance, gives protection against duct obstructions and includes an emergency stop facility. The system is mounted on an anti-corrosion treated, sturdy, height adjustable, wheeled, tubular steel trolley. This allows the unit to be wheeled around on site. The C-1203 hydraulic petrol driven power pack provides power. The unit is CE approved.",
+                "_key": "wMwzXyyo"
+            }
+        ],
+        "_updatedAt": "2023-05-28T15:45:37Z",
+        "recommendedProducts": [
+            {
+                "intro": "Designed to provide maximum cable protection, combined with the performance and reliability of hydraulic drive.",
+                "title": "Jetstream",
+                "id": "617d4265e3fadc2334d28bca",
+                "_key": "FWEMwZze",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-563e656f5b33bc2eea76a8ea0b39d722b5103f35-1200x1200-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1900"
+            },
+            {
+                "mainImage": {
+                    "asset": {
+                        "_ref": "image-a8dc787a5c69dc00461c9e2e069a9b6a78e9fc1e-1200x1200-jpg",
+                        "_type": "reference"
+                    },
+                    "_type": "image"
+                },
+                "subCategory": [],
+                "productId": "C-1700",
+                "intro": "Backed by the latest technology in servo controls to provide precise control of torque and speed.",
+                "title": "Airstream",
+                "id": "617d4265e3fadc2334d28c8a",
+                "_key": "dkrBTBH1",
+                "category": [
+                    "Fibre Installation"
+                ]
+            },
+            {
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-8a94a292805e4aa71a4988a707d9e8b82eeca354-1200x1200-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1800",
+                "intro": "The C-1800 Accelair 2 Fibre Blowing Machine has been developed to provide a simple to use and reliable fibre blowing solution.",
+                "title": "Accelair",
+                "id": "617d4265e3fadc2334d28d13",
+                "_key": "lMVkV52o",
+                "category": [
+                    "Fibre Installation"
+                ]
+            }
+        ],
+        "accessories": [
+            {
+                "subCategory": [],
+                "category": [],
+                "_key": "eOMJMHJ8",
+                "intro": "A trolley mounted hydraulic power pack with preset internal system protection relief valve and quick release connectors.",
+                "id": "6197d65deac4122a72465b08",
+                "title": "Hydraulic Power Pack",
+                "_id": {
+                    "$oid": "6197d65deac4122a72465b08"
+                },
+                "productId": "C-1203-F",
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_type": "reference",
+                        "_ref": "image-f7e7a95e6e46a15e1e5aab86304f243f00a900a1-2131x2403-png"
+                    }
+                }
+            },
+            {
+                "id": "6197d906eac4122a72469b56",
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-4de5a1ced732b57dfad803cbf59cfc1ce207c918-350x288-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "productId": "C-1240-03",
+                "subCategory": [],
+                "_id": {
+                    "$oid": "6197d906eac4122a72469b56"
+                },
+                "title": "Cable Floating Water Pump",
+                "intro": "The CBS C-1240-03 Cable Floating Water Pump has been designed to work in conjunction with the Tornado cable blowing machine to install fibre cables using water instead of air.",
+                "category": [],
+                "_key": "0fu1WoNm"
+            },
+            {
+                "_id": {
+                    "$oid": "61e5618f89b81b3614bc4cef"
+                },
+                "category": [
+                    "Fibre Installation"
+                ],
+                "id": "61e5618f89b81b3614bc4cef",
+                "title": "Tube Blowing Conversion Kits",
+                "_key": "2WfAAi6c",
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_type": "reference",
+                        "_ref": "image-ccd156e82434339d13b018a98eaae8f1375070cf-500x408-jpg"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1250-CON",
+                "intro": "The tube blowing conversion kits are initially used to convert an existing Tornado Cable Blowing Machine into a Tube Blowing Machine for installing micro tubes into ducts."
+            },
+            {
+                "intro": "The Compressor Aftercooler has been designed to cool compressed air and remove water droplets.",
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-fb076140efd9a9d8fec553ba76a1be2c12fc43dd-1674x1569-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "title": "Compressed Air Cooler",
+                "_id": {
+                    "$oid": "61e5873851eb58574dacc6fd"
+                },
+                "id": "61e5873851eb58574dacc6fd",
+                "subCategory": [],
+                "productId": "C-1227-01",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "_key": "2RJAPjRu"
+            }
+        ]
+    },
+    {
+        "hasSubCategories": false,
+        "_rev": "fQbF5w1DAK2Q8lA9cu3k4b",
+        "id": "6197da17eac4122a7246aec0",
+        "intro": "The duct rod pushers are designed to assist in rodding operations. The units are mounted on a sturdy, anti corrosion treated tubular steel frame.",
+        "_updatedAt": "2023-05-28T15:45:37Z",
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "features": [
+            {
+                "heading": "Fully labelled control panel containing:",
+                "id": 1,
+                "_key": "wQT17v77",
+                "list": [
+                    {
+                        "_key": "viJFStcP",
+                        "listItem": "Power on/off button"
+                    },
+                    {
+                        "listItem": "Emergency stop button",
+                        "_key": "jYxezVSr"
+                    },
+                    {
+                        "listItem": "Reset button",
+                        "_key": "HDLdNnz4"
+                    },
+                    {
+                        "listItem": "Combined length counter recording in metres (feet) and cable speed read out in metres/min (feet/min)",
+                        "_key": "RqcSkJPl"
+                    },
+                    {
+                        "listItem": "Air pressure read out dial",
+                        "_key": "1wCMAoQo"
+                    },
+                    {
+                        "listItem": "Hydraulic on/off control valve",
+                        "_key": "qpLRNEV3"
+                    },
+                    {
+                        "listItem": "Adjustable speed control for drive belts",
+                        "_key": "h2L887Vr"
+                    },
+                    {
+                        "_key": "8k1mm4qr",
+                        "listItem": "Air supply control on/off with automatic exhaust function"
+                    }
+                ]
+            }
+        ],
+        "mainImage": {
+            "_type": "image",
+            "asset": {
+                "_type": "reference",
+                "_ref": "image-c75c1e5af2e6f58d9bc914efa0b7bad2af79bef8-1378x1064-jpg"
+            }
+        },
+        "accessories": [],
+        "videos": [],
+        "isDraft": false,
+        "productId": "C-1270-0001-04-BT",
+        "tables": [],
+        "category": [
+            "Fibre Installation"
+        ],
+        "moreImages": [],
+        "_type": "product",
+        "enquiries": 0,
+        "title": "Duct Rod Pusher",
+        "_id": "1a35e1d7-6f61-4136-95a6-b94f8e60e6a1",
+        "description": [
+            {
+                "_key": "thqZyRQS",
+                "paragraph": "The duct rod pushers are designed to assist in rodding operations. The units are mounted on sturdy, anti corrosion treated tubular steel frame, and fitted with gel filled puncture proof tyres, with hydraulic controls mounted on the frame for ease of transportation. The pushers are fitted with a tilting extendable boom, and chamber clamp for use in underground structures."
+            }
+        ],
+        "configurationInfo": [
+            {
+                "paragraph": "",
+                "_key": "2J4DnzF4"
+            },
+            {
+                "paragraph": "",
+                "_key": "DbWKneZY"
+            }
+        ],
+        "recommendedProducts": [
+            {
+                "title": "Tornado",
+                "id": "617d4265e3fadc2334d28b4b",
+                "_key": "cK2CKMxX",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-32ba0a50be4d12fdb4d341bc5619a698fcd7c0f0-1769x2257-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1250-08",
+                "intro": "The Tornado comprises an air box and cable pusher and is designed to provide an effective and safe method of fibre optic cable installation."
+            },
+            {
+                "intro": "Designed to maximise protection for micro cables with a compliant double drive concept, backed by the latest technology in servo controls.",
+                "title": "Hurricane",
+                "id": "617d4265e3fadc2334d28c27",
+                "_key": "umftyqb2",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "asset": {
+                        "_type": "reference",
+                        "_ref": "image-de13911134934173305e1272b7d779323c83781f-1200x1200-jpg"
+                    },
+                    "_type": "image"
+                },
+                "subCategory": [],
+                "productId": "C-1750"
+            },
+            {
+                "_key": "NlO2h3zv",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-9c9d038e5c8eee7148e012d26732c387039ebce0-1618x1235-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1700-PNEU",
+                "intro": "The C-1700-PNEU Pneumatic AirStream has been designed to be a robust and simple to operate cable blowing machine.",
+                "title": "Pneumatic Airstream",
+                "id": "617d4265e3fadc2334d28cdc"
+            }
+        ],
+        "countInStock": 0,
+        "subCategory": [
+            "Duct Rod Equipment"
+        ],
+        "configurationTitle": "TORNADO Configuration for Cable Blowing"
+    },
+    {
+        "videos": [
+            "gQieY1dsXZ6K5Dk3"
+        ],
+        "features": [
+            {
+                "heading": "Main Features:",
+                "id": 1,
+                "_key": "svjg1JEh",
+                "list": [
+                    {
+                        "listItem": "Automatic Cable Centralisation",
+                        "_key": "bJZXDDi5"
+                    },
+                    {
+                        "_key": "xTaUdzpg",
+                        "listItem": "Synchronous high grip profiled drive belts"
+                    },
+                    {
+                        "listItem": "Tabletop design",
+                        "_key": "NLafZKfi"
+                    },
+                    {
+                        "_key": "3w5nPkIC",
+                        "listItem": "Variable speed control"
+                    },
+                    {
+                        "_key": "4q6lk1vW",
+                        "listItem": "Single person operation"
+                    },
+                    {
+                        "listItem": "Digital cable speed and length monitoring",
+                        "_key": "eMlBmRvp"
+                    },
+                    {
+                        "listItem": "Integral air valve and pressure gauge",
+                        "_key": "CfmOGzdx"
+                    },
+                    {
+                        "_key": "h2xqEFZ4",
+                        "listItem": "Easy cable threading"
+                    },
+                    {
+                        "listItem": "Polycarbonate safety guarding",
+                        "_key": "9ccWvFEV"
+                    },
+                    {
+                        "listItem": "Low maintenance",
+                        "_key": "7Ao8IYKM"
+                    },
+                    {
+                        "_key": "CZ7kpOg9",
+                        "listItem": "Wheeled Travel case"
+                    },
+                    {
+                        "_key": "28jFRWHT",
+                        "listItem": "Tool kit"
+                    }
+                ]
+            },
+            {
+                "heading": "Specifications:",
+                "id": 2,
+                "_key": "X3WzaMO4",
+                "list": [
+                    {
+                        "listItem": "Cable Range: 4-20mm",
+                        "_key": "sO00a6b0"
+                    },
+                    {
+                        "listItem": "Duct Range: 12-50mm",
+                        "_key": "MaVEY3Ha"
+                    },
+                    {
+                        "_key": "ADtFSflX",
+                        "listItem": "Cable Speed (Adjustable): (0-85m/min) (0-280 ft/min)"
+                    },
+                    {
+                        "listItem": "Max Air Pressure: 15 Bar (215 psi)",
+                        "_key": "BzNUIskj"
+                    },
+                    {
+                        "_key": "xArXoxOg",
+                        "listItem": "Pushing Force: 600N"
+                    },
+                    {
+                        "listItem": "Drive Media: Hydraulic",
+                        "_key": "esPPIBlt"
+                    },
+                    {
+                        "_key": "nycWA4p1",
+                        "listItem": "Drive Type: Profiled Belt"
+                    },
+                    {
+                        "listItem": "Drive Orientation: Horizontal",
+                        "_key": "P1Lp2b4t"
+                    },
+                    {
+                        "listItem": "Cable Speed Measurement: Proximity Switch",
+                        "_key": "Ilr26ndi"
+                    },
+                    {
+                        "_key": "RvI5AqpV",
+                        "listItem": "Shipping Specification (In Transit Case)"
+                    },
+                    {
+                        "_key": "AlJmEqHZ",
+                        "listItem": "Length: 700mm"
+                    },
+                    {
+                        "listItem": "Width:  590mm",
+                        "_key": "HtG4NmQU"
+                    },
+                    {
+                        "listItem": "Height: 550mm",
+                        "_key": "D3MGN3kS"
+                    },
+                    {
+                        "_key": "RPllfdj9",
+                        "listItem": "Net Weight: 60kg"
+                    }
+                ]
+            }
+        ],
+        "tables": [
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "5yImI0wZ",
+                "title": "A) Cable Collet Assembly",
+                "items": [
+                    {
+                        "_key": "6vOvsk08",
+                        "partNo": "C-1900-C-0406",
+                        "itemDescription": "4-6mm"
+                    },
+                    {
+                        "partNo": "C-1900-C-0609",
+                        "itemDescription": "6-9mm",
+                        "_key": "PwAvbMqI"
+                    },
+                    {
+                        "itemDescription": "9-12mm",
+                        "_key": "1ce0wQJX",
+                        "partNo": "C-1900-C-0912"
+                    },
+                    {
+                        "itemDescription": "12-16mm",
+                        "_key": "ikWg7AHC",
+                        "partNo": "C-1900-C-1216"
+                    },
+                    {
+                        "itemDescription": "16-20mm",
+                        "_key": "9upBkEmc",
+                        "partNo": "C-1900-C-1620"
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "tHewuZnm",
+                "title": "B) Duct Clamp & Seal Collets",
+                "items": [
+                    {
+                        "partNo": "C-1900-D-12",
+                        "itemDescription": "12mm",
+                        "_key": "CA9bN8ql"
+                    },
+                    {
+                        "itemDescription": "14mm",
+                        "_key": "SFcmGYpM",
+                        "partNo": "C-1900-D-14"
+                    },
+                    {
+                        "partNo": "C-1900-D-16",
+                        "itemDescription": "16mm",
+                        "_key": "xM3nUcxK"
+                    },
+                    {
+                        "partNo": "C-1900-D-18",
+                        "itemDescription": "18mm",
+                        "_key": "iQSmhrVd"
+                    },
+                    {
+                        "partNo": "C-1900-D-20",
+                        "itemDescription": "20mm",
+                        "_key": "ZK3HkUN4"
+                    },
+                    {
+                        "partNo": "C-1900-D-25",
+                        "itemDescription": "25mm",
+                        "_key": "Zb8nNRPv"
+                    },
+                    {
+                        "itemDescription": "32mm",
+                        "_key": "Fd9ZVRjB",
+                        "partNo": "C-1900-D-32"
+                    },
+                    {
+                        "partNo": "C-1900-D-40",
+                        "itemDescription": "40mm",
+                        "_key": "zwC4KWCZ"
+                    },
+                    {
+                        "partNo": "C-1900-D-50",
+                        "itemDescription": "50mm",
+                        "_key": "zbTXwctG"
+                    }
+                ]
+            },
+            {
+                "title": "C) Cable Seals",
+                "items": [
+                    {
+                        "_key": "W5AfATpa",
+                        "partNo": "C-1255-0208-04-05",
+                        "itemDescription": "4-5mm"
+                    },
+                    {
+                        "partNo": "C-1255-0208-05-06-1",
+                        "itemDescription": "5-6mm",
+                        "_key": "4JtvsfF2"
+                    },
+                    {
+                        "_key": "ujXq36gp",
+                        "partNo": "C-1255-0208-06-07.5",
+                        "itemDescription": "6-7.5mm"
+                    },
+                    {
+                        "itemDescription": "7.5-9mm",
+                        "_key": "Zo8jTkn6",
+                        "partNo": "C-1255-0208-07.5-09"
+                    },
+                    {
+                        "itemDescription": "9-10.5mm",
+                        "_key": "u4GyOH6L",
+                        "partNo": "C-1255-0208-09-10.5"
+                    },
+                    {
+                        "_key": "j97GcbJd",
+                        "partNo": "C-1255-0208-10.5-12",
+                        "itemDescription": "10.5-12mm"
+                    },
+                    {
+                        "itemDescription": "12-14mm",
+                        "_key": "DBxGAg9U",
+                        "partNo": "C-1255-0208-12-14-F"
+                    },
+                    {
+                        "partNo": "C-1255-0208-14-16-F",
+                        "itemDescription": "14-16mm",
+                        "_key": "PLPmgw1T"
+                    },
+                    {
+                        "partNo": "C-1255-0208-16-18-F",
+                        "itemDescription": "16-18mm",
+                        "_key": "VUyxqMHh"
+                    },
+                    {
+                        "_key": "2awnQHBm",
+                        "partNo": "C-1255-0208-18-20-F",
+                        "itemDescription": "18-20mm"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "LDKpSiCA"
+            },
+            {
+                "title": "D) Cable Seal Plug",
+                "items": [
+                    {
+                        "itemDescription": "4-5mm",
+                        "_key": "L4bBkw9e",
+                        "partNo": "C-1256-0206-05"
+                    },
+                    {
+                        "_key": "NCgRCNRz",
+                        "partNo": "C-1256-0206-06",
+                        "itemDescription": "5-6mm"
+                    },
+                    {
+                        "itemDescription": "6-7.5mm",
+                        "_key": "qUQSzvYf",
+                        "partNo": "C-1256-0206-07.5"
+                    },
+                    {
+                        "itemDescription": "7.5-9mm",
+                        "_key": "ZLHcejka",
+                        "partNo": "C-1256-0206-09"
+                    },
+                    {
+                        "itemDescription": "9-10.5mm",
+                        "_key": "tAKanDSY",
+                        "partNo": "C-1256-0206-10.5"
+                    },
+                    {
+                        "partNo": "C-1256-0206-12",
+                        "itemDescription": "10.5-12mm",
+                        "_key": "i9g2dfGU"
+                    },
+                    {
+                        "partNo": "C-1256-0206-14",
+                        "itemDescription": "12-14mm",
+                        "_key": "nwYqq8iX"
+                    },
+                    {
+                        "_key": "9PuICX0T",
+                        "partNo": "C-1256-0206-16",
+                        "itemDescription": "14-16mm"
+                    },
+                    {
+                        "itemDescription": "16-18mm",
+                        "_key": "TJ5dB78S",
+                        "partNo": "C-1256-0206-18"
+                    },
+                    {
+                        "itemDescription": "18-20mm",
+                        "_key": "6bBvbrHN",
+                        "partNo": "C-1256-0206-20"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "mRCijdzs"
+            },
+            {
+                "columns": [
+                    "partNo",
+                    "itemDescription"
+                ],
+                "_key": "0CWXFGjj",
+                "title": "Drive Belts",
+                "items": [
+                    {
+                        "partNo": "C-1900-DB",
+                        "itemDescription": "Drive belt (pair) 6-20mm o/d cable",
+                        "_key": "mNGGh16s"
+                    },
+                    {
+                        "partNo": "C-1900-DB-1",
+                        "itemDescription": "Drive belt (pair) 4-16mm o/d cable",
+                        "_key": "LkaeSC0j"
+                    }
+                ]
+            },
+            {
+                "_key": "oNmDWGdw",
+                "title": "Tube Seal O Rings",
+                "items": [
+                    {
+                        "partNo": "C-1300-TS-12-5",
+                        "itemDescription": "12mm",
+                        "_key": "ju9KxtEX"
+                    },
+                    {
+                        "partNo": "C-1300-TS-14-5",
+                        "itemDescription": "14mm",
+                        "_key": "7v4eUkLn"
+                    },
+                    {
+                        "_key": "4rtRqcMz",
+                        "partNo": "C-1300-TS-16-5",
+                        "itemDescription": "16mm"
+                    },
+                    {
+                        "_key": "wJc3pVS1",
+                        "partNo": "C-1300-TS-18-5",
+                        "itemDescription": "18mm"
+                    }
+                ],
+                "columns": [
+                    "partNo",
+                    "itemDescription"
+                ]
+            }
+        ],
+        "configurationTitle": "JETSTREAM Configuration",
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "configurationInfo": [
+            {
+                "_key": "oPWpyQbp",
+                "paragraph": "In order to configure your JetStream to your application, we ask that you pick one of each from the list below:"
+            },
+            {
+                "_key": "MgP55WlE",
+                "paragraph": "The cable collet assembly (A), the duct clamp and seal collets (B) and cable seals (C)."
+            }
+        ],
+        "_updatedAt": "2023-06-07T10:41:23Z",
+        "accessories": [
+            {
+                "id": "6197d65deac4122a72465b08",
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-f7e7a95e6e46a15e1e5aab86304f243f00a900a1-2131x2403-png",
+                        "_type": "reference"
+                    }
+                },
+                "productId": "C-1203-F",
+                "_key": "xpSMnpHM",
+                "title": "Hydraulic Power Pack",
+                "category": [],
+                "subCategory": [],
+                "intro": "A trolley mounted hydraulic power pack with preset internal system protection relief valve and quick release connectors.",
+                "_id": {
+                    "$oid": "6197d65deac4122a72465b08"
+                }
+            }
+        ],
+        "_id": "aa1721f0-93aa-4993-b9d3-9c6e1439449a",
+        "mainImage": {
+            "_type": "image",
+            "asset": {
+                "_type": "reference",
+                "_ref": "image-563e656f5b33bc2eea76a8ea0b39d722b5103f35-1200x1200-jpg"
+            }
+        },
+        "id": "617d4265e3fadc2334d28bca",
+        "recommendedProducts": [
+            {
+                "productId": "C-1750",
+                "intro": "Designed to maximise protection for micro cables with a compliant double drive concept, backed by the latest technology in servo controls.",
+                "title": "Hurricane",
+                "id": "617d4265e3fadc2334d28c27",
+                "_key": "B2iI20ju",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_type": "reference",
+                        "_ref": "image-de13911134934173305e1272b7d779323c83781f-1200x1200-jpg"
+                    }
+                },
+                "subCategory": []
+            },
+            {
+                "subCategory": [],
+                "productId": "C-1250-08",
+                "intro": "The Tornado comprises an air box and cable pusher and is designed to provide an effective and safe method of fibre optic cable installation.",
+                "title": "Tornado",
+                "id": "617d4265e3fadc2334d28b4b",
+                "_key": "WhSPZSG7",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-32ba0a50be4d12fdb4d341bc5619a698fcd7c0f0-1769x2257-jpg",
+                        "_type": "reference"
+                    }
+                }
+            },
+            {
+                "intro": "The C-1700-PNEU Pneumatic AirStream has been designed to be a robust and simple to operate cable blowing machine.",
+                "title": "Pneumatic Airstream",
+                "id": "617d4265e3fadc2334d28cdc",
+                "_key": "WU4ppRZG",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-9c9d038e5c8eee7148e012d26732c387039ebce0-1618x1235-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1700-PNEU"
+            }
+        ],
+        "_type": "product",
+        "isDraft": false,
+        "title": "Jetstream",
+        "_rev": "wzkUpesxJ0YkrQleqgnOzW",
+        "intro": "Designed to provide maximum cable protection, combined with the performance and reliability of hydraulic drive.",
+        "productId": "C-1900",
+        "countInStock": 0,
+        "category": [
+            "Fibre Installation"
+        ],
+        "moreImages": [],
+        "subCategory": [
+            "Jetstream"
+        ],
+        "description": [
+            {
+                "paragraph": "The C-1900 has been designed to provide maximum cable protection, combined with the performance and reliability of hydraulic drive. The profiled double drive belt system is driven by single 32cc hydraulic motor, powered by the proven C-1203-F power pack.",
+                "_key": "oB3jVQ0n"
+            },
+            {
+                "paragraph": "The electronic monitoring system provides read-out of speed and distance, gives protection against duct obstructions and includes emergency stop facility. The C-1900 is adjustable to suit a wide range of cable diameters 4-20mm, and duct diameters 12-50mm o/d.",
+                "_key": "SWlOBjCY"
+            }
+        ],
+        "enquiries": 0,
+        "hasSubCategories": false
+    },
+    {
+        "tables": [
+            {
+                "_key": "IXDhLcPi",
+                "title": "Tube Collet & Clamp Assemblies",
+                "items": [
+                    {
+                        "itemDescription": "Tube Collet Assy - 05mm o/d",
+                        "_key": "0409LU2s",
+                        "partNo": "C-1700-TBC-05"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 07mm o/d",
+                        "_key": "JhJrIQl6",
+                        "partNo": "C-1700-TBC-07"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 08mm o/d",
+                        "_key": "P829wfG6",
+                        "partNo": "C-1700-TBC-08"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 10mm o/d",
+                        "_key": "K9sKFEJY",
+                        "partNo": "C-1700-TBC-10"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 12mm o/d",
+                        "_key": "d3zQpTcV",
+                        "partNo": "C-1700-TBC-12"
+                    },
+                    {
+                        "_key": "O5DdI8Gq",
+                        "partNo": "C-1700-TBC-14",
+                        "itemDescription": "Tube Collet Assy - 14mm o/d"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 16mm o/d",
+                        "_key": "vIGUjJre",
+                        "partNo": "C-1700-TBC-16"
+                    },
+                    {
+                        "partNo": "C-1700-TBC-18",
+                        "itemDescription": "Tube Collet Assy - 18mm o/d",
+                        "_key": "XMg76sCh"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ]
+            },
+            {
+                "columns": [
+                    "partNo",
+                    "itemDescription"
+                ],
+                "_key": "satAcy4z",
+                "title": "Cable Guide Assemblies",
+                "items": [
+                    {
+                        "_key": "cfHOXYA0",
+                        "partNo": "C-1700-CG-02025",
+                        "itemDescription": "Cable Guide, 2.5mm Dia"
+                    },
+                    {
+                        "itemDescription": "Cable Guide, 2.6 - 3.5mm Dia",
+                        "_key": "U2zYnylg",
+                        "partNo": "C-1700-CG-02503"
+                    },
+                    {
+                        "itemDescription": "Cable Guide, 3.0 - 6.4mm Dia",
+                        "_key": "t8W4GU84",
+                        "partNo": "C-1700-CG-0306"
+                    },
+                    {
+                        "partNo": "C-1700-CG-0685",
+                        "itemDescription": "Cable Guide, 6.0 - 8.5mm Dia",
+                        "_key": "DNrfQbAh"
+                    },
+                    {
+                        "partNo": "C-1700-CG-8511",
+                        "itemDescription": "Cable Guide, 8.5 - 11.0mm Dia",
+                        "_key": "4KCH8YGR"
+                    }
+                ]
+            },
+            {
+                "_key": "TgAQ7ApK",
+                "title": "Cable Seal Collet Assemblies",
+                "items": [
+                    {
+                        "itemDescription": "Cable Seal Collet 2.5 - 3.0mm",
+                        "_key": "ddaZJdea",
+                        "partNo": "C-1700-CBL-2530"
+                    },
+                    {
+                        "_key": "ugyF8YzN",
+                        "partNo": "C-1700-CBL-3038",
+                        "itemDescription": "Cable Seal Collet 3.0 - 3.8mm"
+                    },
+                    {
+                        "itemDescription": "Cable Seal Collet 3.8 - 5.0mm",
+                        "_key": "qkGoOVVU",
+                        "partNo": "C-1700-CBL-3850"
+                    },
+                    {
+                        "itemDescription": "Cable Seal Collet 5.0 - 6.4mm",
+                        "_key": "f5CQw0R5",
+                        "partNo": "C-1700-CBL-5064"
+                    },
+                    {
+                        "_key": "MMtyrg3R",
+                        "partNo": "C-1700-CBL-6480",
+                        "itemDescription": "Cable Seal Collet 6.4 - 8.0mm"
+                    },
+                    {
+                        "itemDescription": "Cable Seal Collet 8.0 - 9.5mm",
+                        "_key": "g7g4midx",
+                        "partNo": "C-1700-CBL-8095"
+                    },
+                    {
+                        "_key": "snln200R",
+                        "partNo": "C-1700-CBL-9511",
+                        "itemDescription": "Cable Seal Collet 9.5 - 11.0mm"
+                    }
+                ],
+                "columns": [
+                    "partNo",
+                    "Cable Seal Collet Assemblies"
+                ]
+            },
+            {
+                "_key": "Vb5WmT5R",
+                "title": "Cable Seals (supplied in packs of 5)",
+                "items": [
+                    {
+                        "itemDescription": "Cable Seals 2.5 – 3.0mm",
+                        "_key": "stuaiXdq",
+                        "partNo": "C-1300-CS-2530-5"
+                    },
+                    {
+                        "_key": "UCQx4Qnd",
+                        "partNo": "C-1300-CS-3038-5",
+                        "itemDescription": "Cable Seals 3.0 – 3.8mm"
+                    },
+                    {
+                        "_key": "jhu3nlke",
+                        "partNo": "C-1300-CS-3850-5",
+                        "itemDescription": "Cable Seals 3.8 – 5.0mm"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 5.0 – 6.4mm",
+                        "_key": "dBYUNZ6r",
+                        "partNo": "C-1300-CS-5064-5"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 6.4 – 8.0mm",
+                        "_key": "NinNXJwP",
+                        "partNo": "C-1300-CS-6480-5"
+                    },
+                    {
+                        "itemDescription": "Cable Seals 8.0 – 9.5mm",
+                        "_key": "VKG0GSaq",
+                        "partNo": "C-1300-CS-8095-5"
+                    },
+                    {
+                        "_key": "pITunSMB",
+                        "partNo": "C-1300-CS-9511-5",
+                        "itemDescription": "Cable Seals 9.5 – 11.0mm"
+                    }
+                ],
+                "columns": [
+                    "partNo",
+                    "Cable Seals (supplied in packs of 5)"
+                ]
+            },
+            {
+                "title": "Tube Seal O Ring",
+                "items": [
+                    {
+                        "itemDescription": "Tube Collet Assy - 5mm Dia",
+                        "_key": "VJG3VH5k",
+                        "partNo": "C-1700-TBC-05"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 7mm Dia",
+                        "_key": "MaUFWT8Y",
+                        "partNo": "C-1700-TBC-07"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 8mm Dia",
+                        "_key": "a5SGgZFb",
+                        "partNo": "C-1700-TBC-08"
+                    },
+                    {
+                        "_key": "QzIpCvuX",
+                        "partNo": "C-1700-TBC-10",
+                        "itemDescription": "Tube Collet Assy - 10mm o/d"
+                    },
+                    {
+                        "_key": "PFtEKW1c",
+                        "partNo": "C-1700-TBC-12",
+                        "itemDescription": "Tube Collet Assy - 12mm o/d"
+                    },
+                    {
+                        "itemDescription": "Tube Collet Assy - 14mm o/d",
+                        "_key": "QrNZrreV",
+                        "partNo": "C-1700-TBC-14"
+                    },
+                    {
+                        "partNo": "C-1700-TBC-16",
+                        "itemDescription": "Tube Collet Assy - 16mm o/d",
+                        "_key": "ITXBFlbE"
+                    },
+                    {
+                        "partNo": "C-1700-TBC-18",
+                        "itemDescription": "Tube Collet Assy - 18mm o/d",
+                        "_key": "AzZleqtv"
+                    }
+                ],
+                "columns": [
+                    "partNo",
+                    "Tube Seal O Ring"
+                ],
+                "_key": "lPNNWjtc"
+            },
+            {
+                "items": [
+                    {
+                        "_key": "t9CrsWCV",
+                        "partNo": "C-1700-DB-0311",
+                        "itemDescription": "Drive Belt, 2.5 - 11mm Cable Dia"
+                    }
+                ],
+                "columns": [
+                    "partNo",
+                    "itemDescription"
+                ],
+                "_key": "7zWssE3o",
+                "title": "Replacement Drive Belts (Supplied in pairs)"
+            }
+        ],
+        "_type": "product",
+        "id": "617d4265e3fadc2334d28cdc",
+        "intro": "The C-1700-PNEU Pneumatic AirStream has been designed to be a robust and simple to operate cable blowing machine.",
+        "isDraft": false,
+        "_rev": "fQbF5w1DAK2Q8lA9cu3k4b",
+        "moreImages": [],
+        "recommendedProducts": [
+            {
+                "productId": "C-1800",
+                "intro": "The C-1800 Accelair 2 Fibre Blowing Machine has been developed to provide a simple to use and reliable fibre blowing solution.",
+                "title": "Accelair",
+                "id": "617d4265e3fadc2334d28d13",
+                "_key": "hvVfkS0y",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "asset": {
+                        "_ref": "image-8a94a292805e4aa71a4988a707d9e8b82eeca354-1200x1200-jpg",
+                        "_type": "reference"
+                    },
+                    "_type": "image"
+                },
+                "subCategory": []
+            },
+            {
+                "intro": "The Tornado comprises an air box and cable pusher and is designed to provide an effective and safe method of fibre optic cable installation.",
+                "title": "Tornado",
+                "id": "617d4265e3fadc2334d28b4b",
+                "_key": "UUOG7CWS",
+                "category": [
+                    "Fibre Installation"
+                ],
+                "mainImage": {
+                    "asset": {
+                        "_ref": "image-32ba0a50be4d12fdb4d341bc5619a698fcd7c0f0-1769x2257-jpg",
+                        "_type": "reference"
+                    },
+                    "_type": "image"
+                },
+                "subCategory": [],
+                "productId": "C-1250-08"
+            },
+            {
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-a8dc787a5c69dc00461c9e2e069a9b6a78e9fc1e-1200x1200-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [],
+                "productId": "C-1700",
+                "intro": "Backed by the latest technology in servo controls to provide precise control of torque and speed.",
+                "title": "Airstream",
+                "id": "617d4265e3fadc2334d28c8a",
+                "_key": "LiXuizHl",
+                "category": [
+                    "Fibre Installation"
+                ]
+            }
+        ],
+        "title": "Pneumatic Airstream",
+        "productId": "C-1700-PNEU",
+        "description": [
+            {
+                "paragraph": "The C-1700-PNEU Pneumatic AirStream has been designed to be a robust and simple to operate cable blowing machine. The compliant double drive concept also provides the maximum protection for micro cables. Designed to install cable sizes of 2.5-11mm into tube sizes of 5-18mm.",
+                "_key": "FDWmFj3p"
+            }
+        ],
+        "_id": "5813cb4a-242c-4060-9680-7d491425b3fb",
+        "videos": [],
+        "configurationInfo": [
+            {
+                "paragraph": "",
+                "_key": "hBmGmReI"
+            }
+        ],
+        "_updatedAt": "2023-05-28T15:45:37Z",
+        "category": [
+            "Fibre Installation"
+        ],
+        "accessories": [],
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "countInStock": 0,
+        "mainImage": {
+            "_type": "image",
+            "asset": {
+                "_type": "reference",
+                "_ref": "image-9c9d038e5c8eee7148e012d26732c387039ebce0-1618x1235-jpg"
+            }
+        },
+        "subCategory": [
+            "Pneumatic Airstream"
+        ],
+        "configurationTitle": "TORNADO Configuration for Cable Blowing",
+        "features": [
+            {
+                "list": [
+                    {
+                        "listItem": "Cable Diameter: 2.5 to 11mm",
+                        "_key": "AMrACOVa"
+                    },
+                    {
+                        "_key": "SQdu2uv3",
+                        "listItem": "Tube Size (Outside Dia): 5 to 18mm"
+                    },
+                    {
+                        "listItem": "Cable Speed (Adjustable): 0-80m/min",
+                        "_key": "E4j9TqSD"
+                    },
+                    {
+                        "_key": "ZQhCaHBI",
+                        "listItem": "Compressor: >1.5m3/min @ 10-15 Bar"
+                    },
+                    {
+                        "_key": "oix7cpDq",
+                        "listItem": "Width: 300mm (11.8″)"
+                    },
+                    {
+                        "listItem": "Length: 460mm (18″)",
+                        "_key": "J8JJNd7J"
+                    },
+                    {
+                        "listItem": "Height: 240mm (9.4″)",
+                        "_key": "6DzqWgE9"
+                    },
+                    {
+                        "listItem": "Net Weight: 14kg (31 lbs.)",
+                        "_key": "WzNfm7QU"
+                    }
+                ],
+                "heading": "Specifications:",
+                "id": 1,
+                "_key": "npYWslC9"
+            }
+        ],
+        "enquiries": 0,
+        "hasSubCategories": false
+    },
+    {
+        "videos": [],
+        "configurationTitle": "Configuration Section",
+        "countInStock": 0,
+        "category": [],
+        "hasSubCategories": false,
+        "_rev": "8x12ShlkzurvJWsJ5ZRF6I",
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "features": [
+            {
+                "id": 1,
+                "_key": "iMmwbFsP",
+                "list": [
+                    {
+                        "listItem": "Speed: 0-30 metres/min from capstans, 0-100 metres/min drum drive when connected to capstan drive shaft",
+                        "_key": "fFDXrJcx"
+                    },
+                    {
+                        "listItem": "Drive Arrangement:\tFixed displacement pump and motor through double capstan drive module",
+                        "_key": "zdP29CJc"
+                    },
+                    {
+                        "_key": "VcvpXjK6",
+                        "listItem": "Controls:\tFail-safe, bi-directional selection, creep & inching facility and operator adjustable load limiting control"
+                    },
+                    {
+                        "listItem": "Rope Layer:\tSemi-automatic",
+                        "_key": "UrkK2F7P"
+                    },
+                    {
+                        "listItem": "Load Indicator:\tSemi-automatic Calibrated gauge dial read out in kg with adjustable limit control",
+                        "_key": "voykpPBw"
+                    },
+                    {
+                        "listItem": "Hydraulic Circuit:\tOpen circuit with double filtration overload protection",
+                        "_key": "6Jm8trmI"
+                    },
+                    {
+                        "_key": "wVVQYcGU",
+                        "listItem": "Length:\t2844mm"
+                    },
+                    {
+                        "listItem": "Width:\t1420mm",
+                        "_key": "1CqreMcS"
+                    },
+                    {
+                        "listItem": "Height:\t1480mm",
+                        "_key": "zNa6CQVN"
+                    },
+                    {
+                        "_key": "U9KLHwWw",
+                        "listItem": "Weight:\t455kg (unladen)"
+                    },
+                    {
+                        "_key": "6hXxLfOR",
+                        "listItem": "Rope Drum-Empty:\t22kg"
+                    },
+                    {
+                        "listItem": "Split Drum:\t23kg",
+                        "_key": "rSjutJUR"
+                    },
+                    {
+                        "_key": "qW4cl6X2",
+                        "listItem": "Frame & Cover:\t50kg"
+                    },
+                    {
+                        "_key": "APM0GUfF",
+                        "listItem": "Drum c/w 400m:\t27kg"
+                    },
+                    {
+                        "listItem": "Drum c/w 600m:\t40kg",
+                        "_key": "JeHrbxOc"
+                    }
+                ],
+                "heading": "SPECIFICATIONS:"
+            }
+        ],
+        "_id": "2f0af1b2-72a3-47fa-8138-1e771b4cca3e",
+        "intro": "The CBS 821 Universal Winch offers the constant pulling tension of a double capstan drive and the flexibility of a direct drive drum in one machine.",
+        "subCategory": [
+            "Winches"
+        ],
+        "recommendedProducts": [
+            {
+                "intro": "The portable hydraulic winching system is designed to provide a fully portable winching system, by breaking down into easily transportable modules.",
+                "title": "Portable Hydraulic Winching System",
+                "id": "61e6f9655e62f486c8ca29d0",
+                "_key": "mPc2S9cM",
+                "category": [],
+                "mainImage": {
+                    "asset": {
+                        "_ref": "image-3aeaa1c4d22dd6b3e43b88bae084ffc69e38aeeb-1750x1250-jpg",
+                        "_type": "reference"
+                    },
+                    "_type": "image"
+                },
+                "subCategory": [
+                    "Winches"
+                ],
+                "productId": "C-825"
+            },
+            {
+                "title": "Tower Erection Winch",
+                "id": "61e708685e62f486c8cc00ee",
+                "_key": "tZeeVnbR",
+                "category": [
+                    "Overhead Line"
+                ],
+                "mainImage": {
+                    "_type": "image",
+                    "asset": {
+                        "_ref": "image-db0f6e502bddd760e60451c86483c956537b2a35-639x574-jpg",
+                        "_type": "reference"
+                    }
+                },
+                "subCategory": [
+                    "Winches"
+                ],
+                "productId": "W1-TEW25H-01",
+                "intro": "The TEW25H-01 winch has been designed to comply with all the relevant safety requirements for lifting loads. Two fully automatic, fail safe braking systems are incorporated into the unit."
+            },
+            {
+                "_key": "FnRkYgzR",
+                "category": [],
+                "mainImage": {
+                    "asset": {
+                        "_ref": "image-08e9fdcde689d8e8e2f9e843d45627ab6e27a833-1000x715-jpg",
+                        "_type": "reference"
+                    },
+                    "_type": "image"
+                },
+                "subCategory": [
+                    "Grips",
+                    "Grips For Large Conductors"
+                ],
+                "productId": "K-1628-16-P",
+                "intro": "These grips are custom made to individual conductor sizes to ensure maximum contact around the conductor circumference.",
+                "title": "Grips For Large Conductors (weight 7.71kg)",
+                "id": "61e72c3d95c61896ca971d31"
+            }
+        ],
+        "title": "Hydraulic Universal Winch",
+        "id": "61e41f8146b6b7f32de828a1",
+        "isDraft": false,
+        "productId": "C-821",
+        "tables": [
+            {
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "qOwWPK5U",
+                "title": "Optional Extras",
+                "items": [
+                    {
+                        "partNo": "C-821-02",
+                        "itemDescription": "Drum 700mm diameter fitted with 400 metres of 8mm diameter Paraline rope",
+                        "_key": "hgJjpkF7"
+                    },
+                    {
+                        "_key": "YFUHg9Gn",
+                        "partNo": "C-821-03",
+                        "itemDescription": "Drum 700mm diameter fitted with 600 metres of 8mm diameter Paraline rope"
+                    },
+                    {
+                        "itemDescription": "Split Drum",
+                        "_key": "feAivGHr",
+                        "partNo": "C-A1-680-27"
+                    },
+                    {
+                        "partNo": "C-821-14",
+                        "itemDescription": "Waterproof Cover and Frame",
+                        "_key": "wIjzhGnu"
+                    }
+                ]
+            }
+        ],
+        "enquiries": 1,
+        "accessories": [],
+        "_updatedAt": "2023-05-28T15:45:41Z",
+        "moreImages": [],
+        "configurationInfo": [
+            {
+                "paragraph": "",
+                "_key": "q28moG4W"
+            }
+        ],
+        "_type": "product",
+        "mainImage": {
+            "asset": {
+                "_type": "reference",
+                "_ref": "image-bfafa12ec10d4948dacff8fb534770a8bd583f87-1770x998-jpg"
+            },
+            "_type": "image"
+        },
+        "description": [
+            {
+                "_key": "E3k7oPa7",
+                "paragraph": "The CBS 821 Universal Winch offers the constant pulling tension of a double capstan drive and the flexibility of a direct drive drum in one machine."
+            },
+            {
+                "paragraph": "The winch employs a powerful petrol engine mounted with associated hydraulic on a sturdy trailer unit. The precise hydraulic controls allow easy operation through one fail-safe lever. Ideally suited for ABC erection, 11/33kV stringing work conductor recovery and underground cable handling.",
+                "_key": "OVCm4qfd"
+            }
+        ]
+    },
+    {
+        "moreImages": [],
+        "enquiries": 5,
+        "tables": [
+            {
+                "items": [
+                    {
+                        "itemDescription": "Length: 150m, Width: 64kg",
+                        "_key": "emdiJcBT",
+                        "partNo": "B-105-150-1200"
+                    },
+                    {
+                        "partNo": "B-105-200-1200",
+                        "itemDescription": "Length: 200m, Width: 73kg",
+                        "_key": "ZtH6wD3s"
+                    },
+                    {
+                        "itemDescription": "Length: 250m, Width: 84kg",
+                        "_key": "T4R7Ht8X",
+                        "partNo": "B-105-250-1200"
+                    },
+                    {
+                        "partNo": "B-105-300-1200",
+                        "itemDescription": "Length: 300m, Width: 96kg",
+                        "_key": "fdYxjsJV"
+                    }
+                ],
+                "columns": [
+                    "itemDescription",
+                    "partNo"
+                ],
+                "_key": "LyPP339O",
+                "title": "ORDERING INFO"
+            }
+        ],
+        "hasSubCategories": false,
+        "_type": "product",
+        "title": "Maxi Rod 14mm",
+        "features": [
+            {
+                "_key": "kYIiLgrA",
+                "list": [
+                    {
+                        "listItem": "Cassette Diameter: 1200 mm",
+                        "_key": "Mbp5fhUC"
+                    },
+                    {
+                        "listItem": "Length: 1300 mm",
+                        "_key": "ENrRbpJI"
+                    },
+                    {
+                        "listItem": "Width: 550 mm",
+                        "_key": "bbkwjcjP"
+                    },
+                    {
+                        "_key": "OrIvsQux",
+                        "listItem": "Height: 1300 mm"
+                    },
+                    {
+                        "_key": "qpBkx8MG",
+                        "listItem": "Min. Bend Diameter: 950 mm"
+                    },
+                    {
+                        "listItem": "Breaking Strength: 8630kg",
+                        "_key": "AMUHxtNk"
+                    }
+                ],
+                "heading": "SPECIFICATIONS:",
+                "id": 1
+            }
+        ],
+        "countInStock": 0,
+        "accessories": [],
+        "recommendedProducts": [],
+        "_id": "9c2fac78-1dd8-4025-8524-44cc4a2e1866",
+        "subCategory": [
+            "Duct Rod Equipment"
+        ],
+        "id": "61f1b2c6caee60882d7b1065",
+        "configurationTitle": "Configuration Section",
+        "_createdAt": "2023-05-28T15:45:24Z",
+        "mainImage": {
+            "_type": "image",
+            "asset": {
+                "_ref": "image-6afc6d26ee85f4434e9245e9a7c0aade3ecf5b9d-1417x1124-jpg",
+                "_type": "reference"
+            }
+        },
+        "intro": "A high quality fibreglass rod, specially constructed to provide exceptionally high tensile strengths, whilst retaining flexibility.",
+        "configurationInfo": [
+            {
+                "paragraph": "",
+                "_key": "gBkFQSuO"
+            }
+        ],
+        "_rev": "fQbF5w1DAK2Q8lA9cu3pLx",
+        "_updatedAt": "2023-05-28T15:45:42Z",
+        "videos": [],
+        "isDraft": false,
+        "productId": "B-105",
+        "category": [
+            "Fibre Installation"
+        ],
+        "description": [
+            {
+                "paragraph": "A high quality fibreglass rod, specially constructed to provide exceptionally high tensile strengths, whilst retaining flexibility.  The 80% fill rate glass fibre core is reinforced with a high strength resin.  A braided reinforcing wrap is added before the final polypropylene wear resistant protective coating is applied. The continuous rods range from 4.5mm – 14mm with lengths from 30 metres – 300 metres.",
+                "_key": "6sYIAaHG"
+            }
+        ]
+    }
+]

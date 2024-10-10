@@ -8,12 +8,12 @@ import { normalizedData } from "@utils/methods";
 import VideoArea from "@containers/video/layout-01";
 import ExploreCarouselBothArea from "@containers/explore-product/layout-07";
 import ExploreLogos from "@containers/logos";
+import ContactTopArea from "@containers/contact-top";
 import Image from "next/image";
-import CategoryArea from "@containers/category/layout-01";
 
 // Demo data
 import homepageData from "../data/homepages/home-04.json";
-import productData from "../data/products-03.json";
+import favouriteProducts from "../data/favourite-products.json"
 
 import imageUrlBuilder from "@sanity/image-url";
 
@@ -48,24 +48,24 @@ const Home = () => {
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
                 <ExploreLogos />
-                <ServiceArea data={content["service-section"]} />
                 <VideoArea data={content["video-section"]} />
-                {/* <div className="slider-thumbnail">
+                <ServiceArea data={content["service-section"]} />
+                <div className="slider-thumbnail">
                 <Image
-                style={{display: 'block', marginInline: 'auto', marginTop: 30}}
+                style={{display: 'block', marginInline: 'auto', marginTop: 30, height: '100%', maxHeight: '500px', width: 'auto'}}
                                 src={urlFor(atmosImage).url()}
                                 alt={'atmos compressor'}
-                                width={585}
-                                height={593}
-                                priority
+                                width={0}
+                                height={0}
                             />
-                            </div> */}
+                            </div>
                 <ExploreCarouselBothArea
                     space={4}
                     data={{
-                        products: productData.slice(0, 9),
+                        products: favouriteProducts,
                     }}
                 />
+                <ContactTopArea className="mb--50" />
             </main>
             <Footer  data={content["brand-section"]}/>
         </Wrapper>
