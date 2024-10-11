@@ -27,6 +27,7 @@
                     "path": "/telecoms"
                 }
             ],
+            "catalogue": "/pdfs/main_product_catalogue.pdf",
             "images": [
                 {
                     "src": "/images/banner/atmos-banner.png"

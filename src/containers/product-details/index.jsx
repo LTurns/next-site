@@ -52,6 +52,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                 // title={product.title}
                                 // likeCount={product.likeCount}
                                 title={product?.title}
+                                videos={product?.videos}
                             />
                             <span className="bid">
                                 <span>{product?.productId}</span>
@@ -59,6 +60,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             <h6 className="title-name">
                                 {product?.category?.join(", ")}
                             </h6>
+                        
 
 
                             <div>
@@ -68,50 +70,57 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                     </p>
                                 ))}
                             </div>
-                                        <button
-                type="button"
-                className="vedio-wrapper"
-                onClick={() => setOpen(true)}
-            >
-                Play
-            </button>
-                            {product?.videos?.map((video) => (
-                                isOpen && (
-                            <Portal>
-                    <ModalVideo
-                        isOpen={isOpen}
-                        videoId={video}
-                        channel={"youtube"}
-                        onClose={() => setOpen(false)}
-                    />
-                </Portal>
-                                )
-                            ))}
+                                { product.title === 'Hurricane' ?  
+                                <><p style={{ fontSize: 14, marginTop: 10 }}>
+                                        Finance options available through our recommended partner PMD Business
+                                        Finance. Please contact either Rob Greenhalgh or Lauren O’Connor using
+                                        these details:
+                                    </p>
+                                    <p style={{ fontSize: 14 }}>
+                                            <a
+                                                class="green--text my-2"
+                                                href="email:robg@pmdbusinessfinance.co.uk"
+                                            >Email:robg@pmdbusinessfinance.co.uk</a><br></br><a
+                                                class="green--text my-2"
+                                                href="email:lauren@pmdbusinessfinance.co.uk"
+                                            >Email:lauren@pmdbusinessfinance.co.uk</a><br></br><a
+                                                class="green--text my-2"
+                                                href="tel:01616277486"
+                                            >Tel: 0161 627 7486</a><br></br>
+                                            <a href="www.pmdbusinessfinance.co.uk">Web: www.pmdbusinessfinance.co.uk</a>
+                                    </p></> : "" }
 
-                            <div className="rn-bid-details">
-                                <BidTab
-                                    features={product.features}
-                                    tables={product.tables}
-                                    accessories={product.accessories}
-                                />
-                                {/* <ExtraInfo /> */}
-                            </div>
+                                    { product.title === 'Hard Cable Ratchet Cutter 41mm' ||
+                                    product.title === '750 Mcm Ratcheting Cable Cutter' ||
+                                    product.title ===  'Cable Croppers' ? <>
+      <p
+        style={{fontSize: 14, color: 'red', marginTop: 10}}
+      >
+        Never use this tool to cut electrically energised cable. Severe or fatal
+        injury may result.
+      </p></> : ""}
 
-                            <Box mt={1}>
-                                <Button
-                                    variant="contained"
-                                    onClick={() =>
-                                        addToCart({
-                                            quantity: count + 1,
-                                            product,
-                                        })
-                                    }
-                                >
-                                    Add to Cart
-                                </Button>
-                            </Box>
-                        </div>
-                    </div>
+                                                <div className="rn-bid-details">
+                                                    <BidTab
+                                                        features={product.features}
+                                                        tables={product.tables}
+                                                        accessories={product.accessories} />
+                                                    {/* <ExtraInfo /> */}
+                                                </div>
+
+                                                <Box mt={1}>
+                                                    <Button
+                                                        variant="contained"
+                                                        onClick={() => addToCart({
+                                                            quantity: count + 1,
+                                                            product,
+                                                        })}
+                                                    >
+                                                        Add to Cart
+                                                    </Button>
+                                                </Box>
+                                            </div>
+                                        </div>
                 </div>
             </div>
         </div>

@@ -25547,7 +25547,9 @@
         ],
         "_rev": "fQbF5w1DAK2Q8lA9cu3pLx",
         "_updatedAt": "2023-05-28T15:45:42Z",
-        "videos": [],
+        "videos": [
+            "i6t07HuGgkk"
+        ],
         "isDraft": false,
         "productId": "B-105",
         "category": [
@@ -28170,7 +28172,7 @@
             "Fibre Installation"
         ],
         "videos": [
-            "gQieY1dsXZ6K5Dk3"
+            "mOE-7MfnK4E"
         ],
         "moreImages": [],
         "subCategory": [
@@ -28287,7 +28289,9 @@
             "Duct Rod Equipment"
         ],
         "isDraft": false,
-        "videos": [],
+        "videos": [
+            "i6t07HuGgkk"
+        ],
         "moreImages": [],
         "countInStock": 0,
         "title": "Maxi Rod 11mm",
@@ -29752,6 +29756,9 @@
         "id": "617d4265e3fadc2334d28d13",
         "productId": "C-1800-UK",
         "title": "Accelair 3",
+        "videos": [
+            "CTx6-et5fG8"
+        ],
         "countInStock": 0,
         "description": [
             {
@@ -30141,8 +30148,7 @@
                 "_ref": "image-4a97d169c99fa1965598ec7ca82b8cef7d139207-5654x3769-jpg",
                 "_type": "reference"
             }
-        },
-        "videos": []
+        }
     },
     {
         "_type": "product",
@@ -31041,7 +31047,9 @@
         ]
     },
     {
-        "videos": [],
+        "videos": [
+            "O8FtLP0pBuQ"
+        ],
         "configurationInfo": [
             {
                 "paragraph": "In order to customise your new “Tornado” to your application, we ask that you pick one of each from the list below, the Duct Clamp Collet (A), the Duct Seal Collet (B), the Cable Collet Assy (C) and the In Feed Cable Collet (D), the Cable Seals (E) and the Cable Seal Plug (F).",
@@ -41292,7 +41300,9 @@
             }
         ],
         "_updatedAt": "2023-05-28T15:45:37Z",
-        "videos": [],
+        "videos": [
+            "306kkYE_8aE"
+        ],
         "countInStock": 0,
         "configurationInfo": [
             {
@@ -44048,7 +44058,9 @@
         "intro": "A high quality fibreglass rod, specially constructed to provide exceptionally high tensile strengths, whilst retaining flexibility.",
         "configurationTitle": "Configuration Section",
         "countInStock": 0,
-        "videos": []
+        "videos": [
+            "i6t07HuGgkk"
+        ]
     },
     {
         "videos": [],

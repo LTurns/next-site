@@ -182,13 +182,12 @@ const ExploreProductArea = ({
         <div
             className={clsx(
                 "explore-area",
-                space === 1 && "rn-section-gapTop",
                 className
             )}
             id="explore-id"
         >
             <div className="container">
-            <div className="col-lg-1 col-sm-3 mb--15">
+            <div className="col-lg-1 col-sm-3 mb--15 mt--15">
                         <FilterButton
                             open={state.filterToggle}
                             onClick={filterToggle}

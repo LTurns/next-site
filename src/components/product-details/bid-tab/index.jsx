@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import { makeStyles } from "@mui/styles";
 
 import React from "react";
-import Product from "@components/product/layout-04";
+import Product from "@components/product/layout-02";
 // import List from '@material-ui/core/List';
 // import ListItem from '@material-ui/core/ListItem';
 // import ListItemText from '@material-ui/core/ListItemText';
@@ -291,17 +291,7 @@ const BidTab = ({ className, accessories, tables, features }) => {
                                     {accessories.map((a) => (
                                         <div className={classes.accessories}>
                                             <Product
-                                                // placeBid={!!placeBid}
-                                                title={a.title}
-                                                slug={a.title}
-                                                intro={a.intro}
-                                                category={a.category}
-                                                // latestBid={a.latestBid}
-                                                // price={a.price}
-                                                // likeCount={a.likeCount}
-                                                image={a.mainImage}
-                                                // authors={prod.authors}
-                                                // bitCount={prod.bitCount}
+                                                product={a}
                                             />
                                         </div>
                                     ))}
@@ -315,17 +305,17 @@ const BidTab = ({ className, accessories, tables, features }) => {
                         <div className="box-table table-responsive">
                             {}
                             {tables.map((table) => (
-                                <table>
-                                    <thead>
+                                <table className="mt--15 mb--15">
+                                    {/* <thead>
                                         <tr>
                                             {table.columns.map((column) => (
                                                 <th className={classes.columns}>
                                                     {" "}
-                                                    {column}{" "}
+                                                    {column.split(" ")}{" "}
                                                 </th>
                                             ))}
                                         </tr>
-                                    </thead>
+                                    </thead> */}
                                     <tbody>
                                         {table.items.map((item) => (
                                             <tr>
@@ -349,6 +339,7 @@ BidTab.propTypes = {
     accessories: [],
     features: [],
     tables: [],
+    product: []
 };
 
 export default BidTab;

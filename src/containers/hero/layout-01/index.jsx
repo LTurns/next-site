@@ -4,6 +4,7 @@ import Button from "@ui/button";
 import { HeadingType, TextType, ButtonType, ImageType } from "@utils/types";
 import BannerGallery from "@components/banner-ui/banner-gallery";
 import imageUrlBuilder from "@sanity/image-url";
+import { FaDownload } from "react-icons/fa6";
 
 const builder = imageUrlBuilder({
     projectId: "b6e027vh",
@@ -38,6 +39,7 @@ const HeroArea = ({ data }) => (
                         >
                             {data.headings[0].content}
                         </h2>
+                        
                     )}
                     {data?.texts?.map((text) => (
                         <p
@@ -50,6 +52,7 @@ const HeroArea = ({ data }) => (
                             {text.content}
                         </p>
                     ))}
+                    
                     {data?.buttons && (
                         <div className="button-group">
                             {data.buttons.map(({ content, id, ...btn }, i) => (
@@ -62,6 +65,12 @@ const HeroArea = ({ data }) => (
                                     {content}
                                 </Button>
                             ))}
+                        </div>
+                    )}
+                    {data?.catalogue && (
+                        <div style={{fontSize: 17, paddingBlock: 15}} data-sal="slide-up"
+                        data-sal-duration="800">
+                        <a className="catalogues" href={data?.catalogue} download>Download Catalogue<FaDownload style={{color: 'orange', marginLeft: 10}} size={30} /></a>
                         </div>
                     )}
                 </div>
