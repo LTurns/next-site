@@ -271,5 +271,35 @@
         "email": "ian_urmeneta@testronix.com.ph",
         "website": "http://www.testronix.com.ph",
         "img": "testronixlogo.jpeg"
+    },
+    {
+        "name": "DM Optics",
+        "roadOne": "The Hive",
+        "roadTwo": "6 Beaufighter Road",
+        "county": "Weston-Super-Mare",
+        "postcode": "BS24 8EE",
+        "country": "England",
+        "contact": "",
+        "mobile": "",
+        "fax": "",
+        "tel": "01934 750655",
+        "email": "info@dmoptics.co.uk",
+        "website": "https://www.dmoptics.co.uk/",
+        "img": "dmoptics.png"
+    },
+    {
+        "name": "Thorne & Derrick International",
+        "roadOne": "7 Lumley Court",
+        "roadTwo": "Drum Industrial Estate",
+        "county": "Chester-le-Street",
+        "postcode": "DH2 1AN",
+        "country": "England",
+        "contact": "",
+        "mobile": "",
+        "fax": "",
+        "tel": "0191 410 4292",
+        "email": "uksales@thorneandderrick.co.uk",
+        "website": "https://www.powerandcables.com/",
+        "img": "thornederrick.jpg"
     }
 ]

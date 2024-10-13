@@ -10,6 +10,7 @@ const ArrowButton = ({ onClick, icon, className }) => (
     <button
         type="button"
         onClick={onClick}
+        aria-label="slide arrow"
         className={clsx("slide-arrow", className)}
     >
         <i className={icon} />

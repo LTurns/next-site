@@ -4,6 +4,7 @@ import clsx from "clsx";
 const BurgerButton = ({ className, onClick }) => (
     <button
         type="button"
+        aria-label="hamburger button"
         className={clsx(className, "hamberger-button")}
         onClick={onClick}
     >

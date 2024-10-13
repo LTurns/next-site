@@ -13,7 +13,9 @@ const SEO = ({ pageTitle }) => {
                 name="viewport"
                 content="width=device-width, initial-scale=1, shrink-to-fit=no"
             />
+            <meta name="robots" />
             <link rel="icon" href="/favicon.png" />
+            <link rel="manifest" href="/site.webmanifest" />
         </Head>
     );
 };

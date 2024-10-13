@@ -89,12 +89,14 @@ const Product = ({
                     <Anchor
                         className="read-more-button"
                         path={`/product/${product.title}`}
+                        aria-label="read more"
                     >
                         <i className="feather-arrow-right" />
                     </Anchor>
 
                     <Button
                         className="shopping-cart"
+                        aria-label="shopping cart"
                         onClick={() =>
                             addToCart({ quantity: count + 1, product })
                         }

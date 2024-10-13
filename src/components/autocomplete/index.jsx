@@ -8,7 +8,9 @@ const Autocomplete = ({ data, isOpen }) => {
     const router = useRouter();
 
     data.forEach(product => {
+      if (!product.hasSubCategories) {
         results.push({ id: product._id, name: product.title})
+      }
     })
 
     const handleOnSearch = (string, results) => {
@@ -46,6 +48,7 @@ const Autocomplete = ({ data, isOpen }) => {
               onSelect={handleOnSelect}
               autoFocus
               formatResult={formatResult}
+              label="searchbar"
             />
         </div>
     ) : ""

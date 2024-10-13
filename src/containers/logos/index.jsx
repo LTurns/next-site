@@ -11,7 +11,7 @@ const SliderOptions = {
     slidesToShow: 8,
     slidesToScroll: 2,
     arrows: true,
-    dots: true,
+    dots: false,
     responsive: [
         {
             breakpoint: 1399,
@@ -38,7 +38,7 @@ const SliderOptions = {
             breakpoint: 576,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 4
+                slidesToScroll: 2
             },
         },
     ],
@@ -66,7 +66,7 @@ const ExploreLogos = ({ className, space }) => (
                             options={SliderOptions}
                             className="banner-one-slick slick-arrow-style-one slick-gutter-15"
                         >
-                            {whereToBuy.map((dist) => (
+                            {whereToBuy.reverse().map((dist) => (
                                 <SliderItem
                                     key={dist.name}
                                     className="logos-carousel"
