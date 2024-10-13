@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Anchor from "@ui/anchor";
+import Image from "next/image";
 
 const FooterLinkWidget = ({ data }) => (
     <ul className="privacy">
@@ -8,6 +9,7 @@ const FooterLinkWidget = ({ data }) => (
                 <Anchor path={nav.path}>{nav.text}</Anchor>
             </li>
         ))}
+        <Image style={{marginLeft: 30}} src={"/images/brand/coin.png"} height={30} width={30} alt={"Klein Tools Logo"} />
     </ul>
 );
 

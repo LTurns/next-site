@@ -114,12 +114,6 @@ button {
             &:hover {
                 background: var(--color-primary);
             }
-            &.open {
-                background: var(--color-primary-alta);
-                &:hover {
-                    background: var(--color-primary-alta);
-                }
-            }
         }
     }
 

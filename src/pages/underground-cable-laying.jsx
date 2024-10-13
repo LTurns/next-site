@@ -5,7 +5,11 @@ import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ExploreProductArea from "@containers/explore-product/layout-10";
 import productData from "../data/products-03.json";
+import Catalogue from "@components/catalogue";
 
+const data = {
+    "catalogue": "/pdfs/Underground-cable-laying-web.pdf",
+}
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
@@ -23,6 +27,7 @@ const Product = () => (
                 pageTitle="Underground Cable Laying Products"
                 currentPage="Underground Cable Laying Products"
             />
+            <Catalogue data={data} />
             <ExploreProductArea
                 data={{
                     products: UndergroundCableLayingProducts,

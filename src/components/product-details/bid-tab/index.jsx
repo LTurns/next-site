@@ -266,18 +266,16 @@ const BidTab = ({ className, accessories, tables, features }) => {
                     <TabPane eventKey="nav-profile">
                         <div className="box-table table-responsive">
                             {features.map((f) => (
-                                <div className={classes.features}>
-                                    <ul>
-                                        <span
-                                            classNames={classes.title}
+                                <div style={{ padding: 20}}>
+                                        <p style={{fontSize: 13}}
+                                            // classNames={classes.title}
                                             key={f.id}
                                         >
                                             {f.heading}
-                                        </span>
+                                        </p>
                                         {f.list.map((item) => (
-                                            <li>{item.listItem}</li>
+                                            <p style={{fontSize: 13}}>{item.listItem}</p>
                                         ))}
-                                    </ul>
                                 </div>
                             ))}
                         </div>

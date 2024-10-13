@@ -4,8 +4,8 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ContactTopArea from "@containers/contact-top";
-import ContactFormArea from "@containers/contact-form";
 import GoogleMapArea from "@containers/google-map";
+import RepairsFormArea from "@containers/repairs-form";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -20,9 +20,9 @@ const Contact = () => (
                 pageTitle="Repairs"
                 currentPage="Repairs"
             />
-            <ContactTopArea />
-            <ContactFormArea />
+            <RepairsFormArea />
             <GoogleMapArea />
+            <ContactTopArea />
         </main>
         <Footer />
     </Wrapper>

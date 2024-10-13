@@ -17,10 +17,10 @@ const Contact = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Contact With Us"
-                currentPage="Contact With Us"
+                pageTitle="Contact Us"
+                currentPage="Contact Us"
             />
-            <ContactTopArea />
+             <ContactTopArea />
             <ContactFormArea />
             <GoogleMapArea />
         </main>

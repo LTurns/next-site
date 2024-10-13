@@ -15,6 +15,8 @@ import Box from "@mui/material/Box";
 import CartContext from "../../../Context/cart/CartContext";
 import headerData from "../../../data/general/header-01.json";
 import menuData from "../../../data/general/menu-01.json";
+import productData from "../../../data/products-03.json";
+import Autocomplete from "@components/autocomplete";
 
 const Header = ({ className }) => {
     // const router = useRouter();
@@ -92,11 +94,12 @@ const Header = ({ className }) => {
                         </div>
                         <div className="header-right">
                             <div className="searches setting-option d-none d-lg-block">
-                                <SearchBar isOpen={true} />
+                                {/* <SearchBar isOpen={true} /> */}
+                                <Autocomplete data={productData} isOpen={true}/>
                             </div>
 
                             <div className="rn-icon-list setting-option d-block d-lg-none">
-                                <div className="icon-box search-mobile-icon">
+                                {/* <div className="icon-box search-mobile-icon">
                                     <button
                                         type="button"
                                         aria-label="Click here to open search form"
@@ -104,8 +107,8 @@ const Header = ({ className }) => {
                                     >
                                         <i className="feather-search" />
                                     </button>
-                                </div>
-                                <SearchBar isOpen={search} />
+                                </div> */}
+                                <Autocomplete data={productData} isOpen={true}/>
                             </div>
                             {/* <div className="setting-option rn-icon-list notification-badge">
                                 <div className="icon-box">

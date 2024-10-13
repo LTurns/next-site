@@ -1,7 +1,9 @@
 // tab button area
 
 // product-details
-
+.features-list {
+    color: white !important;
+}
 .product-tab-wrapper {
     position: sticky;
     .pd-tab-inner {
@@ -163,12 +165,12 @@
     // bid details
     .pd-title-area {
         display: flex;
-        justify-content: space-between;
+        // justify-content: ;
         align-items: center;
         margin-bottom: 10px;
-        @media #{$small-mobile} {
-            display: block;
-        }
+        // @media #{$small-mobile} {
+        //     display: block;
+        // }
         h4 {
             &.title {
                 font-size: 30px;

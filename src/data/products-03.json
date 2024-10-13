@@ -22,14 +22,7 @@
         ],
         "countInStock": 0,
         "videos": [
-            {
-                "title": "Video",
-                "_id": {
-                    "$oid": "620928e713b09a64e5e122cf"
-                },
-                "video": "https://www.youtube.com/embed/JMxLzd_RYDI",
-                "_key": "bZEPHsQD"
-            }
+            "JMxLzd_RYDI"
         ],
         "moreImages": [],
         "tables": [

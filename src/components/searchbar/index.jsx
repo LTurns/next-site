@@ -53,11 +53,7 @@ export default function SearchBar({ isOpen }) {
                 if (typeof option === "string") {
                     return option;
                 }
-                // Add "xxx" option created dynamically
-                // if (option.inputValue) {
-                //   return option.inputValue;
-                // }
-                // Regular option
+
                 return option.title;
             }}
             renderOption={(props, option) => {

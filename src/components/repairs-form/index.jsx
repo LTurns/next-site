@@ -1,11 +1,10 @@
-import { useState } from "react";
 import Button from "@ui/button";
 import ErrorText from "@ui/error-text";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 
-const ContactForm = () => {
+const RepairsForm = () => {
     const router = useRouter();
 
     const {
@@ -20,12 +19,12 @@ const ContactForm = () => {
 
         try {
             axios
-              .post("https://getform.io/f/7c4ff1e8-d838-46d1-b502-5853f033d47a", {
+              .post("https://getform.io/f/2d1525ec-9a44-4f8f-ad6e-87a1b9d87db6", {
                 email: data.email,
                 name: data.name,
                 number: data.phone ?? '',
                 message: data.message,
-                subject: data.subject ?? '',
+                product: data.product ?? '',
               })
               .then(() => router.push({ pathname: "/thankyou" }));
           } catch (err) {
@@ -52,7 +51,7 @@ const ContactForm = () => {
                         })}
                     />
                     {errors.contactName && (
-                        <ErrorText>{errors.contactName?.message}</ErrorText>
+                        <ErrorText>{errors.name?.message}</ErrorText>
                     )}
                 </div>
                 <div className="mb-5">
@@ -71,7 +70,7 @@ const ContactForm = () => {
                         })}
                     />
                     {errors.contactEmail && (
-                        <ErrorText>{errors.contactEmail?.message}</ErrorText>
+                        <ErrorText>{errors.email?.message}</ErrorText>
                     )}
                 </div>
                 <div className="mb-5">
@@ -86,18 +85,20 @@ const ContactForm = () => {
                     />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="subject" className="form-label">
-                        Subject
+                    <label htmlFor="product" className="form-label">
+                        Product
                     </label>
                     <input
-                        name="subject"
+                        name="product"
                         type="text"
-                        {...register("subject")}
+                        {...register("product", {
+                            required: "Product is required",
+                        })}
                     />
                 </div>
                 <div className="mb-5">
                     <label htmlFor="contact-message" className="form-label">
-                        Write Message
+                        What needs repairing?
                     </label>
                     <textarea
                         id="contact-message"
@@ -107,7 +108,7 @@ const ContactForm = () => {
                         })}
                     />
                     {errors.contactMessage && (
-                        <ErrorText>{errors.contactMessage?.message}</ErrorText>
+                        <ErrorText>{errors.message?.message}</ErrorText>
                     )}
                 </div>
                 <Button type="submit" size="medium">
@@ -117,4 +118,4 @@ const ContactForm = () => {
         </div>
     );
 };
-export default ContactForm;
+export default RepairsForm;

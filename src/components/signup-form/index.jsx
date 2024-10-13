@@ -10,7 +10,7 @@ import axios from "axios";
 
 const SignupForm = ({ className }) => {
     const router = useRouter();
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, removeAll } = useContext(CartContext);
 
     const {
         register,
@@ -26,8 +26,6 @@ const SignupForm = ({ className }) => {
             return `${i.product.title} : ${i.quantity}`
         })
 
-        console.log(item.toString().replace(',', ', '))
-
         try {
             axios
               .post("https://getform.io/f/cee9fb5b-06de-41ac-a982-5103f16311ce", {
@@ -38,6 +36,9 @@ const SignupForm = ({ className }) => {
                 products: item,
               })
               .then(() => router.push({ pathname: "/thankyou" }))
+              .finally(() => {
+                    removeAll()
+              })
   
           } catch (err) {
             throw new Error(err);

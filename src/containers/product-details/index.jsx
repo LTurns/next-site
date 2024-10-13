@@ -11,6 +11,7 @@ import ProductCategory from "@components/product-details/category";
 import ProductCollection from "@components/product-details/collection";
 import BidTab from "@components/product-details/bid-tab";
 import PlaceBet from "@components/product-details/place-bet";
+import Catalogue from "@components/catalogue";
 // import ExtraInfo from "@components/product-details/extra-info";
 import { ImageType } from "@utils/types";
 import { Box, Button, Typography } from "@mui/material";
@@ -20,6 +21,10 @@ import CartContext from "../../Context/cart/CartContext";
 import VideoButton from "@ui/video-button";
 import { useState } from "react";
 import dynamic from "next/dynamic";
+
+const data = {
+    "catalogue": "/pdfs/Accelair31.pdf",
+}
 
 
 import { Portal } from "react-portal";
@@ -99,6 +104,9 @@ const ProductDetailsArea = ({ space, className, product }) => {
         Never use this tool to cut electrically energised cable. Severe or fatal
         injury may result.
       </p></> : ""}
+
+      { product.title === 'Accelair 3' ?
+      <><Catalogue data={data}></Catalogue></> : ""}
 
                                                 <div className="rn-bid-details">
                                                     <BidTab

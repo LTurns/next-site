@@ -1,4 +1,4 @@
-import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM } from "../types";
+import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM, REMOVE_ALL } from "../types";
 
 const CartReducer = (state, action) => {
     switch (action.type) {
@@ -23,8 +23,6 @@ const CartReducer = (state, action) => {
             }
 
             if (items !== 1) state.cartItems.push(action.payload);
-
-            console.log("yayy", items);
             return {
                 ...state,
                 cartItems: [...state.cartItems],
@@ -45,6 +43,13 @@ const CartReducer = (state, action) => {
             return {
                 ...state,
                 cartItems: state.cartItems,
+            };
+        }
+
+        case REMOVE_ALL: {
+            return {
+                ...state,
+                cartItems: [],
             };
         }
 

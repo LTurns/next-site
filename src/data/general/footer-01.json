@@ -1,21 +1,20 @@
 {
     "id": "footer-data-01",
-    "logo-widget": {
-        "logo": [
-            {
-                "src": "/images/logo/cbslogo-white.png",
-                "alt": "logo"
-            }
-        ],
-        "text": "Leaders in Cable Blowing and Cable Installation"
-    },
+    "logo": [
+        {
+            "src": "/images/logo/cbslogo-white.png"
+        },
+        {
+            "src": "/images/logo/cbslogo-dark.svg"
+        }
+    ],
     "quicklink-widget": {
         "title": "CBS Products",
         "menu": [
             {
                 "id": 1,
-                "text": "Fibre Installation",
-                "path": "/fibre-installation"
+                "text": "Telecoms",
+                "path": "telecoms"
             },
             {
                 "id": 2,
@@ -51,11 +50,6 @@
     },
     "footer-link-widget": {
         "menu": [
-            {
-                "id": 1,
-                "text": "Terms",
-                "path": "/terms-condition"
-            },
             {
                 "id": 2,
                 "text": "Privacy Policy",

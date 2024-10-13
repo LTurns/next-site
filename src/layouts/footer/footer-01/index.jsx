@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import Image from "next/image";
-import LogoWidget from "@widgets/logo-widget";
+import Logo from "@components/logo";
 import QuicklinkWidget from "@widgets/quicklink-widget";
 import InformationWidget from "@widgets/information-widget";
 import FooterLinkWidget from "@widgets/footer-link-widget";
@@ -57,7 +57,7 @@ const Footer = ({ space, className, data }) => (
                 <div className="row gx-5">
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="widget-content-wrapper">
-                            <LogoWidget data={footerData["logo-widget"]} />
+                        <Logo logo={footerData.logo} />
                         </div>
                     </div>
 

@@ -67,12 +67,6 @@ const HeroArea = ({ data }) => (
                             ))}
                         </div>
                     )}
-                    {data?.catalogue && (
-                        <div style={{fontSize: 17, paddingBlock: 15}} data-sal="slide-up"
-                        data-sal-duration="800">
-                        <a className="catalogues" href={data?.catalogue} download>Download Catalogue<FaDownload style={{color: 'orange', marginLeft: 10}} size={30} /></a>
-                        </div>
-                    )}
                 </div>
                 {/* <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1 order-2">
                         <div className="slider-thumbnail">

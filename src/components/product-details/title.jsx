@@ -16,7 +16,7 @@ const ProductTitle = ({ className, title, videos }) => {
         <div className={clsx("pd-title-area", className)}>
         <h4 className="title">{title}</h4>
         {videos.length !== 0 ? 
-                <div className="pd-react-area">
+                <span>
                 <button
                         type="button"
                         style={{border: 'none'}}
@@ -38,7 +38,7 @@ const ProductTitle = ({ className, title, videos }) => {
                         </Portal>
                                         )
                                     ))}
-                </div>
+                </span>
                 : ''
         }
     </div>

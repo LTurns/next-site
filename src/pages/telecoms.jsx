@@ -4,7 +4,13 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ExploreProductArea from "@containers/explore-product/layout-10";
+import Catalogue from "@components/catalogue";
 import productData from "../data/products-03.json";
+
+const data = {
+    "catalogue": "/pdfs/Accelair31.pdf",
+}
+
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };

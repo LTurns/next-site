@@ -27,7 +27,7 @@ export const CartView = () => {
     const router = useRouter();
     const { removeItem, cartItems } = useContext(CartContext);
 
-    return (
+    return cartItems.length ? (
         <Container>
                         <p style={{padding: 20, textAlign: 'center'}}>
             You are enquiring about the below products:
@@ -73,5 +73,5 @@ export const CartView = () => {
             <p style={{padding: 20, textAlign: 'center'}}>
             Please fill in your contact details and someone from our team will be in touch shortly about your enquiry.</p>
         </Container>
-    );
+    ) : "";
 };

@@ -70,8 +70,8 @@
             },
             {
                 "id": 8,
-                "text": "General Enquiry",
-                "path": "/general-enquiry",
+                "text": "Contact Us",
+                "path": "/contact",
                 "icon": "feather-fast-forward"
             },
             {

@@ -16,6 +16,7 @@ import homepageData from "../data/homepages/home-04.json";
 import favouriteProducts from "../data/favourite-products.json"
 
 import imageUrlBuilder from "@sanity/image-url";
+import Catalogue from "@components/catalogue";
 
 const builder = imageUrlBuilder({
     projectId: "b6e027vh",
@@ -49,6 +50,7 @@ const Home = () => {
                 <HeroArea data={content["hero-section"]} />
                 <ExploreLogos />
                 <VideoArea data={content["video-section"]} />
+                <Catalogue data={content["hero-section"]} />
                 <ServiceArea data={content["service-section"]} />
                 <div className="slider-thumbnail">
                 <Image
