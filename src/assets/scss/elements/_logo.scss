@@ -4,7 +4,7 @@
     width: 200px;
     text-align: center;
     margin: 0;
-    height: 70px;
+    height: 60px;
     margin-right: 15px;
     border-radius: 6px;
     background-color: var(--background-color-2);
@@ -18,14 +18,15 @@
 
     @media (min-width: 768px) {
         .logos-carousel {
-            height: 90px;
+            height: 60px;
+            width: 100px;
         }
         img {
             // opacity: 0.8;
             // transition: 0.3s;
             max-height: 85px !important;
             max-width: 160px !important;
-            padding: 20px !important;
+            padding: 15px !important;
             // filter: grayscale(1);
             // cursor: pointer;
             // transition: var(--transition);
