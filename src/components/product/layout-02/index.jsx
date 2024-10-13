@@ -89,7 +89,7 @@ const Product = ({
                     <Anchor
                         className="read-more-button"
                         path={`/product/${product.title}`}
-                        aria-label="read more"
+                        ariaLabel="read more"
                     >
                         <i className="feather-arrow-right" />
                     </Anchor>

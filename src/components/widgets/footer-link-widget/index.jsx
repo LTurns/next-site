@@ -9,7 +9,7 @@ const FooterLinkWidget = ({ data }) => (
                 <Anchor path={nav.path}>{nav.text}</Anchor>
             </li>
         ))}
-        <Image style={{marginLeft: 30}} src={"/images/brand/coin.png"} height={30} width={30} alt={"Klein Tools Logo"} />
+        <li><Image style={{marginLeft: 30}} src={"/images/brand/coin.png"} height={30} width={30} alt={"Klein Tools Logo"} /></li>
     </ul>
 );
 

@@ -3,7 +3,7 @@ import Anchor from "@ui/anchor";
 
 const QuicklinkWidget = ({ data }) => (
     <div className="footer-widget widget-quicklink">
-        <h6 className="widget-title">{data.title}</h6>
+        <h1 className="widget-title">{data.title}</h1>
         {data?.menu && (
             <ul className="footer-list-one">
                 {data.menu.map((nav) => (
