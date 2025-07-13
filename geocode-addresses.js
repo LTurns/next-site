@@ -5,7 +5,7 @@ require("dotenv").config();
 const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 const { addresses } = require("./addresses.js");
 
-async function geocodeAddress(address) {
+async function geocodeAddress(address, id) {
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
     address
   )}&key=${API_KEY}`;
@@ -14,20 +14,26 @@ async function geocodeAddress(address) {
 
   if (data.status === "OK") {
     const location = data.results[0].geometry.location;
-    console.log(`✅ Geocoded: ${address} => (${location.lat}, ${location.lng})`);
-    return { address, lat: location.lat, lng: location.lng };
+    console.log(`✅ Geocoded [${id}]: ${address} => (${location.lat}, ${location.lng})`);
+    return {
+      id, // Add incremental ID
+      address,
+      lat: location.lat,
+      lng: location.lng,
+    };
   } else {
-    console.error(`❌ Failed to geocode: ${address} (${data.status})`);
+    console.error(`❌ Failed to geocode [${id}]: ${address} (${data.status})`);
     return null;
   }
 }
 
 async function run() {
   const results = [];
-  for (const address of addresses) {
-    const result = await geocodeAddress(address);
+  for (const [index, address] of addresses.entries()) {
+    const id = index + 1; // Start IDs at 1
+    const result = await geocodeAddress(address, id);
     if (result) results.push(result);
-    await new Promise((r) => setTimeout(r, 200)); // avoid hitting API limits
+    await new Promise((r) => setTimeout(r, 200)); // Avoid hitting API limits
   }
   fs.writeFileSync("./geocoded.json", JSON.stringify(results, null, 2));
   console.log("🎉 Geocoding complete. Results saved to geocoded.json");
