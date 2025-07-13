@@ -4,11 +4,16 @@ import clsx from "clsx";
 import SectionTitle from "@components/section-title/layout-02";
 import ProductFilter from "@components/product-filter/layout-03";
 import Product from "@components/product/layout-02";
+import SubCategory from "@components/subcategory";
 import Pagination from "@components/pagination-02";
 import { slideToggle } from "@utils/methods";
 import FilterButton from "@ui/filter-button";
 import { SectionTitleType, ProductType } from "@utils/types";
 import { flatDeep } from "@utils/methods";
+import CollectionArea from "@containers/collection/layout-01";
+import collectionsData from "../../../data/collections.json";
+import homepageData from "../../../data/homepages/home-04.json";
+import { normalizedData } from "@utils/methods";
 
 function reducer(state, action) {
     switch (action.type) {
@@ -34,6 +39,8 @@ const ExploreProductArea = ({
     space,
     data: { products },
 }) => {
+    const content = normalizedData(homepageData?.content || []);
+
     const itemsToFilter = [...products];
     const [state, dispatch] = useReducer(reducer, {
         products: [],
@@ -123,11 +130,11 @@ const ExploreProductArea = ({
     };
 
         const filterRef = useRef(null);
-    const filterToggle = () => {
-        dispatch({ type: "FILTER_TOGGLE" });
-        if (!filterRef.current) return;
-        slideToggle(filterRef.current);
-    };
+    // const filterToggle = () => {
+    //     dispatch({ type: "FILTER_TOGGLE" });
+    //     if (!filterRef.current) return;
+    //     slideToggle(filterRef.current);
+    // };
 
     // Filter Method, this function is responsible for filtering the products
     const itemFilterHandler = useCallback(() => {
@@ -187,13 +194,13 @@ const ExploreProductArea = ({
             id="explore-id"
         >
             <div className="container">
-            <div className="col-lg-1 col-sm-3 mb--15 mt--15">
+            {/* <div className="col-lg-1 col-sm-3 mb--15 mt--15">
                         <FilterButton
                             open={state.filterToggle}
                             onClick={filterToggle}
                         />
-            </div>
-                <div className="row g-4 col-12">
+            </div> */}
+                {/* <div className="row g-4 col-12">
                     <div className="col-12 order-1 order-lg-1">
                         <ProductFilter
                             ref={filterRef}
@@ -202,22 +209,33 @@ const ExploreProductArea = ({
                             // priceHandler={priceHandler}
                         />
                     </div>
-                    </div>
+                    </div> */}
                         <div className="row g-4">
                             {state.products.length > 0 ? (
                                 <>
+                                            {/* <CollectionArea
+                                                data={{
+                                                    ...content["collection-section"],
+                                                    collections: state.products,
+                                                }}
+                                                /> */}
                                     {state.products.map((prod) => {
                                         return (
-                                            !prod.hasSubCategories && (
-                                                <div
-                                                    key={prod.id}
-                                                    className="col-6 col-lg-3 col-md-3"
-                                                >
-                                                    <Product product={prod} />
+                                            <div className="col-6 col-lg-3 col-md-3">
+                                                 {prod.hasSubCategories ?
+                                                <div 
+                                                    key={prod.id} >
+                                                        <SubCategory product={prod} />
                                                 </div>
-                                            )
-                                        );
-                                    })}
+                                                :
+                                                <div 
+                                                key={prod.id} >
+                                                    <Product product={prod} />
+                                            </div>
+                                                }  
+                                            </div>
+                                        )
+                                    })} 
                                 </>
                             ) : (
                                 <p>No item to show</p>

@@ -4,7 +4,7 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ExploreProductArea from "@containers/explore-product/layout-10";
-import productData from "../data/products-03.json";
+import productData from "../data/products-06.json";
 import Catalogue from "@components/catalogue";
 
 const data = {

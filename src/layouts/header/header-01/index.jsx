@@ -15,7 +15,7 @@ import Box from "@mui/material/Box";
 import CartContext from "../../../Context/cart/CartContext";
 import headerData from "../../../data/general/header-01.json";
 import menuData from "../../../data/general/menu-01.json";
-import productData from "../../../data/products-03.json";
+import productData from "../../../data/products-06.json";
 import Autocomplete from "@components/autocomplete";
 
 const Header = ({ className }) => {

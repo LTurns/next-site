@@ -10,8 +10,8 @@
     background-color: var(--background-color-2);
 
     img {
-        max-height: 65px;
-        max-width: 100px;
+        max-height: auto;
+        max-width: 200px;
         padding: 20px !important;
         margin-inline: auto;
     }

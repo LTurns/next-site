@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { useRouter } from "next/router";
 import sal from "sal.js";
 import { ThemeProvider } from "next-themes";
+import { Provider } from 'react-redux'
+import { store } from '../redux/store'
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/feather.css";
 import "../assets/css/modal-video.css";
@@ -23,11 +25,13 @@ const MyApp = ({ Component, pageProps }) => {
         document.body.className = `${pageProps.className}`;
     });
     return (
+         <Provider store={store}>
         <ThemeProvider defaultTheme="dark">
             <CartState>
                 <Component {...pageProps} />
             </CartState>
         </ThemeProvider>
+        </Provider>
     );
 };
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
-import productData from "../../data/products-03.json";
+import productData from "../../data/products-06.json";
 import { withTheme } from "@mui/styles";
 import { useRouter } from "next/router";
 import PropTypes from "prop-types";

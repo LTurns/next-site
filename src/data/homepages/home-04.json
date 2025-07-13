@@ -140,6 +140,12 @@
                     }
                 }
             ]
+        },
+        {
+            "section": "collection-section",
+            "section_title": {
+                "title": "Top Categories"
+            }
         }
     ]
 }

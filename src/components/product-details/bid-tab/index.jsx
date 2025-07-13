@@ -284,7 +284,7 @@ const BidTab = ({ className, accessories, tables, features }) => {
                     </TabPane>
                     <TabPane eventKey="nav-contact">
                         <div className="box-table table-responsive">
-                            {accessories.length ? (
+                            {/* {accessories.length ? (
                                 <div>
                                     {accessories.map((a) => (
                                         <div className={classes.accessories}>
@@ -296,13 +296,13 @@ const BidTab = ({ className, accessories, tables, features }) => {
                                 </div>
                             ) : (
                                 <div>No accessories required.</div>
-                            )}
+                            )} */}
                         </div>
                     </TabPane>
                     <TabPane eventKey="nav-info">
                         <div className="box-table table-responsive">
                             {}
-                            {tables.map((table) => (
+                            {tables?.map((table) => (
                                 <table className="mt--15 mb--15">
                                     {/* <thead>
                                         <tr>

@@ -15,7 +15,7 @@ const ProductTitle = ({ className, title, videos }) => {
     return (
         <div className={clsx("pd-title-area", className)}>
         <h4 className="title">{title}</h4>
-        {videos.length !== 0 ? 
+        {videos?.length !== 0 ? 
                 <span>
                 <button
                         type="button"

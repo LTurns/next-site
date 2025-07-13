@@ -1,0 +1,28 @@
+const addresses = [ 
+    'Amadys, Amadys Belgium Headquarter, "Sint-Pietersvliet 7, 2000 Antwerpen, Belgium',
+    'Telenco UK, Hillmead Enterprise Park, Unit 3 Westerngate, Langley Rd, Swindon, SN5 5WN, UK',
+    'Gigabit Utility Supplies, Unit 3, Crags Industrial Park, Morven Street, Creswell, S80 4AJ, UK',
+    'PMD Business Finance, 2 Howarth Court, Gateway Crescent, Oldham, OL9 9XB, UK',
+    'CBI Electric Telecom Cables (Pty) Ltd, 3 Marthinus Ras Street, Industrial Sites, Brits, North West Province',
+    'D.J.Global Creation Co. Ltd, 137/79-80 Moo 1 Nanthanagarden Soi 12, Pathumthani-Rangsit Road, Banklang Muang Pathumthani, Pathumthani 12000, Thailand',
+    'Paviot Equipment,16 Rue Des Taillées, 79180 Chauray, France',
+    'Exceed Solutions P.C., 76 Ymittou Street, Athens, Greece',
+    'GA Telecomunicazioni, Via dante Alighieri, 6, 20050 – Sovico (MI), Italy',
+    'Fibrain Sp.z o.o., Zaczernie 190F, 36-062 Zaczernie, Poland',
+    'Teledatanet srl, Blvd 21 Decembrie 1989, Nr. 140-155, Cluj-Napoca, RO-400604, Romania',
+    'Argano Group, Calle Serranía de Ronda, 15, 28691 Villanueva de la Cañada, Madrid, Spain',
+    'MFS-Tech, Hungerbuhlstrasse 10, CH-8500 Frauenfeld, Switzerland',
+    'Helsingin Laatulaite Oy, Päivöläntie 39, 00730 Helsinki, Finland',
+    'General Machine Products (KT), LLC (GMP), 3111 Old Lincoln Hwy, Trevose, Pa 19053-4996, USA',
+    'Midland Site Supplies, Old Bacon Factory, Castleholding, Rosecrea, Eire, UK',
+    'Testronix Inc., Unit 415 VGP Center, (Formerly Manila Bank Building), 6772 Ayala Avenue, Makati City 1226, Philippines',
+    'DM Optics, The Hive, 6 Beaufighter Road, Weston-Super-Mare, BS24 8EE, England',
+    'Thorne & Derrick International, 7 Lumley Court, Drum Industrial Estate, Chester-le-Street, DH2 1AN, England',
+    'Vallin, Latgales iela 322, Riga, LV-1063, Latvia',
+    'Vallin SIA, Tarandes 2 – 13, LT-14188, Vilnius, Lithuania',
+    'Mejdaf, Anas Bin Malek Rd, Riyadh, KSA, Saudi Arabia',
+    'Advanced Optics Limited, Courtyard Mews, Piccadilly Place, Bath, BA1 6PL, United Kingdom',
+    'Digatel Telecoms, Avenida Real de Pinto 91-A16, Madrid, 28021, Spain',
+];
+
+module.exports = { addresses };

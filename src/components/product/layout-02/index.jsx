@@ -54,7 +54,7 @@ const Product = ({
                                     marginInline: "auto",
                                     display: "block",
                                 }}
-                                src={urlFor(product.mainImage).url()}
+                                src={urlFor(product?.mainImage).url()}
                                 width={200}
                                 height={200}
                                 alt={product.title}

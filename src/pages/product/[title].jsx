@@ -7,7 +7,7 @@ import Breadcrumb from "@components/breadcrumb";
 import ProductDetailsArea from "@containers/product-details";
 
 // demo data
-import productData from "../../data/products-03.json";
+import productData from "../../data/products-06.json";
 
 const ProductDetails = ({ product }) => (
     <Wrapper>

@@ -110,7 +110,7 @@ export function getPostsByTag(tag, fields = []) {
 }
 
 const productsDirectory = JSON.parse(
-    fs.readFileSync("src/data/products-03.json", "utf8")
+    fs.readFileSync("src/data/products-06.json", "utf8")
 );
 
 export function getProductSlugs() {
