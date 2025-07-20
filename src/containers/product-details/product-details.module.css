@@ -433,6 +433,16 @@
     color: #f1f5f9;
 }
 
+/* Dark mode for bid tab content */
+[data-theme="dark"] .detailsSection :global(.rn-bid-content) {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .detailsSection :global(.box-table) {
+    background: transparent;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .productDetailsArea {

@@ -6,7 +6,7 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, "./src/assets/scss")],
     },
-    output: 'export',
+    output: "export",
     images: {
         remotePatterns: [
             {
@@ -16,7 +16,7 @@ module.exports = {
                 pathname: "/images/**",
             },
         ],
-        unoptimized: true
+        unoptimized: false,
     },
     // //  distDir: 'build',
     // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -33,5 +33,5 @@ module.exports = {
         // Warning: This allows production builds to successfully complete even if
         // your project has ESLint errors.
         ignoreDuringBuilds: true,
-    }
+    },
 };

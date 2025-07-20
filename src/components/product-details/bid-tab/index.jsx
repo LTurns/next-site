@@ -277,7 +277,7 @@ const useStyles = makeStyles({
             fontWeight: "bold",
         },
         // Dark mode
-        '[data-theme="dark"] &': {
+        "[data-theme='dark'] &": {
             color: "#ced4da !important",
         },
     },
@@ -292,7 +292,7 @@ const useStyles = makeStyles({
             marginBottom: "0",
         },
         // Dark mode
-        '[data-theme="dark"] &': {
+        "[data-theme='dark'] &": {
             backgroundColor: "#2c3e50",
             border: "1px solid rgba(255, 255, 255, 0.1)",
             boxShadow: "0 4px 16px rgba(0, 0, 0, 0.3)",
@@ -325,7 +325,7 @@ const useStyles = makeStyles({
         backgroundColor: "#ffffff",
         transition: "background-color 0.2s ease",
         // Dark mode
-        '[data-theme="dark"] &': {
+        "[data-theme='dark'] &": {
             backgroundColor: "#2c3e50",
             color: "#ced4da",
             borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
@@ -340,7 +340,7 @@ const useStyles = makeStyles({
         borderRadius: "12px",
         border: "1px solid #e9ecef",
         // Dark mode
-        '[data-theme="dark"] &': {
+        "[data-theme='dark'] &": {
             backgroundColor: "#343a40",
             color: "#adb5bd",
             border: "1px solid rgba(255, 255, 255, 0.1)",

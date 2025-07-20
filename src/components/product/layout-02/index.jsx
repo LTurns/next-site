@@ -23,8 +23,6 @@ const urlFor = (source) => {
 const Product = ({ product }) => {
     const count = 0;
 
-    console.log("heyyyyyyy", product);
-
     const { addToCart } = useContext(CartContext);
     return (
         <div className={clsx("lg-product-wrapper product-card")}>

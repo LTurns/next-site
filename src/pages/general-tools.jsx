@@ -39,7 +39,6 @@ const Product = () => {
     useEffect(() => {
         if (!posts || posts.length === 0) {
             // eslint-disable-next-line no-console
-            console.log("Dispatching fetchPosts...");
             dispatch(fetchPosts());
         } else {
             // Filter and set general tools products
