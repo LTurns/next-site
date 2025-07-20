@@ -254,18 +254,17 @@ const ExploreProductArea = ({
                     <div className="row g-5">
                         {state.products.length > 0 ? (
                             <>
-                                {state.products.map((prod) => {
-                                    return (
-                                        !prod.hasSubCategories && (
-                                            <div
-                                                key={prod.id}
-                                                className="col-lg-3 col-md-6 col-sm-12"
-                                            >
-                                                <Product product={prod} />
-                                            </div>
-                                        )
-                                    );
-                                })}
+                                {state.products.map(
+                                    (prod) =>
+                                    !prod.hasSubCategories && (
+                                        <div
+                                            key={prod.id}
+                                            className="col-lg-3 col-md-6 col-sm-12"
+                                        >
+                                            <Product product={prod} />
+                                        </div>
+                                    )
+                                ))}
                             </>
                         ) : (
                             <p>No item to show</p>

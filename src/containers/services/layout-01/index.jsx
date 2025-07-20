@@ -6,11 +6,7 @@ import { SectionTitleType, ItemType } from "@utils/types";
 
 const ServiceArea = ({ className, id, space, data }) => (
     <div
-        className={clsx(
-            "rn-service-area",
-            space === 2 && "pb--70",
-            className
-        )}
+        className={clsx("rn-service-area", space === 2 && "pb--70", className)}
         id={id}
     >
         <div className="container">
@@ -25,7 +21,7 @@ const ServiceArea = ({ className, id, space, data }) => (
                 <div className="row g-5">
                     {data.items.map((item) => (
                         <div
-                            className="col-xxl-3 col-lg-4 col-md-6 col-sm-12 col-12"
+                            className="col-xxl-3 col-lg-6 col-md-6 col-sm-12 col-12"
                             key={item.id}
                         >
                             <Service

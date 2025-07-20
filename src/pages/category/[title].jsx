@@ -5,6 +5,8 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ExploreProductArea from "@containers/explore-product/layout-10";
+import { ProductType } from "@utils/types";
+import { sanityClient } from "../../lib/sanity";
 import productData from "../../data/products-06.json";
 // import Catalogue from "@components/catalogue";
 
@@ -24,61 +26,93 @@ import productData from "../../data/products-06.json";
 //     }
 // );
 
-const Category = ({ products, params }) => {
-    return (
-        <Wrapper>
+const Category = ({ products, params }) => (
+    <Wrapper>
         <SEO pageTitle={params.title} />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle={params.title}
-                currentPage={params.title}
+                pageTitle="Product Categories"
+                currentPage={
+                    params.title.charAt(0).toUpperCase() +
+                    params.title.slice(1).replace("-", " ")
+                }
             />
             <ExploreProductArea
                 data={{
-                    products: products,
+                    products,
                 }}
             />
         </main>
         <Footer />
     </Wrapper>
-    )
-};
+);
 
 export async function getStaticPaths() {
-    return {
-        paths: productData.map(({ title }) => ({
-            params: {
-                title,
-            },
-        })),
-        fallback: false,
-    };
+    try {
+        // Fetch posts directly from Sanity at build time
+        const posts = await sanityClient.fetch("*[_type == 'product']");
+        const dataSource = posts && posts.length > 0 ? posts : productData;
+
+        return {
+            paths: dataSource.map(({ title }) => ({
+                params: {
+                    title,
+                },
+            })),
+            fallback: false,
+        };
+    } catch (error) {
+        // Fallback to productData if Sanity fetch fails
+        return {
+            paths: productData.map(({ title }) => ({
+                params: {
+                    title,
+                },
+            })),
+            fallback: false,
+        };
+    }
 }
 
 export async function getStaticProps({ params }) {
-    // needs to loop round subcategory array instead of choosing the first = products could have multiple subcategories
-    const products = productData.filter(({ subCategory }) => subCategory?.[0]?.toLowerCase().includes(params.title.toLowerCase()));
-    // const products = productData;
-    // const { category } = product;
-    // const recentViewProducts = shuffleArray(productData).slice(0, 5);
-    // const relatedProducts = productData
-    //     .filter((prod) => prod.categories?.some((r) => categories?.includes(r)))
-    //     .slice(0, 5);
-    return {
-        props: {
-            className: "template-color-1",
-            products,
-            params
-            // recentViewProducts,
-            // relatedProducts,
-        }, // will be passed to the page component as props
-    };
+    try {
+        // Fetch posts directly from Sanity at build time
+        const posts = await sanityClient.fetch("*[_type == 'product']");
+        const dataSource = posts && posts.length > 0 ? posts : productData;
+
+        const products = dataSource.filter(({ subCategory }) =>
+            subCategory?.[0]?.toLowerCase().includes(params.title.toLowerCase())
+        );
+
+        return {
+            props: {
+                className: "template-color-1",
+                products,
+                params,
+            },
+        };
+    } catch (error) {
+        // Fallback to productData if Sanity fetch fails
+        const products = productData.filter(({ subCategory }) =>
+            subCategory?.[0]?.toLowerCase().includes(params.title.toLowerCase())
+        );
+
+        return {
+            props: {
+                className: "template-color-1",
+                products,
+                params,
+            },
+        };
+    }
 }
 
 Category.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
-    product: PropTypes.object,
+    products: PropTypes.arrayOf(ProductType).isRequired,
+    params: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+    }).isRequired,
 };
 
 export default Category;

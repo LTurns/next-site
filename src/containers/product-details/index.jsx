@@ -3,7 +3,6 @@
 
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import Sticky from "@ui/sticky";
 import SEO from "@components/seo";
 import GalleryTab from "@components/product-details/gallery-tab";
 import ProductTitle from "@components/product-details/title";
@@ -13,123 +12,266 @@ import BidTab from "@components/product-details/bid-tab";
 import PlaceBet from "@components/product-details/place-bet";
 import Catalogue from "@components/catalogue";
 // import ExtraInfo from "@components/product-details/extra-info";
-import { ImageType } from "@utils/types";
-import { Box, Button, Typography } from "@mui/material";
+import { ImageType, ProductType } from "@utils/types";
+import { Button } from "@mui/material";
 import { useRouter } from "next/router";
-import { useContext } from "react";
-import CartContext from "../../Context/cart/CartContext";
+import { useContext, useState } from "react";
 import VideoButton from "@ui/video-button";
-import { useState } from "react";
 import dynamic from "next/dynamic";
 
-const data = {
-    "catalogue": "/pdfs/Accelair31.pdf",
-}
-
-
 import { Portal } from "react-portal";
+import CartContext from "../../Context/cart/CartContext";
+import styles from "./product-details.module.css";
+
+const data = {
+    catalogue: "/pdfs/Accelair31.pdf",
+};
 
 const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
 
 const ProductDetailsArea = ({ space, className, product }) => {
     const { addToCart } = useContext(CartContext);
     const [isOpen, setOpen] = useState(false);
-    let count = 0;
+    const [showFullDescription, setShowFullDescription] = useState(false);
+    const count = 0;
+
+    // Check if description is long (more than 3 paragraphs or very long text)
+    const isDescriptionLong =
+        product?.description &&
+        (product.description.length > 3 ||
+            product.description.some((p) => p.paragraph.length > 200));
 
     return (
         <div
             className={clsx(
                 "product-details-area",
+                styles.productDetailsArea,
                 space === 1 && "rn-section-gapTop",
                 className
             )}
         >
             <div className="container">
-                <div className="row g-5">
-                    <div className="col-lg-7 col-md-12 col-sm-12">
-                        <Sticky>
-                            <GalleryTab images={[product.mainImage]} videos={product.videos} />
-                        </Sticky>
+                {/* Main Product Section */}
+                <div className="row g-5 mb-5">
+                    {/* Product Image */}
+                    <div className="col-lg-6 col-md-12">
+                        <div className={styles.imageWrapper}>
+                            <GalleryTab
+                                images={[product.mainImage]}
+                                videos={product.videos}
+                            />
+                        </div>
                     </div>
-                    <div className="col-lg-5 col-md-12 col-sm-12 mt_md--50 mt_sm--60">
-                        <div className="rn-pd-content-area">
+
+                    {/* Product Information */}
+                    <div className="col-lg-6 col-md-12">
+                        <div className={styles.productInfo}>
                             <ProductTitle
-                                // title={product.title}
-                                // likeCount={product.likeCount}
                                 title={product?.title}
                                 videos={product?.videos}
                             />
-                            <span className="bid">
-                                <span>{product?.productId}</span>
-                            </span>
-                            <h6 className="title-name">
-                                {product?.category?.join(", ")}
-                            </h6>
-                        
 
-
-                            <div>
-                                {product?.description?.map((p) => (
-                                    <p style={{ fontSize: 14 }} key={p.id}>
-                                        {p.paragraph}
-                                    </p>
-                                ))}
+                            <div className={styles.productMeta}>
+                                <div className={styles.productId}>
+                                    <span className={styles.label}>
+                                        Product ID:
+                                    </span>
+                                    <span className={styles.value}>
+                                        {product?.productId}
+                                    </span>
+                                </div>
+                                {product?.category && (
+                                    <div className={styles.productCategory}>
+                                        <span className={styles.label}>
+                                            Category:
+                                        </span>
+                                        <span className={styles.value}>
+                                            {product?.category?.join(", ")}
+                                        </span>
+                                    </div>
+                                )}
                             </div>
-                                { product.title === 'Hurricane' ?  
-                                <><p style={{ fontSize: 14, marginTop: 10 }}>
-                                        Finance options available through our recommended partner PMD Business
-                                        Finance. Please contact either Rob Greenhalgh or Lauren O’Connor using
-                                        these details:
+
+                            {/* Description */}
+                            {product?.description && (
+                                <div className={styles.productDescription}>
+                                    <h6 className={styles.sectionTitle}>
+                                        Description
+                                    </h6>
+                                    <div
+                                        className={clsx(
+                                            styles.descriptionContent,
+                                            {
+                                                [styles.descriptionCollapsed]:
+                                                    !showFullDescription &&
+                                                    isDescriptionLong,
+                                                [styles.descriptionExpanded]:
+                                                    showFullDescription &&
+                                                    isDescriptionLong,
+                                            }
+                                        )}
+                                    >
+                                        {(showFullDescription ||
+                                        !isDescriptionLong
+                                            ? product.description
+                                            : product.description.slice(0, 2)
+                                        ).map((p) => (
+                                            <p
+                                                key={p.id}
+                                                className={
+                                                    styles.descriptionText
+                                                }
+                                            >
+                                                {p.paragraph}
+                                            </p>
+                                        ))}
+                                    </div>
+                                    {isDescriptionLong && (
+                                        <button
+                                            type="button"
+                                            className={styles.showMoreBtn}
+                                            onClick={() =>
+                                                setShowFullDescription(
+                                                    !showFullDescription
+                                                )
+                                            }
+                                        >
+                                            {showFullDescription
+                                                ? "Show Less ▲"
+                                                : "Show More ▼"}
+                                        </button>
+                                    )}
+                                </div>
+                            )}
+
+                            {/* Call to Action */}
+                            <div className={styles.ctaSection}>
+                                <Button
+                                    variant="contained"
+                                    size="large"
+                                    fullWidth
+                                    onClick={() =>
+                                        addToCart({
+                                            quantity: count + 1,
+                                            product,
+                                        })
+                                    }
+                                    className={styles.enquireButton}
+                                    sx={{
+                                        backgroundColor: "#f4d03f",
+                                        color: "#2c3e50",
+                                        fontWeight: 700,
+                                        fontSize: "16px",
+                                        textTransform: "uppercase",
+                                        letterSpacing: "1px",
+                                        padding: "18px 32px",
+                                        borderRadius: "12px",
+                                        boxShadow:
+                                            "0 8px 25px rgba(244, 208, 63, 0.3)",
+                                        transition: "all 0.3s ease",
+                                        "&:hover": {
+                                            backgroundColor: "#e8b339",
+                                            transform: "translateY(-2px)",
+                                            boxShadow:
+                                                "0 12px 35px rgba(244, 208, 63, 0.4)",
+                                        },
+                                    }}
+                                >
+                                    Enquire Now
+                                </Button>
+                            </div>
+
+                            {/* Special Notices */}
+                            {product.title === "Hurricane" && (
+                                <div className={styles.financeNotice}>
+                                    <h6 className={styles.sectionTitle}>
+                                        💰 Finance Options Available
+                                    </h6>
+                                    <p className={styles.noticeText}>
+                                        Finance options available through our
+                                        recommended partner PMD Business
+                                        Finance.
                                     </p>
-                                    <p style={{ fontSize: 14 }}>
+                                    <div className={styles.contactInfo}>
+                                        <div className={styles.contactItem}>
                                             <a
-                                                class="green--text my-2"
-                                                href="email:robg@pmdbusinessfinance.co.uk"
-                                            >Email:robg@pmdbusinessfinance.co.uk</a><br></br><a
-                                                class="green--text my-2"
-                                                href="email:lauren@pmdbusinessfinance.co.uk"
-                                            >Email:lauren@pmdbusinessfinance.co.uk</a><br></br><a
-                                                class="green--text my-2"
-                                                href="tel:01616277486"
-                                            >Tel: 0161 627 7486</a><br></br>
-                                            <a href="www.pmdbusinessfinance.co.uk">Web: www.pmdbusinessfinance.co.uk</a>
-                                    </p></> : "" }
-
-                                    { product.title === 'Hard Cable Ratchet Cutter 41mm' ||
-                                    product.title === '750 Mcm Ratcheting Cable Cutter' ||
-                                    product.title ===  'Cable Croppers' ? <>
-      <p
-        style={{fontSize: 14, color: 'red', marginTop: 10}}
-      >
-        Never use this tool to cut electrically energised cable. Severe or fatal
-        injury may result.
-      </p></> : ""}
-
-      { product.title === 'Accelair 3' ?
-      <><Catalogue data={data}></Catalogue></> : ""}
-
-                                                <div className="rn-bid-details">
-                                                    <BidTab
-                                                        features={product.features}
-                                                        tables={product.tables}
-                                                        accessories={product.accessories} />
-                                                    {/* <ExtraInfo /> */}
-                                                </div>
-
-                                                <Box mt={1}>
-                                                    <Button
-                                                        variant="contained"
-                                                        onClick={() => addToCart({
-                                                            quantity: count + 1,
-                                                            product,
-                                                        })}
-                                                    >
-                                                        Add to Cart
-                                                    </Button>
-                                                </Box>
-                                            </div>
+                                                className={styles.contactLink}
+                                                href="mailto:robg@pmdbusinessfinance.co.uk"
+                                            >
+                                                Email:
+                                                robg@pmdbusinessfinance.co.uk
+                                            </a>
                                         </div>
+                                        <div className={styles.contactItem}>
+                                            <a
+                                                className={styles.contactLink}
+                                                href="tel:01616277486"
+                                            >
+                                                Tel: 0161 627 7486
+                                            </a>
+                                        </div>
+                                        <div className={styles.contactItem}>
+                                            <a
+                                                className={styles.contactLink}
+                                                href="https://www.pmdbusinessfinance.co.uk"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                www.pmdbusinessfinance.co.uk
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {(product.title ===
+                                "Hard Cable Ratchet Cutter 41mm" ||
+                                product.title ===
+                                    "750 Mcm Ratcheting Cable Cutter" ||
+                                product.title === "Cable Croppers") && (
+                                <div className={styles.safetyWarning}>
+                                    <h6 className={styles.warningTitle}>
+                                        ⚠️ Safety Warning
+                                    </h6>
+                                    <p className={styles.warningText}>
+                                        Never use this tool to cut electrically
+                                        energised cable. Severe or fatal injury
+                                        may result.
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </div>
                 </div>
+
+                {/* Product Details Section */}
+                <div className="row">
+                    <div className="col-12">
+                        <div className={styles.detailsSection}>
+                            <h3 className={styles.detailsTitle}>
+                                Product Details
+                            </h3>
+                            <div className={styles.bidDetails}>
+                                <BidTab
+                                    features={product.features}
+                                    tables={product.tables}
+                                    accessories={product.accessories}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Catalogue Section */}
+                {product.title === "Accelair 3" && (
+                    <div className="row mt-5">
+                        <div className="col-12">
+                            <div className={styles.catalogueSection}>
+                                <Catalogue data={data} />
+                            </div>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     );
@@ -138,24 +280,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
 ProductDetailsArea.propTypes = {
     space: PropTypes.oneOf([1, 2]),
     className: PropTypes.string,
-    product:  PropTypes.arrayOf(PropTypes.shape({})),
-    // product: PropTypes.shape({
-    //     title: PropTypes.string.isRequired,
-    //     likeCount: PropTypes.number,
-    //     price: PropTypes.shape({
-    //         amount: PropTypes.number.isRequired,
-    //         currency: PropTypes.string.isRequired,
-    //     }).isRequired,
-    //     owner: PropTypes.shape({}),
-    //     collection: PropTypes.shape({}),
-    //     bids: PropTypes.arrayOf(PropTypes.shape({})),
-    //     properties: PropTypes.arrayOf(PropTypes.shape({})),
-    //     tags: PropTypes.arrayOf(PropTypes.shape({})),
-    //     history: PropTypes.arrayOf(PropTypes.shape({})),
-    //     highest_bid: PropTypes.shape({}),
-    //     auction_date: PropTypes.string,
-    //     images: PropTypes.arrayOf(ImageType),
-    // }),
+    product: PropTypes.arrayOf(ProductType),
 };
 
 ProductDetailsArea.defaultProps = {

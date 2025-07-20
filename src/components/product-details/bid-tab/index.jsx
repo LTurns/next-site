@@ -229,10 +229,100 @@ const useStyles = makeStyles({
     columns: {
         padding: 20,
     },
+    featureSection: {
+        padding: "24px",
+        marginBottom: "16px",
+        backgroundColor: "#ffffff",
+        borderRadius: "12px",
+        border: "1px solid rgba(0, 0, 0, 0.08)",
+        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+        transition: "all 0.2s ease",
+        "&:hover": {
+            boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
+            transform: "translateY(-1px)",
+        },
+    },
+    featureHeading: {
+        fontSize: "16px !important",
+        fontWeight: "600 !important",
+        color: "#2c3e50 !important",
+        marginBottom: "16px !important",
+        paddingBottom: "8px !important",
+        borderBottom: "2px solid #f4d03f !important",
+        display: "inline-block !important",
+    },
+    featureItem: {
+        fontSize: "14px !important",
+        color: "#495057 !important",
+        marginBottom: "8px !important",
+        paddingLeft: "16px !important",
+        position: "relative !important",
+        "&:before": {
+            content: '"•"',
+            position: "absolute",
+            left: "0",
+            color: "#f4d03f",
+            fontWeight: "bold",
+        },
+    },
+    tableContainer: {
+        backgroundColor: "#ffffff",
+        borderRadius: "12px",
+        overflow: "hidden",
+        boxShadow: "0 4px 16px rgba(0, 0, 0, 0.08)",
+        border: "1px solid rgba(0, 0, 0, 0.08)",
+        marginBottom: "24px",
+        "&:last-child": {
+            marginBottom: "0",
+        },
+    },
+    table: {
+        width: "100%",
+        borderCollapse: "collapse",
+        margin: "0 !important",
+        tableLayout: "fixed",
+    },
+    tableHeader: {
+        backgroundColor: "linear-gradient(135deg, #f4d03f 0%, #e8b339 100%)",
+        color: "#2c3e50",
+        fontWeight: "700",
+        fontSize: "14px",
+        textTransform: "uppercase",
+        letterSpacing: "0.5px",
+        padding: "16px 20px",
+        border: "none",
+        width: "50%",
+        textAlign: "left",
+    },
+    tableCell: {
+        padding: "16px 20px",
+        borderBottom: "1px solid rgba(0, 0, 0, 0.05)",
+        fontSize: "14px",
+        color: "#495057",
+        backgroundColor: "#ffffff",
+        transition: "background-color 0.2s ease",
+    },
+    emptyState: {
+        padding: "40px 24px",
+        textAlign: "center",
+        color: "#6c757d",
+        fontSize: "16px",
+        backgroundColor: "#f8f9fa",
+        borderRadius: "12px",
+        border: "1px solid #e9ecef",
+    },
 });
 
 const BidTab = ({ className, accessories, tables, features }) => {
     const classes = useStyles();
+
+    const getColumnLabel = (column) => {
+        if (column === "itemDescription") return "Description";
+        if (column === "partNo") return "Part Number";
+        return column
+            .replace(/([A-Z])/g, " $1")
+            .replace(/^./, (str) => str.toUpperCase());
+    };
 
     return (
         <TabContainer defaultActiveKey="nav-home">
@@ -265,66 +355,120 @@ const BidTab = ({ className, accessories, tables, features }) => {
                 <TabContent className="rn-bid-content">
                     <TabPane eventKey="nav-profile">
                         <div className="box-table table-responsive">
-                            {features.map((f) => (
-                                <div style={{ padding: 20}}>
-                                        <p style={{fontSize: 13}}
-                                            // classNames={classes.title}
-                                            key={f.id}
-                                        >
+                            {features?.length ? (
+                                features.map((f) => (
+                                    <div
+                                        key={f._key || f.id}
+                                        className={classes.featureSection}
+                                    >
+                                        <h4 className={classes.featureHeading}>
                                             {f.heading}
-                                        </p>
-                                        {f.list.map((item) => (
-                                            <p style={{fontSize: 13}}>{item.listItem}</p>
+                                        </h4>
+                                        {f.list?.map((item) => (
+                                            <p
+                                                key={item._key}
+                                                className={classes.featureItem}
+                                            >
+                                                {item.listItem}
+                                            </p>
                                         ))}
+                                    </div>
+                                ))
+                            ) : (
+                                <div className={classes.emptyState}>
+                                    No features available for this product.
                                 </div>
-                            ))}
+                            )}
                         </div>
-
-                        <></>
                     </TabPane>
                     <TabPane eventKey="nav-contact">
                         <div className="box-table table-responsive">
-                            {/* {accessories.length ? (
+                            {accessories?.length ? (
                                 <div>
                                     {accessories.map((a) => (
-                                        <div className={classes.accessories}>
-                                            <Product
-                                                product={a}
-                                            />
+                                        <div
+                                            key={a._key || a.id}
+                                            className={classes.accessories}
+                                        >
+                                            <Product product={a} />
                                         </div>
                                     ))}
                                 </div>
                             ) : (
-                                <div>No accessories required.</div>
-                            )} */}
+                                <div className={classes.emptyState}>
+                                    No accessories required for this product.
+                                </div>
+                            )}
                         </div>
                     </TabPane>
                     <TabPane eventKey="nav-info">
                         <div className="box-table table-responsive">
-                            {}
-                            {tables?.map((table) => (
-                                <table className="mt--15 mb--15">
-                                    {/* <thead>
-                                        <tr>
-                                            {table.columns.map((column) => (
-                                                <th className={classes.columns}>
-                                                    {" "}
-                                                    {column.split(" ")}{" "}
-                                                </th>
-                                            ))}
-                                        </tr>
-                                    </thead> */}
-                                    <tbody>
-                                        {table.items.map((item) => (
-                                            <tr>
-                                                {table.columns.map((column) => (
-                                                    <td>{item[column]}</td>
-                                                ))}
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            ))}
+                            {tables?.length ? (
+                                tables.map((table) => (
+                                    <div
+                                        key={table._key}
+                                        className={classes.tableContainer}
+                                    >
+                                        <table className={classes.table}>
+                                            <thead>
+                                                <tr>
+                                                    {table.columns?.map(
+                                                        (column) => (
+                                                            <th
+                                                                key={column}
+                                                                className={
+                                                                    classes.tableHeader
+                                                                }
+                                                            >
+                                                                {getColumnLabel(
+                                                                    column
+                                                                )}
+                                                            </th>
+                                                        )
+                                                    )}
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {table.items?.map(
+                                                    (item, index) => (
+                                                        <tr
+                                                            key={
+                                                                item._key ||
+                                                                item.id ||
+                                                                `row-${index}`
+                                                            }
+                                                        >
+                                                            {table.columns?.map(
+                                                                (column) => (
+                                                                    <td
+                                                                        key={
+                                                                            column
+                                                                        }
+                                                                        className={
+                                                                            classes.tableCell
+                                                                        }
+                                                                    >
+                                                                        {
+                                                                            item[
+                                                                                column
+                                                                            ]
+                                                                        }
+                                                                    </td>
+                                                                )
+                                                            )}
+                                                        </tr>
+                                                    )
+                                                )}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className={classes.emptyState}>
+                                    No ordering information available for this
+                                    product.
+                                </div>
+                            )}
                         </div>
                     </TabPane>
                 </TabContent>
@@ -334,10 +478,10 @@ const BidTab = ({ className, accessories, tables, features }) => {
 };
 
 BidTab.propTypes = {
-    accessories: [],
-    features: [],
-    tables: [],
-    product: []
+    accessories: PropTypes.arrayOf(PropTypes.shape({})),
+    features: PropTypes.arrayOf(PropTypes.shape({})),
+    tables: PropTypes.arrayOf(PropTypes.shape({})),
+    className: PropTypes.string,
 };
 
 export default BidTab;

@@ -14,40 +14,42 @@ const ProductTitle = ({ className, title, videos }) => {
 
     return (
         <div className={clsx("pd-title-area", className)}>
-        <h4 className="title">{title}</h4>
-        {videos?.length !== 0 ? 
+            <h4 className="title">{title}</h4>
+            {videos?.length !== 0 ? (
                 <span>
-                <button
+                    <button
                         type="button"
-                        style={{border: 'none'}}
+                        style={{ border: "none" }}
                         // className="vedio-wrapper"
                         onClick={() => setOpen(true)}
                     >
                         {/* Play Video   */}
                         <FaPlay size={40} className="play-button" />
                     </button>
-                                    {videos?.map((video) => (
-                                        isOpen && (
-                                    <Portal>
-                            <ModalVideo
-                                isOpen={isOpen}
-                                videoId={video}
-                                channel={"youtube"}
-                                onClose={() => setOpen(false)}
-                            />
-                        </Portal>
-                                        )
-                                    ))}
+                    {videos?.map(
+                        (video) =>
+                            isOpen && (
+                                <Portal>
+                                    <ModalVideo
+                                        isOpen={isOpen}
+                                        videoId={video}
+                                        channel="youtube"
+                                        onClose={() => setOpen(false)}
+                                    />
+                                </Portal>
+                            )
+                    )}
                 </span>
-                : ''
-        }
-    </div>
-    )
+            ) : (
+                " "
+            )}
+        </div>
+    );
 };
 
 ProductTitle.propTypes = {
     className: PropTypes.string,
-    videos: PropTypes.array
+    videos: PropTypes.array,
 };
 
 ProductTitle.defaultProps = {

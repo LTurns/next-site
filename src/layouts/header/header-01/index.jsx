@@ -12,11 +12,11 @@ import { useOffcanvas, useSticky, useFlyoutSearch } from "@hooks";
 import router from "next/router";
 import { FaShoppingCart } from "react-icons/fa";
 import Box from "@mui/material/Box";
+import Autocomplete from "@components/autocomplete";
 import CartContext from "../../../Context/cart/CartContext";
 import headerData from "../../../data/general/header-01.json";
 import menuData from "../../../data/general/menu-01.json";
 import productData from "../../../data/products-06.json";
-import Autocomplete from "@components/autocomplete";
 
 const Header = ({ className }) => {
     // const router = useRouter();
@@ -74,8 +74,7 @@ const Header = ({ className }) => {
         <>
             <header
                 className={clsx(
-                    "rn-header haeder-default black-logo-version header--fixed header--sticky",
-                    sticky && "sticky",
+                    "rn-header haeder-default black-logo-version header--fixed",
                     className
                 )}
             >
@@ -95,7 +94,7 @@ const Header = ({ className }) => {
                         <div className="header-right">
                             <div className="searches setting-option d-none d-lg-block">
                                 {/* <SearchBar isOpen={true} /> */}
-                                <Autocomplete data={productData} isOpen={true}/>
+                                <Autocomplete data={productData} isOpen />
                             </div>
 
                             <div className="rn-icon-list setting-option d-block d-lg-none">
@@ -108,7 +107,7 @@ const Header = ({ className }) => {
                                         <i className="feather-search" />
                                     </button>
                                 </div> */}
-                                <Autocomplete data={productData} isOpen={true}/>
+                                <Autocomplete data={productData} isOpen />
                             </div>
                             {/* <div className="setting-option rn-icon-list notification-badge">
                                 <div className="icon-box">
@@ -159,7 +158,7 @@ const Header = ({ className }) => {
                                             paddingInline: 5,
                                         }}
                                     >
-                                        {total != 0 ? total : ''}
+                                        {total != 0 ? total : ""}
                                     </span>
                                 </Box>
                             </div>

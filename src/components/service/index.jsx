@@ -1,7 +1,7 @@
 import Anchor from "@ui/anchor";
 import PropTypes from "prop-types";
 import { ImageType } from "@utils/types";
-import Image from 'next/image'
+import Image from "next/image";
 
 const Service = ({ title, subtitle, path, description, image }) => (
     <div
@@ -15,14 +15,17 @@ const Service = ({ title, subtitle, path, description, image }) => (
                 {image?.src && (
                     // eslint-disable-next-line @next/next/no-img-element
                     <Image src={image.src} alt={title} />
-                    
                 )}
             </div>
             <div className="subtitle">{subtitle}</div>
             <div className="content">
                 <h4 className="title">{title}</h4>
                 <p className="description">{description}</p>
-                <Anchor className="read-more-button" path={path} ariaLabel="read more">
+                <Anchor
+                    className="read-more-button"
+                    path={path}
+                    ariaLabel="read more"
+                >
                     <i className="feather-arrow-right" />
                 </Anchor>
             </div>

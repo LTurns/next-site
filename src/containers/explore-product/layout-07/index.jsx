@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import Product from "@components/product/layout-02";
+import Product from "@components/product/layout-03";
 import Slider, { SliderItem } from "@ui/slider";
 import { SectionTitleType, ProductType } from "@utils/types";
 import SectionTitle from "@components/section-title/layout-02";
@@ -57,37 +57,35 @@ const ExploreProductArea = ({ data, className, space }) => (
     >
         <div className="container">
             {/* {data?.products && ( */}
-                <div className="row mt--80">
-                                <SectionTitle
-                title="Popular Products"
-            />
-                    <div className="col-lg-12 mt--20">
-                        <Slider
-                            options={SliderOptions}
-                            className="banner-one-slick slick-arrow-style-one slick-gutter-10"
-                        >
-                            {data.products.map((prod) => (
-                                <SliderItem
-                                    key={prod._id}
-                                    className="single-slide-product"
-                                >
-                                    <Product
-                                        product={prod}
-                                        // title={prod.title}
-                                        // slug={prod.title}
-                                        // intro={prod.intro}
-                                        // category={prod.category}
-                                        // productId={prod.productId}
-                                        // // latestBid={prod.latestBid}
-                                        // // price={prod.price}
-                                        // // likeCount={prod.likeCount}
-                                        // image={prod.mainImage}
-                                    />
-                                </SliderItem>
-                            ))}
-                        </Slider>
-                    </div>
+            <div className="row mt--80">
+                <SectionTitle title="Popular Products" />
+                <div className="col-lg-12 mt--20">
+                    <Slider
+                        options={SliderOptions}
+                        className="banner-one-slick slick-arrow-style-one slick-gutter-10"
+                    >
+                        {data.products.map((prod) => (
+                            <SliderItem
+                                key={prod._id}
+                                className="single-slide-product"
+                            >
+                                <Product
+                                    product={prod}
+                                    // title={prod.title}
+                                    // slug={prod.title}
+                                    // intro={prod.intro}
+                                    // category={prod.category}
+                                    // productId={prod.productId}
+                                    // // latestBid={prod.latestBid}
+                                    // // price={prod.price}
+                                    // // likeCount={prod.likeCount}
+                                    // image={prod.mainImage}
+                                />
+                            </SliderItem>
+                        ))}
+                    </Slider>
                 </div>
+            </div>
             {/* )} */}
         </div>
     </div>

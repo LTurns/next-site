@@ -78,11 +78,18 @@
                     "description": "Includes a large catalogue of cable blowing machines, including our most recent atmos compressor."
                 },
                 {
-                    "id": 4,
+                    "id": 3,
                     "title": "Underground Cable Laying",
                     "path": "/underground-cable-laying",
-                    "subtitle": "Cable Pushers, heavy duty cable rollers",
+                    "subtitle": "Cable Pushers, Heavy Duty Cable Rollers",
                     "description": "Includes cable pushers, heavy duty cable rollers, bridge rollers, narrow cable rollers and more."
+                },
+                {
+                    "id": 4,
+                    "title": "Klein Tools",
+                    "path": "/klein-tools",
+                    "subtitle": "Battery Tools, Cutters, Gloves",
+                    "description": "A highly accredited product line, including a vast selection of tools for your every need."
                 }
             ]
         },

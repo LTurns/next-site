@@ -1,35 +1,14 @@
 import PropTypes from "prop-types";
 import Image from "next/image";
 import Button from "@ui/button";
+import Catalogue from "@components/catalogue";
 import { HeadingType, TextType, ButtonType, ImageType } from "@utils/types";
-import BannerGallery from "@components/banner-ui/banner-gallery";
-import imageUrlBuilder from "@sanity/image-url";
-import { FaDownload } from "react-icons/fa6";
-
-const builder = imageUrlBuilder({
-    projectId: "b6e027vh",
-    dataset: "production",
-});
-
-const urlFor = (source) => {
-    const image = builder.image(source);
-    return image;
-};
-
-
-const hydraulicImage = {
-    "_type": "image",
-    "asset": {
-        "_type": "reference",
-        "_ref": "image-f7e7a95e6e46a15e1e5aab86304f243f00a900a1-2131x2403-png"
-    }
-}
 
 const HeroArea = ({ data }) => (
     <div className="slider-one rn-section-gapTop">
         <div className="container">
             <div className="row row-reverce-sm align-items-center">
-                <div className="col-lg-10 col-md-8 col-sm-12 order-1">
+                <div className="col-lg-6 col-12 order-1">
                     {data?.headings[0]?.content && (
                         <h2
                             className="title"
@@ -39,7 +18,6 @@ const HeroArea = ({ data }) => (
                         >
                             {data.headings[0].content}
                         </h2>
-                        
                     )}
                     {data?.texts?.map((text) => (
                         <p
@@ -52,7 +30,7 @@ const HeroArea = ({ data }) => (
                             {text.content}
                         </p>
                     ))}
-                    
+
                     {data?.buttons && (
                         <div className="button-group">
                             {data.buttons.map(({ content, id, ...btn }, i) => (
@@ -67,18 +45,20 @@ const HeroArea = ({ data }) => (
                             ))}
                         </div>
                     )}
+
+                    <Catalogue data={data?.catalogue} />
                 </div>
-                {/* <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1 order-2">
-                        <div className="slider-thumbnail">
-                            <Image
-                                src={data.images[0].src}
-                                alt={data.images[0]?.alt || "Slider Images"}
-                                width={585}
-                                height={593}
-                                priority
-                            />
-                        </div>
-                </div> */}
+                <div className="col-lg-5 offset-lg-1 order-2">
+                    <div className="slider-thumbnail d-none d-lg-block">
+                        <Image
+                            src={data.images[0].src}
+                            alt={data.images[0]?.alt || "Slider Images"}
+                            width={585}
+                            height={593}
+                            priority
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     </div>

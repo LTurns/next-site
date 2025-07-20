@@ -5,6 +5,7 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ProductDetailsArea from "@containers/product-details";
+import { sanityClient } from "../../lib/sanity";
 
 // demo data
 import productData from "../../data/products-06.json";
@@ -15,12 +16,10 @@ const ProductDetails = ({ product }) => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Product Details"
-                currentPage="Product Details"
+                pageTitle={product?.title || "Product Details"}
+                currentPage={product?.title || "Product Details"}
             />
-            <ProductDetailsArea
-                product={product}
-            />
+            <ProductDetailsArea product={product} />
             {/* <ProductArea
                 data={{
                     section_title: { title: "Recent View" },
@@ -39,31 +38,58 @@ const ProductDetails = ({ product }) => (
 );
 
 export async function getStaticPaths() {
-    return {
-        paths: productData.map(({ title }) => ({
+    try {
+        const posts = await sanityClient.fetch(`*[_type == "product"]`);
+
+        const paths = posts.map((post) => ({
             params: {
-                title,
+                title: post.title,
             },
-        })),
-        fallback: false,
-    };
+        }));
+
+        return {
+            paths,
+            fallback: false,
+        };
+    } catch (error) {
+        // Fallback to productData
+        return {
+            paths: productData.map(({ title }) => ({
+                params: {
+                    title,
+                },
+            })),
+            fallback: false,
+        };
+    }
 }
 
 export async function getStaticProps({ params }) {
+    try {
+        const posts = await sanityClient.fetch(`*[_type == "product"]`);
+
+        const product = posts.find((post) => post.title === params.title);
+
+        if (product) {
+            return {
+                props: {
+                    className: "template-color-1",
+                    product,
+                },
+            };
+        }
+    } catch (error) {
+        // Fallback to productData if Sanity fails
+    }
+
+    // Fallback to productData
     const product = productData.find(({ title }) => title === params.title);
 
-    // const { category } = product;
-    // const recentViewProducts = shuffleArray(productData).slice(0, 5);
-    // const relatedProducts = productData
-    //     .filter((prod) => prod.categories?.some((r) => categories?.includes(r)))
-    //     .slice(0, 5);
     return {
         props: {
             className: "template-color-1",
             product,
-            // recentViewProducts,
-            // relatedProducts,
-        }, // will be passed to the page component as props
+        },
     };
 }
 

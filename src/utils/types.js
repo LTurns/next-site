@@ -57,25 +57,96 @@ export const ItemType = PropTypes.shape({
 });
 
 export const ProductType = PropTypes.shape({
-    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    title: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
-    latestBid: PropTypes.string.isRequired,
-    price: PropTypes.shape({
-        amount: PropTypes.number.isRequired,
-        currency: PropTypes.string.isRequired,
-    }).isRequired,
-    likeCount: PropTypes.number,
-    image: ImageType,
-    auction_date: PropTypes.string,
-    authors: PropTypes.arrayOf(
+    _id: PropTypes.string,
+    _type: PropTypes.string,
+    _rev: PropTypes.string,
+    _createdAt: PropTypes.string,
+    _updatedAt: PropTypes.string,
+    id: PropTypes.string,
+    productId: PropTypes.string,
+    title: PropTypes.string,
+    intro: PropTypes.string,
+    isDraft: PropTypes.bool,
+    enquiries: PropTypes.number,
+    countInStock: PropTypes.number,
+    hasSubCategories: PropTypes.bool,
+    mainImage: PropTypes.shape({
+        _type: PropTypes.string,
+        asset: PropTypes.shape({
+            _type: PropTypes.string,
+            _ref: PropTypes.string,
+        }),
+    }),
+    moreImages: PropTypes.arrayOf(
         PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            slug: PropTypes.string.isRequired,
-            image: ImageType,
+            _type: PropTypes.string,
+            asset: PropTypes.shape({
+                _type: PropTypes.string,
+                _ref: PropTypes.string,
+            }),
         })
     ),
-    bitCount: PropTypes.number,
+    recommendedProducts: PropTypes.arrayOf(
+        PropTypes.shape({
+            _key: PropTypes.string,
+            category: PropTypes.arrayOf(PropTypes.string),
+            mainImg: PropTypes.shape({
+                _type: PropTypes.string,
+                asset: PropTypes.shape({
+                    _type: PropTypes.string,
+                    _ref: PropTypes.string,
+                }),
+            }),
+            subCategory: PropTypes.arrayOf(PropTypes.string),
+            productId: PropTypes.string,
+            intro: PropTypes.string,
+            title: PropTypes.string,
+            id: PropTypes.string,
+        })
+    ),
+    accessories: PropTypes.arrayOf(PropTypes.any),
+    subCategory: PropTypes.arrayOf(PropTypes.string),
+    category: PropTypes.arrayOf(PropTypes.string),
+    description: PropTypes.arrayOf(
+        PropTypes.shape({
+            _key: PropTypes.string,
+            paragraph: PropTypes.string,
+        })
+    ),
+    features: PropTypes.arrayOf(
+        PropTypes.shape({
+            _key: PropTypes.string,
+            heading: PropTypes.string,
+            id: PropTypes.number,
+            list: PropTypes.arrayOf(
+                PropTypes.shape({
+                    _key: PropTypes.string,
+                    listItem: PropTypes.string,
+                })
+            ),
+        })
+    ),
+    configurationTitle: PropTypes.string,
+    configurationInfo: PropTypes.arrayOf(
+        PropTypes.shape({
+            _key: PropTypes.string,
+            paragraph: PropTypes.string,
+        })
+    ),
+    tables: PropTypes.arrayOf(
+        PropTypes.shape({
+            _key: PropTypes.string,
+            title: PropTypes.string,
+            columns: PropTypes.arrayOf(PropTypes.string),
+            items: PropTypes.arrayOf(
+                PropTypes.shape({
+                    _key: PropTypes.string,
+                    partNo: PropTypes.string,
+                    itemDescription: PropTypes.string,
+                })
+            ),
+        })
+    ),
 });
 
 export const SellerType = PropTypes.shape({
