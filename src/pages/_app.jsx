@@ -8,6 +8,7 @@ import { store } from '../redux/store'
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/feather.css";
 import "../assets/css/modal-video.css";
+import "../assets/css/map.css"
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/scss/style.scss";
 import CartState from "../Context/cart/CartState";

@@ -56,28 +56,30 @@ export default function Map() {
                   position={{ lat: loc.lat, lng: loc.lng }}
                   onCloseClick={() => setActiveMarkerId(null)}
                 >
-                  <div style={{ maxWidth: "220px", fontSize: "12px" }}>
+                  <div>
                     {(() => {
                       const contact = getContactDetails(loc.id);
-                      if (!contact) {
-                        return (
-                          <>
-                            <p>{loc.address}</p>
-                          </>
-                        );
-                      }
                       return (
                         <>
-                          <p>{contact.contact}</p>
-                          <p>{contact.tel}</p>
-                          <p>{contact.mobile}</p>
-                          <p>{contact.email}</p>
-                          <a href={contact.website} target="_blank" rel="noopener noreferrer">{contact.website}</a>
+                        <div className="gmap-infowindow">
+                        <p>Address</p>
+                        <p>{contact?.name}</p>
+                        <p>{contact?.county}</p>
+                        <p>{contact?.postcode}</p>
+                        <p>{contact?.country}</p>
+
+                        <p>Contact Details:</p>
+                          <p>{contact?.contact}</p>
+                          <p>{contact?.tel}</p>
+                          <p>{contact?.mobile}</p>
+                          <p>{contact?.email}</p>
+                          <a href={contact?.website} target="_blank" rel="noopener noreferrer">{contact.website}</a>
                                 <img
                                 src={`/images/whereToBuy/${contact.img}`}
                                 alt={contact.name}
                                 style={{ maxWidth: "50%", height: "auto" }}
                                 />
+                                </div>
                         </>
                       );
                     })()}
