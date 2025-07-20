@@ -6,7 +6,6 @@ import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
 import { makeStyles } from "@mui/styles";
 
-import React from "react";
 import Product from "@components/product/layout-02";
 // import List from '@material-ui/core/List';
 // import ListItem from '@material-ui/core/ListItem';
@@ -241,6 +240,15 @@ const useStyles = makeStyles({
             boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
             transform: "translateY(-1px)",
         },
+        // Dark mode
+        "[data-theme='dark'] &": {
+            backgroundColor: "#2c3e50",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+            "&:hover": {
+                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.4)",
+            },
+        },
     },
     featureHeading: {
         fontSize: "16px !important",
@@ -250,6 +258,10 @@ const useStyles = makeStyles({
         paddingBottom: "8px !important",
         borderBottom: "2px solid #f4d03f !important",
         display: "inline-block !important",
+        // Dark mode
+        "[data-theme='dark'] &": {
+            color: "#f8f9fa !important",
+        },
     },
     featureItem: {
         fontSize: "14px !important",
@@ -258,11 +270,15 @@ const useStyles = makeStyles({
         paddingLeft: "16px !important",
         position: "relative !important",
         "&:before": {
-            content: '"•"',
+            content: "'•'",
             position: "absolute",
             left: "0",
             color: "#f4d03f",
             fontWeight: "bold",
+        },
+        // Dark mode
+        '[data-theme="dark"] &': {
+            color: "#ced4da !important",
         },
     },
     tableContainer: {
@@ -275,6 +291,12 @@ const useStyles = makeStyles({
         "&:last-child": {
             marginBottom: "0",
         },
+        // Dark mode
+        '[data-theme="dark"] &': {
+            backgroundColor: "#2c3e50",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
+            boxShadow: "0 4px 16px rgba(0, 0, 0, 0.3)",
+        },
     },
     table: {
         width: "100%",
@@ -283,7 +305,7 @@ const useStyles = makeStyles({
         tableLayout: "fixed",
     },
     tableHeader: {
-        backgroundColor: "linear-gradient(135deg, #f4d03f 0%, #e8b339 100%)",
+        background: "linear-gradient(135deg, #f4d03f 0%, #e8b339 100%)",
         color: "#2c3e50",
         fontWeight: "700",
         fontSize: "14px",
@@ -293,6 +315,7 @@ const useStyles = makeStyles({
         border: "none",
         width: "50%",
         textAlign: "left",
+        // Dark mode - keep the same gradient as it provides good contrast
     },
     tableCell: {
         padding: "16px 20px",
@@ -301,6 +324,12 @@ const useStyles = makeStyles({
         color: "#495057",
         backgroundColor: "#ffffff",
         transition: "background-color 0.2s ease",
+        // Dark mode
+        '[data-theme="dark"] &': {
+            backgroundColor: "#2c3e50",
+            color: "#ced4da",
+            borderBottom: "1px solid rgba(255, 255, 255, 0.05)",
+        },
     },
     emptyState: {
         padding: "40px 24px",
@@ -310,6 +339,12 @@ const useStyles = makeStyles({
         backgroundColor: "#f8f9fa",
         borderRadius: "12px",
         border: "1px solid #e9ecef",
+        // Dark mode
+        '[data-theme="dark"] &': {
+            backgroundColor: "#343a40",
+            color: "#adb5bd",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
+        },
     },
 });
 
@@ -325,7 +360,7 @@ const BidTab = ({ className, accessories, tables, features }) => {
     };
 
     return (
-        <TabContainer defaultActiveKey="nav-home">
+        <TabContainer defaultActiveKey="nav-profile">
             <div className={clsx("tab-wrapper-one", className)}>
                 <nav className="tab-button-one">
                     <Nav as="div" className="nav-tabs">
