@@ -8,12 +8,9 @@ import GalleryTab from "@components/product-details/gallery-tab";
 import ProductTitle from "@components/product-details/title";
 import BidTab from "@components/product-details/bid-tab";
 import Catalogue from "@components/catalogue";
-// import ExtraInfo from "@components/product-details/extra-info";
 import { ProductType } from "@utils/types";
 import { Button } from "@mui/material";
 import { useContext, useState } from "react";
-import VideoButton from "@ui/video-button";
-import dynamic from "next/dynamic";
 
 import CartContext from "../../Context/cart/CartContext";
 import styles from "./product-details.module.css";
@@ -22,108 +19,71 @@ const data = {
     catalogue: "/pdfs/Accelair31.pdf",
 };
 
-const ModalVideo = dynamic(() => import("react-modal-video"), { ssr: false });
-
 const ProductDetailsArea = ({ space, className, product }) => {
     const { addToCart } = useContext(CartContext);
     const [showFullDescription, setShowFullDescription] = useState(false);
-    const [videoModalOpen, setVideoModalOpen] = useState(false);
-    const [currentVideoId, setCurrentVideoId] = useState("");
+    const [showAddedToCart, setShowAddedToCart] = useState(false);
     const count = 0;
 
-    // Check if description is long (more than 3 paragraphs or very long text)
+    // Check if description needs "Show More" button (more than 1 paragraph)
     const isDescriptionLong =
-        product?.description &&
-        (product.description.length > 3 ||
-            product.description.some((p) => p.paragraph.length > 200));
+        product?.description && product.description.length > 1;
 
-    // Function to extract YouTube video ID from URL
-    const getYouTubeVideoId = (url) => {
-        const regex =
-            /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/;
-        const match = url.match(regex);
-        return match ? match[1] : null;
+    // Handle adding product to cart with success message
+    const handleAddToCart = () => {
+        addToCart({
+            quantity: count + 1,
+            product,
+        });
+        setShowAddedToCart(true);
+        // Hide message after 3 seconds
+        setTimeout(() => {
+            setShowAddedToCart(false);
+        }, 3000);
     };
 
-    // Function to open video modal
-    const openVideoModal = (videoUrl) => {
-        const videoId = getYouTubeVideoId(videoUrl);
-        if (videoId) {
-            setCurrentVideoId(videoId);
-            setVideoModalOpen(true);
-        }
+    // Generate SEO content
+    const generateSEOContent = () => {
+        const title = `${product?.title} - CBS Products`;
+        const description =
+            product?.description?.length > 0
+                ? `${product.description[0].paragraph.substring(0, 155)}...`
+                : `${product?.title} - Professional cable blowing equipment from CBS Products. High-quality telecommunications tools and machinery.`;
+        const keywords = `${
+            product?.title
+        }, cable blowing, telecommunications, CBS Products${
+            product?.category ? `, ${product.category.join(", ")}` : ""
+        }`;
+
+        return { title, description, keywords };
     };
+
+    const { title, description, keywords } = generateSEOContent();
 
     return (
         <>
             {/* SEO Meta Tags */}
             <SEO pageTitle={product?.title || "Product Details"} />
-
-            {/* Enhanced SEO with product-specific meta data */}
             <Head>
-                <meta
-                    name="description"
-                    content={
-                        product?.description?.length > 0
-                            ? `${product.description[0].paragraph.substring(
-                                  0,
-                                  155
-                              )}...`
-                            : `${product?.title} - Professional cable blowing equipment from CBS Products. High-quality telecommunications tools and machinery.`
-                    }
-                />
-                <meta
-                    name="keywords"
-                    content={`${
-                        product?.title
-                    }, cable blowing, telecommunications, CBS Products, ${product?.category?.join(
-                        ", "
-                    )}`}
-                />
-                <meta
-                    property="og:title"
-                    content={`${product?.title} - CBS Products`}
-                />
-                <meta
-                    property="og:description"
-                    content={
-                        product?.description?.length > 0
-                            ? product.description[0].paragraph.substring(0, 155)
-                            : `Professional ${product?.title} from CBS Products`
-                    }
-                />
+                <meta name="description" content={description} />
+                <meta name="keywords" content={keywords} />
+
+                {/* Open Graph tags */}
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:type" content="product" />
                 {product?.mainImage && (
                     <meta property="og:image" content={product.mainImage} />
                 )}
-                <meta property="og:type" content="product" />
+
+                {/* Twitter Card tags */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content={`${product?.title} - CBS Products`}
-                />
-                <meta
-                    name="twitter:description"
-                    content={
-                        product?.description?.length > 0
-                            ? product.description[0].paragraph.substring(0, 155)
-                            : `Professional ${product?.title} from CBS Products`
-                    }
-                />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
                 {product?.mainImage && (
                     <meta name="twitter:image" content={product.mainImage} />
                 )}
             </Head>
-
-            {/* Video Modal */}
-            {videoModalOpen && (
-                <ModalVideo
-                    channel="youtube"
-                    autoplay
-                    isOpen={videoModalOpen}
-                    videoId={currentVideoId}
-                    onClose={() => setVideoModalOpen(false)}
-                />
-            )}
 
             <div
                 className={clsx(
@@ -139,10 +99,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                         {/* Product Image */}
                         <div className="col-lg-6 col-md-12">
                             <div className={styles.imageWrapper}>
-                                <GalleryTab
-                                    images={[product?.mainImage]}
-                                    videos={product?.videos}
-                                />
+                                <GalleryTab images={[product?.mainImage]} />
                             </div>
                         </div>
 
@@ -175,6 +132,11 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                     )}
                                 </div>
 
+                                {/* <ExtraInfo
+                                    data={{ video: product?.videos[0] }}
+                                    className={styles.extraInfo}
+                                /> */}
+
                                 {/* Description */}
                                 {product?.description && (
                                     <div className={styles.productDescription}>
@@ -199,7 +161,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                                 ? product.description
                                                 : product.description.slice(
                                                       0,
-                                                      2
+                                                      1
                                                   )
                                             ).map((p) => (
                                                 <p
@@ -236,12 +198,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                         variant="contained"
                                         size="large"
                                         fullWidth
-                                        onClick={() =>
-                                            addToCart({
-                                                quantity: count + 1,
-                                                product,
-                                            })
-                                        }
+                                        onClick={handleAddToCart}
                                         className={styles.enquireButton}
                                         sx={{
                                             backgroundColor: "#f4d03f",
@@ -265,6 +222,17 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                     >
                                         Enquire Now
                                     </Button>
+
+                                    {/* Added to Cart Message */}
+                                    {showAddedToCart && (
+                                        <div
+                                            className={
+                                                styles.addedToCartMessage
+                                            }
+                                        >
+                                            ✅ Added to cart
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* Special Notices */}
@@ -360,37 +328,6 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             <div className="col-12">
                                 <div className={styles.catalogueSection}>
                                     <Catalogue data={data} />
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Video Section */}
-                    {product?.videos && product.videos.length > 0 && (
-                        <div className="row mt-5">
-                            <div className="col-12">
-                                <div className={styles.videoSection}>
-                                    <h3 className={styles.detailsTitle}>
-                                        Product Videos
-                                    </h3>
-                                    <div className={styles.videoGrid}>
-                                        {product.videos.map((video, index) => (
-                                            <div
-                                                key={index}
-                                                className={styles.videoItem}
-                                            >
-                                                <VideoButton
-                                                    video={video}
-                                                    onClick={() =>
-                                                        openVideoModal(video)
-                                                    }
-                                                    className={
-                                                        styles.videoButton
-                                                    }
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
                                 </div>
                             </div>
                         </div>

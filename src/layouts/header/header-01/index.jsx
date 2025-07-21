@@ -151,11 +151,12 @@ const Header = ({ className }) => {
                                         router.push("/cart");
                                     }}
                                 >
-                                    <FaShoppingCart size={25} />
+                                    <FaShoppingCart color="orange" size={25} />
                                     <span
                                         style={{
-                                            fontSize: 9,
+                                            fontSize: 14,
                                             paddingInline: 5,
+                                            fontWeight: "bold",
                                         }}
                                     >
                                         {total !== 0 ? total : ""}

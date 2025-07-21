@@ -28,7 +28,8 @@ const ProductTitle = ({ className, title, videos }) => {
                     </button>
                     {videos?.map(
                         (video) =>
-                            isOpen && (
+                            isOpen &&
+                            videos.length > 0 && (
                                 <Portal>
                                     <ModalVideo
                                         isOpen={isOpen}

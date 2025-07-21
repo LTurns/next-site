@@ -28,9 +28,11 @@ const ProductDetails = ({ product }) => (
 
 export async function getStaticPaths() {
     try {
-        const posts = await sanityClient.fetch(`*[_type == "product"]`);
+        // Fetch posts directly from Sanity at build time
+        const posts = await sanityClient.fetch("*[_type == 'product']");
+        const dataSource = posts && posts.length > 0 ? posts : productData;
 
-        const paths = posts.map((post) => ({
+        const paths = dataSource.map((post) => ({
             params: {
                 title: post.title,
             },
@@ -55,17 +57,17 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     try {
-        // Fetch specific product by title from Sanity (more efficient)
-        const product = await sanityClient.fetch(
-            `*[_type == "product" && title == "${params.title}"][0]{title}`,
-            { title: params.title }
-        );
+        // Fetch posts directly from Sanity at build time
+        const posts = await sanityClient.fetch("*[_type == 'product']");
+        const dataSource = posts && posts.length > 0 ? posts : productData;
 
-        if (product) {
+        if (dataSource) {
             return {
                 props: {
                     className: "template-color-1",
-                    product,
+                    product: dataSource.find(
+                        ({ title }) => title === params.title
+                    ),
                 },
             };
         }

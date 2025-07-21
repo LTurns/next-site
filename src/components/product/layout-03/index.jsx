@@ -1,7 +1,7 @@
 import Anchor from "@ui/anchor";
 import { ProductType } from "@utils/types";
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import PropTypes from "prop-types";
 
 import imageUrlBuilder from "@sanity/image-url";
@@ -24,6 +24,17 @@ const urlFor = (source) => {
 
 const Product = ({ product, isAccessory }) => {
     const { addToCart } = useContext(CartContext);
+    const [showAddedToCart, setShowAddedToCart] = useState(false);
+
+    // Handle adding product to cart with success message
+    const handleAddToCart = () => {
+        addToCart({ quantity: 1, product });
+        setShowAddedToCart(true);
+        // Hide message after 3 seconds
+        setTimeout(() => {
+            setShowAddedToCart(false);
+        }, 3000);
+    };
 
     return (
         <div className={styles.productCard}>
@@ -60,16 +71,6 @@ const Product = ({ product, isAccessory }) => {
             {/* Action Buttons */}
             <div className={styles.actionButtons}>
                 {!product.hasSubCategories && (
-                    <button
-                        type="button"
-                        className={styles.addToCartButton}
-                        onClick={() => addToCart({ quantity: 1, product })}
-                    >
-                        ENQUIRE
-                    </button>
-                )}
-
-                {!product.hasSubCategories && (
                     <Anchor
                         path={
                             isAccessory
@@ -79,11 +80,28 @@ const Product = ({ product, isAccessory }) => {
                     >
                         <button
                             type="button"
-                            className={styles.viewProductButton}
+                            className={styles.addToCartButton}
                         >
                             View Details
                         </button>
                     </Anchor>
+                )}
+
+                {!product.hasSubCategories && (
+                    <button
+                        type="button"
+                        className={styles.viewProductButton}
+                        onClick={handleAddToCart}
+                    >
+                        ENQUIRE
+                    </button>
+                )}
+
+                {/* Added to Cart Message */}
+                {!product.hasSubCategories && showAddedToCart && (
+                    <div className={styles.addedToCartMessage}>
+                        ✅ Added to cart
+                    </div>
                 )}
 
                 {product.hasSubCategories && (

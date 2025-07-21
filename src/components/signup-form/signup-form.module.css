@@ -1,0 +1,263 @@
+/* Signup Form Styling - Professional Design */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formContainer {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.formHeader {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.formHeader h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formHeader p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.form {
+    padding: 50px 40px 40px 40px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input,
+.textarea {
+    padding: 16px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+    color: #2c3e50;
+    font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background: #ffffff;
+}
+
+.input:hover,
+.textarea:hover {
+    border-color: #bdc3c7;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+}
+
+.textarea::placeholder {
+    color: #95a5a6;
+    font-style: italic;
+}
+
+.submitSection {
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.submitButton {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 200px;
+    justify-content: center;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.submitButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #5a6fd8 0%, #6b4190 100%);
+}
+
+.submitButton:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.submitButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submitButton svg {
+    font-size: 1.2rem;
+}
+
+.inputGroup:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.inputGroup:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.inputGroup:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Error text styling */
+.inputGroup :global(.error-text) {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formContainer {
+        margin: 0 15px 40px 15px;
+        border-radius: 20px;
+    }
+
+    .formHeader {
+        padding: 30px 20px;
+    }
+
+    .formHeader h3 {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .input,
+    .textarea {
+        padding: 14px 16px;
+    }
+
+    .submitButton {
+        padding: 16px 30px;
+        font-size: 1rem;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        margin: 0 10px 30px 10px;
+    }
+
+    .formHeader h3 {
+        font-size: 1.5rem;
+    }
+
+    .formHeader p {
+        font-size: 1rem;
+    }
+
+    .submitButton {
+        width: 100%;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .formContainer {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: white;
+    }
+
+    .formHeader {
+        background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    }
+
+    .label {
+        color: white;
+    }
+
+    .input,
+    .textarea {
+        background: #34495e;
+        border-color: #4a5568;
+        color: white;
+    }
+
+    .input:focus,
+    .textarea:focus {
+        background: #34495e;
+        border-color: #667eea;
+    }
+
+    .input:hover,
+    .textarea:hover {
+        border-color: #718096;
+    }
+
+    .textarea::placeholder {
+        color: #a0aec0;
+    }
+}

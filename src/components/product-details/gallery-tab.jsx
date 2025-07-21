@@ -4,7 +4,6 @@ import TabContent from "react-bootstrap/TabContent";
 import TabContainer from "react-bootstrap/TabContainer";
 import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
-import VideoButton from "@ui/video-button";
 import { ImageType } from "@utils/types";
 
 import imageUrlBuilder from "@sanity/image-url";

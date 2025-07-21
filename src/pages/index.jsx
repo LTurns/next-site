@@ -59,29 +59,12 @@ const Home = () => {
                 <RatingSection space={4} />
                 <ServiceArea data={content["service-section"]} />
                 <VideoArea data={content["video-section"]} />
-                {/* <div className="slider-thumbnail">
-                    <Image
-                        style={{
-                            display: "block",
-                            marginInline: "auto",
-                            marginTop: 30,
-                            height: "100%",
-                            maxHeight: "400px",
-                            width: "auto",
-                        }}
-                        src={urlFor(atmosImage).url()}
-                        alt="atmos compressor"
-                        width={0}
-                        height={0}
-                    />
-                </div> */}
                 <ExploreCarouselBothArea
                     space={4}
                     data={{
                         products: filteredPosts,
                     }}
                 />
-                <ExploreLogos />
                 <ContactTopArea className="mb--50" />
             </main>
             <Footer data={content["brand-section"]} />

@@ -61,6 +61,7 @@ export const CartView = () => {
                             </td>
                             <td>
                                 <button
+                                    type="button"
                                     className="CartItem__button"
                                     onClick={() => removeItem(item.product._id)}
                                 >
