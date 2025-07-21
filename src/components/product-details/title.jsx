@@ -49,11 +49,8 @@ const ProductTitle = ({ className, title, videos }) => {
 
 ProductTitle.propTypes = {
     className: PropTypes.string,
-    videos: PropTypes.array,
-};
-
-ProductTitle.defaultProps = {
-    likeCount: 0,
+    videos: PropTypes.arrayOf(PropTypes.string),
+    title: PropTypes.string,
 };
 
 export default ProductTitle;

@@ -13,12 +13,11 @@ export const TextType = PropTypes.shape({
 });
 
 export const ImageType = PropTypes.shape({
-    src: PropTypes.oneOfType([PropTypes.string, PropTypes.shape({})])
-        .isRequired,
-    alt: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number,
-    layout: PropTypes.string,
+    _type: PropTypes.string.isRequired,
+    asset: PropTypes.shape({
+        _ref: PropTypes.string.isRequired,
+        _type: PropTypes.string.isRequired,
+    }),
 });
 
 export const ButtonComponentType = {
@@ -70,13 +69,7 @@ export const ProductType = PropTypes.shape({
     enquiries: PropTypes.number,
     countInStock: PropTypes.number,
     hasSubCategories: PropTypes.bool,
-    mainImage: PropTypes.shape({
-        _type: PropTypes.string,
-        asset: PropTypes.shape({
-            _type: PropTypes.string,
-            _ref: PropTypes.string,
-        }),
-    }),
+    mainImage: PropTypes.shape(ImageType),
     moreImages: PropTypes.arrayOf(
         PropTypes.shape({
             _type: PropTypes.string,
@@ -104,7 +97,24 @@ export const ProductType = PropTypes.shape({
             id: PropTypes.string,
         })
     ),
-    accessories: PropTypes.arrayOf(PropTypes.any),
+    accessories: PropTypes.arrayOf(
+        PropTypes.shape({
+            _key: PropTypes.string,
+            category: PropTypes.arrayOf(PropTypes.string),
+            mainImg: PropTypes.shape({
+                _type: PropTypes.string,
+                asset: PropTypes.shape({
+                    _type: PropTypes.string,
+                    _ref: PropTypes.string,
+                }),
+            }),
+            subCategory: PropTypes.arrayOf(PropTypes.string),
+            productId: PropTypes.string,
+            intro: PropTypes.string,
+            title: PropTypes.string,
+            id: PropTypes.string,
+        })
+    ),
     subCategory: PropTypes.arrayOf(PropTypes.string),
     category: PropTypes.arrayOf(PropTypes.string),
     description: PropTypes.arrayOf(

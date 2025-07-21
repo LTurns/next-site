@@ -158,7 +158,7 @@ const Header = ({ className }) => {
                                             paddingInline: 5,
                                         }}
                                     >
-                                        {total != 0 ? total : ""}
+                                        {total !== 0 ? total : ""}
                                     </span>
                                 </Box>
                             </div>

@@ -16,7 +16,7 @@ module.exports = {
                 pathname: "/images/**",
             },
         ],
-        unoptimized: false,
+        unoptimized: true,
     },
     // //  distDir: 'build',
     // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

@@ -19,6 +19,10 @@ const builder = imageUrlBuilder({
 });
 
 const urlFor = (source) => {
+    // Return a fallback image if source is undefined or invalid
+    if (!source || !source.asset || !source.asset._ref) {
+        return { url: () => "/images/icon.png" }; // Fallback to existing icon
+    }
     const image = builder.image(source);
     return image;
 };

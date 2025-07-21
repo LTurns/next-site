@@ -15,25 +15,32 @@ const builder = imageUrlBuilder({
 });
 
 const urlFor = (source) => {
+    // Return a fallback image if source is undefined or invalid
+    if (!source || !source.asset || !source.asset._ref) {
+        return {
+            url: () => "/images/icon.png",
+            width: (_w) => ({ url: () => "/images/icon.png" }),
+        };
+    }
     const image = builder.image(source);
     return image;
 };
 
-const GalleryTab = ({ images, videos }) => (
+const GalleryTab = ({ images }) => (
     <div className="product-tab-wrapper">
         <TabContainer defaultActiveKey="nav-0">
             <div className="pd-tab-inner">
                 <Nav className="rn-pd-nav rn-pd-rt-content nav-pills">
                     {images?.map((image, index) => (
                         <Nav.Link
-                            key={urlFor(image).width(250).url()}
+                            key={urlFor(image).url()}
                             as="button"
                             eventKey={`nav-${index}`}
                         >
                             <span className="rn-pd-sm-thumbnail">
                                 <Image
-                                    src={urlFor(image).width(250).url()}
-                                    alt={"Product"}
+                                    src={urlFor(image).url()}
+                                    alt="Product Image"
                                     width={167}
                                     height={167}
                                 />
@@ -50,7 +57,7 @@ const GalleryTab = ({ images, videos }) => (
                             <div className="rn-pd-thumbnail">
                                 <Image
                                     src={urlFor(image).url()}
-                                    alt={"Product"}
+                                    alt="Product"
                                     width={400}
                                     height={400}
                                 />
@@ -65,6 +72,6 @@ const GalleryTab = ({ images, videos }) => (
 
 GalleryTab.propTypes = {
     images: PropTypes.arrayOf(ImageType),
-    videos: PropTypes.arrayOf(ImageType)
+    // videos: PropTypes.arrayOf(ImageType),
 };
 export default GalleryTab;

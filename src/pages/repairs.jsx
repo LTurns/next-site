@@ -16,10 +16,7 @@ const Contact = () => (
         <SEO pageTitle="Repairs" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Repairs"
-                currentPage="Repairs"
-            />
+            <Breadcrumb pageTitle="Repairs" currentPage="Repairs" />
             <RepairsFormArea />
             <GoogleMapArea />
             <ContactTopArea />

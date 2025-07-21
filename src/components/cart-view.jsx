@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 import {
     Box,
     Button,
@@ -8,10 +8,10 @@ import {
     Divider,
 } from "@mui/material";
 import { useContext } from "react";
-import CartContext from "../Context/cart/CartContext";
 import { useRouter } from "next/router";
 import { MdDelete } from "react-icons/md";
 import imageUrlBuilder from "@sanity/image-url";
+import CartContext from "../Context/cart/CartContext";
 
 const builder = imageUrlBuilder({
     projectId: "b6e027vh",
@@ -19,6 +19,10 @@ const builder = imageUrlBuilder({
 });
 
 const urlFor = (source) => {
+    // Return a fallback image if source is undefined or invalid
+    if (!source || !source.asset || !source.asset._ref) {
+        return { url: () => "/images/icon.png" }; // Fallback to existing icon
+    }
     const image = builder.image(source);
     return image;
 };
@@ -29,16 +33,15 @@ export const CartView = () => {
 
     return cartItems.length ? (
         <Container>
-                        <p style={{padding: 20, textAlign: 'center'}}>
-            You are enquiring about the below products:
+            <p style={{ padding: 20, textAlign: "center" }}>
+                You are enquiring about the below products:
             </p>
             <table>
                 <tr>
                     <th>Item</th>
                     <th>Remove</th>
                 </tr>
-                {
-                cartItems?.map((item) => (
+                {cartItems?.map((item) => (
                     <tbody>
                         <tr>
                             {/* <td>
@@ -51,9 +54,10 @@ export const CartView = () => {
                                         height={75}
                                     />
                             </td> */}
-<td>
-                                    <span>{item.product.title} x {item.quantity}</span>
-    
+                            <td>
+                                <span>
+                                    {item.product.title} x {item.quantity}
+                                </span>
                             </td>
                             <td>
                                 <button
@@ -65,13 +69,22 @@ export const CartView = () => {
                             </td>
                         </tr>
                     </tbody>
-                ))
-            }
+                ))}
             </table>
 
-            {!cartItems.length ? <p style={{textAlign: 'center', fontStyle: 'italic'}}>no items to display</p> : ''}
-            <p style={{padding: 20, textAlign: 'center'}}>
-            Please fill in your contact details and someone from our team will be in touch shortly about your enquiry.</p>
+            {!cartItems.length ? (
+                <p style={{ textAlign: "center", fontStyle: "italic" }}>
+                    no items to display
+                </p>
+            ) : (
+                ""
+            )}
+            <p style={{ padding: 20, textAlign: "center" }}>
+                Please fill in your contact details and someone from our team
+                will be in touch shortly about your enquiry.
+            </p>
         </Container>
-    ) : "";
+    ) : (
+        ""
+    );
 };

@@ -2,6 +2,7 @@ import Anchor from "@ui/anchor";
 import { ProductType } from "@utils/types";
 import Image from "next/image";
 import { useContext } from "react";
+import PropTypes from "prop-types";
 
 import imageUrlBuilder from "@sanity/image-url";
 import CartContext from "../../../Context/cart/CartContext";
@@ -13,11 +14,15 @@ const builder = imageUrlBuilder({
 });
 
 const urlFor = (source) => {
+    // Return a fallback image if source is undefined or invalid
+    if (!source || !source.asset || !source.asset._ref) {
+        return { url: () => "/images/icon.png" }; // Fallback to existing icon
+    }
     const image = builder.image(source);
     return image;
 };
 
-const Product = ({ product }) => {
+const Product = ({ product, isAccessory }) => {
     const { addToCart } = useContext(CartContext);
 
     return (
@@ -27,7 +32,11 @@ const Product = ({ product }) => {
                 <Anchor path={`/product/${product.title}`}>
                     <Image
                         className={styles.productImage}
-                        src={urlFor(product?.mainImage).url()}
+                        src={
+                            product?.mainImage
+                                ? urlFor(product.mainImage).url()
+                                : urlFor(product.mainImg).url()
+                        }
                         width={180}
                         height={180}
                         alt={product.title}
@@ -61,7 +70,13 @@ const Product = ({ product }) => {
                 )}
 
                 {!product.hasSubCategories && (
-                    <Anchor path={`/product/${product.title}`}>
+                    <Anchor
+                        path={
+                            isAccessory
+                                ? `/product/${product.name}`
+                                : `/product/${product.title}`
+                        }
+                    >
                         <button
                             type="button"
                             className={styles.viewProductButton}
@@ -91,6 +106,7 @@ const Product = ({ product }) => {
 
 Product.propTypes = {
     product: ProductType,
+    isAccessory: PropTypes.bool,
 };
 
 export default Product;

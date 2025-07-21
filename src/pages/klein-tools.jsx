@@ -4,7 +4,6 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ExploreProductArea from "@containers/explore-product/layout-10";
-import Catalogue from "@components/catalogue";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchPosts } from "../redux/sanitySlice";

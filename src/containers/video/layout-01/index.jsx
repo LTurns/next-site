@@ -30,7 +30,7 @@ const VideoArea = ({
                 <div className="col-12 position-relative">
                     {video?.videoId && <VideoButton videoId={video.videoId} />}
                     {images?.[0]?.src && (
-                        <div className="vedio-wrapper mb--30 mt--50"></div>
+                        <div className="vedio-wrapper mb--30 mt--50" />
                     )}
                 </div>
             </div>

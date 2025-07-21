@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
 import RepairsForm from "@components/repairs-form";
 
-const RepairsFormArea = ({ space, className }) => (
+const RepairsFormArea = () => (
     <div>
         <div className="container">
             <div className="row g-5">
@@ -17,11 +16,6 @@ const RepairsFormArea = ({ space, className }) => (
         </div>
     </div>
 );
-
-RepairsFormArea.propTypes = {
-    space: PropTypes.oneOf([1, 2]),
-    className: PropTypes.string,
-};
 
 RepairsFormArea.defaultProps = {
     space: 1,

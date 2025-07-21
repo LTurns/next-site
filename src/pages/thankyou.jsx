@@ -14,25 +14,18 @@ const Product = () => (
         <SEO pageTitle="Thank you" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Thank you"
-                currentPage="Thank you"
-            />
-            <div style={{textAlign: 'center', fontSize: 16, paddingBlock: 30}}>
-            <p
+            <Breadcrumb pageTitle="Thank you" currentPage="Thank you" />
+            <div
+                style={{ textAlign: "center", fontSize: 16, paddingBlock: 30 }}
             >
-              Thanks for your enquiry. We will get back to you
-              as soon as we can.
-            </p>
+                <p>
+                    Thanks for your enquiry. We will get back to you as soon as
+                </p>
 
-            <Button
-                                    path="/"
-                                    data-sal="slide-up"
-                                    data-sal-duration="800"
-                                >
-                                   Back To Home
-                                </Button>
-                                </div>
+                <Button path="/" data-sal="slide-up" data-sal-duration="800">
+                    Back To Home
+                </Button>
+            </div>
         </main>
         <Footer />
     </Wrapper>

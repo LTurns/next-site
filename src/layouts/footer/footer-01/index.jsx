@@ -57,7 +57,7 @@ const Footer = ({ space, className, data }) => (
                 <div className="row gx-5">
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="widget-content-wrapper">
-                        <Logo logo={footerData.logo} />
+                            <Logo logo={footerData.logo} />
                         </div>
                     </div>
 
@@ -78,16 +78,16 @@ const Footer = ({ space, className, data }) => (
 
                         <div style={{ margin: 5 }}>
                             <span style={{ fontSize: 16 }}>Address</span>
-                            <Divider style={{ marginBlock: 10 }}></Divider>
+                            <Divider style={{ marginBlock: 10 }} />
                             CBS Products (KT), Pillings Road Oakham Rutland LE15
                             6QF UK
                         </div>
 
-                        <br></br>
+                        <br />
 
                         <div style={{ margin: 5 }}>
                             <span style={{ fontSize: 16 }}>Email</span>
-                            <Divider style={{ marginBlock: 10 }}></Divider>
+                            <Divider style={{ marginBlock: 10 }} />
                             <a
                                 className="email black--text"
                                 href="mailto: sales@cbsproducts.com"
@@ -97,8 +97,11 @@ const Footer = ({ space, className, data }) => (
                         </div>
                         <div style={{ margin: 5 }}>
                             <span style={{ fontSize: 16 }}>Phone</span>
-                            <Divider style={{ marginBlock: 10 }}></Divider>
-                            <a class="email black--text" href="tel:01572723665">
+                            <Divider style={{ marginBlock: 10 }} />
+                            <a
+                                className="email black--text"
+                                href="tel:01572723665"
+                            >
                                 +44 (0) 1572 723 665
                             </a>
                         </div>

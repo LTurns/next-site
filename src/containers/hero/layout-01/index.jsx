@@ -70,6 +70,7 @@ HeroArea.propTypes = {
         texts: PropTypes.arrayOf(TextType),
         buttons: PropTypes.arrayOf(ButtonType),
         images: PropTypes.arrayOf(ImageType),
+        catalogue: PropTypes.string,
     }),
 };
 

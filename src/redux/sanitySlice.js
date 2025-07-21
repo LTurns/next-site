@@ -19,29 +19,21 @@ export const fetchPosts = createAsyncThunk("sanity/fetchPosts", async () => {
     return data;
 });
 
-// Fetch a single post/product by ID
-export const fetchPostById = createAsyncThunk(
-    "sanity/fetchPostById",
-    async (id) => {
-        const data = await sanityClient.fetch(
-            `*[_type == "product" && _id == "${id}"]{ _id, title, slug, price, description }`
-        );
-        return data[0]; // We assume Sanity returns an array
-    }
-);
-
 // Slice definition
 const sanitySlice = createSlice({
     name: "sanity",
     initialState,
     reducers: {
         setPosts: (state, action) => {
+            // eslint-disable-next-line no-param-reassign
             state.posts = action.payload;
         },
         setLoading: (state, action) => {
+            // eslint-disable-next-line no-param-reassign
             state.loading = action.payload;
         },
         setError: (state, action) => {
+            // eslint-disable-next-line no-param-reassign
             state.error = action.payload;
         },
     },
@@ -49,29 +41,21 @@ const sanitySlice = createSlice({
         builder
             // Handle fetchPosts (all products)
             .addCase(fetchPosts.pending, (state) => {
+                // eslint-disable-next-line no-param-reassign
                 state.loading = true;
+                // eslint-disable-next-line no-param-reassign
                 state.error = null;
             })
             .addCase(fetchPosts.fulfilled, (state, action) => {
+                // eslint-disable-next-line no-param-reassign
                 state.loading = false;
+                // eslint-disable-next-line no-param-reassign
                 state.posts = action.payload;
             })
             .addCase(fetchPosts.rejected, (state, action) => {
+                // eslint-disable-next-line no-param-reassign
                 state.loading = false;
-                state.error = action.error.message;
-            })
-
-            // Handle fetchPostById (single product)
-            .addCase(fetchPostById.pending, (state) => {
-                state.loading = true;
-                state.error = null;
-            })
-            .addCase(fetchPostById.fulfilled, (state, action) => {
-                state.loading = false;
-                state.post = action.payload;
-            })
-            .addCase(fetchPostById.rejected, (state, action) => {
-                state.loading = false;
+                // eslint-disable-next-line no-param-reassign
                 state.error = action.error.message;
             });
     },
