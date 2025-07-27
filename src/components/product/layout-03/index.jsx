@@ -40,28 +40,46 @@ const Product = ({ product, isAccessory }) => {
         <div className={styles.productCard}>
             {/* Product Image */}
             <div className={styles.imageContainer}>
-                <Anchor path={`/product/${product.title}`}>
-                    <Image
-                        className={styles.productImage}
-                        src={
-                            product?.mainImage
-                                ? urlFor(product.mainImage).url()
-                                : urlFor(product.mainImg).url()
-                        }
-                        width={180}
-                        height={180}
-                        alt={product.title}
-                        style={{
-                            objectFit: "contain",
-                        }}
-                    />
-                </Anchor>
+                {product.hasSubCategories && (
+                    <Anchor path={`/category/${product.title}`}>
+                        <Image
+                            className={styles.productImage}
+                            src={
+                                product?.mainImage
+                                    ? urlFor(product.mainImage).url()
+                                    : urlFor(product.mainImg).url()
+                            }
+                            width={180}
+                            height={180}
+                            alt={product.title}
+                            style={{
+                                objectFit: "contain",
+                            }}
+                        />
+                    </Anchor>
+                )}
+                {!product.hasSubCategories && (
+                    <Anchor path={`/product/${product.title}`}>
+                        <Image
+                            className={styles.productImage}
+                            src={
+                                product?.mainImage
+                                    ? urlFor(product.mainImage).url()
+                                    : urlFor(product.mainImg).url()
+                            }
+                            width={180}
+                            height={180}
+                            alt={product.title}
+                            style={{
+                                objectFit: "contain",
+                            }}
+                        />
+                    </Anchor>
+                )}
             </div>
 
             {/* Product Title */}
-            <Anchor path={`/product/${product.title}`}>
-                <h3 className={styles.productTitle}>{product.title}</h3>
-            </Anchor>
+            <h3 className={styles.productTitle}>{product.title}</h3>
 
             <div className={styles.brandName}>{product.intro}</div>
 

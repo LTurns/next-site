@@ -11,7 +11,7 @@ const whereToBuy = require("../data/whereToBuy.json");
 const locations = require("../../geocoded.json");
 
 const containerStyle = {
-    width: "100%",
+    width: "80%",
     height: "600px",
     display: "block",
     margin: "0 auto",
@@ -66,9 +66,33 @@ export default function Map() {
                             {activeMarkerId === loc.id && (
                                 <InfoWindow
                                     position={{ lat: loc.lat, lng: loc.lng }}
-                                    onCloseClick={() => setActiveMarkerId(null)}
+                                    onCloseClick={() => {
+                                        setActiveMarkerId(null);
+                                        // Recenter map to fit all markers when InfoWindow closes
+                                        if (mapRef.current) {
+                                            const bounds = new window.google.maps.LatLngBounds();
+                                            locations.forEach((l: { lat: number; lng: number }) => {
+                                                bounds.extend({ lat: l.lat, lng: l.lng });
+                                            });
+                                            (mapRef.current as google.maps.Map).fitBounds(bounds);
+                                        }
+                                    }}
                                 >
-                                    <div className="gmap-infowindow">
+                                    <div
+                                        className="gmap-infowindow"
+                                        style={{
+                                            background: "#222",
+                                            color: "#fff",
+                                            padding: "12px 16px",
+                                            borderRadius: "8px",
+                                            boxShadow:
+                                                "0 2px 8px rgba(0,0,0,0.5)",
+                                            maxWidth: "420px",
+                                            minWidth: "320px",
+                                            fontSize: "15px",
+                                            lineHeight: "1.6",
+                                        }}
+                                    >
                                         {(() => {
                                             const contact = getContactDetails(
                                                 loc.id
@@ -77,139 +101,23 @@ export default function Map() {
                                                 <>
                                                     <p>
                                                         <strong>
-                                                            {contact?.name}
+                                                            {loc.address}
                                                         </strong>
+
+                                                        <br></br>
+
+                                                        <p>
+                                                            Tel: {contact?.tel}
+                                                        </p>
+                                                        <p>
+                                                            Email:{" "}
+                                                            {contact?.email}
+                                                        </p>
+                                                        <p>
+                                                            Website:{" "}
+                                                            {contact?.website}
+                                                        </p>
                                                     </p>
-
-                                                    <div
-                                                        style={{
-                                                            marginBottom:
-                                                                "12px",
-                                                        }}
-                                                    >
-                                                        <p
-                                                            style={{
-                                                                margin: "4px 0",
-                                                                fontWeight:
-                                                                    "500",
-                                                                color: "#2c3e50",
-                                                            }}
-                                                        >
-                                                            Address:
-                                                        </p>
-                                                        <p
-                                                            style={{
-                                                                margin: "2px 0",
-                                                            }}
-                                                        >
-                                                            {contact?.county}
-                                                        </p>
-                                                        <p
-                                                            style={{
-                                                                margin: "2px 0",
-                                                            }}
-                                                        >
-                                                            {contact?.postcode}
-                                                        </p>
-                                                        <p
-                                                            style={{
-                                                                margin: "2px 0",
-                                                            }}
-                                                        >
-                                                            {contact?.country}
-                                                        </p>
-                                                    </div>
-
-                                                    <div
-                                                        style={{
-                                                            marginBottom:
-                                                                "12px",
-                                                        }}
-                                                    >
-                                                        <p
-                                                            style={{
-                                                                margin: "4px 0",
-                                                                fontWeight:
-                                                                    "500",
-                                                                color: "#2c3e50",
-                                                            }}
-                                                        >
-                                                            Contact Details:
-                                                        </p>
-                                                        {contact?.contact && (
-                                                            <p
-                                                                style={{
-                                                                    margin: "2px 0",
-                                                                }}
-                                                            >
-                                                                {
-                                                                    contact.contact
-                                                                }
-                                                            </p>
-                                                        )}
-                                                        {contact?.tel && (
-                                                            <p
-                                                                style={{
-                                                                    margin: "2px 0",
-                                                                }}
-                                                            >
-                                                                Tel:{" "}
-                                                                {contact.tel}
-                                                            </p>
-                                                        )}
-                                                        {contact?.mobile && (
-                                                            <p
-                                                                style={{
-                                                                    margin: "2px 0",
-                                                                }}
-                                                            >
-                                                                Mobile:{" "}
-                                                                {contact.mobile}
-                                                            </p>
-                                                        )}
-                                                        {contact?.email && (
-                                                            <p
-                                                                style={{
-                                                                    margin: "2px 0",
-                                                                }}
-                                                            >
-                                                                Email:{" "}
-                                                                {contact.email}
-                                                            </p>
-                                                        )}
-                                                        {contact?.website && (
-                                                            <p
-                                                                style={{
-                                                                    margin: "2px 0",
-                                                                }}
-                                                            >
-                                                                <a
-                                                                    href={
-                                                                        contact.website
-                                                                    }
-                                                                    target="_blank"
-                                                                    rel="noopener noreferrer"
-                                                                >
-                                                                    Visit
-                                                                    Website
-                                                                </a>
-                                                            </p>
-                                                        )}
-                                                    </div>
-
-                                                    {/* {contact?.img && (
-                            <img
-                              src={`/images/whereToBuy/${contact.img}`}
-                              alt={contact.name}
-                              style={{ 
-                                maxWidth: "100%", 
-                                height: "auto",
-                                marginTop: "8px",
-                                borderRadius: "8px",
-                                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)"
-                              }}
-                            />
-                          )} */}
                                                 </>
                                             );
                                         })()}

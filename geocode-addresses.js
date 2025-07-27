@@ -30,12 +30,17 @@ async function geocodeAddress(address, id) {
 
 async function run() {
     const results = [];
-    for (const [index, address] of addresses.entries()) {
-        const id = index + 1; // Start IDs at 1
-        const result = await geocodeAddress(address, id);
-        if (result) results.push(result);
-        await new Promise((r) => setTimeout(r, 200)); // Avoid hitting API limits
-    }
+    await addresses.reduce(
+        (promiseChain, address, index) =>
+            promiseChain.then(async () => {
+                const id = index + 1; // Start IDs at 1
+                const result = await geocodeAddress(address, id);
+                if (result) results.push(result);
+                // Avoid hitting API limits
+                return new Promise((resolve) => setTimeout(resolve, 200));
+            }),
+        Promise.resolve()
+    );
     fs.writeFileSync("./geocoded.json", JSON.stringify(results, null, 2));
     console.log("🎉 Geocoding complete. Results saved to geocoded.json");
 }

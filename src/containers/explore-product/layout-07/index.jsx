@@ -7,7 +7,7 @@ import SectionTitle from "@components/section-title/layout-02";
 
 const SliderOptions = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 2,
     arrows: true,
     dots: false,
@@ -36,7 +36,7 @@ const SliderOptions = {
         {
             breakpoint: 576,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false,
                 arrows: true,

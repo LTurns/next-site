@@ -1,146 +1,146 @@
 [
   {
     "id": 1,
-    "address": "Amadys, Amadys Belgium Headquarter, \"Sint-Pietersvliet 7, 2000 Antwerpen, Belgium",
-    "lat": 51.2255797,
-    "lng": 4.4008959
+    "address": "Netceed, \"Sint-Pietersvliet 7, 2000 Antwerpen, Belgium",
+    "lat": 51.219858,
+    "lng": 4.415506
   },
   {
     "id": 2,
     "address": "Telenco UK, Hillmead Enterprise Park, Unit 3 Westerngate, Langley Rd, Swindon, SN5 5WN, UK",
-    "lat": 51.5731149,
-    "lng": -1.8345897
+    "lat": 51.5738834069,
+    "lng": -1.8334930184
   },
   {
     "id": 3,
-    "address": "Gigabit Utility Supplies, Unit 3, Crags Industrial Park, Morven Street, Creswell, S80 4AJ, UK",
-    "lat": 53.2595463,
-    "lng": -1.2132101
+    "address": "Lambda Test, Quintin Brand Street, Apex Corporate Park, Persequor Technopark, Pretoria, 0020, South Africa",
+    "lat": -25.744472,
+    "lng": 28.271944
   },
   {
     "id": 4,
-    "address": "PMD Business Finance, 2 Howarth Court, Gateway Crescent, Oldham, OL9 9XB, UK",
-    "lat": 53.5321599,
-    "lng": -2.1660602
+    "address": "D.J.Global Creation Co. Ltd, 137/79-80 Moo 1 Nanthanagarden Soi 12, Pathumthani-Rangsit Road, Banklang Muang Pathumthani, Pathumthani 12000, Thailand",
+    "lat": 14.021,
+    "lng": 100.5250
   },
   {
     "id": 5,
-    "address": "CBI Electric Telecom Cables (Pty) Ltd, 3 Marthinus Ras Street, Industrial Sites, Brits, North West Province",
-    "lat": -25.6448909,
-    "lng": 27.8049482
+    "address": "Paviot Equipment,16 Rue Des Taillées, 79180 Chauray, France",
+    "lat": 46.3413075,
+    "lng": -0.3720649
   },
   {
     "id": 6,
-    "address": "D.J.Global Creation Co. Ltd, 137/79-80 Moo 1 Nanthanagarden Soi 12, Pathumthani-Rangsit Road, Banklang Muang Pathumthani, Pathumthani 12000, Thailand",
-    "lat": 13.9781671,
-    "lng": 100.654634
+    "address": "Paviot Equipment,98 Rue Louis Ampère, 93330 Neuilly-Sur-Marne, France",
+    "lat": 46.3413075,
+    "lng": -0.3720649
   },
   {
     "id": 7,
-    "address": "Paviot Equipment,16 Rue Des Taillées, 79180 Chauray, France",
-    "lat": 46.3415784,
-    "lng": -0.3727707
+    "address": "Exceed Solutions P.C., 76 Ymittou Street, Athens, Greece",
+    "lat": 37.95342,
+    "lng": 23.74897
   },
   {
     "id": 8,
-    "address": "Exceed Solutions P.C., 76 Ymittou Street, Athens, Greece",
-    "lat": 37.968492,
-    "lng": 23.7513432
+    "address": "GA Telecomunicazioni, Via dante Alighieri, 6, 20050 – Sovico (MI), Italy",
+    "lat": 45.6460,
+    "lng": 9.2627
   },
   {
     "id": 9,
-    "address": "GA Telecomunicazioni, Via dante Alighieri, 6, 20050 – Sovico (MI), Italy",
-    "lat": 45.6482765,
-    "lng": 9.257092199999999
+    "address": "Fibrain Sp.z o.o., Zaczernie 190F, 36-062 Zaczernie, Poland",
+    "lat": 50.093,
+    "lng": 22.005
   },
   {
     "id": 10,
-    "address": "Fibrain Sp.z o.o., Zaczernie 190F, 36-062 Zaczernie, Poland",
-    "lat": 50.10614349999999,
-    "lng": 22.0093285
-  },
-  {
-    "id": 11,
     "address": "Teledatanet srl, Blvd 21 Decembrie 1989, Nr. 140-155, Cluj-Napoca, RO-400604, Romania",
     "lat": 46.7759807,
     "lng": 23.6088889
   },
   {
-    "id": 12,
+    "id": 11,
     "address": "Argano Group, Calle Serranía de Ronda, 15, 28691 Villanueva de la Cañada, Madrid, Spain",
     "lat": 40.4376901,
     "lng": -4.0038158
   },
   {
-    "id": 13,
+    "id": 12,
     "address": "MFS-Tech, Hungerbuhlstrasse 10, CH-8500 Frauenfeld, Switzerland",
     "lat": 47.5627098,
     "lng": 8.873279799999999
   },
   {
-    "id": 14,
+    "id": 13,
     "address": "Helsingin Laatulaite Oy, Päivöläntie 39, 00730 Helsinki, Finland",
     "lat": 60.26627269999999,
     "lng": 25.025201
   },
   {
-    "id": 15,
+    "id": 14,
     "address": "General Machine Products (KT), LLC (GMP), 3111 Old Lincoln Hwy, Trevose, Pa 19053-4996, USA",
     "lat": 40.1334726,
     "lng": -74.9733869
   },
   {
-    "id": 16,
+    "id": 15,
     "address": "Midland Site Supplies, Old Bacon Factory, Castleholding, Rosecrea, Eire, UK",
     "lat": 52.95946199999999,
     "lng": -7.794541400000001
   },
   {
-    "id": 17,
+    "id": 16,
     "address": "Testronix Inc., Unit 415 VGP Center, (Formerly Manila Bank Building), 6772 Ayala Avenue, Makati City 1226, Philippines",
     "lat": 14.5569393,
     "lng": 121.020295
   },
   {
-    "id": 18,
+    "id": 17,
     "address": "DM Optics, The Hive, 6 Beaufighter Road, Weston-Super-Mare, BS24 8EE, England",
     "lat": 51.34211579999999,
     "lng": -2.9350976
   },
   {
-    "id": 19,
+    "id": 18,
     "address": "Thorne & Derrick International, 7 Lumley Court, Drum Industrial Estate, Chester-le-Street, DH2 1AN, England",
     "lat": 54.871272,
     "lng": -1.5911443
   },
   {
-    "id": 20,
+    "id": 19,
     "address": "Vallin, Latgales iela 322, Riga, LV-1063, Latvia",
     "lat": 56.9041404,
     "lng": 24.1920312
   },
   {
-    "id": 21,
+    "id": 20,
     "address": "Vallin SIA, Tarandes 2 – 13, LT-14188, Vilnius, Lithuania",
     "lat": 54.7499038,
     "lng": 25.2128579
   },
   {
-    "id": 22,
+    "id": 21,
     "address": "Mejdaf, Anas Bin Malek Rd, Riyadh, KSA, Saudi Arabia",
     "lat": 24.8078155,
     "lng": 46.6174648
   },
   {
-    "id": 23,
+    "id": 22,
     "address": "Advanced Optics Limited, Courtyard Mews, Piccadilly Place, Bath, BA1 6PL, United Kingdom",
     "lat": 51.3923164,
     "lng": -2.3515055
   },
   {
-    "id": 24,
+    "id": 23,
     "address": "Digatel Telecoms, Avenida Real de Pinto 91-A16, Madrid, 28021, Spain",
     "lat": 40.334044,
     "lng": -3.7121703
+  },
+  {
+    "id": 24,
+    "address": "CBS Products (KT) Ltd, Oakham, LE15 6QF, UK",
+    "lat": 52.6789,
+    "lng": -0.7343
   }
 ]
