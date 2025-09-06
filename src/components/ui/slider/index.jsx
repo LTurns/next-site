@@ -27,11 +27,16 @@ const Slider = ({ options, children, prevIcon, nextIcon, className }) => {
     const settings = {
         dots: false,
         arrows: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        swipeToSlide: true,
         cssEase: "linear",
         prevArrow: <ArrowButton icon={prevIcon} />,
         nextArrow: <ArrowButton icon={nextIcon} />,
@@ -68,7 +73,10 @@ Slider.defaultProps = {
 export default Slider;
 
 export const SliderItem = ({ children, className, ...rest }) => (
-    <div className={clsx(className, "slider-item")} {...rest}>
+    <div
+        className={clsx(className, "slider-item")}
+        {...rest}
+    >
         {children}
     </div>
 );

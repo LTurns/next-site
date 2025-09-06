@@ -7,10 +7,10 @@ const RatingSection = ({ className, id, space }) => (
     <div
         className={clsx(
             "rn-rating-area",
-            space === 1 && "rn-section-gap",
-            space === 2 && "pb--70",
-            space === 3 && "pt--70",
-            space === 4 && "py--70",
+            space === 1 && "",
+            space === 2 && "",
+            space === 3 && "",
+            space === 4 && "",
             className
         )}
         id={id}
@@ -23,21 +23,21 @@ const RatingSection = ({ className, id, space }) => (
                         subtitle="Customer Satisfaction"
                         description="Our commitment to quality and service excellence has earned us a 5-star rating from our valued customers across the globe."
                     /> */}
-                    <div className="rating-display mt--20">
-                        <div className="d-flex justify-content-center align-items-center gap-3 mb--20">
+                    <div className="rating-display">
+                        <div className="d-flex justify-content-left align-items-left">
                             <StarRating
                                 rating={5}
                                 showAnimation
                                 animationDelay={100}
-                                size="32px"
+                                size="20px"
                                 color="#ffd700"
                             />
-                        </div>
-                        <p className="text-muted">
-                            Based on Google reviews and testimonials
-                        </p>
+                        </div> 
                     </div>
                 </div>
+                                                                 {/* <div className="col-9 d-flex justify-content-left align-items-left text-muted text-align-left">
+                            Based on Google reviews and testimonials
+                        </div> */}
             </div>
         </div>
     </div>

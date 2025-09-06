@@ -4,27 +4,46 @@
         {
             "section": "hero-section",
             "headings": [
-                {
-                    "id": 1,
-                    "content": "Leaders in Cable Installation for over 50 years."
-                }
-            ],
-            "texts": [
-                {
-                    "id": 1,
-                    "content": "Our Fibre Optic capabilities span projects around the globe."
-                }
+                "Leaders in Cable Installation for over 50 years.",
+                "Global Projects, Trusted Telecom Solutions.",
+                "Innovative Design and Exceptional Service."
             ],
             "buttons": [
                 {
                     "id": 1,
                     "content": "Overhead Line",
-                    "path": "/overhead-line"
+                    "path": "/overhead-line",
+                    "image": {
+                        "src": "/images/hero/overheadline-logo.png",
+                        "alt": "Overhead Line"
+                    }
                 },
                 {
                     "id": 1,
-                    "content": "Telecoms",
-                    "path": "/telecoms"
+                    "content": "",
+                    "path": "/telecoms",
+                    "image": {
+                        "src": "/images/hero/telecoms-logo.png",
+                        "alt": "Telecoms"
+                    }
+                },
+                {
+                    "id": 1,
+                    "content": "Aboriculture",
+                    "path": "/arboriculture",
+                    "image": {
+                        "src": "/images/hero/aboriculture.png",
+                        "alt": "Aboriculture"
+                    }
+                },
+                {
+                    "id": 1,
+                    "content": "Klein Tools",
+                    "path": "/klein-tools",
+                    "image": {
+                        "src": "/images/hero/klein_tools.svg",
+                        "alt": "Klein Tools"
+                    }
                 }
             ],
             "catalogue": "/pdfs/main_product_catalogue.pdf",

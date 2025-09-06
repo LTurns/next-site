@@ -108,7 +108,7 @@ const ProductDetailsArea = ({ space, className, product }) => {
                             <div className={styles.productInfo}>
                                 <ProductTitle
                                     title={product?.title}
-                                    videos={product?.videos}
+                                    videos={product?.videos.length ? product.videos : []}
                                 />
 
                                 <div className={styles.productMeta}>

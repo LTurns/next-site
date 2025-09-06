@@ -12,7 +12,7 @@
     {
         "id": 4,
         "text": "Products",
-        "path": "/product",
+        "path": "/",
         "submenu": [
             {
                 "id": 7,
@@ -43,19 +43,13 @@
                 "text": "General Tools",
                 "path": "/general-tools",
                 "icon": "feather-fast-forward"
-            },
-            {
-                "id": 12,
-                "text": "All Products",
-                "path": "/product",
-                "icon": "feather-fast-forward"
             }
         ]
     },
     {
         "id": 5,
-        "text": "Where to Buy",
-        "path": "/where-to-buy"
+        "text": "How To Buy",
+        "path": "/how-to-buy"
     },
     {
         "id": 6,

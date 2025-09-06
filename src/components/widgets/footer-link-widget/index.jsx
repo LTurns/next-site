@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
 import Anchor from "@ui/anchor";
 import Image from "next/image";
+import RatingSection from "@components/rating-section";
 
 const FooterLinkWidget = ({ data }) => (
     <ul className="privacy">
+        <RatingSection />
         {data?.menu?.map((nav) => (
             <li key={nav.id}>
                 <Anchor path={nav.path}>{nav.text}</Anchor>

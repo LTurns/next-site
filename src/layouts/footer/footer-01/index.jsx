@@ -8,7 +8,7 @@ import FooterLinkWidget from "@widgets/footer-link-widget";
 import SocialWidget from "@widgets/social-widget";
 import { ItemType } from "@utils/types";
 import { Divider } from "@mui/material";
-
+import RatingSection from "@components/rating-section";
 // Demo data
 import footerData from "../../../data/general/footer-01.json";
 import contactData from "../../../data/general/contact.json";
@@ -18,8 +18,8 @@ const Footer = ({ space, className, data }) => (
         <div
             className={clsx(
                 "rn-footer-one",
-                space === 1 && "rn-section-gap mt--20 mt_md--30 mt_sm--30",
-                space === 2 && "rn-section-gap",
+                space === 1 && "mt--20 mt_md--30 mt_sm--30",
+                space === 2 && "",
                 space === 3 && "mt--100 mt_md--30 mt_sm--30",
                 className
             )}

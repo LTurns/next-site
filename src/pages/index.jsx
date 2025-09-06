@@ -56,16 +56,15 @@ const Home = () => {
             <Header />
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
-                <RatingSection space={4} />
-                <ServiceArea data={content["service-section"]} />
-                <VideoArea data={content["video-section"]} />
-                <ExploreCarouselBothArea
+                {/* <ServiceArea data={content["service-section"]} /> */}
+                {/* <VideoArea data={content["video-section"]} /> */}
+                {/* <ExploreCarouselBothArea
                     space={4}
                     data={{
                         products: filteredPosts,
                     }}
-                />
-                <ContactTopArea className="mb--50" />
+                /> */}
+                {/* <ContactTopArea className="mb--50" /> */}
             </main>
             <Footer data={content["brand-section"]} />
         </Wrapper>

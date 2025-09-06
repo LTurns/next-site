@@ -19,10 +19,10 @@ export async function getStaticProps() {
 
 const Product = () => (
     <Wrapper>
-        <SEO pageTitle="Where to Buy" />
+        <SEO pageTitle="How To Buy" />
         <Header />
         <main id="main-content">
-            <Breadcrumb pageTitle="Our Products" currentPage="Our Products" />
+            <Breadcrumb pageTitle="How To Buy" currentPage="How To Buy" />
             <div>
                 <Map locations={locations} />
             </div>
