@@ -81,7 +81,6 @@ const Product = () => {
                 <ExploreProductArea
                     data={{
                         products: telecomsProducts || [],
-                        title: "Telecoms Products",
                         catalogue: data.catalogue,
                     }}
                 />

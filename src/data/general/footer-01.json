@@ -22,9 +22,14 @@
                 "path": "/overhead-line"
             },
             {
-                "id": 3,
-                "text": "Underground Cable Laying",
-                "path": "/underground-cable-laying"
+                "id": 2,
+                "text": "Aboriculture",
+                "path": "/aboriculture"
+            },
+            {
+                "id": 2,
+                "text": "Klein Tools",
+                "path": "/klein-tools"
             }
         ]
     },

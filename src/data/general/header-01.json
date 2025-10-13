@@ -8,5 +8,8 @@
             "src": "/images/logo/cbslogo-dark.svg"
         }
     ],
+    "klein": {
+        "src": "/images/brand/coin.png"
+    },
     "activity_link": "/activity"
 }

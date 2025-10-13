@@ -5,7 +5,7 @@ const SectionTitle = ({ title, align, className, ...rest }) => (
     <div className={clsx(`section-title text-${align}`, className)} {...rest}>
         {title && (
             <h3
-                className={clsx("title mb--0 live-bidding-title")}
+                className={clsx("title mb--0 section-title")}
                 data-sal-delay="150"
                 data-sal="slide-up"
                 data-sal-duration="800"

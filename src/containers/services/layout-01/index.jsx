@@ -9,32 +9,24 @@ const ServiceArea = ({ className, id, space, data }) => (
         className={clsx("rn-service-area", space === 2 && "pb--70", className)}
         id={id}
     >
-        <div className="container">
-            {data?.section_title && (
-                <div className="row">
-                    <div className="col-12 mb--50">
-                        <SectionTitle {...data.section_title} />
-                    </div>
-                </div>
-            )}
             {data?.items && (
-                <div className="row g-5">
+                <div className="row g-3">
                     {data.items.map((item) => (
                         <div
-                            className="col-xxl-3 col-lg-6 col-md-6 col-sm-12 col-12"
+                            className="col-xxl-6 col-lg-6 col-md-6 col-sm-6 col-12"
                             key={item.id}
                         >
                             <Service
                                 title={item.title}
-                                subtitle={item.subtitle}
+                                image={item.image}
+                                // subtitle={item.subtitle}
                                 path={item.path}
-                                description={item.description}
+                                // description={item.description}
                             />
                         </div>
                     ))}
                 </div>
             )}
-        </div>
     </div>
 );
 

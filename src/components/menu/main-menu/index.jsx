@@ -10,13 +10,17 @@ const MainMenu = ({ menu }) => (
             <li
                 key={nav.id}
                 className={clsx(
-                    !!nav.submenu && "has-droupdown has-menu-child-item",
+                    !!nav.submenu && "has-dropdown has-menu-child-item",
                     !!nav.megamenu && "with-megamenu"
                 )}
             >
-                <Anchor className="its_new" path={nav.path}>
-                    {nav.text}
-                </Anchor>
+                {nav.submenu ? (
+                    <span className="its_new">{nav.text}</span>
+                ) : (
+                    <Anchor className="its_new" path={nav.path}>
+                        {nav.text}
+                    </Anchor>
+                )}
                 {nav?.submenu && <SubMenu menu={nav.submenu} />}
                 {nav?.megamenu && <MegaMenu menu={nav.megamenu} />}
             </li>

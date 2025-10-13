@@ -1,14 +1,10 @@
 import PropTypes from "prop-types";
 import { FaDownload } from "react-icons/fa6";
 
-const Catalogue = ({ data }) => (
+const Catalogue = ({ data, title }) => (
     <div
         style={{
             fontSize: 17,
-            paddingTop: 15,
-            marginTop: 15,
-            marginBottom: 15,
-            paddingBottom: 15,
             textAlign: "left",
         }}
         data-sal="slide-up"
@@ -37,13 +33,14 @@ const Catalogue = ({ data }) => (
         >
             Download
         </a>{" "}
-        Catalogue
+        { title } Catalogue
         <FaDownload style={{ color: "orange", marginLeft: 10 }} size={30} />
     </div>
 );
 
 Catalogue.propTypes = {
     data: PropTypes.string.isRequired,
+    title: PropTypes.string,
 };
 
 export default Catalogue;

@@ -4,7 +4,6 @@
         {
             "section": "hero-section",
             "headings": [
-                "Leaders in Cable Installation for over 50 years.",
                 "Global Projects, Trusted Telecom Solutions.",
                 "Innovative Design and Exceptional Service."
             ],
@@ -23,7 +22,7 @@
                     "content": "",
                     "path": "/telecoms",
                     "image": {
-                        "src": "/images/hero/telecoms-logo.png",
+                        "src": "/images/hero/tornado-transparent.png",
                         "alt": "Telecoms"
                     }
                 },
@@ -41,12 +40,13 @@
                     "content": "Klein Tools",
                     "path": "/klein-tools",
                     "image": {
-                        "src": "/images/hero/klein_tools.svg",
+                        "src": "/images/hero/klein-tools.png",
                         "alt": "Klein Tools"
                     }
                 }
             ],
             "catalogue": "/pdfs/main_product_catalogue.pdf",
+            "kleinCatalogue": "/pdfs/klein-catalogue.pdf",
             "images": [
                 {
                     "src": "/images/banner/atmos-banner.png"
@@ -78,14 +78,15 @@
         },
         {
             "section": "service-section",
-            "section_title": {
-                "title": "Our Services"
-            },
             "items": [
                 {
                     "id": 1,
-                    "title": "Overhead Line Equipment",
+                    "title": "Overhead Line",
                     "path": "/overhead-line",
+                    "image": {
+                        "src": "/images/hero/overheadline.png",
+                        "alt": "Overhead Line"
+                    },
                     "subtitle": "Winches, Clamps, Pole Handling",
                     "description": "Includes a variety of winches that provide a compact, safe and transportable unit for all overhead line work."
                 },
@@ -93,13 +94,21 @@
                     "id": 2,
                     "title": "Telecoms",
                     "path": "/telecoms",
+                    "image": {
+                        "src": "/images/hero/telecoms.png",
+                        "alt": "Telecoms"
+                    },
                     "subtitle": "Tornado, Hurricane, Accelair 3",
                     "description": "Includes a large catalogue of cable blowing machines, including our most recent atmos compressor."
                 },
                 {
                     "id": 3,
-                    "title": "Underground Cable Laying",
-                    "path": "/underground-cable-laying",
+                    "title": "Aboriculture",
+                    "path": "/arboriculture",
+                    "image": {
+                        "src": "/images/hero/aboriculture.png",
+                        "alt": "Aboriculture"
+                    },
                     "subtitle": "Cable Pushers, Heavy Duty Cable Rollers",
                     "description": "Includes cable pushers, heavy duty cable rollers, bridge rollers, narrow cable rollers and more."
                 },
@@ -107,25 +116,14 @@
                     "id": 4,
                     "title": "Klein Tools",
                     "path": "/klein-tools",
+                    "image": {
+                        "src": "/images/hero/klein-tools.png",
+                        "alt": "Klein Tools"
+                    },
                     "subtitle": "Battery Tools, Cutters, Gloves",
                     "description": "A highly accredited product line, including a vast selection of tools for your every need."
                 }
             ]
-        },
-        {
-            "section": "video-section",
-            "section_title": {
-                "title": "What do we do?",
-                "subtitle": "CBS Products is at the forefront of cabling technology, including the design and installation of manufacturing equipment for HV Transmission Towers, LV Distribution Lines and underground CATV / Telecommunications Networks. See the below video for one of our most popular products, the Tornado."
-            },
-            "images": [
-                {
-                    "src": "/images/tornado.jpg"
-                }
-            ],
-            "video": {
-                "videoId": "O8FtLP0pBuQ"
-            }
         },
         {
             "section": "brand-section",
@@ -166,12 +164,6 @@
                     }
                 }
             ]
-        },
-        {
-            "section": "collection-section",
-            "section_title": {
-                "title": "Top Categories"
-            }
         }
     ]
 }

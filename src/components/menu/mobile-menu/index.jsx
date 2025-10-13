@@ -39,7 +39,7 @@ const MobileMenu = ({ isOpen, onClick, menu, logo }) => {
                             return (
                                 <li
                                     className={clsx(
-                                        !!nav.submenu && "has-droupdown",
+                                        !!nav.submenu && "has-dropdown",
                                         !!nav.megamenu && "with-megamenu",
                                         hasChildren && "has-children"
                                     )}

@@ -12,16 +12,6 @@ const Autocomplete = ({ data, isOpen }) => {
         }
     });
 
-    const handleOnSearch = (string, results) => {
-        // onSearch will have as the first callback parameter
-        // the string searched and for the second the results.
-        console.log(string, results);
-    };
-
-    const handleOnHover = (result) => {
-        // the item hovered
-        console.log(result);
-    };
 
     const handleOnSelect = (item) => {
         // the item selected
@@ -29,31 +19,42 @@ const Autocomplete = ({ data, isOpen }) => {
     };
 
     const formatResult = (results) => (
-        <>
-            {/* <span style={{ display: 'block', textAlign: 'left' }}>id: {results.id}</span> */}
-            <span
-                style={{
-                    display: "block",
-                    textAlign: "left",
-                    textWrap: "wrap",
-                    color: "black",
-                }}
-            >
-                {results.name}
-            </span>
-        </>
+        <span
+            className="autocomplete-result"
+            style={{
+                textAlign: "left",
+                borderRadius: "6px",
+                color: "white",
+                margin: "2px 0",
+            }}
+        >
+            {results.name}
+        </span>
     );
 
     return isOpen ? (
-        <div style={{ width: 200 }}>
+        <div
+            style={{
+                width: 260,
+            }}
+        >
             <ReactSearchAutocomplete
                 items={results}
-                onSearch={handleOnSearch}
-                onHover={handleOnHover}
                 onSelect={handleOnSelect}
                 autoFocus
                 formatResult={formatResult}
                 label="searchbar"
+                styling={{
+                    borderRadius: "8px",
+                    backgroundColor: "#23232a",
+                    color: "white",
+                    boxShadow: "0 2px 12px 0 rgba(255,183,0,0.08)",
+                    hoverBackgroundColor: "black",
+                    display: "flex",
+                    alignItems: "center",
+                    zIndex: 100,
+                    iconColor: "#ffd500ff",
+                }}
             />
         </div>
     ) : (

@@ -24,7 +24,7 @@ const Button = ({
                     src={typeof image === 'string' ? image : image.src}
                     alt={typeof image === 'object' && image.alt ? image.alt : label || 'button image'}
                     className="btn-image"
-                    style={{ display: 'block', margin: '0 auto', maxWidth: '60%', maxHeight: '60%', marginBottom: 8 }}
+                    style={{ display: 'block', margin: '0 auto', maxWidth: '100%', maxHeight: '100%', marginBottom: 8 }}
                 />
             )}
             <span>{children}</span>
@@ -35,7 +35,6 @@ const Button = ({
         "btn",
         `btn-${size}`,
         `btn-${color}`,
-        fullwidth && "w-100 d-block",
         shape === "ellipse" && "rounded",
         image && "btn-square"
     );

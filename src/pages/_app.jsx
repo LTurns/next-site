@@ -21,13 +21,20 @@ const MyApp = ({ Component, pageProps }) => {
 
     useEffect(() => {
         sal();
+        // The following lines set dark mode and background color immediately on mount.
+        // This is fine for ensuring dark mode, but setting styles on every render is unnecessary.
+        // For performance, you can move this logic to a custom _document.js for instant effect,
+        // or keep it here for simplicity. It does not significantly affect performance.
+        document.documentElement.classList.add("dark");
+        document.body.classList.add("dark");
+        document.body.style.background = "#18181b";
+        document.documentElement.style.background = "#18181b";
     }, []);
-    useEffect(() => {
-        document.body.className = `${pageProps.className}`;
-    });
+
     return (
         <Provider store={store}>
-            <ThemeProvider defaultTheme="dark">
+            {/* ThemeProvider always dark, disables switching */}
+            <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark" enableSystem={false}>
                 <CartState>
                     <Component {...pageProps} />
                 </CartState>

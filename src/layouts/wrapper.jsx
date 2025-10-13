@@ -1,13 +1,11 @@
 import PropTypes from "prop-types";
 import ScrollToTop from "@ui/scroll-to-top";
-import { ToastContainer } from "react-toastify";
 
 const Wrapper = ({ children }) => (
-    <>
+    <div className="app-wrapper">
         {children}
         <ScrollToTop />
-        <ToastContainer />
-    </>
+    </div>
 );
 
 Wrapper.propTypes = {

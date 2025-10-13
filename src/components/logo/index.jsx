@@ -2,16 +2,26 @@ import Image from "next/image";
 import Anchor from "@ui/anchor";
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import headerData from '../../data/homepages/home-04.json';
 
 const Logo = ({ className, logo }) => (
     <div className={clsx("logo-thumbnail logo-custom-css", className)}>
+        <Image
+        className="coin-logo"
+                    src={'images/brand/coin.png'}
+                    alt={''}
+                    width={50}
+                    height={70}
+                    priority
+                />
         {logo?.[0]?.src && (
             <Anchor className="logo-light" path="/">
                 <Image
                     src={logo[0].src}
                     alt={logo[0]?.alt || "cbs logo"}
-                    width={150}
-                    height={35}
+                    className="cbs-logo"
+                    width={130}
+                    height={50}
                     priority
                 />
             </Anchor>

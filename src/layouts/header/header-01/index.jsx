@@ -19,151 +19,85 @@ import menuData from "../../../data/general/menu-01.json";
 import productData from "../../../data/products-06.json";
 
 const Header = ({ className }) => {
-    // const router = useRouter();
-    const sticky = useSticky();
     const { offcanvas, offcanvasHandler } = useOffcanvas();
-    const { search, searchHandler } = useFlyoutSearch();
 
     const { cartItems } = useContext(CartContext);
-    // const [isAuthenticated, setIsAuthenticated] = useState(false);
-
     let total = 0;
 
-    // eslint-disable-next-line
     for (const item in cartItems) {
         total += cartItems[item].quantity;
     }
-    // const detectCurrentProvider = () => {
-    //     let provider;
-    //     if (window.ethereum) {
-    //         provider = window.ethereum;
-    //     } else if (window.web3) {
-    //         provider = window.web3.currentProvider;
-    //     } else {
-    //         console.log(
-    //             "Non-ethereum browser detected. You should install Metamask"
-    //         );
-    //     }
-    //     return provider;
-    // };
-
-    // const onConnect = async () => {
-    //     try {
-    //         const currentProvider = detectCurrentProvider();
-    //         if (currentProvider) {
-    //             await currentProvider.request({
-    //                 method: "eth_requestAccounts",
-    //             });
-    //             const web3 = new Web3(currentProvider);
-    //             const userAccount = await web3.eth.getAccounts();
-    //             const account = userAccount[0];
-    //             const getEthBalance = await web3.eth.getBalance(account);
-    //             setEthBalance(getEthBalance);
-    //             setIsAuthenticated(true);
-    //         }
-    //     } catch (err) {
-    //         console.log(err);
-    //     }
-    // };
-
-    // const onDisconnect = () => {
-    //     setIsAuthenticated(false);
-    // };
 
     return (
-        <>
+    <div>
+            {/* Top Thin Nav */}
+            <div className="header-top-nav">
+                <div style={{ display: 'flex', alignItems: 'center', gap: '18px', marginRight: 24 }}>
+                    {/* LinkedIn */}
+                    <a className="linkedIn-button" href="https://www.linkedin.com/company/cbs-products-ltd/" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', gap: 4 }}>
+                        <svg width="18" height="18" fill="var(--color-primary, #FFD600)" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+                        <span style={{ fontWeight: 500 }}>LinkedIn</span>
+                    </a>
+                    {/* Contact Details */}
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--header-top-text, #222)' }}>
+                        <svg width="16" height="16" fill="none" stroke="var(--color-primary, #FFD600)" strokeWidth="2" viewBox="0 0 24 24"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13.81.28 1.61.46 2.39a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.78.18 1.58.33 2.39.46A2 2 0 0 1 21 16.92z"/></svg>
+                        <a href="tel:+4401572723665">+44 (0) 1572 723 665</a>
+                        <svg width="16" height="16" fill="none" stroke="var(--color-primary, #FFD600)" strokeWidth="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:sales@cbsproducts.com
+">sales@cbsproducts.com
+</a>
+                    </span>
+                </div>
+            </div>
             <header
                 className={clsx(
-                    "rn-header haeder-default black-logo-version header--fixed",
+                    "rn-header header-default black-logo-version header--fixed",
                     className
                 )}
             >
-                <div className="container">
-                    <div className="header-inner">
-                        <div className="header-left">
-                            <Logo logo={headerData.logo} />
-                            <div className="mainmenu-wrapper">
-                                <nav
-                                    id="sideNav"
-                                    className="mainmenu-nav d-none d-xl-block"
-                                >
-                                    <MainMenu menu={menuData} />
-                                </nav>
-                            </div>
-                        </div>
-                        <div className="header-right">
-                            <div className="searches setting-option d-none d-lg-block">
-                                {/* <SearchBar isOpen={true} /> */}
-                                <Autocomplete data={productData} isOpen />
-                            </div>
-
-                            <div className="rn-icon-list setting-option d-block d-lg-none">
-                                {/* <div className="icon-box search-mobile-icon">
-                                    <button
-                                        type="button"
-                                        aria-label="Click here to open search form"
-                                        onClick={searchHandler}
-                                    >
-                                        <i className="feather-search" />
-                                    </button>
-                                </div> */}
-                                <Autocomplete data={productData} isOpen />
-                            </div>
-                            {/* <div className="setting-option rn-icon-list notification-badge">
-                                <div className="icon-box">
-                                    <Anchor path={headerData.activity_link}>
-                                        <i className="feather-bell" />
-                                        <span className="badge">6</span>
-                                    </Anchor>
-                                </div>
-                            </div> */}
-                            <div>
-                                {/* <Box
-                        sx={{ flexGrow: 0 }}
-                        onClick={() => {
-                        router.push("/cart");
-                        }}
-                    >
-                        <Tooltip title="Shopping Cart">
-                        <button sx={{ p: 0 }}>
-                            <Badge badgeContent={cartItems.length} color="error">
-                            <ShoppingBagOutlinedIcon style={{ color: "white" }} />
-                            </Badge>
-                        </button>
-                        </Tooltip>
-                    </Box> */}
-                            </div>
-                            <div className="setting-option mobile-menu-bar d-block d-xl-none">
-                                <div className="hamberger">
-                                    <BurgerButton onClick={offcanvasHandler} />
-                                </div>
-                            </div>
-                            <div
-                                id="my_switcher"
-                                className="setting-option my_switcher"
+                <div className="header-inner">
+                    <div className="header-left">
+                          <Logo logo={headerData.logo}/>
+                        <div className="mainmenu-wrapper">
+                            <nav
+                                id="sideNav"
+                                className="mainmenu-nav d-none d-xl-block"
                             >
-                                <ColorSwitcher />
-                            </div>
-                            <div className="nav__right-cart">
-                                <Box
-                                    sx={{ flexGrow: 0 }}
-                                    onClick={() => {
-                                        router.push("/cart");
+                                <MainMenu menu={menuData} />
+                            </nav>
+                        </div>
+                    </div>
+                    <div className="header-right">
+                        <div className="searches">
+                            <Autocomplete data={productData} isOpen />
+                        </div>
+                        {/* <div className="rn-icon-list setting-option d-block d-lg-none">
+                            <Autocomplete data={productData} isOpen />
+                        </div> */}
+                        <div className="nav__right-cart">
+                            <Box
+                                sx={{ flexGrow: 0 }}
+                                onClick={() => {
+                                    router.push("/cart");
+                                }}
+                            >
+                                <FaShoppingCart size={25} />
+                                <span
+                                    style={{
+                                        fontSize: 14,
+                                        paddingInline: 5,
+                                        fontWeight: "bold",
                                     }}
                                 >
-                                    <FaShoppingCart color="orange" size={25} />
-                                    <span
-                                        style={{
-                                            fontSize: 14,
-                                            paddingInline: 5,
-                                            fontWeight: "bold",
-                                        }}
-                                    >
-                                        {total !== 0 ? total : ""}
-                                    </span>
-                                </Box>
-                            </div>
+                                    {total !== 0 ? total : ""}
+                                </span>
+                            </Box>
                         </div>
+                                                                                            <div className="setting-option mobile-menu-bar d-block d-xl-none">
+                            <div className="hamberger">
+                                <BurgerButton onClick={offcanvasHandler} />
+                            </div>
+                    </div>
                     </div>
                 </div>
             </header>
@@ -173,7 +107,7 @@ const Header = ({ className }) => {
                 menu={menuData}
                 logo={headerData.logo}
             />
-        </>
+    </div>
     );
 };
 

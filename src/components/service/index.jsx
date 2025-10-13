@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ImageType } from "@utils/types";
 import Image from "next/image";
 
-const Service = ({ title, subtitle, path, description, image }) => (
+const Service = ({ title, subtitle, path, image }) => (
     <div
         data-sal="slide-up"
         data-sal-delay="150"
@@ -13,21 +13,19 @@ const Service = ({ title, subtitle, path, description, image }) => (
         <div className="inner">
             <div className="icon">
                 {image?.src && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <Image src={image.src} alt={title} />
+                    <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={70}
+                        height={70}
+                        style={{ objectFit: 'contain', width: '70px', height: '70px' }}
+                        priority={false}
+                        loading="lazy"
+                    />
                 )}
             </div>
-            <div className="subtitle">{subtitle}</div>
             <div className="content">
                 <h4 className="title">{title}</h4>
-                <p className="description">{description}</p>
-                <Anchor
-                    className="read-more-button"
-                    path={path}
-                    ariaLabel="read more"
-                >
-                    <i className="feather-arrow-right" />
-                </Anchor>
             </div>
         </div>
         <Anchor className="over-link" path={path}>
@@ -38,10 +36,8 @@ const Service = ({ title, subtitle, path, description, image }) => (
 
 Service.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: ImageType,
+    image: PropTypes.string,
 };
 
 export default Service;

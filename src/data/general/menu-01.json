@@ -49,12 +49,62 @@
     {
         "id": 5,
         "text": "How To Buy",
+        "path": "/",
+        "submenu": [
+            {
+                "id": 7,
+                "text": "Locate A Partner",
+                "path": "/locate-a-partner",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 8,
+                "text": "View All Partners",
+                "path": "/view-all-partners",
+                "icon": "feather-fast-forward"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "Innovation",
         "path": "/how-to-buy"
+    },
+    {
+        "id": 5,
+        "text": "Catalogues",
+        "path": "/",
+        "submenu": [
+            {
+                "id": 7,
+                "text": "All Products",
+                "path": "/pdfs/main_product_catalogue.pdf",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 8,
+                "text": "Klein Tools",
+                "path": "/pdfs/klein-catalogue.pdf",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 9,
+                "text": "Accelair",
+                "path": "/pdfs/Accelair31.pdf",
+                "icon": "feather-fast-forward"
+            },
+            {
+                "id": 9,
+                "text": "Overhead Line",
+                "path": "/pdfs/Overhead-Line-Stringing-web.pdf",
+                "icon": "feather-fast-forward"
+            }
+        ]
     },
     {
         "id": 6,
         "text": "Contact",
-        "path": "/contact",
+        "path": "/",
         "submenu": [
             {
                 "id": 7,

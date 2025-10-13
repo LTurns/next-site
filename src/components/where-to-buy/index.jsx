@@ -27,66 +27,63 @@ const WhereToBuy = ({
     email,
     website,
     image,
+    continent,
+    service,
+    industry
 }) => {
     return (
         <>
-            <div className={clsx("lg-product-wrapper")}>
-                <div style={{ height: 625 }} className="color-shape-7">
+            <div>
+                <div>
                     <div className="where-to-buy-content">
-                        <Anchor path={website}>
-                            <div
-                                style={{ background: "white", borderRadius: 8 }}
-                            >
-                                <Image
-                                    style={{ objectFit: "contain" }}
-                                    src={`/images/whereToBuy/${image}`}
-                                    width={200}
-                                    height={200}
-                                    alt={name}
-                                />
-                            </div>
-                        </Anchor>
+                        <div className="chip-group">
+                            <span className="chip-title"> Industry: </span>
+                            {industry.map((ind, idx) => (
+                                <span key={`industry-${idx}`} className="chip">{ind}</span>
+                            ))}
+                        </div>
+                        <div className="chip-group" style={{ marginTop: "0.5rem" }}>
+                            <span className="chip-title"> Service: </span>
+                            {service.map((srv, idx) => (
+                                <span key={`service-${idx}`} className="chip-service">{srv}</span>
+                            ))}
+                        </div>
                         <Divider sx={{ marginBlock: 2 }}></Divider>
-                        <FaLocationPin />
+                                                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "1rem" }}>
+                            <Anchor path={website} className="where-to-buy-title">
+                               <FaLocationPin /> {name}
+                            </Anchor>
+                            <Image
+                                style={{
+                                    objectFit: "contain",
+                                    borderRadius: "10px",
+                                    boxShadow: "0 2px 12px rgba(0,0,0,0.10)",
+                                    background: "#ffffffff",
+                                    border: "1px solid #41485a",
+                                }}
+                                src={`/images/whereToBuy/${image}`}
+                                width={80}
+                                height={80}
+                                alt={name}
+                            />
+                        </div>
 
-                        <Anchor path={website}>
-                            <p
-                                className="title"
-                                style={{ fontSize: 15, fontWeight: 500 }}
-                            >
-                                {name}
-                            </p>
-                        </Anchor>
-
                         <Divider sx={{ marginBlock: 2 }}></Divider>
-                        {roadOne}
-                        <br></br>
-                        {roadTwo}
-                        <br></br>
-                        {county}
-                        <br></br>
-                        {country}
-                        <br></br>
-                        {postcode}
+                        <div className="where-to-buy-address">
+                            {roadOne && <span>{roadOne}</span>}
+                            {roadTwo && <span>{roadTwo}</span>}
+                            {county && <span>{county}</span>}
+                            {country && <span>{country}</span>}
+                            {postcode && <span>{postcode}</span>}
+                        </div>
                         <Divider sx={{ marginBlock: 2 }}></Divider>
-                        {contact ? <div>Contact: {contact}</div> : ""}
-                        <br></br>
-                        {tel ? <a href={`tel:${tel}`}>tel: {tel}</a> : ""}
-                        <br></br>
-                        {mobile ? (
-                            <a href={`mobile:${mobile}`}>mobile: {mobile}</a>
-                        ) : (
-                            ""
-                        )}
-                        <br></br>
-                        {email ? (
-                            <a href={`mailto:${email}`}>email: {email}</a>
-                        ) : (
-                            ""
-                        )}
-                        <br></br>
-                        {fax ? <a href={`tel:${fax}`}>fax: {fax}</a> : ""}
-                        <br></br>
+                        <div className="where-to-buy-details" style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "0.5rem" }}>
+                            {contact && <span><strong>Contact:</strong> {contact}</span>}
+                            {tel && <span><a href={`tel:${tel}`}>Tel: {tel}</a></span>}
+                            {mobile && <span><a href={`tel:${mobile}`}>Mobile: {mobile}</a></span>}
+                            {email && <span><a href={`mailto:${email}`}>Email: {email}</a></span>}
+                            {fax && <span><a href={`tel:${fax}`}>Fax: {fax}</a></span>}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,24 +105,10 @@ WhereToBuy.propTypes = {
     tel: PropTypes.string,
     email: PropTypes.string,
     website: PropTypes.string,
-    // latestBid: PropTypes.string.isRequired,
-    // price: PropTypes.shape({
-    //     amount: PropTypes.number.isRequired,
-    //     currency: PropTypes.string.isRequired,
-    // }).isRequired,
-    // likeCount: PropTypes.number.isRequired,
-    // auction_date: PropTypes.string,
     image: PropTypes.object,
-    // authors: PropTypes.arrayOf(
-    //     PropTypes.shape({
-    //         name: PropTypes.string.isRequired,
-    //         slug: PropTypes.string.isRequired,
-    //         image: ImageType.isRequired,
-    //     })
-    // ),
-    // bitCount: PropTypes.number,
-    // placeBid: PropTypes.bool,
-    // disableShareDropdown: PropTypes.bool,
+    industry: PropTypes.array,
+    service: PropTypes.array,
+    continent: PropTypes.string,
 };
 
 WhereToBuy.defaultProps = {

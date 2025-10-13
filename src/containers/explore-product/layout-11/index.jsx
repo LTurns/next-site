@@ -264,7 +264,7 @@ const ExploreProductArea = ({
                                             <Product product={prod} />
                                         </div>
                                     )
-                                ))}
+                                )}
                             </>
                         ) : (
                             <p>No item to show</p>

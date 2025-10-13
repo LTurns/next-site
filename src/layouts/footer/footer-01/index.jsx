@@ -24,7 +24,7 @@ const Footer = ({ space, className, data }) => (
                 className
             )}
         >
-            {data?.items && (
+            {/* {data?.items && (
                 <div className="footer-top">
                     <div className="container">
                         <div className="row">
@@ -51,7 +51,7 @@ const Footer = ({ space, className, data }) => (
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
 
             <div className="container">
                 <div className="row gx-5">

@@ -1,29 +1,65 @@
 [
     {
         "id": 1,
+        "name": "CBS Products (KT)",
+        "roadOne": "Pillings Road",
+        "roadTwo": "Oakham",
+        "county": "Rutland",
+        "postcode": "LE15 6QF",
+        "country": "United Kingdom",
+        "contact": "",
+        "mobile": "",
+        "fax": "",
+        "tel": "+44 (0) 1572 723 665",
+        "email": "sales@cbsproducts.com",
+        "website": "/",
+        "img": "cbslogo.jpeg",
+        "service": [
+            "distribution"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
+    },
+    {
+        "id": 2,
         "name": "Netceed",
-        "roadOne": "",
-        "roadTwo": "Sint-Pietersvliet 32 - Unit 12/13",
-        "county": "Sint-Job-in-'t-Goor",
+        "roadOne": "Smederijstraat 32 - Unit 12/13",
+        "roadTwo": "Sint-Job-in-'t-Goor",
+        "county": "",
         "postcode": "B-2960",
         "country": "Belgium",
-        "tel": "+32 3 202 16 50",
+        "tel": "+32 3 633 02 98",
         "mobile": "",
         "fax": "",
         "contact": "",
         "email": "sales.be@netceed.com",
-        "website": "https://be-store.netceed.com/",
-        "service": "Distributor",
-        "img": "netceed.png"
+        "website": "https://be-store.netceed.com/?changeLanguage=en",
+        "img": "netceed.png",
+        "service": [
+            "distributor",
+            "repair"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Telenco UK",
         "roadOne": "Hillmead Enterprise Park",
         "roadTwo": "Unit 3 Westerngate, Langley Rd",
         "county": "Swindon",
         "postcode": "SN5 5WN",
-        "country": "UK",
+        "country": "United Kingdom",
         "tel": "01793 848123",
         "mobile": "",
         "fax": "",
@@ -31,27 +67,97 @@
         "email": "sales.uk@telenco.com",
         "website": "https://www.telenco.uk/",
         "img": "telencologo.jpeg",
-        "service": "Distributor"
-    },
-    {
-        "id": 3,
-        "name": "Lambda Test",
-        "roadOne": "Quintin Brand Street",
-        "roadTwo": "Apex Corporate Park",
-        "county": "Persequor Technopark",
-        "postcode": "Pretoria, 0020",
-        "country": "South Africa",
-        "tel": "",
-        "mobile": "+27 (0) 12 349 1341",
-        "fax": "",
-        "contact": "",
-        "email": "ockie@lambdatest.co.za",
-        "website": "https://www.lambdatest.co.za/",
-        "img": "lambda.png",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
         "id": 4,
+        "name": "Telenco Germany",
+        "roadOne": "Ammerthalstrasse 30",
+        "roadTwo": "85551",
+        "county": "Kirchheim",
+        "postcode": "(Allemagne)",
+        "country": "Germany",
+        "contact": "",
+        "mobile": "",
+        "fax": "",
+        "tel": "+49 89 431982-0",
+        "email": "info.germany@telenco.com",
+        "website": "https://www.telenco.de/",
+        "img": "telencologo.jpeg",
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
+    },
+    {
+        "id": 6,
+        "name": "UK HIRE PARTNER",
+        "roadOne": "",
+        "roadTwo": "",
+        "county": "",
+        "postcode": "",
+        "country": "United Kingdom",
+        "tel": "",
+        "fax": "",
+        "mobile": "07742404707",
+        "contact": "Dave Randall",
+        "email": "dave.randall@wolseley.co.uk",
+        "website": "https://www.fusion-utilities.co.uk",
+        "img": "fusionutilitieslogo.png",
+        "service": [
+            "distribution"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
+    },
+    {
+        "id": 7,
+        "name": "Lambda Test Equipment",
+        "roadOne": "Quintin Brand Street, Apex Corporate Park",
+        "roadTwo": "Persequor Techno Park, Pretoria",
+        "county": "",
+        "postcode": "",
+        "country": "South Africa",
+        "tel": "+27 12 349 1341",
+        "mobile": "+27 12 349 1341",
+        "fax": "",
+        "contact": "Wynand Frost",
+        "email": "support@lambdatest.co.za",
+        "website": "https://www.lambdatest.co.za",
+        "img": "lamdba.png",
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Africa"
+    },
+    {
+        "id": 8,
         "name": "D.J.Global Creation Co. Ltd",
         "roadOne": "137/79-80 Moo 1 Nanthanagarden Soi 12",
         "roadTwo": "Pathumthani-Rangsit Road",
@@ -64,43 +170,49 @@
         "contact": "Jeffery Jia",
         "email": "info@djglobalcreation.com",
         "website": "https://www.djglobalcreation.com",
-        "img": "djgloballogo.jpeg"
+        "img": "djgloballogo.jpeg",
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Asia"
     },
     {
-        "id": 5,
-        "name": "Paviot Equipment (1)",
+        "id": 9,
+        "name": "Paviot Equipment",
         "roadOne": "16 Rue Des Taillées",
-        "roadTwo": "",
-        "postcode": "79180 Chauray",
+        "roadTwo": "79180 Chauray",
+        "county": "05 49 79 07 05",
+        "roadThree": "98 Rue Louis Ampère",
+        "roadFour": "93330 Neuilly-Sur-Marne",
+        "countyTwo": "01 43 00 43 00",
+        "postcodeTwo": "",
         "country": "France",
-        "tel": "05 49 79 07 05",
+        "tel": "",
         "mobile": "",
         "fax": "",
         "contact": "",
         "email": "contact@paviotequipement.fr",
         "website": "https://www.paviotequipement.fr",
         "img": "paviotlogo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 6,
-        "name": "Paviot Equipment (2)",
-        "roadOne": "98 Rue Louis Ampère",
-        "roadTwo": "",
-        "county": "",
-        "postcode": "93330 Neuilly-Sur-Marne",
-        "country": "France",
-        "tel": "01 43 00 43 00",
-        "mobile": "",
-        "fax": "",
-        "contact": "",
-        "email": "contact@paviotequipement.fr",
-        "website": "https://www.paviotequipement.fr",
-        "img": "paviotlogo.jpeg",
-        "service": "Distributor"
-    },
-    {
-        "id": 7,
+        "id": 10,
         "name": "Exceed Solutions P.C.",
         "roadOne": "76 Ymittou Street",
         "roadTwo": "",
@@ -114,15 +226,24 @@
         "email": "info@exceedsolutions.gr",
         "website": "https://www.exceedsolutions.gr",
         "img": "exceed_logo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distribution"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 8,
+        "id": 11,
         "name": "GA Telecomunicazioni",
         "roadOne": "Via dante Alighieri, 6",
         "roadTwo": "",
         "county": "",
-        "postcode": "20050 – Sovico(MI)",
+        "postcode": "20050 – Sovico (MI)",
         "country": "Italy",
         "tel": "+390392011285",
         "mobile": "",
@@ -131,10 +252,19 @@
         "email": "info@gatelecomunicazioni.com",
         "website": "https://www.gatelecomunicazioni.com",
         "img": "GA_tele_logo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 9,
+        "id": 12,
         "name": "Fibrain Sp.z o.o.",
         "roadOne": "Zaczernie 190F",
         "roadTwo": "",
@@ -148,10 +278,20 @@
         "email": "Info@fibrain.com",
         "website": "https://www.fibrain.com",
         "img": "fibrainlogo.png",
-        "service": "Distributor"
+        "service": [
+            "distributor",
+            "repair"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 10,
+        "id": 13,
         "name": "Teledatanet srl",
         "roadOne": "Blvd 21 Decembrie 1989",
         "roadTwo": "Nr. 140-155",
@@ -165,10 +305,20 @@
         "email": "dinu.dragomir@teledatanet.com",
         "website": "https://www.teledatanet.com",
         "img": "teledatanet-logo.png",
-        "service": "Distributor, Repair Center"
+        "service": [
+            "distributor",
+            "repair"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 11,
+        "id": 14,
         "name": "Argano Group",
         "roadOne": "Calle Serranía de Ronda, 15",
         "roadTwo": "28691 Villanueva de la Cañada",
@@ -182,10 +332,19 @@
         "email": "comercial@arganogroup.com",
         "website": "https://www.arganogroup.com",
         "img": "argano-logo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 12,
+        "id": 15,
         "name": "MFS-Tech",
         "roadOne": "Hungerbuhlstrasse 10",
         "roadTwo": "",
@@ -199,10 +358,19 @@
         "email": "info@mfs-tech.ch",
         "website": "https://www.mfs-tech.ch",
         "img": "MFSTECHlogo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 13,
+        "id": 16,
         "name": "Helsingin Laatulaite Oy",
         "roadOne": "Päivöläntie 39",
         "roadTwo": "",
@@ -216,10 +384,19 @@
         "email": "myynti@helsinginlaatulaite.fi",
         "website": "https://www.helsinginlaatulaite.fi",
         "img": "Helsinginlogo.png",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 14,
+        "id": 17,
         "name": "General Machine Products (KT), LLC (GMP)",
         "roadOne": "3111 Old Lincoln Hwy",
         "roadTwo": "Trevose",
@@ -233,16 +410,26 @@
         "email": "info@gmptools.com",
         "website": "https://www.gmptools.com",
         "img": "GMP-Tools-logo.jpeg",
-        "service": "Distributor, Repair Center"
+        "service": [
+            "distributor",
+            "repair"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "North America"
     },
     {
-        "id": 15,
+        "id": 18,
         "name": "Midland Site Supplies",
         "roadOne": "Old Bacon Factory",
         "roadTwo": "Castleholding",
         "county": "Rosecrea",
         "postcode": "Eire",
-        "country": "UK",
+        "country": "United Kingdom",
         "contact": "Brian McCartney",
         "mobile": "",
         "fax": "",
@@ -250,10 +437,19 @@
         "email": "brian@midlandsitesupplies.ie",
         "website": "https://www.midlandsitesupplies.ie",
         "img": "msslogo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distribution"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 16,
+        "id": 19,
         "name": "Testronix Inc.",
         "roadOne": "Unit 415 VGP Center",
         "roadTwo": "(Formerly Manila Bank Building)",
@@ -267,16 +463,25 @@
         "email": "ian_urmeneta@testronix.com.ph",
         "website": "http://www.testronix.com.ph",
         "img": "testronixlogo.jpeg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Asia"
     },
     {
-        "id": 17,
+        "id": 20,
         "name": "DM Optics",
         "roadOne": "The Hive",
         "roadTwo": "6 Beaufighter Road",
         "county": "Weston-Super-Mare",
         "postcode": "BS24 8EE",
-        "country": "England",
+        "country": "United Kingdom",
         "contact": "",
         "mobile": "",
         "fax": "",
@@ -284,16 +489,25 @@
         "email": "info@dmoptics.co.uk",
         "website": "https://www.dmoptics.co.uk/",
         "img": "dmoptics.png",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 18,
+        "id": 21,
         "name": "Thorne & Derrick International",
         "roadOne": "7 Lumley Court",
         "roadTwo": "Drum Industrial Estate",
         "county": "Chester-le-Street",
         "postcode": "DH2 1AN",
-        "country": "England",
+        "country": "United Kingdom",
         "contact": "",
         "mobile": "",
         "fax": "",
@@ -301,10 +515,19 @@
         "email": "uksales@thorneandderrick.co.uk",
         "website": "https://www.powerandcables.com/",
         "img": "thornederrick.jpg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 19,
+        "id": 22,
         "name": "Vallin",
         "roadOne": "Latgales iela 322",
         "roadTwo": "",
@@ -318,10 +541,19 @@
         "email": "info@vallin.lv",
         "website": "https://vallin.lv/en/about-us/",
         "img": "vallin-logo.jpg",
-        "service": "Distributor"
+        "service": [
+            "distribution"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 20,
+        "id": 23,
         "name": "Vallin SIA",
         "roadOne": "Tarandes 2 – 13",
         "roadTwo": "",
@@ -335,10 +567,19 @@
         "email": "info@vallin.lt",
         "website": "https://vallin.lv/lt/",
         "img": "vallin-logo.jpg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 21,
+        "id": 24,
         "name": "Mejdaf",
         "roadOne": "Anas Bin Malek Rd",
         "roadTwo": "",
@@ -352,10 +593,19 @@
         "email": "jo@medjaf.com",
         "website": "https://www.mejdaf.com/",
         "img": "mejdaf.png",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Asia"
     },
     {
-        "id": 22,
+        "id": 25,
         "name": "Advanced Optics Limited",
         "roadOne": "Courtyard Mews",
         "roadTwo": "Piccadilly Place",
@@ -369,10 +619,19 @@
         "email": "hugo@advanceoptics.co.uk",
         "website": "www.advanceoptics.co.uk",
         "img": "advanced-optics.jpg",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     },
     {
-        "id": 23,
+        "id": 26,
         "name": "Digatel Telecoms",
         "roadOne": "Avenida Real de Pinto 91-A16",
         "roadTwo": "",
@@ -386,40 +645,15 @@
         "email": "pablo.fernandez@digateltelecom.com",
         "website": "https://digateltelecom.com/",
         "img": "digitale-telecoms.jpg",
-        "service": "Distributor"
-    },
-    {
-        "id": 24,
-        "name": "CBS Products (KT) Ltd",
-        "roadOne": "Pillings Road",
-        "roadTwo": "Oakham",
-        "county": "Rutland",
-        "postcode": "LE15 6QF",
-        "country": "United Kingdom",
-        "contact": "",
-        "mobile": "",
-        "fax": "",
-        "tel": "+44 1572 723 665",
-        "email": "sales@cbsproducts.com",
-        "website": "https://www.cbsproducts.com/",
-        "img": "cbslogo.png",
-        "service": "Distributor, Manufacturer, Repair Center"
-    },
-    {
-        "id": 3,
-        "name": "UK HIRE PARTNER",
-        "roadOne": "",
-        "roadTwo": "",
-        "county": "",
-        "postcode": "",
-        "country": "",
-        "tel": "",
-        "fax": "",
-        "mobile": "07742404707",
-        "contact": "Dave Randall",
-        "email": "dave.randall@wolseley.co.uk",
-        "website": "https://www.fusion-utilities.co.uk",
-        "img": "fusionutilitieslogo.png",
-        "service": "Distributor"
+        "service": [
+            "distributor"
+        ],
+        "industry": [
+            "telecoms",
+            "power",
+            "overheadline",
+            "aboriculture"
+        ],
+        "continent": "Europe"
     }
 ]

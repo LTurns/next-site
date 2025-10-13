@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Klein Tools — icon in blue with label underneath, styled similar to Arboriculture example -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 200 200" role="img" aria-label="Klein Tools icon">
+  <title>Klein Tools — stylized pliers</title>
+  <!-- Stylized pliers silhouette -->
+  <g fill="#0A6CBF">
+    <!-- handles -->
+    <path d="M75 60c-8 12-8 26 0 38l22 40c2 3 6 4 9 2l8-6c3-2 4-6 2-9L90 97" />
+    <path d="M125 60c8 12 8 26 0 38l-22 40c-2 3-6 4-9 2l-8-6c-3-2-4-6-2-9l26-44" />
+    <!-- jaws -->
+    <path d="M85 65c10-6 20-6 30 0l-15 26z" />
+    <!-- pivot -->
+    <circle cx="100" cy="85" r="6" fill="#0A6CBF" />
+  </g>
+
+  <!-- Label underneath -->
+  <text x="100" y="180" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#0A6CBF">KLEIN TOOLS</text>
+
+  <desc>Blue stylized pliers icon with text 'KLEIN TOOLS' underneath, designed in a clean flat style similar to Arboriculture logo.</desc>
+</svg>

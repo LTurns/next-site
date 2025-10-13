@@ -1,0 +1,83 @@
+.how-to-buy-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background: #23272f; // dark background
+  border: 1px solid rgb(65, 72, 90); // similar to autocomplete
+  border-radius: 8px;
+  padding: 2rem;
+
+  input,
+  select,
+  textarea {
+    background: #181a20;
+    color: #fff;
+    border: 1px solid rgb(65, 72, 90);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s;
+    outline: none;
+
+    &:focus {
+      border-color: #4f5b7a;
+      background: #23272f;
+    }
+  }
+
+
+  label {
+    color: #bfc8e2;
+    font-weight: 500;
+  }
+
+  button {
+    background: #4f5b7a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #6c7bbd;
+    }
+  }
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.toggle-continent-view {
+    width: 100%;
+    text-align: left;
+    background: #181a20;
+    color: #fff;
+    border: 1px solid rgb(65, 72, 90);
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    display: flex;
+    
+
+    &:hover,
+    &:focus {
+      border-color: #4f5b7a;
+      background: #23272f;
+      color: #ffd500;
+    }
+
+}
+
+    .country {
+      margin: 10px 0;
+      margin-left: 5%;
+      width: 95%;
+    }
