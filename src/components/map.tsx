@@ -5,6 +5,8 @@ import {
     Marker,
     InfoWindow,
 } from "@react-google-maps/api";
+import ExploreProductArea from "@containers/explore-product/layout-12";
+
 const whereToBuy = require("../data/whereToBuy.json");
 
 // Import geocoded locations and contacts
@@ -44,7 +46,7 @@ export default function Map() {
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 onLoad={onLoad}
-                onClick={() => setActiveMarkerId(null)} // Close InfoWindow when clicking elsewhere
+                onClick={() => setActiveMarkerId(null)}
             >
                 {locations.map(
                     (loc: {
@@ -81,45 +83,39 @@ export default function Map() {
                                     <div
                                         className="gmap-infowindow"
                                         style={{
-                                            background: "#222",
-                                            color: "#fff",
-                                            padding: "12px 16px",
-                                            borderRadius: "8px",
-                                            boxShadow:
-                                                "0 2px 8px rgba(0,0,0,0.5)",
-                                            maxWidth: "420px",
-                                            minWidth: "320px",
-                                            fontSize: "15px",
-                                            lineHeight: "1.6",
+                                            width: "100%",
+                                            maxWidth: "520px",
+                                            minWidth: "340px",
+                                            height: "520px",
+                                            padding: "0",
+                                            background: "transparent",
+                                            boxSizing: "border-box",
+                                            overflow: "visible",
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center",
                                         }}
                                     >
                                         {(() => {
-                                            const contact = getContactDetails(
-                                                loc.id
-                                            );
-                                            return (
-                                                <>
-                                                    <p>
-                                                        <strong>
-                                                            {loc.address}
-                                                        </strong>
-
-                                                        <br></br>
-
-                                                        <p>
-                                                            Tel: {contact?.tel}
-                                                        </p>
-                                                        <p>
-                                                            Email:{" "}
-                                                            {contact?.email}
-                                                        </p>
-                                                        <p>
-                                                            Website:{" "}
-                                                            {contact?.website}
-                                                        </p>
-                                                    </p>
-                                                </>
-                                            );
+                                            const contact = getContactDetails(loc.id);
+                                            return contact ? (
+                                                <div style={{
+                                                    width: "520px",
+                                                    minWidth: "340px",
+                                                    height: "520px",
+                                                    padding: "0.5rem",
+                                                    display: "flex",
+                                                    // flexDirection: "column",
+                                                    // alignItems: "stretch",
+                                                }}>
+                                                    <ExploreProductArea
+                                                        data={{ products: [contact] }}
+                                                        className="explore-product-infowindow"
+                                                        space={1}
+                                                        columns={12}
+                                                    />
+                                                </div>
+                                            ) : null;
                                         })()}
                                     </div>
                                 </InfoWindow>

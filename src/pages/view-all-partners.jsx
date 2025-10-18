@@ -49,11 +49,6 @@ const Product = () => (
         <main id="main-content">
             <Breadcrumb pageTitle="View All Partners" currentPage="View All Partners" />
             <Map locations={locations} />
-            <ExploreProductArea
-                data={{
-                    products: whereToBuy,
-                }}
-            />
         </main>
         <Footer />
     </Wrapper>

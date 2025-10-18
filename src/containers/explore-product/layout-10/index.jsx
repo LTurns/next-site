@@ -89,11 +89,10 @@ const ExploreProductArea = ({
     delete categories[""];
 
     return (
-        <div className={clsx("explore-area", className)} id="explore-id">
+        <div className={clsx("explore-area", "rn-section-gapTop", className)} id="explore-id">
             <ProductArea
                 data={{
                     items: state.products,
-                    section_title: title,
                     catalogue,
                 }}
             />

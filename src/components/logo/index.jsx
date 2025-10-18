@@ -6,9 +6,9 @@ import headerData from '../../data/homepages/home-04.json';
 
 const Logo = ({ className, logo }) => (
     <div className={clsx("logo-thumbnail logo-custom-css", className)}>
-        <Image
-        className="coin-logo"
-                    src={'images/brand/coin.png'}
+                <Image
+                    className="coin-logo"
+                    src={'/images/brand/coin.png'} // Add leading slash for absolute path
                     alt={''}
                     width={50}
                     height={70}
@@ -28,6 +28,14 @@ const Logo = ({ className, logo }) => (
         )}
         {logo?.[1]?.src && (
             <Anchor className="logo-dark" path="/">
+                        <Image
+                    className="coin-logo"
+                    src={'/images/brand/coin.png'} // Add leading slash for absolute path
+                    alt={''}
+                    width={50}
+                    height={70}
+                    priority
+                />
                 <Image
                     src={logo[1].src}
                     alt={logo[1]?.alt || "cbs logo"}

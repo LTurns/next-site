@@ -58,7 +58,6 @@ const Product = () => {
                 <ExploreProductArea
                     data={{
                         products: overHeadLineProducts,
-                        title: "Overheadline Products",
                         catalogue: data.catalogue,
                     }}
                 />

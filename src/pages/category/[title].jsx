@@ -32,7 +32,6 @@ const Category = ({ products, params }) => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Product Categories"
                 currentPage={
                     params.title.charAt(0).toUpperCase() +
                     params.title.slice(1).replace("-", " ")

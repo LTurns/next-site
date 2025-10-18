@@ -18,7 +18,7 @@ const ProductArea = ({ className, id, space, data }) => (
                             <SectionTitle title={data.section_title} />
                         </div>
                     </div>
-                    <Catalogue data={data.catalogue} />
+                    <Catalogue data={data.catalogue} className="mb--20 mt--20" />
                 </>
             )}
             {data?.items && (

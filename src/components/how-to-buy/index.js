@@ -194,30 +194,16 @@ export default function HowToBuy() {
 
         {submitted && closest && Array.isArray(closest) && closest.length > 0 && (
           <div className="mt-4 p-4 border-2 border-yellow-400 rounded-xl bg-yellow-50 shadow-lg flex flex-col items-start">
-            <h2 className="font-bold text-lg text-yellow-700 mb-1 flex items-center gap-2">
+            <h6 className="font-bold text-lg text-yellow-700 mb-1 flex items-center gap-2">
               <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-              Distributors for "{selectedIndustry || 'All Industries'}" in {selectedCountry || 'All Countries'}
-            </h2>
-            {closest.map((item, idx) => (
-              <div key={item.id || idx} className="mb-4 pb-4 border-b border-yellow-100 last:border-b-0 last:mb-0 last:pb-0 w-full">
-                <div className="text-gray-800 mb-2 font-semibold">{item.address}</div>
-                {item.name && <div className="text-sm text-gray-700">Contact: <span className="font-semibold">{item.name}</span></div>}
-                {item.tel && <div className="text-sm text-gray-700">Tel: <span className="font-semibold">{item.tel}</span></div>}
-                {item.email && <div className="text-sm text-gray-700">Email: <a href={`mailto:${item.email}`} className="text-yellow-700 underline">{item.email}</a></div>}
-                {Array.isArray(item.service) && item.service.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {item.service.map((srv, sidx) => (
-                      <span
-                        key={sidx}
-                        className="inline-block bg-yellow-200 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full"
-                      >
-                        {srv}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+              Closest {selectedService} to {selectedCountry || 'All Countries'}
+            </h6>
+                     <ExploreProductArea
+              data={{
+                products: closest,
+              }}
+              columns={12}
+            />
           </div>
         )}
 

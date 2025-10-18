@@ -26,15 +26,36 @@ const Product = () => {
     const filterTelecomsProducts = (allPosts) => {
         if (!allPosts || allPosts.length === 0) return [];
 
-        const filtered = allPosts.filter(
-            (post) =>
-                (post.category?.includes("Fibre Installation") ||
-                    post.category?.includes("Telecoms")) &&
-                post.hasSubCategories
+        // Use map instead of forEach, and fix sorting logic
+        const filtered = allPosts.filter((product) =>
+            (product.category?.includes("Fibre Installation") || product.category?.includes("Telecoms")) &&
+            product.hasSubCategories &&
+            !product.subCategory?.length
         );
+
+        const categoriesOrder = [
+            "Fibre Blowing Machines",
+            "Compressors",
+            "Drum Handling and Drum Trailers",
+            "Cable Fleeting Devices",
+            "Fibre Blowing Accessories",
+            "Desilter",
+            "Winches",
+            "Rod Pusher and Duct Rods",
+            "Duct Rod Accessories",
+            "Cable Pulling Grips",
+            "Cable Avoidance",
+            "Telecom Winches"
+        ];
+
+        // Sort by title according to categoriesOrder
+        filtered.sort((a, b) => {
+            return categoriesOrder.indexOf(a.title) - categoriesOrder.indexOf(b.title);
+        });
 
         return filtered;
     };
+
 
     // Fetch posts and filter them
     useEffect(() => {
@@ -45,29 +66,9 @@ const Product = () => {
             // Filter and set telecoms products
             const filtered = filterTelecomsProducts(posts);
 
-            const categoriesOrder = [
-                "Fibre Blowing Machines",
-                "Compressors",
-                "Drum Handling and Drum Trailers",
-                "Cable Fleeting Devices",
-                "Fibre Blowing Accessories",
-                "Desilter",
-                "Telecom Winches",
-                "Rod Pusher and Duct Rods",
-                "Duct Rodders",
-                "Duct Rod Accessories",
-                "Cable Pulling Grips",
-                "Cable Avoidance",
-            ];
-
-            const filteredList = filtered.sort(
-                (a, b) =>
-                    categoriesOrder.indexOf(a.title) -
-                    categoriesOrder.indexOf(b.title)
-            );
-            setTelecomsProducts(filteredList);
+            setTelecomsProducts(filtered);
         }
-    }, [dispatch, posts]);
+    }, [dispatch, filterTelecomsProducts, setTelecomsProducts, posts]);
 
     return (
         <Wrapper>

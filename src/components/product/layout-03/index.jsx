@@ -3,6 +3,7 @@ import { ProductType } from "@utils/types";
 import Image from "next/image";
 import { useContext, useState } from "react";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 import imageUrlBuilder from "@sanity/image-url";
 import CartContext from "../../../Context/cart/CartContext";
@@ -40,8 +41,8 @@ const Product = ({ product, isAccessory }) => {
         <div className={styles.productCard}>
             {/* Product Image */}
             <div className={styles.imageContainer}>
-                {product.hasSubCategories && (
-                    <Anchor path={`/category/${product.title}`}>
+                {product.hasSubCategories ? (
+                    <Link href={`/category/${product.title}`}>
                         <Image
                             className={styles.productImage}
                             src={
@@ -56,10 +57,9 @@ const Product = ({ product, isAccessory }) => {
                                 objectFit: "contain",
                             }}
                         />
-                    </Anchor>
-                )}
-                {!product.hasSubCategories && (
-                    <Anchor path={`/product/${product.title}`}>
+                    </Link>
+                ) : (
+                    <Link href={`/product/${product.title}`}>
                         <Image
                             className={styles.productImage}
                             src={
@@ -74,7 +74,7 @@ const Product = ({ product, isAccessory }) => {
                                 objectFit: "contain",
                             }}
                         />
-                    </Anchor>
+                    </Link>
                 )}
             </div>
 
@@ -89,20 +89,16 @@ const Product = ({ product, isAccessory }) => {
             {/* Action Buttons */}
             <div className={styles.actionButtons}>
                 {!product.hasSubCategories && (
-                    <Anchor
-                        path={
+                    <a
+                        href={
                             isAccessory
                                 ? `/product/${product.name}`
                                 : `/product/${product.title}`
                         }
+                        className={styles.addToCartButton}
                     >
-                        <button
-                            type="button"
-                            className={styles.addToCartButton}
-                        >
-                            View Details
-                        </button>
-                    </Anchor>
+                        View Details
+                    </a>
                 )}
 
                 {!product.hasSubCategories && (
@@ -125,14 +121,12 @@ const Product = ({ product, isAccessory }) => {
                 {product.hasSubCategories && (
                     <>
                         <div className={styles.divider} />
-                        <Anchor path={`/category/${product.title}`}>
-                            <button
-                                type="button"
-                                className={styles.viewProductButton}
-                            >
-                                View Products
-                            </button>
-                        </Anchor>
+                        <a
+                            href={`/category/${product.title}`}
+                            className={styles.viewProductButton}
+                        >
+                            View Products
+                        </a>
                     </>
                 )}
             </div>
