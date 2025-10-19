@@ -25,7 +25,7 @@ const HeroArea = ({ data }) => (
                         ))}
                     </Slider>
                     <div className="button-group mt--20 mb--20" style={{ display: 'flex', gap: '10px' }}>
-                                                    <Button size="small" path="/locate-a-partner">
+                                                    <Button size="small" path="/how-to-buy">
                                     Locate A Partner
                                 </Button>
                                 </div>

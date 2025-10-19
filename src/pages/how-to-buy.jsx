@@ -45,10 +45,10 @@ export async function getStaticProps() {
 }
 const Product = () => (
     <Wrapper>
-        <SEO pageTitle="Locate A Partner" />
+        <SEO pageTitle="How To Buy" />
         <Header />
         <main id="main-content">
-            <Breadcrumb currentPage="Locate A Partner" />
+            <Breadcrumb currentPage="How To Buy" />
             <HowToBuy />
         </main>
         <Footer />
