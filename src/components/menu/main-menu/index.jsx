@@ -3,6 +3,7 @@ import Anchor from "@ui/anchor";
 import clsx from "clsx";
 import SubMenu from "./submenu";
 import MegaMenu from "./megamenu";
+import Link from "next/link";
 
 const MainMenu = ({ menu }) => (
     <ul className="mainmenu">
@@ -17,9 +18,9 @@ const MainMenu = ({ menu }) => (
                 {nav.submenu ? (
                     <span className="its_new">{nav.text}</span>
                 ) : (
-                    <Anchor className="its_new" path={nav.path}>
+                    <Link className="its_new" href={nav.path}>
                         {nav.text}
-                    </Anchor>
+                    </Link>
                 )}
                 {nav?.submenu && <SubMenu menu={nav.submenu} />}
                 {nav?.megamenu && <MegaMenu menu={nav.megamenu} />}

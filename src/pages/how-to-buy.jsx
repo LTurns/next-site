@@ -7,6 +7,7 @@ import ExploreProductArea from "@containers/explore-product/layout-12";
 import Map from "@components/map.tsx";
 import whereToBuy from "../data/whereToBuy.json";
 import HowToBuy from "@components/how-to-buy";
+
 import SectionTitle from "@components/section-title/layout-02";
 
 const locations = [
@@ -44,11 +45,11 @@ export async function getStaticProps() {
 }
 const Product = () => (
     <Wrapper>
-        <SEO pageTitle="How To Buy" />
+        <SEO pageTitle="Locate A Partner" />
         <Header />
         <main id="main-content">
-            <Breadcrumb pageTitle="View All Partners" currentPage="View All Partners" />
-            <Map locations={locations} />
+            <Breadcrumb currentPage="Locate A Partner" />
+            <HowToBuy />
         </main>
         <Footer />
     </Wrapper>

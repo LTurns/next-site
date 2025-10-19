@@ -5,10 +5,12 @@ html, body, #__next, .app-wrapper {
 #__next, .app-wrapper {
     display: flex;
     flex-direction: column;
+    background-color: var(--background-color-2);
 }
 
 #main-content {
     flex: 1;
+    background-color: var(--background-color-2);
 }
 
 body {

@@ -49,31 +49,12 @@
     {
         "id": 5,
         "text": "How To Buy",
-        "path": "/",
-        "submenu": [
-            {
-                "id": 7,
-                "text": "Locate A Partner",
-                "path": "/locate-a-partner",
-                "icon": "feather-fast-forward"
-            },
-            {
-                "id": 8,
-                "text": "View All Partners",
-                "path": "/view-all-partners",
-                "icon": "feather-fast-forward"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "text": "Innovation",
         "path": "/how-to-buy"
     },
     {
         "id": 5,
         "text": "Catalogues",
-        "path": "/",
+        "path": "/catalogues",
         "submenu": [
             {
                 "id": 7,

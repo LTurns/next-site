@@ -24,9 +24,11 @@ const HeroArea = ({ data }) => (
                             </div>
                         ))}
                     </Slider>
+                    <div className="button-group mt--20 mb--20" style={{ display: 'flex', gap: '10px' }}>
                                                     <Button size="small" path="/locate-a-partner">
                                     Locate A Partner
                                 </Button>
+                                </div>
                 </div>
                 <div className="service-area col-lg-5 col-12 order-2 d-flex flex-column align-items-center justify-content-start">
                     <ServiceArea data={content["service-section"]} />

@@ -285,6 +285,7 @@
 
 .tab-wrapper-one {
     margin-bottom: 30px;
+    background-color: var(--background-color-2);
 
     .top-seller-inner-one {
         .thumbnail {
@@ -293,9 +294,14 @@
     }
 }
 
+.tab-nav-profile {
+    background: #23272f;
+}
+
 .tab-button-one {
     display: block;
     border-radius: 5px;
+    background: var(--background-color-2) !important;
 
     .nav-tabs {
         border-bottom: none;
@@ -331,99 +337,99 @@
     }
 }
 
-.place-bet-area {
-    background: var(--background-color-1);
-    padding: 30px;
-    border-radius: 6px;
-    height: auto;
-    width: 100%;
-    border: 1px solid var(--color-border);
+// .place-bet-area {
+//     background: var(--background-color-1);
+//     padding: 30px;
+//     border-radius: 6px;
+//     height: auto;
+//     width: 100%;
+//     border: 1px solid var(--color-border);
 
-    .rn-bet-create {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin: -15px;
+//     .rn-bet-create {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: flex-start;
+//         margin: -15px;
 
-        .bid-list {
-            padding: 15px;
-        }
-        @media #{$large-mobile} {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-            transform: translateX(25%);
-            text-align: center;
-        }
+//         .bid-list {
+//             padding: 15px;
+//         }
+//         @media #{$large-mobile} {
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: flex-start;
+//             flex-direction: column;
+//             justify-content: center;
+//             transform: translateX(25%);
+//             text-align: center;
+//         }
 
-        @media #{$small-mobile} {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-            transform: translateX(14%);
-            text-align: center;
-        }
-    }
+//         @media #{$small-mobile} {
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: flex-start;
+//             flex-direction: column;
+//             justify-content: center;
+//             transform: translateX(14%);
+//             text-align: center;
+//         }
+//     }
 
-    .winning-bid {
-        flex-basis: 60%;
+//     .winning-bid {
+//         flex-basis: 60%;
 
-        h6 {
-            font-weight: 400;
-            font-size: 18px;
-        }
+//         h6 {
+//             font-weight: 400;
+//             font-size: 18px;
+//         }
 
-        .thumbnail {
-            max-width: 50px;
+//         .thumbnail {
+//             max-width: 50px;
 
-            a {
-                img {
-                    border-radius: 50%;
-                }
-            }
-        }
+//             a {
+//                 img {
+//                     border-radius: 50%;
+//                 }
+//             }
+//         }
 
-        .top-seller-content {
-            .heighest-bid {
-                font-size: 16px;
-            }
+//         .top-seller-content {
+//             .heighest-bid {
+//                 font-size: 16px;
+//             }
 
-            .count-number {
-                font-size: 14px;
-            }
-        }
-    }
+//             .count-number {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
 
-    .left-bid {
-        flex-basis: 40%;
+//     .left-bid {
+//         flex-basis: 40%;
 
-        .countdown {
-            justify-content: flex-start;
-        }
+//         .countdown {
+//             justify-content: flex-start;
+//         }
 
-        h6 {
-            font-weight: 400;
-            font-size: 18px;
-            margin-bottom: 0;
-        }
+//         h6 {
+//             font-weight: 400;
+//             font-size: 18px;
+//             margin-bottom: 0;
+//         }
 
-        @media #{$small-mobile} {
-            margin-top: 20px;
-        }
-    }
+//         @media #{$small-mobile} {
+//             margin-top: 20px;
+//         }
+//     }
 
-    .btn {
-        display: block;
-        bottom: 30px;
-        width: 100%;
-        margin: auto;
-        padding: 15px;
-    }
-}
+//     .btn {
+//         display: block;
+//         bottom: 30px;
+//         width: 100%;
+//         margin: auto;
+//         padding: 15px;
+//     }
+// }
 
 .rn-pd-bd-wrapper {
     max-width: 450px;

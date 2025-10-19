@@ -8,6 +8,7 @@ import Link from "next/link";
 import imageUrlBuilder from "@sanity/image-url";
 import CartContext from "../../../Context/cart/CartContext";
 import styles from "./product-animations.module.css";
+import Button from "@ui/button";
 
 const builder = imageUrlBuilder({
     projectId: "b6e027vh",
@@ -89,16 +90,16 @@ const Product = ({ product, isAccessory }) => {
             {/* Action Buttons */}
             <div className={styles.actionButtons}>
                 {!product.hasSubCategories && (
-                    <a
-                        href={
+                    <Button
+                        path={
                             isAccessory
                                 ? `/product/${product.name}`
                                 : `/product/${product.title}`
                         }
-                        className={styles.addToCartButton}
+                        size="small"
                     >
                         View Details
-                    </a>
+                    </Button>
                 )}
 
                 {!product.hasSubCategories && (
@@ -121,12 +122,12 @@ const Product = ({ product, isAccessory }) => {
                 {product.hasSubCategories && (
                     <>
                         <div className={styles.divider} />
-                        <a
-                            href={`/category/${product.title}`}
-                            className={styles.viewProductButton}
+                        <Button
+                            size="small"
+                            path={`/category/${product.title}`}
                         >
                             View Products
-                        </a>
+                        </Button>
                     </>
                 )}
             </div>

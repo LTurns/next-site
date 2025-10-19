@@ -46,7 +46,7 @@
 .showMoreBtn {
     background: none !important;
     border: none !important;
-    color: #2c3e50 !important;
+    color: rgb(185, 183, 183);
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;
@@ -540,6 +540,8 @@
     padding: 24px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
 }
 
 .enquireButton {

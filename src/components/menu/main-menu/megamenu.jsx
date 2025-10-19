@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Anchor from "@ui/anchor";
+import Link from "next/link";
 
 const MegaMenu = ({ menu }) => (
     <div className="rn-megamenu">
@@ -11,14 +12,14 @@ const MegaMenu = ({ menu }) => (
                             <ul className="mega-menu-item">
                                 {nav.submenu.map((subnav) => (
                                     <li key={subnav.id}>
-                                        <Anchor path={subnav.path}>
+                                        <Link href={subnav.path}>
                                             {subnav.text}
                                             {subnav?.icon && (
                                                 <i
                                                     className={`feather ${subnav.icon}`}
                                                 />
                                             )}
-                                        </Anchor>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

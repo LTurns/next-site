@@ -1,9 +1,8 @@
 import Anchor from "@ui/anchor";
 import PropTypes from "prop-types";
-import { ImageType } from "@utils/types";
 import Image from "next/image";
 
-const Service = ({ title, subtitle, path, image }) => (
+const Service = ({ title, path, image }) => (
     <div
         data-sal="slide-up"
         data-sal-delay="150"

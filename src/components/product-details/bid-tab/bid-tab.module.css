@@ -14,7 +14,7 @@
 .featureSection {
     padding: 24px;
     margin-bottom: 16px;
-    background-color: #ffffff;
+    background: #23272f;
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -29,7 +29,7 @@
 .featureHeading {
     font-size: 16px !important;
     font-weight: 600 !important;
-    color: #2c3e50 !important;
+    color: #bfc8e2 !important;
     margin-bottom: 16px !important;
     padding-bottom: 8px !important;
     border-bottom: 2px solid #f4d03f !important;
@@ -38,7 +38,7 @@
 
 .featureItem {
     font-size: 14px !important;
-    color: #495057 !important;
+    color: #bfc8e2 !important;
     margin-bottom: 8px !important;
     padding-left: 16px !important;
     position: relative !important;

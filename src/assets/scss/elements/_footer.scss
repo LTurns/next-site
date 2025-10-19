@@ -3,6 +3,7 @@
 }
 
 .rn-footer-one {
+    background-color: var(--background-color-2);
     .footer-left {
         .rn-footer-describe {
             font-size: 18px;
@@ -117,17 +118,17 @@
         }
     }
 
-    .newsletter-dsc {
-        p {
-            margin-top: 10px;
-            font-size: 14px;
-            letter-spacing: 0.2px;
-        }
-    }
+    // .newsletter-dsc {
+    //     p {
+    //         margin-top: 10px;
+    //         font-size: 14px;
+    //         letter-spacing: 0.2px;
+    //     }
+    // // }
 
-    .widget-bottom {
-        border-top: 1px solid var(--background-color-2);
-    }
+    // .widget-bottom {
+    //     border-top: 1px solid var(--background-color-2);
+    // }
 }
 
 /*-------------------------------

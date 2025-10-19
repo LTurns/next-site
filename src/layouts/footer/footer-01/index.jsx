@@ -24,67 +24,25 @@ const Footer = ({ space, className, data }) => (
                 className
             )}
         >
-            {/* {data?.items && (
-                <div className="footer-top">
-                    <div className="container">
-                        <div className="row">
-                            <ul className="nu-brand-area">
-                                {data.items.map(({ id, image }) => (
-                                    <li key={id}>
-                                        {image?.src && (
-                                            <Image
-                                                src={image.src}
-                                                alt={
-                                                    image?.alt ||
-                                                    "nuron-brand_nft"
-                                                }
-                                                sizes="200px"
-                                                fill
-                                                style={{
-                                                    objectFit: "contain",
-                                                }}
-                                            />
-                                        )}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            )} */}
 
             <div className="container">
-                <div className="row gx-5">
+                <div className="row">
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="widget-content-wrapper">
                             <Logo logo={footerData.logo} />
                         </div>
                     </div>
 
-                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
-                        <QuicklinkWidget
-                            data={footerData["quicklink-widget"]}
-                        />
-                    </div>
-
-                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        <InformationWidget
-                            data={footerData["information-widget"]}
-                        />
-                    </div>
-
-                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        <h5>Contact Details</h5>
-
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
                         <div style={{ margin: 5 }}>
                             <span style={{ fontSize: 16 }}>Address</span>
                             <Divider style={{ marginBlock: 10 }} />
                             CBS Products (KT), Pillings Road Oakham Rutland LE15
                             6QF UK
                         </div>
+                    </div>
 
-                        <br />
-
+                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
                         <div style={{ margin: 5 }}>
                             <span style={{ fontSize: 16 }}>Email</span>
                             <Divider style={{ marginBlock: 10 }} />
@@ -95,6 +53,9 @@ const Footer = ({ space, className, data }) => (
                                 sales@cbsproducts.com
                             </a>
                         </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
                         <div style={{ margin: 5 }}>
                             <span style={{ fontSize: 16 }}>Phone</span>
                             <Divider style={{ marginBlock: 10 }} />
@@ -109,7 +70,7 @@ const Footer = ({ space, className, data }) => (
                 </div>
             </div>
         </div>
-        <div className="copy-right-one ptb--20 bg-color--1">
+        <div className="copy-right-one mt--10 ptb--20 bg-color--1">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">

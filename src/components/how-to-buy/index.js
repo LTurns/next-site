@@ -3,7 +3,8 @@ import countryCoordinates from '../../../country_coordinates.json';
 import geocodeAddresses from '../../../geocoded.json';
 import whereToBuy from '../../data/whereToBuy.json';
 import ExploreProductArea from "@containers/explore-product/layout-12";
-
+import Map from "@components/map.tsx";
+import { Divider } from "@mui/material";
 // Haversine formula
 function haversine(lat1, lon1, lat2, lon2) {
   const R = 6371;
@@ -38,7 +39,7 @@ const southAmericaDistributors = whereToBuy.filter(item => item.continent === "S
 const oceaniaDistributors = whereToBuy.filter(item => item.continent === "Oceania");
 
 export default function HowToBuy() {
-  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("United Kingdom");
   const [closestCountry, setClosestCountry] = useState({});
   const [selectedIndustry, setSelectedIndustry] = useState("");
   const [selectedService, setSelectedService] = useState("");
@@ -54,6 +55,13 @@ export default function HowToBuy() {
     "South America": false,
     Oceania: false,
   });
+
+  const locations = [
+    { lat: 37.7749, lng: -122.4194, label: "A" },
+    { lat: 37.7849, lng: -122.4094, label: "B" },
+    { lat: 37.7649, lng: -122.4294, label: "C" },
+];
+
 
   // Add state for open Europe countries
   const [openEuropeCountries, setOpenEuropeCountries] = useState({});
@@ -91,7 +99,6 @@ export default function HowToBuy() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Filter whereToBuy by industry if selected
     let filtered = whereToBuy;
     if (selectedIndustry) {
       filtered = whereToBuy.filter(item =>
@@ -105,8 +112,17 @@ export default function HowToBuy() {
       );
     }
 
-    // If a country is selected, find the closest from the filtered list
-    if (selectedCountry) {
+    // If United Kingdom is selected, show all UK distributors, CBS first
+    if (selectedCountry === "United Kingdom") {
+      let ukDistributors = filtered.filter(item => item.country === "United Kingdom");
+      const cbsIndex = ukDistributors.findIndex(item => item.name && item.name.toLowerCase().includes("cbs"));
+      if (cbsIndex > -1) {
+        const [cbs] = ukDistributors.splice(cbsIndex, 1);
+        ukDistributors = [cbs, ...ukDistributors];
+      }
+      setClosest(ukDistributors);
+    } else if (selectedCountry) {
+      // If a country is selected, find the closest from the filtered list
       // Get geocoded addresses for filtered whereToBuy
       const filteredGeocodes = geocodeAddresses.filter(g =>
         filtered.some(item => item.id === g.id)
@@ -154,8 +170,10 @@ export default function HowToBuy() {
   return (
     <div className="container">
       <div className="p-4 max-w-lg mx-auto">
+        <h5>How to Buy</h5>
+        <Divider style={{ marginBottom: "20px" }} />
         <form onSubmit={handleSubmit}>
-          <div className="how-to-buy-form col-12 gap-4 mb-4 items-center justify-center">
+          <div className="how-to-buy-form mt--20 mb--40 col-12 gap-4 mb-4 items-center justify-center">
             <select
               value={selectedCountry}
               onChange={handleChangeCountry}
@@ -202,10 +220,12 @@ export default function HowToBuy() {
               data={{
                 products: closest,
               }}
-              columns={12}
+              columns={4}
             />
           </div>
         )}
+
+         <Map locations={locations} />
 
         {/**
          * Continent Sections

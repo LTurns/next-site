@@ -9,7 +9,7 @@ import ProductTitle from "@components/product-details/title";
 import BidTab from "@components/product-details/bid-tab";
 import Catalogue from "@components/catalogue";
 import { ProductType } from "@utils/types";
-import { Button } from "@mui/material";
+import Button from "@ui/button";
 import { useContext, useState } from "react";
 
 import CartContext from "../../Context/cart/CartContext";
@@ -196,29 +196,8 @@ const ProductDetailsArea = ({ space, className, product }) => {
                                 <div className={styles.ctaSection}>
                                     <Button
                                         variant="contained"
-                                        size="large"
-                                        fullWidth
+                                        size="small"
                                         onClick={handleAddToCart}
-                                        className={styles.enquireButton}
-                                        sx={{
-                                            backgroundColor: "#f4d03f",
-                                            color: "#2c3e50",
-                                            fontWeight: 700,
-                                            fontSize: "16px",
-                                            textTransform: "uppercase",
-                                            letterSpacing: "1px",
-                                            padding: "18px 32px",
-                                            borderRadius: "12px",
-                                            boxShadow:
-                                                "0 8px 25px rgba(244, 208, 63, 0.3)",
-                                            transition: "all 0.3s ease",
-                                            "&:hover": {
-                                                backgroundColor: "#e8b339",
-                                                transform: "translateY(-2px)",
-                                                boxShadow:
-                                                    "0 12px 35px rgba(244, 208, 63, 0.4)",
-                                            },
-                                        }}
                                     >
                                         Enquire Now
                                     </Button>

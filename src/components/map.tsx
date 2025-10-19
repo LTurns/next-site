@@ -6,6 +6,7 @@ import {
     InfoWindow,
 } from "@react-google-maps/api";
 import ExploreProductArea from "@containers/explore-product/layout-12";
+import { Divider } from "@mui/material";
 
 const whereToBuy = require("../data/whereToBuy.json");
 
@@ -40,6 +41,9 @@ export default function Map() {
         whereToBuy.find((contact: { id: number }) => contact.id === id);
 
     return (
+        <div className="mb--40">
+        <h5>View All Partners</h5>
+        <Divider style={{ marginBottom: "20px" }} />
         <LoadScript
             googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
         >
@@ -125,5 +129,6 @@ export default function Map() {
                 )}
             </GoogleMap>
         </LoadScript>
+        </div>
     );
 }

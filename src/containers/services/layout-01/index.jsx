@@ -19,9 +19,7 @@ const ServiceArea = ({ className, id, space, data }) => (
                             <Service
                                 title={item.title}
                                 image={item.image}
-                                // subtitle={item.subtitle}
                                 path={item.path}
-                                // description={item.description}
                             />
                         </div>
                     ))}
